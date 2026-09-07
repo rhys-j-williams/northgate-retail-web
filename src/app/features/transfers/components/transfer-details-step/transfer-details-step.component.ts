@@ -3,7 +3,7 @@ import { AbstractControl, FormControl, FormGroup, NonNullableFormBuilder, Valida
 import { Observable, of, Subject } from 'rxjs';
 import { catchError, map, takeUntil } from 'rxjs/operators';
 
-import { CnSelectOption } from '@meridian/canopy-ui/forms';
+import { CnSelectOption } from '@northgate/canopy-ui/forms';
 
 import { TransfersApiService } from '../../../../core/api/transfers-api.service';
 import { Account, Payee, TransferLimits, TransferType } from '../../../../core/api/models';

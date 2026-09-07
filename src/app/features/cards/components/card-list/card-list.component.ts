@@ -4,7 +4,7 @@ import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-import { CnToastService } from '@meridian/canopy-ui/overlays';
+import { CnToastService } from '@northgate/canopy-ui/overlays';
 
 import { Card, CardStatus } from '../../../../core/api/models';
 import { LanternService } from '../../../../core/telemetry/lantern.service';

@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { CnRadioOption } from '@meridian/canopy-ui/forms';
-import { CnToastService } from '@meridian/canopy-ui/overlays';
+import { CnRadioOption } from '@northgate/canopy-ui/forms';
+import { CnToastService } from '@northgate/canopy-ui/overlays';
 
 import { ProfileApiService } from '../../../../core/api/profile-api.service';
 import { SecuritySettings } from '../../../../core/api/models';
@@ -25,7 +25,7 @@ type MfaMethod = SecuritySettings['mfaMethod'];
 })
 export class MfaSettingsComponent implements OnInit {
   readonly options: CnRadioOption<MfaMethod>[] = [
-    { value: 'push', label: 'Push notification', description: 'Approve sign-ins in the Meridian mobile app. Recommended.' },
+    { value: 'push', label: 'Push notification', description: 'Approve sign-ins in the Northgate mobile app. Recommended.' },
     { value: 'authenticator', label: 'Authenticator app', description: 'Six digit codes from an app such as any TOTP authenticator.' },
     { value: 'sms', label: 'Text message', description: 'Codes sent to your mobile. Least secure; vulnerable to SIM swap.' }
   ];

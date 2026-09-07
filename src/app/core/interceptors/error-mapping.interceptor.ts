@@ -75,7 +75,7 @@ export class ErrorMappingInterceptor implements HttpInterceptor {
   private titleFor(status: number, fromBody?: string): string {
     if (fromBody) return fromBody;
     switch (status) {
-      case 0: return $localize`:@@err.network:We could not reach Meridian Online. Check your connection and try again.`;
+      case 0: return $localize`:@@err.network:We could not reach Northgate Online. Check your connection and try again.`;
       case 401: return $localize`:@@err.401:Your session has ended. Please sign in again.`;
       case 403: return $localize`:@@err.403:You do not have access to this feature.`;
       case 404: return $localize`:@@err.404:We could not find what you were looking for.`;

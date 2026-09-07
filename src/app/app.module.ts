@@ -7,7 +7,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { NgxMaskModule } from 'ngx-mask';
 
-import { CnCoreModule } from '@meridian/canopy-ui/core';
+import { CnCoreModule } from '@northgate/canopy-ui/core';
 
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';

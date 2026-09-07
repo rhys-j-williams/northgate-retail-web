@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { of } from 'rxjs';
 
-import { CnDialogService } from '@meridian/canopy-ui/overlays';
+import { CnDialogService } from '@northgate/canopy-ui/overlays';
 
 import { HasUnsavedChanges, UnsavedChangesGuard } from './unsaved-changes.guard';
 

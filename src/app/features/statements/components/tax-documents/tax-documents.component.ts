@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-import { CnToastService } from '@meridian/canopy-ui/overlays';
+import { CnToastService } from '@northgate/canopy-ui/overlays';
 
 import { StatementsApiService } from '../../../../core/api/statements-api.service';
 import { Statement } from '../../../../core/api/models';
@@ -54,7 +54,7 @@ export class TaxDocumentsComponent implements OnInit {
     this.busyId = d.statementId;
     this.api.download(d.statementId).subscribe({
       next: blob => {
-        StatementListComponent.saveBlob(blob, `meridian-${d.type}-${this.year}.pdf`);
+        StatementListComponent.saveBlob(blob, `northgate-${d.type}-${this.year}.pdf`);
         this.lantern.track('statements.tax.downloaded', { type: d.type, year: this.year });
         this.busyId = null;
         this.cdr.markForCheck();

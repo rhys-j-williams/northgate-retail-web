@@ -36,8 +36,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="err.network" datatype="html">
-        <source>We could not reach Meridian Online. Check your connection and try again.</source>
-        <target state="translated">No pudimos conectar con Meridian Online. Compruebe su conexión e inténtelo de nuevo.</target>
+        <source>We could not reach Northgate Online. Check your connection and try again.</source>
+        <target state="translated">No pudimos conectar con Northgate Online. Compruebe su conexión e inténtelo de nuevo.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/interceptors/error-mapping.interceptor.ts</context>
           <context context-type="linenumber">78</context>
@@ -576,8 +576,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="accounts.renameAccount.body" datatype="html">
-        <source>Nicknames only show in Meridian Online and the mobile app. Statements keep the product name.</source>
-        <target state="translated">Los apodos solo se muestran en Meridian Online y en la aplicación móvil. Los estados de cuenta conservan el nombre del producto.</target>
+        <source>Nicknames only show in Northgate Online and the mobile app. Statements keep the product name.</source>
+        <target state="translated">Los apodos solo se muestran en Northgate Online y en la aplicación móvil. Los estados de cuenta conservan el nombre del producto.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/accounts/components/rename-account/rename-account.component.html</context>
           <context context-type="linenumber">2</context>
@@ -640,8 +640,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="accounts.routing.note" datatype="html">
-        <source>Use the routing number above for both electronic transfers and wires. Meridian Trust Bank does not use a separate wire routing number.</source>
-        <target state="translated">Use el número de ruta anterior tanto para transferencias electrónicas como para giros. Meridian Trust Bank no usa un número de ruta distinto para giros.</target>
+        <source>Use the routing number above for both electronic transfers and wires. Northgate Trust Bank does not use a separate wire routing number.</source>
+        <target state="translated">Use el número de ruta anterior tanto para transferencias electrónicas como para giros. Northgate Trust Bank no usa un número de ruta distinto para giros.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/accounts/components/routing-details/routing-details.component.html</context>
           <context context-type="linenumber">19</context>
@@ -1424,8 +1424,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="billPay.billPayHome.emptyBody" datatype="html">
-        <source>Add a payee to start paying bills from Meridian Online.</source>
-        <target state="translated">Agregue un beneficiario para empezar a pagar facturas desde Meridian Online.</target>
+        <source>Add a payee to start paying bills from Northgate Online.</source>
+        <target state="translated">Agregue un beneficiario para empezar a pagar facturas desde Northgate Online.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/bill-pay/components/bill-pay-home/bill-pay-home.component.html</context>
           <context context-type="linenumber">16</context>
@@ -2324,8 +2324,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="dashboard.promoBanner.headline" datatype="html">
-        <source>Earn 4.10% APY with Meridian Reserve Savings</source>
-        <target state="translated">Gane 4.10% APY con Meridian Reserve Savings</target>
+        <source>Earn 4.10% APY with Northgate Reserve Savings</source>
+        <target state="translated">Gane 4.10% APY con Northgate Reserve Savings</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/dashboard/components/promo-banner/promo-banner.component.html</context>
           <context context-type="linenumber">3,4</context>
@@ -2740,8 +2740,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="help.faq.p1" datatype="html">
-        <source>How long do transfers take? Transfers between your Meridian accounts are immediate. External transfers take 1-3 business days depending on the receiving bank.</source>
-        <target state="translated">¿Cuánto tardan las transferencias? Las transferencias entre sus cuentas Meridian son inmediatas. Las externas tardan de 1 a 3 días hábiles según el banco receptor.</target>
+        <source>How long do transfers take? Transfers between your Northgate accounts are immediate. External transfers take 1-3 business days depending on the receiving bank.</source>
+        <target state="translated">¿Cuánto tardan las transferencias? Las transferencias entre sus cuentas Northgate son inmediatas. Las externas tardan de 1 a 3 días hábiles según el banco receptor.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/help/components/faq/faq.component.html</context>
           <context context-type="linenumber">4</context>
@@ -3620,8 +3620,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="profile.activity.lede" datatype="html">
-        <source>The last 30 days of sign-ins to Meridian Online and the mobile app.</source>
-        <target state="translated">Los últimos 30 días de inicios de sesión en Meridian Online y la aplicación móvil.</target>
+        <source>The last 30 days of sign-ins to Northgate Online and the mobile app.</source>
+        <target state="translated">Los últimos 30 días de inicios de sesión en Northgate Online y la aplicación móvil.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/profile/components/login-history/login-history.component.html</context>
           <context context-type="linenumber">1</context>
@@ -3924,8 +3924,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="profile.security.signOutBody" datatype="html">
-        <source>Ends every Meridian Online and mobile session, including this one. Trusted devices stay trusted; remove them separately if you think a device is compromised.</source>
-        <target state="translated">Termina todas las sesiones de Meridian Online y móviles, incluida esta. Los dispositivos de confianza siguen siéndolo; elimínelos por separado si cree que alguno está comprometido.</target>
+        <source>Ends every Northgate Online and mobile session, including this one. Trusted devices stay trusted; remove them separately if you think a device is compromised.</source>
+        <target state="translated">Termina todas las sesiones de Northgate Online y móviles, incluida esta. Los dispositivos de confianza siguen siéndolo; elimínelos por separado si cree que alguno está comprometido.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/profile/components/security-settings/security-settings.component.html</context>
           <context context-type="linenumber">13,14</context>
@@ -3964,8 +3964,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="profile.security.mfaPush" datatype="html">
-        <source>Push notification to the Meridian app</source>
-        <target state="translated">Notificación push a la aplicación Meridian</target>
+        <source>Push notification to the Northgate app</source>
+        <target state="translated">Notificación push a la aplicación Northgate</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/profile/components/security-settings/security-settings.component.ts</context>
           <context context-type="linenumber">31</context>
@@ -4076,8 +4076,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="rewards.redeemPoints.lede" datatype="html">
-        <source>Statement credits post within 2 business days. Deposits to a Meridian account are same day.</source>
-        <target state="translated">Los créditos al estado de cuenta se aplican en 2 días hábiles. Los depósitos a una cuenta Meridian son el mismo día.</target>
+        <source>Statement credits post within 2 business days. Deposits to a Northgate account are same day.</source>
+        <target state="translated">Los créditos al estado de cuenta se aplican en 2 días hábiles. Los depósitos a una cuenta Northgate son el mismo día.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rewards/components/redeem-points/redeem-points.component.html</context>
           <context context-type="linenumber">1</context>
@@ -4484,8 +4484,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="statements.tax.disclaimer" datatype="html">
-        <source>Meridian Trust Bank does not give tax advice. Talk to a tax professional about how to use these forms.</source>
-        <target state="translated">Meridian Trust Bank no ofrece asesoramiento fiscal. Consulte a un profesional de impuestos sobre cómo usar estos formularios.</target>
+        <source>Northgate Trust Bank does not give tax advice. Talk to a tax professional about how to use these forms.</source>
+        <target state="translated">Northgate Trust Bank no ofrece asesoramiento fiscal. Consulte a un profesional de impuestos sobre cómo usar estos formularios.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/statements/components/tax-documents/tax-documents.component.html</context>
           <context context-type="linenumber">27,29</context>
@@ -5500,8 +5500,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="auth.signingIn" datatype="html">
-        <source>Signing you in to Meridian Online…</source>
-        <target state="translated">Iniciando su sesión en Meridian Online…</target>
+        <source>Signing you in to Northgate Online…</source>
+        <target state="translated">Iniciando su sesión en Northgate Online…</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shell/auth-callback/auth-callback.component.ts</context>
           <context context-type="linenumber">17</context>
@@ -5628,8 +5628,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="loggedOut.user.body" datatype="html">
-        <source>Thanks for banking with Meridian. Close this window when you are done.</source>
-        <target state="translated">Gracias por operar con Meridian. Cierre esta ventana cuando termine.</target>
+        <source>Thanks for banking with Northgate. Close this window when you are done.</source>
+        <target state="translated">Gracias por operar con Northgate. Cierre esta ventana cuando termine.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shell/logged-out/logged-out.component.ts</context>
           <context context-type="linenumber">53</context>
@@ -5716,8 +5716,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="sw.ready" datatype="html">
-        <source>A new version of Meridian Online is available.</source>
-        <target state="translated">Hay una nueva versión de Meridian Online disponible.</target>
+        <source>A new version of Northgate Online is available.</source>
+        <target state="translated">Hay una nueva versión de Northgate Online disponible.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shell/sw-update-banner/sw-update-banner.component.ts</context>
           <context context-type="linenumber">15</context>

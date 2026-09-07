@@ -1,7 +1,7 @@
-# Architecture decision records, Meridian Online
+# Architecture decision records, Northgate Online
 
 Numbered, immutable once accepted. Superseding an ADR means writing a new one and linking both
-ways. Reviews go to @meridian/cswt-architecture via CODEOWNERS; they are slow, plan for it.
+ways. Reviews go to @northgate/cswt-architecture via CODEOWNERS; they are slow, plan for it.
 
 | # | Title | Status | Date |
 |---|---|---|---|

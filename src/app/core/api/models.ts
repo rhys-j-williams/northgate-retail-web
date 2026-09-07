@@ -95,7 +95,7 @@ export interface Card {
   accountId: string;
   /** Masked by the BFF except on the reveal endpoint. */
   cardNumber: string;
-  network: 'meridian-debit' | 'meridian-credit';
+  network: 'northgate-debit' | 'northgate-credit';
   expiryMonth: number;
   expiryYear: number;
   status: CardStatus;

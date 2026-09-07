@@ -1,7 +1,7 @@
-# Meridian Online (`retail-web`)
+# Northgate Online (`retail-web`)
 
-Consumer online banking. Angular 14, NgRx, Canopy. Owned by @meridian/retail-digital (Charlotte
-and Plano, with the payments work shared with @meridian/payments-platform in Jersey City and
+Consumer online banking. Angular 14, NgRx, Canopy. Owned by @northgate/retail-digital (Charlotte
+and Plano, with the payments work shared with @northgate/payments-platform in Jersey City and
 Chennai). Jira project `MOL`. On call rota is in the team space; the app is Tier 1 so the rota is
 real.
 
@@ -20,8 +20,8 @@ served from here; it has been its own repo since MOL-3410) but the shape is righ
 | TypeScript | 4.7.4 | `package.json` |
 | RxJS | 7.5.7 | `package.json` |
 | NgRx | 14.3.3 | `package.json` |
-| Canopy UI | 3.7.2 | `package.json`, `@meridian/canopy-ui` |
-| Lantern SDK | 2.4.1 | `package.json`, `@meridian/lantern-sdk` |
+| Canopy UI | 3.7.2 | `package.json`, `@northgate/canopy-ui` |
+| Lantern SDK | 2.4.1 | `package.json`, `@northgate/lantern-sdk` |
 
 Everything is exact-pinned. `save-exact=true` is in `.npmrc` so `npm install <thing>` does the
 right thing. Do not add `^` back; we have been bitten (MOL-2270, the zone.js patch that broke
@@ -45,7 +45,7 @@ npm start
 `npm start` runs `ng serve` with `proxy.conf.json`, which forwards `/api` to the retail BFF on
 4500, `/flags` to Semaphore on 4608 and `/telemetry` to the Splunk HEC stand-in. All of those come
 from `mock-external/estate-up.sh` at the repo root; without them you get a login redirect to
-nothing. Keystone (the mock, port 4400) accepts any customer from `@meridian/domain-fixtures` with
+nothing. Keystone (the mock, port 4400) accepts any customer from `@northgate/domain-fixtures` with
 the OTP `000000`.
 
 `postinstall` runs `ngcc` because the Lantern SDK is still shipped as View Engine (LNTN-140, the

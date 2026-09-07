@@ -1,4 +1,4 @@
-// Protractor configuration for Meridian Online.
+// Protractor configuration for Northgate Online.
 //
 // This suite has not run in CI since the Jenkins agents moved to nodejs16-rhel8 in 2023 and
 // webdriver-manager stopped being able to fetch a chromedriver matching the agent Chrome

@@ -1,4 +1,4 @@
-# MOL-4471 Angular upgrade, Meridian Online
+# MOL-4471 Angular upgrade, Northgate Online
 
 Owner: Deborah Okafor. Architecture contact: Wataru Tanaka. AppSec: Chidi Mbeki (GIS-2207).
 Status: Deferred to 2025 per ADR 0014 (June 2024), reconfirmed November 2024.

@@ -4,8 +4,8 @@ import { Store } from '@ngrx/store';
 import { combineLatest, Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
 
-import { CnSelectOption } from '@meridian/canopy-ui/forms';
-import { CnToastService } from '@meridian/canopy-ui/overlays';
+import { CnSelectOption } from '@northgate/canopy-ui/forms';
+import { CnToastService } from '@northgate/canopy-ui/overlays';
 
 import { StatementsApiService } from '../../../../core/api/statements-api.service';
 import { Account, Statement } from '../../../../core/api/models';
@@ -104,7 +104,7 @@ export class StatementListComponent implements OnInit {
   }
 
   static fileName(s: Statement): string {
-    return `meridian-${s.type}-${s.periodEnd.slice(0, 10)}.pdf`;
+    return `northgate-${s.type}-${s.periodEnd.slice(0, 10)}.pdf`;
   }
 
   static saveBlob(blob: Blob, name: string): void {

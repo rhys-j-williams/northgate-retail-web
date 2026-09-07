@@ -2,7 +2,7 @@
  * Polyfills loaded before the application bundle.
  *
  * Browser support is defined by the digital channels browser matrix (Confluence, "Supported
- * browsers - Meridian Online"), which as of the 2023.06 train is evergreen Chrome/Edge/Firefox/Safari
+ * browsers - Northgate Online"), which as of the 2023.06 train is evergreen Chrome/Edge/Firefox/Safari
  * and iOS 14+. IE11 support was withdrawn in MOL-2440 (2022.03 train) and the core-js imports that
  * carried it were removed at the same time. If you find yourself adding them back, talk to the
  * channels product owner first.

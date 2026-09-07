@@ -1,7 +1,7 @@
-# Meridian Online architecture
+# Northgate Online architecture
 
 Last substantive update 2023-06 (MOL-3290). The diagram has drifted since; corrections welcome,
-open an MOL ticket and tag @meridian/cswt-architecture on the PR.
+open an MOL ticket and tag @northgate/cswt-architecture on the PR.
 
 ## Overview
 
@@ -14,7 +14,7 @@ core banking or any vendor except Lantern (analytics) and Keystone (identity).
 flowchart LR
   subgraph Browser
     SW[Service worker\nngsw]
-    APP[Meridian Online\nAngular 14]
+    APP[Northgate Online\nAngular 14]
     IRIS[Iris chat widget\nfeatures/iris]
   end
 
@@ -96,8 +96,8 @@ Registered in `CoreModule` through `HTTP_INTERCEPTORS`, order matters:
 5. `ErrorMappingInterceptor`: RFC 7807 problem responses into `AppError`, 401 into a silent
    refresh then logout.
 
-XSRF is `HttpClientXsrfModule.withOptions` with cookie `MERIDIAN-XSRF` and header
-`X-MERIDIAN-XSRF`, which the BFF validates on every non-GET.
+XSRF is `HttpClientXsrfModule.withOptions` with cookie `NORTHGATE-XSRF` and header
+`X-NORTHGATE-XSRF`, which the BFF validates on every non-GET.
 
 ## Session
 
@@ -107,7 +107,7 @@ the reason the warning dialog no longer resets the timer when it is dismissed by
 
 MFA step-up (`MfaStepUpGuard`): above `transfers.mfaStepUpThresholdMinor` the guard requires an
 `mfa_at` claim younger than `mfaMaxAgeSeconds` (600) and otherwise sends the customer to Keystone
-with `acr_values=urn:meridian:keystone:loa2` and a return URL. The amount itself is never put in
+with `acr_values=urn:northgate:keystone:loa2` and a return URL. The amount itself is never put in
 telemetry, only the band.
 
 ## Things not on the diagram

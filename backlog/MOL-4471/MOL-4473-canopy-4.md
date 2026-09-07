@@ -6,7 +6,7 @@ Canopy 3.7.x overrides Material 14 internals. Material 15+ (MDC) renames them. C
 design system team's rebuild against MDC. Not funded as of Q4 2024.
 
 When it exists:
-- Bump `@meridian/canopy-ui` to 4.x, exact.
+- Bump `@northgate/canopy-ui` to 4.x, exact.
 - Every `cn-*` component in `src/app` re-checked against the Canopy 4 changelog; they promise no
   API changes to the public selectors but the `CONTRIBUTING.md` in canopy-ui says the public
   API is frozen at 3.x, so read that promise carefully.

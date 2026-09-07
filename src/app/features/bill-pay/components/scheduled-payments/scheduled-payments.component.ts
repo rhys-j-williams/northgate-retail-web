@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Store } from '@ngrx/store';
 
-import { CnColumn } from '@meridian/canopy-ui/data-display';
+import { CnColumn } from '@northgate/canopy-ui/data-display';
 
 import { Bill } from '../../../../core/api/models';
 import { billPayActions } from '../../store/bill-pay.actions';

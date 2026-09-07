@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 
-import { CnDialogService, CnToastService } from '@meridian/canopy-ui/overlays';
+import { CnDialogService, CnToastService } from '@northgate/canopy-ui/overlays';
 
 import { ProfileApiService } from '../../../../core/api/profile-api.service';
 import { TrustedDevice } from '../../../../core/api/models';

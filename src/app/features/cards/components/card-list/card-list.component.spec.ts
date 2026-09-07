@@ -30,7 +30,7 @@ describe('CardListComponent', () => {
   });
 
   it('sorts active cards ahead of locked, expired and replaced ones', () => {
-    const c = (cardId: string, status: Card['status']): Card => ({ cardId, customerId: 'c', accountId: 'a', cardNumber: '0000', network: 'meridian-debit', expiryMonth: 1, expiryYear: 2029, status, contactlessEnabled: true, digitalWallet: { applePay: false, googlePay: false, samsungPay: false } });
+    const c = (cardId: string, status: Card['status']): Card => ({ cardId, customerId: 'c', accountId: 'a', cardNumber: '0000', network: 'northgate-debit', expiryMonth: 1, expiryYear: 2029, status, contactlessEnabled: true, digitalWallet: { applePay: false, googlePay: false, samsungPay: false } });
     const sorted = [c('1', 'replaced'), c('2', 'active'), c('3', 'locked')].sort(CardListComponent.byStatus);
     expect(sorted.map(x => x.cardId)).toEqual(['2', '3', '1']);
   });

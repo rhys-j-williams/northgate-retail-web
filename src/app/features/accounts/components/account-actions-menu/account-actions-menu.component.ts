@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { CnMenuItem } from '@meridian/canopy-ui/actions';
-import { CnDialogService } from '@meridian/canopy-ui/overlays';
+import { CnMenuItem } from '@northgate/canopy-ui/actions';
+import { CnDialogService } from '@northgate/canopy-ui/overlays';
 
 import { Account } from '../../../../core/api/models';
 import { RenameAccountComponent, RenameAccountData } from '../rename-account/rename-account.component';

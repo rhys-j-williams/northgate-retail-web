@@ -2,7 +2,7 @@ unsaved.body	Hay cambios en esta página que no se han guardado. Si sale ahora, 
 unsaved.title	¿Salir sin guardar?
 unsaved.leave	Salir de la página
 unsaved.stay	Quedarme
-err.network	No pudimos conectar con Meridian Online. Compruebe su conexión e inténtelo de nuevo.
+err.network	No pudimos conectar con Northgate Online. Compruebe su conexión e inténtelo de nuevo.
 err.401	Su sesión ha terminado. Inicie sesión de nuevo.
 err.403	No tiene acceso a esta función.
 err.404	No pudimos encontrar lo que buscaba.
@@ -57,7 +57,7 @@ accounts.pending.title	Pendientes
 accounts.pending.less	Mostrar menos
 accounts.pending.more	Mostrar todas ({0})
 accounts.renameAccount.title	Renombrar cuenta
-accounts.renameAccount.body	Los apodos solo se muestran en Meridian Online y en la aplicación móvil. Los estados de cuenta conservan el nombre del producto.
+accounts.renameAccount.body	Los apodos solo se muestran en Northgate Online y en la aplicación móvil. Los estados de cuenta conservan el nombre del producto.
 accounts.renameAccount.confirm	Guardar nombre
 accounts.routing.title	Números de cuenta y de ruta
 accounts.routing.description	Para depósito directo y pagos automáticos
@@ -65,7 +65,7 @@ accounts.routing.routingLabel	Número de ruta (ACH y transferencias)
 accounts.routing.copyRouting	Copiar número de ruta
 accounts.routing.accountLabel	Número de cuenta
 accounts.routing.copyAccount	Copiar número de cuenta
-accounts.routing.note	Use el número de ruta anterior tanto para transferencias electrónicas como para giros. Meridian Trust Bank no usa un número de ruta distinto para giros.
+accounts.routing.note	Use el número de ruta anterior tanto para transferencias electrónicas como para giros. Northgate Trust Bank no usa un número de ruta distinto para giros.
 accounts.routing.copiedRouting	Número de ruta copiado
 accounts.routing.copiedAccount	Número de cuenta copiado
 accounts.txn.back	Volver a la cuenta
@@ -150,7 +150,7 @@ billPay.billPayHome.lede	Facturas que vencen en los próximos 30 días. Las fact
 billPay.billPayHome.section	Vencen pronto
 billPay.billPayHome.caption	Pago de facturas
 billPay.billPayHome.empty	No hay facturas pendientes
-billPay.billPayHome.emptyBody	Agregue un beneficiario para empezar a pagar facturas desde Meridian Online.
+billPay.billPayHome.emptyBody	Agregue un beneficiario para empezar a pagar facturas desde Northgate Online.
 billPay.billPayHome.col.payeeName	Beneficiario
 billPay.billPayHome.col.dueAt	Vence
 billPay.billPayHome.col.amountDueMinor	Importe adeudado
@@ -261,7 +261,7 @@ dashboard.lede	Así están las cosas hoy.
 dashboard.greeting.morning	Buenos días
 dashboard.greeting.afternoon	Buenas tardes
 dashboard.greeting.evening	Buenas noches
-dashboard.promoBanner.headline	Gane 4.10% APY con Meridian Reserve Savings
+dashboard.promoBanner.headline	Gane 4.10% APY con Northgate Reserve Savings
 dashboard.promoBanner.p1	Tasa vigente hoy y sujeta a cambios. Consulte las divulgaciones para más detalles.
 dashboard.promoBanner.learnMore	Más información
 dashboard.promoBanner.dismiss	Descartar oferta
@@ -310,7 +310,7 @@ help.contactUs.p2	Tarjetas perdidas o robadas: 1-800-555-0199, 24 horas.
 help.contactUs.p3	Personas con discapacidad auditiva o del habla: marque 711 y luego el número indicado.
 help.contactUs.message	Enviar un mensaje seguro
 help.faq.title	Preguntas frecuentes
-help.faq.p1	¿Cuánto tardan las transferencias? Las transferencias entre sus cuentas Meridian son inmediatas. Las externas tardan de 1 a 3 días hábiles según el banco receptor.
+help.faq.p1	¿Cuánto tardan las transferencias? Las transferencias entre sus cuentas Northgate son inmediatas. Las externas tardan de 1 a 3 días hábiles según el banco receptor.
 help.faq.p2	¿Por qué se cerró mi sesión? Por su seguridad cerramos las sesiones tras 10 minutos sin actividad. Su trabajo no se guarda cuando esto ocurre.
 help.faq.p3	¿Cómo disputo un cargo? Abra la transacción y elija Disputar. Tiene 60 días desde la fecha del estado de cuenta.
 help.helpHome.title	Ayuda
@@ -420,7 +420,7 @@ profile.contactDetails.preferredLanguage.en	English
 profile.contactDetails.preferredLanguage.es	Español
 profile.contactDetails.saved	Datos de contacto actualizados.
 profile.activity.title	Actividad de inicio de sesión
-profile.activity.lede	Los últimos 30 días de inicios de sesión en Meridian Online y la aplicación móvil.
+profile.activity.lede	Los últimos 30 días de inicios de sesión en Northgate Online y la aplicación móvil.
 profile.activity.caption	Historial de inicios de sesión
 profile.activity.when	Cuándo
 profile.activity.outcome	Resultado
@@ -458,12 +458,12 @@ profile.posture.fair	Podría mejorar
 profile.posture.weak	Requiere atención
 profile.security.title	Seguridad
 profile.security.signOutTitle	Cerrar sesión en todos lados
-profile.security.signOutBody	Termina todas las sesiones de Meridian Online y móviles, incluida esta. Los dispositivos de confianza siguen siéndolo; elimínelos por separado si cree que alguno está comprometido.
+profile.security.signOutBody	Termina todas las sesiones de Northgate Online y móviles, incluida esta. Los dispositivos de confianza siguen siéndolo; elimínelos por separado si cree que alguno está comprometido.
 profile.security.signOut	Cerrar sesión en todos los dispositivos
 profile.security.footnote	Si cree que otra persona tiene acceso a su cuenta, llame al número al dorso de su tarjeta. Nuestra línea de fraude está abierta 24 horas.
 profile.security.mfaSms	Código por mensaje de texto
 profile.security.mfaApp	Aplicación de autenticación
-profile.security.mfaPush	Notificación push a la aplicación Meridian
+profile.security.mfaPush	Notificación push a la aplicación Northgate
 profile.devices.title	Dispositivos de confianza
 profile.devices.lede	Estos dispositivos omiten la verificación en dos pasos durante 90 días. Elimine cualquiera que no reconozca.
 profile.devices.thisDevice	Este dispositivo
@@ -476,7 +476,7 @@ profile.devices.removeCurrent	Este es el dispositivo que está usando ahora. Se 
 profile.devices.removeOther	Ese dispositivo necesitará un código de verificación la próxima vez que inicie sesión.
 profile.devices.removed	Dispositivo eliminado
 rewards.redeemPoints.title	Canjear puntos
-rewards.redeemPoints.lede	Los créditos al estado de cuenta se aplican en 2 días hábiles. Los depósitos a una cuenta Meridian son el mismo día.
+rewards.redeemPoints.lede	Los créditos al estado de cuenta se aplican en 2 días hábiles. Los depósitos a una cuenta Northgate son el mismo día.
 rewards.redeem.option	Canjear por
 rewards.redeem.points	Puntos a canjear
 rewards.redeemPoints.submit	Canjear
@@ -526,7 +526,7 @@ statements.tax.pending	Los formularios de {0} se están preparando y aparecerán
 statements.tax.pages	páginas
 statements.tax.empty	No hay formularios fiscales para este año
 statements.tax.emptyBody	Solo emitimos un 1099-INT cuando los intereses pagados fueron de $10 o más, y un 1098 para cuentas hipotecarias.
-statements.tax.disclaimer	Meridian Trust Bank no ofrece asesoramiento fiscal. Consulte a un profesional de impuestos sobre cómo usar estos formularios.
+statements.tax.disclaimer	Northgate Trust Bank no ofrece asesoramiento fiscal. Consulte a un profesional de impuestos sobre cómo usar estos formularios.
 statements.tax.f1098	Formulario 1098 intereses hipotecarios
 statements.tax.f1099	Formulario 1099-INT ingresos por intereses
 statements.tax.failed	No pudimos obtener ese formulario en este momento.
@@ -650,7 +650,7 @@ masked.full	Número completo visible
 masked.ending	Número que termina en {0}
 date.today	Hoy
 date.yesterday	Ayer
-auth.signingIn	Iniciando su sesión en Meridian Online…
+auth.signingIn	Iniciando su sesión en Northgate Online…
 idle.body	Por su seguridad cerramos la sesión tras 10 minutos sin actividad.
 idle.countdown	Se cerrará su sesión en {0} segundos.
 idle.signOut	Cerrar sesión ahora
@@ -666,7 +666,7 @@ loggedOut.user.title	Ha cerrado sesión
 loggedOut.idle.body	Cerramos su sesión tras 10 minutos sin actividad para mantener sus cuentas seguras.
 loggedOut.expired.body	Su inicio de sesión expiró. Inicie sesión de nuevo para continuar donde lo dejó.
 loggedOut.stepUp.body	No pudimos verificar que era usted, así que la transferencia no se realizó. Inicie sesión de nuevo para intentarlo otra vez.
-loggedOut.user.body	Gracias por operar con Meridian. Cierre esta ventana cuando termine.
+loggedOut.user.body	Gracias por operar con Northgate. Cierre esta ventana cuando termine.
 nav.dashboard	Panel
 nav.accounts	Cuentas
 nav.transfers	Transferencias
@@ -677,6 +677,6 @@ nav.messages	Mensajes
 nav.rewards	Recompensas
 nav.alerts	Alertas
 nav.profile	Perfil y seguridad
-sw.ready	Hay una nueva versión de Meridian Online disponible.
+sw.ready	Hay una nueva versión de Northgate Online disponible.
 sw.reload	Actualizar ahora
 sw.later	Más tarde

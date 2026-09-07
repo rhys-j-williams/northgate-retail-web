@@ -1,6 +1,6 @@
-# Runbook: rolling back a failed Meridian Online deploy
+# Runbook: rolling back a failed Northgate Online deploy
 
-Owner: @meridian/retail-digital on call. Last exercised: INC-2024-0388 (2024-03-21, the
+Owner: @northgate/retail-digital on call. Last exercised: INC-2024-0388 (2024-03-21, the
 ngsw.json mismatch). Last reviewed: 2024-09.
 
 This is for the web tier only. If the BFF is the problem, that is PLAT's runbook
@@ -62,7 +62,7 @@ will update on the customer's next navigation. That is the normal path and takes
 
 If the bad release broke the worker itself (it happened once, MOL-3310), customers are stuck.
 The escape hatch is the `ngsw-bypass` query parameter, and the contact centre script for that is
-in the knowledge base under "Meridian Online white screen". You can also push `safety-worker.js`
+in the knowledge base under "Northgate Online white screen". You can also push `safety-worker.js`
 by setting `SW_SAFETY_MODE=1` on the deployment, which serves Angular's safety worker at
 `/ngsw-worker.js` and unregisters everything. Undo it once the fix is out or nobody gets the
 worker back.

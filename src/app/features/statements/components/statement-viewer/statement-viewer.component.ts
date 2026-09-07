@@ -53,7 +53,7 @@ export class StatementViewerComponent implements OnInit, OnDestroy {
   }
 
   download(): void {
-    if (this.blob) StatementListComponent.saveBlob(this.blob, `meridian-statement-${this.statementId}.pdf`);
+    if (this.blob) StatementListComponent.saveBlob(this.blob, `northgate-statement-${this.statementId}.pdf`);
   }
 
   print(): void {

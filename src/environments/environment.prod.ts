@@ -9,7 +9,7 @@ export const environment = {
   // Stamped by Jenkins alongside version. The prod write key is not a secret but is not in git.
   lantern: {
     writeKey: 'CHANGEME-lantern-write-key-prod',
-    scriptUrl: 'https://static.meridian-online.example/lantern/v4/lantern.min.js',
+    scriptUrl: 'https://static.northgate-online.example/lantern/v4/lantern.min.js',
     debug: false,
     disabled: false
   }

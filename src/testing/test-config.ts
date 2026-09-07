@@ -12,12 +12,12 @@ export const TEST_CONFIG: AppConfig = {
   apiBaseUrl: '/api/v1',
   keystone: {
     issuer: 'http://localhost:4400/oauth2/v1',
-    clientId: 'meridian-online-web',
+    clientId: 'northgate-online-web',
     scope: 'openid profile',
     redirectUri: 'http://localhost:4200/auth/callback',
     silentRefreshRedirectUri: 'http://localhost:4200/silent-refresh.html',
     postLogoutRedirectUri: 'http://localhost:4200/',
-    stepUpAcr: 'urn:meridian:keystone:loa2',
+    stepUpAcr: 'urn:northgate:keystone:loa2',
     requireHttps: false
   },
   semaphore: { baseUrl: '/flags', environment: 'test', refreshSeconds: 300 },

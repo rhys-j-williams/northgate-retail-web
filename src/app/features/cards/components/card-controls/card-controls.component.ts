@@ -2,8 +2,8 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@
 import { FormControl, FormGroup, NonNullableFormBuilder, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 
-import { CnFilterChip } from '@meridian/canopy-ui/data-display';
-import { CnToastService } from '@meridian/canopy-ui/overlays';
+import { CnFilterChip } from '@northgate/canopy-ui/data-display';
+import { CnToastService } from '@northgate/canopy-ui/overlays';
 
 import { CardsApiService } from '../../../../core/api/cards-api.service';
 import { CardControls } from '../../../../core/api/models';

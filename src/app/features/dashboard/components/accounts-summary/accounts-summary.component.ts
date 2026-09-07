@@ -4,7 +4,7 @@ import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-import { CnListItem } from '@meridian/canopy-ui/data-display';
+import { CnListItem } from '@northgate/canopy-ui/data-display';
 
 import { Account } from '../../../../core/api/models';
 import { dashboardActions } from '../../store/dashboard.actions';

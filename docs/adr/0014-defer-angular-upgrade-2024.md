@@ -7,7 +7,7 @@ Tickets: MOL-3801 (spike), MOL-4471 (epic, deferred), GIS-2207
 
 ## Context
 
-Meridian Online is on Angular 14.3.0 (ADR 0011, November 2022). Angular 14 left LTS in November
+Northgate Online is on Angular 14.3.0 (ADR 0011, November 2022). Angular 14 left LTS in November
 2023. GIS raised GIS-2207 in March 2024 as a medium finding: framework out of vendor support.
 Angular 17 is current. Architecture asked for a plan to at least 15, ideally 17, in the 2024
 roadmap.
@@ -25,7 +25,7 @@ does not compile afterwards, and the notes list why. The short version:
    and the Angular team's guidance is CSS. We have `fxLayout`/`fxFlex` in something over a
    hundred templates including responsive `fxLayout.lt-md` variants. Rewriting those is a
    template-by-template job with a visual regression on every page.
-3. **Lantern SDK.** `@meridian/lantern-sdk` 2.4.1 is View Engine and we depend on `ngcc` at
+3. **Lantern SDK.** `@northgate/lantern-sdk` 2.4.1 is View Engine and we depend on `ngcc` at
    install. Angular 16 removes `ngcc`. The vendor's Ivy build (LNTN-140) has been promised
    since 2022 and Digital Analytics Enablement have not been able to get a date. Replacing
    Lantern is a separate procurement conversation.
@@ -42,7 +42,7 @@ capacity for the second half, and the real-time payments work with payments-plat
 
 ## Decision
 
-Defer. Meridian Online stays on Angular 14.3.0 through 2024. Epic MOL-4471 is created with the
+Defer. Northgate Online stays on Angular 14.3.0 through 2024. Epic MOL-4471 is created with the
 child stories needed to unblock the upgrade (Canopy 4, flex-layout removal, Lantern replacement,
 test coverage in transfers and bill pay) and parked with a target of Q2 2025 for a decision on
 whether to go to 15 or straight to whatever is current then.

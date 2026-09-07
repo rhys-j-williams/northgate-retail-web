@@ -1,4 +1,4 @@
-// Karma configuration for Meridian Online.
+// Karma configuration for Northgate Online.
 //
 // The Jenkins agents (nodejs16-rhel8) ship Chrome in the image and export CHROME_BIN. On a laptop
 // set CHROME_BIN yourself or let the launcher find whatever Chrome is on PATH; puppeteer is not a

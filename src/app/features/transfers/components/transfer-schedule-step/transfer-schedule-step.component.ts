@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 import { FormControl, FormGroup, NonNullableFormBuilder, Validators } from '@angular/forms';
 
-import { CnRadioOption } from '@meridian/canopy-ui/forms';
+import { CnRadioOption } from '@northgate/canopy-ui/forms';
 
 import { TransferFrequency, TransferLimits } from '../../../../core/api/models';
 import { ConfigService } from '../../../../core/config/config.service';

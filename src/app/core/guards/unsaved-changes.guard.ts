@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { CanDeactivate } from '@angular/router';
 import { Observable, of } from 'rxjs';
 
-import { CnDialogService } from '@meridian/canopy-ui/overlays';
+import { CnDialogService } from '@northgate/canopy-ui/overlays';
 
 /** Implemented by any routed component that holds a form the customer might lose. */
 export interface HasUnsavedChanges {

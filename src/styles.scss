@@ -1,12 +1,12 @@
-// Meridian Online global styles.
+// Northgate Online global styles.
 //
 // Everything visual comes from Canopy. This file exists to include the theme mixin once, set the
 // page-level frame and carry the handful of app specific utilities that never made it into Canopy
 // (see the TODOs). Component styles live next to their components.
 //
 // Note: `themes` and `tokens` resolve through the includePath in angular.json
-// (node_modules/@meridian/canopy-ui). The package's `exports` map only lists JS entry points, so
-// `@use '@meridian/canopy-ui/themes'` fails under the Webpack sass-loader (CNPY-2211, also why we
+// (node_modules/@northgate/canopy-ui). The package's `exports` map only lists JS entry points, so
+// `@use '@northgate/canopy-ui/themes'` fails under the Webpack sass-loader (CNPY-2211, also why we
 // do not use the `styles` index with its broken relative forward). Switch back when 3.8 lands.
 @use 'themes' as canopy;
 @use 'tokens' as tokens;

@@ -4,8 +4,8 @@ import { PageEvent } from '@angular/material/paginator';
 import { BehaviorSubject, Observable, Subject } from 'rxjs';
 import { debounceTime, distinctUntilChanged, switchMap, takeUntil, tap } from 'rxjs/operators';
 
-import { CnColumn } from '@meridian/canopy-ui/data-display';
-import { CnDialogService } from '@meridian/canopy-ui/overlays';
+import { CnColumn } from '@northgate/canopy-ui/data-display';
+import { CnDialogService } from '@northgate/canopy-ui/overlays';
 
 import { AccountsApiService } from '../../../../core/api/accounts-api.service';
 import { Page, Transaction, TransactionQuery } from '../../../../core/api/models';

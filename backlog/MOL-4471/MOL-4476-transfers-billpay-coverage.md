@@ -21,6 +21,6 @@ Target for this story: behaviour specs, not creation-only, for
 - CancelTransferComponent / CancelPaymentComponent eligibility rules
 
 Use `TEST_CONFIG` from `src/testing/test-config.ts` for the runtime config, and the fixture
-customers from `@meridian/domain-fixtures`, never hand-written accounts.
+customers from `@northgate/domain-fixtures`, never hand-written accounts.
 
 Coverage will go up. That is a side effect, not the goal; do not chase the number.

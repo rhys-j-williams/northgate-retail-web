@@ -2,7 +2,7 @@
 
 Parent: MOL-4471. Owner: Femi Adeyemi (DAE) with retail-digital.
 
-`@meridian/lantern-sdk` 2.4.1 is the vendor's Angular wrapper, shipped View Engine, and we run
+`@northgate/lantern-sdk` 2.4.1 is the vendor's Angular wrapper, shipped View Engine, and we run
 `ngcc` at `postinstall` to use it. Angular 16 removes `ngcc`. Without an Ivy build the framework
 upgrade stops at 15.
 

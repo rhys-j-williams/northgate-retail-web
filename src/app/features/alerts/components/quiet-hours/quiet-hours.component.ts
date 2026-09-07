@@ -4,7 +4,7 @@ import { Store } from '@ngrx/store';
 import { forkJoin } from 'rxjs';
 import { filter, take } from 'rxjs/operators';
 
-import { CnToastService } from '@meridian/canopy-ui/overlays';
+import { CnToastService } from '@northgate/canopy-ui/overlays';
 
 import { AlertsApiService } from '../../../../core/api/alerts-api.service';
 import { AlertPreference } from '../../../../core/api/models';

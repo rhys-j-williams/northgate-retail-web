@@ -5,8 +5,8 @@ import { Store } from '@ngrx/store';
 import { Observable, Subject } from 'rxjs';
 import { map, takeUntil } from 'rxjs/operators';
 
-import { CnSelectOption } from '@meridian/canopy-ui/forms';
-import { CnToastService } from '@meridian/canopy-ui/overlays';
+import { CnSelectOption } from '@northgate/canopy-ui/forms';
+import { CnToastService } from '@northgate/canopy-ui/overlays';
 
 import { TransfersApiService } from '../../../../core/api/transfers-api.service';
 import { Account } from '../../../../core/api/models';

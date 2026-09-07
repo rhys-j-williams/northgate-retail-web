@@ -3,7 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 
-import { CnStepperShellComponent } from '@meridian/canopy-ui/navigation';
+import { CnStepperShellComponent } from '@northgate/canopy-ui/navigation';
 
 import { Account, TransferLimits, TransferType } from '../../../../core/api/models';
 import { HasUnsavedChanges } from '../../../../core/guards/unsaved-changes.guard';

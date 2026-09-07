@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
-import { LanternModule, LanternProperties, LanternService as LanternSdkService, LanternWindow } from '@meridian/lantern-sdk';
+import { LanternModule, LanternProperties, LanternService as LanternSdkService, LanternWindow } from '@northgate/lantern-sdk';
 
 import { AuthService } from '../auth/auth.service';
 
 /**
  * Application facade over the Lantern analytics SDK.
  *
- * The SDK (@meridian/lantern-sdk, owned by the Digital Analytics team) is registered once in
+ * The SDK (@northgate/lantern-sdk, owned by the Digital Analytics team) is registered once in
  * CoreModule with LanternModule.forRoot(...) and handles the vendor script, the router page
  * events and the X-Analytics-Session header. This service exists so feature code calls
  * `lantern.track('transfer.submitted', ...)` with our naming conventions and never talks to the

@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { Clipboard } from '@angular/cdk/clipboard';
 
-import { CnToastService } from '@meridian/canopy-ui/overlays';
+import { CnToastService } from '@northgate/canopy-ui/overlays';
 
 import { AccountDetails } from '../../../../core/api/models';
 import { LanternService } from '../../../../core/telemetry/lantern.service';

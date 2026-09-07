@@ -37,7 +37,7 @@ export class AppComponent implements OnInit, OnDestroy {
         filter((e): e is NavigationEnd => e instanceof NavigationEnd),
         map(() => this.deepestTitle())
       )
-      .subscribe(t => this.title.setTitle(t ? `${t} - Meridian Online` : 'Meridian Online'));
+      .subscribe(t => this.title.setTitle(t ? `${t} - Northgate Online` : 'Northgate Online'));
   }
 
   ngOnDestroy(): void {

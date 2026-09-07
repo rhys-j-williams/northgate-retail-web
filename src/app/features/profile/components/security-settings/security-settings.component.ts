@@ -28,7 +28,7 @@ export class SecuritySettingsComponent implements OnInit {
     switch (m) {
       case 'sms': return $localize`:@@profile.security.mfaSms:Text message code`;
       case 'authenticator': return $localize`:@@profile.security.mfaApp:Authenticator app`;
-      case 'push': return $localize`:@@profile.security.mfaPush:Push notification to the Meridian app`;
+      case 'push': return $localize`:@@profile.security.mfaPush:Push notification to the Northgate app`;
     }
   }
 

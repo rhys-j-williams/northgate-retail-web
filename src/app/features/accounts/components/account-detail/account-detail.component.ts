@@ -4,7 +4,7 @@ import { Store } from '@ngrx/store';
 import { Observable, Subject } from 'rxjs';
 import { map, takeUntil } from 'rxjs/operators';
 
-import { CnAccountKind, CnAccountSummary } from '@meridian/canopy-ui/data-display';
+import { CnAccountKind, CnAccountSummary } from '@northgate/canopy-ui/data-display';
 
 import { AccountDetails } from '../../../../core/api/models';
 import { LanternService } from '../../../../core/telemetry/lantern.service';

@@ -34,6 +34,6 @@ describe('StatementListComponent', () => {
     const s = (statementId: string, accountId: string, periodEnd: string, type: Statement['type'] = 'monthly'): Statement => ({ statementId, accountId, type, periodStart: periodEnd, periodEnd, pages: 2, sizeBytes: 1, available: true });
     const out = StatementListComponent.filter([s('1', 'a', '2026-01-31'), s('2', 'b', '2026-02-28'), s('3', 'a', '2025-12-31'), s('4', 'a', '2026-03-31', 'tax-1099-int')], 'a', 2026);
     expect(out.map(x => x.statementId)).toEqual(['1']);
-    expect(StatementListComponent.fileName(out[0])).toBe('meridian-monthly-2026-01-31.pdf');
+    expect(StatementListComponent.fileName(out[0])).toBe('northgate-monthly-2026-01-31.pdf');
   });
 });

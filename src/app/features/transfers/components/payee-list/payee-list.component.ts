@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
 
-import { CnDialogService, CnToastService } from '@meridian/canopy-ui/overlays';
+import { CnDialogService, CnToastService } from '@northgate/canopy-ui/overlays';
 
 import { TransfersApiService } from '../../../../core/api/transfers-api.service';
 import { Payee } from '../../../../core/api/models';

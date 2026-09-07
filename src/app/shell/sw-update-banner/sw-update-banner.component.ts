@@ -12,7 +12,7 @@ import { filter } from 'rxjs/operators';
   selector: 'mol-sw-update-banner',
   template: `
     <div class="mol-sw-banner" *ngIf="ready" role="status" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center center" fxLayoutGap="12px">
-      <span i18n="@@sw.ready">A new version of Meridian Online is available.</span>
+      <span i18n="@@sw.ready">A new version of Northgate Online is available.</span>
       <cn-button variant="secondary" size="small" (pressed)="reload()" i18n="@@sw.reload">Refresh now</cn-button>
       <cn-button variant="tertiary" size="small" (pressed)="ready = false" i18n="@@sw.later">Later</cn-button>
     </div>

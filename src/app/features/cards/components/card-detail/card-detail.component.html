@@ -1,10 +1,10 @@
 <ng-container *ngIf="card$ | async as card; else loading">
-  <cn-page-header [title]="card.network === 'meridian-credit' ? 'Meridian Rewards Credit' : 'Meridian Everyday Debit'" [eyebrow]="'Ending ' + card.cardNumber.slice(-4)" backLink="/cards" backLabel="Cards"></cn-page-header>
+  <cn-page-header [title]="card.network === 'northgate-credit' ? 'Northgate Rewards Credit' : 'Northgate Everyday Debit'" [eyebrow]="'Ending ' + card.cardNumber.slice(-4)" backLink="/cards" backLabel="Cards"></cn-page-header>
 
   <div class="mol-page" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="24px">
     <div fxFlex="0 0 360px" fxFlex.lt-md="auto">
-      <div class="mol-card-art" [class.mol-card-art--credit]="card.network === 'meridian-credit'" [class.mol-card-art--locked]="card.status === 'locked'" aria-hidden="true">
-        <span class="mol-card-art__bank">Meridian Trust</span>
+      <div class="mol-card-art" [class.mol-card-art--credit]="card.network === 'northgate-credit'" [class.mol-card-art--locked]="card.status === 'locked'" aria-hidden="true">
+        <span class="mol-card-art__bank">Northgate Trust</span>
         <span class="mol-card-art__number">{{ revealed ? grouped(revealed.cardNumber) : '•••• •••• •••• ' + card.cardNumber.slice(-4) }}</span>
         <span class="mol-card-art__exp">{{ card.expiryMonth | number:'2.0-0' }}/{{ card.expiryYear % 100 }}<ng-container *ngIf="revealed"> &nbsp; CVV {{ revealed.cvv }}</ng-container></span>
         <mat-icon *ngIf="card.status === 'locked'" class="mol-card-art__lock">lock</mat-icon>

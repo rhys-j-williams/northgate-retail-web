@@ -3,7 +3,7 @@ import { FormControl, FormGroup, NonNullableFormBuilder } from '@angular/forms';
 import { Subject } from 'rxjs';
 import { debounceTime, map, takeUntil } from 'rxjs/operators';
 
-import { CnDateRange, CnFilterChip } from '@meridian/canopy-ui';
+import { CnDateRange, CnFilterChip } from '@northgate/canopy-ui';
 
 import { TransactionCategory, TransactionQuery } from '../../../../core/api/models';
 

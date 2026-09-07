@@ -57,7 +57,7 @@
               "src/silent-refresh.html",
               {
                 "glob": "canopy-sprite.svg",
-                "input": "node_modules/@meridian/canopy-ui/icons",
+                "input": "node_modules/@northgate/canopy-ui/icons",
                 "output": "/assets/canopy"
               }
             ],
@@ -67,7 +67,7 @@
             "stylePreprocessorOptions": {
               "includePaths": [
                 "src/styles",
-                "node_modules/@meridian/canopy-ui"
+                "node_modules/@northgate/canopy-ui"
               ]
             },
             "scripts": [
@@ -193,7 +193,7 @@
             "stylePreprocessorOptions": {
               "includePaths": [
                 "src/styles",
-                "node_modules/@meridian/canopy-ui"
+                "node_modules/@northgate/canopy-ui"
               ]
             },
             "scripts": [],

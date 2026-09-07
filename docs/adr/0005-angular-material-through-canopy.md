@@ -7,28 +7,28 @@ Ticket: MOL-1188, CNPY-210
 
 ## Context
 
-Meridian Online launched on a mix of hand-rolled components and a copy of the old MeridianStyle
+Northgate Online launched on a mix of hand-rolled components and a copy of the old NorthgateStyle
 bootstrap theme from the 2016 site. Business Online (`business-web`) has its own copy of the same
 theme with different fixes. The Digital Design Council set up the Canopy design system team in
 January to stop this, and their first decision (CNPY-102) was to build Canopy as a thin layer over
 Angular Material rather than from scratch.
 
-We have to pick how Meridian Online consumes it. Options that were on the table:
+We have to pick how Northgate Online consumes it. Options that were on the table:
 
-1. Use Angular Material directly, with a Meridian theme in `styles/`. Fast, no dependency on the
+1. Use Angular Material directly, with a Northgate theme in `styles/`. Fast, no dependency on the
    Canopy team's schedule, but the two applications drift again within a year.
-2. Use `@meridian/canopy-ui` exclusively and never import `@angular/material` in application code.
+2. Use `@northgate/canopy-ui` exclusively and never import `@angular/material` in application code.
    Everything the application needs either exists in Canopy or is a Canopy ticket.
 3. Both: Canopy for what it has, Material for what it does not.
 
 ## Decision
 
-Option 2. Application code imports from `@meridian/canopy-ui` only. `@angular/material` and
+Option 2. Application code imports from `@northgate/canopy-ui` only. `@angular/material` and
 `@angular/cdk` stay in `package.json` because Canopy declares them as peers. An ESLint
 `no-restricted-imports` rule blocking `@angular/material/*` in `src/app` is part of this decision
 and is tracked as MOL-1190. Canopy re-exports the
 Material modules it wraps (`CnFormsModule`, `CnLayoutModule`, `CnFeedbackModule`, `CnDataModule`)
-and applies the Meridian theme internally through its own `mat-*` overrides in
+and applies the Northgate theme internally through its own `mat-*` overrides in
 `_material-overrides.scss`.
 
 Where Canopy does not have something, we raise a `CNPY` ticket and either wait or build a
@@ -44,8 +44,8 @@ Bad, and we are writing this down so nobody is surprised later:
 
 - Canopy's Material overrides reach into Material's internal class names (`.mat-form-field-flex`,
   `.mat-select-arrow-wrapper` and so on). Every Material major that changes those internals is a
-  Canopy major before it is a Meridian Online upgrade. The Canopy team accept this and own it.
-- We are coupled to the Canopy release cadence for Angular majors. Meridian Online cannot move
+  Canopy major before it is a Northgate Online upgrade. The Canopy team accept this and own it.
+- We are coupled to the Canopy release cadence for Angular majors. Northgate Online cannot move
   to Angular N+1 until Canopy has a release built against it.
 - Bundle size goes up slightly because Canopy pulls modules we do not use. Measured at 38 KB
   gzipped on the initial chunk; accepted.

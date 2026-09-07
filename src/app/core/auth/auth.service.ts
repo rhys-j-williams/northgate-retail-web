@@ -8,7 +8,7 @@ import { ConfigService } from '../config/config.service';
 import { KeystoneClaims, LogoutReason } from './session-claims.model';
 
 /**
- * Keystone (OIDC, authorization code + PKCE) session for Meridian Online.
+ * Keystone (OIDC, authorization code + PKCE) session for Northgate Online.
  *
  * Wraps angular-oauth2-oidc so the rest of the app never touches OAuthService directly. Tokens
  * are kept in sessionStorage (see keystone-storage.ts) - never localStorage, GIS-1180 finding 1 -

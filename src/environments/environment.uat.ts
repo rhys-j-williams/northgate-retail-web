@@ -8,7 +8,7 @@ export const environment = {
   logLevel: 'info' as 'debug' | 'info' | 'warn' | 'error',
   lantern: {
     writeKey: 'CHANGEME-lantern-write-key-uat',
-    scriptUrl: 'https://static-uat.meridian-online.example/lantern/v4/lantern.min.js',
+    scriptUrl: 'https://static-uat.northgate-online.example/lantern/v4/lantern.min.js',
     debug: true,
     disabled: false
   }

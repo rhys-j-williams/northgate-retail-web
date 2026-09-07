@@ -3,7 +3,7 @@ import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-import { CnFilterChip } from '@meridian/canopy-ui/data-display';
+import { CnFilterChip } from '@northgate/canopy-ui/data-display';
 
 import { Channel } from '../../../../core/api/models';
 import { selectProfile } from '../../../../core/store/session';

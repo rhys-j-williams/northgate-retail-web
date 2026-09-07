@@ -3,8 +3,8 @@ import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms
 import { Router } from '@angular/router';
 import { Store } from '@ngrx/store';
 
-import { CnSelectOption } from '@meridian/canopy-ui/forms';
-import { CnToastService } from '@meridian/canopy-ui/overlays';
+import { CnSelectOption } from '@northgate/canopy-ui/forms';
+import { CnToastService } from '@northgate/canopy-ui/overlays';
 
 import { AppError } from '../../../../core/errors/app-error.model';
 import { HasUnsavedChanges } from '../../../../core/guards/unsaved-changes.guard';

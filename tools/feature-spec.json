@@ -17,7 +17,7 @@
         { "name": "spending-snapshot", "kind": "static", "hand": true, "title": "Spending this month", "purpose": "Doughnut chart of spend by category for the current month." },
         { "name": "upcoming-payments", "kind": "static", "hand": true, "title": "Coming up", "purpose": "Scheduled transfers and bills due in the next 14 days." },
         { "name": "alerts-digest", "kind": "static", "hand": true, "title": "Alerts", "purpose": "Unread alerts since last sign-in." },
-        { "name": "promo-banner", "kind": "static", "title": "", "purpose": "Marketing slot fed by Semaphore flag mol.dashboard.promo; hidden when the flag is off.", "paragraphs": ["Earn 4.10% APY on a Meridian Reserve Savings account. Rates as of today; see disclosures for details."], "actions": [ { "id": "learnMore", "label": "Learn more", "link": "/open-account", "variant": "secondary" } ] }
+        { "name": "promo-banner", "kind": "static", "title": "", "purpose": "Marketing slot fed by Semaphore flag mol.dashboard.promo; hidden when the flag is off.", "paragraphs": ["Earn 4.10% APY on a Northgate Reserve Savings account. Rates as of today; see disclosures for details."], "actions": [ { "id": "learnMore", "label": "Learn more", "link": "/open-account", "variant": "secondary" } ] }
       ]
     },
     "accounts": {
@@ -38,7 +38,7 @@
         { "name": "transaction-filters", "kind": "static", "hand": true, "title": "Filters", "purpose": "Date range, category, amount and search filters for the transaction list." },
         { "name": "account-actions-menu", "kind": "static", "hand": true, "title": "Actions", "purpose": "Transfer, statements, rename, paperless and routing details entry points for an account." },
         { "name": "routing-details", "kind": "static", "hand": true, "title": "Account and routing numbers", "purpose": "Reveals routing and full account number for direct deposit forms." },
-        { "name": "rename-account", "kind": "dialog", "title": "Rename account", "body": "Nicknames only show in Meridian Online and the mobile app. Statements keep the product name.", "confirmLabel": "Save name", "dataFields": "accountId: string;\n  nickname: string;", "confirmCall": "this.api.rename(this.data.accountId, this.data.nickname)", "purpose": "Nickname editor dialog." },
+        { "name": "rename-account", "kind": "dialog", "title": "Rename account", "body": "Nicknames only show in Northgate Online and the mobile app. Statements keep the product name.", "confirmLabel": "Save name", "dataFields": "accountId: string;\n  nickname: string;", "confirmCall": "this.api.rename(this.data.accountId, this.data.nickname)", "purpose": "Nickname editor dialog." },
         { "name": "dispute-transaction", "kind": "form", "route": ":accountId/transactions/:transactionId/dispute", "deactivate": true, "backLink": "/accounts", "title": "Dispute a transaction", "lede": "We will credit your account while we investigate, usually within 2 business days.", "submitLabel": "Submit dispute", "successToast": "Dispute submitted. We will email you a reference within 24 hours.", "afterSubmit": "/accounts", "purpose": "Reg E dispute intake form.",
           "fields": [ { "name": "reason", "label": "Reason", "type": "select", "required": true, "i18n": "accounts.dispute.reason", "options": [ { "value": "unauthorised", "label": "I did not make this purchase" }, { "value": "duplicate", "label": "I was charged twice" }, { "value": "amount", "label": "The amount is wrong" }, { "value": "not-received", "label": "I did not receive what I paid for" } ] }, { "name": "detail", "label": "Tell us what happened", "type": "textarea", "required": true, "maxLength": 1000, "i18n": "accounts.dispute.detail" } ],
           "submitCall": "this.api.openDispute(this.router.url.split('/')[2], this.router.url.split('/')[4], this.form.value.reason ?? '', this.form.value.detail ?? '')" },
@@ -88,7 +88,7 @@
       "apiMethod": "bills",
       "staleSeconds": 120,
       "components": [
-        { "name": "bill-pay-home", "kind": "list", "route": "", "spec": false, "title": "Bill pay", "lede": "Bills due in the next 30 days. eBills update automatically.", "sectionTitle": "Due soon", "rowLink": "/bill-pay/bills", "emptyIcon": "receipt_long", "emptyTitle": "No bills due", "emptyBody": "Add a payee to start paying bills from Meridian Online.", "purpose": "Bills due, with pay-now entry points.",
+        { "name": "bill-pay-home", "kind": "list", "route": "", "spec": false, "title": "Bill pay", "lede": "Bills due in the next 30 days. eBills update automatically.", "sectionTitle": "Due soon", "rowLink": "/bill-pay/bills", "emptyIcon": "receipt_long", "emptyTitle": "No bills due", "emptyBody": "Add a payee to start paying bills from Northgate Online.", "purpose": "Bills due, with pay-now entry points.",
           "columns": [ { "key": "payeeName", "header": "Payee" }, { "key": "dueAt", "header": "Due", "type": "date" }, { "key": "amountDueMinor", "header": "Amount due", "type": "currency", "align": "end" }, { "key": "status", "header": "Status" } ] },
         { "name": "bill-detail", "kind": "detail", "spec": false, "route": "bills/:billId", "param": "billId", "backLink": "/bill-pay", "title": "Bill", "purpose": "One bill with eBill and autopay status.",
           "fields": [ { "name": "payee", "label": "Payee", "expr": "item.payeeName" }, { "name": "amount", "label": "Amount due", "expr": "item.amountDueMinor | minorAmount" }, { "name": "due", "label": "Due date", "expr": "item.dueAt | date:'longDate'" }, { "name": "status", "label": "Status", "expr": "item.status | translate" }, { "name": "ebill", "label": "eBill", "expr": "item.ebill ? 'On' : 'Off'" }, { "name": "autopay", "label": "Autopay", "expr": "item.autopay ? 'On' : 'Off'" } ] },
@@ -210,7 +210,7 @@
       ]
     },
     "rewards": {
-      "description": "Meridian Rewards points balance and redemption. Behind flag mol.rewards.enabled; credit card customers only.",
+      "description": "Northgate Rewards points balance and redemption. Behind flag mol.rewards.enabled; credit card customers only.",
       "entity": "RewardsActivity",
       "idKey": "id",
       "apiService": "RewardsApiService",
@@ -221,7 +221,7 @@
         { "name": "rewards-summary", "kind": "static", "hand": true, "route": "", "title": "Rewards", "purpose": "Points balance, tier and expiring points." },
         { "name": "rewards-activity", "kind": "list", "route": "activity", "backLink": "/rewards", "title": "Points activity", "sectionTitle": "Earned and redeemed", "emptyIcon": "stars", "emptyTitle": "No points activity yet", "purpose": "Points earned and redeemed.",
           "columns": [ { "key": "at", "header": "Date", "type": "date" }, { "key": "description", "header": "Description" }, { "key": "points", "header": "Points", "type": "number", "align": "end" } ] },
-        { "name": "redeem-points", "kind": "form", "route": "redeem", "deactivate": true, "backLink": "/rewards", "title": "Redeem points", "lede": "Statement credits post within 2 business days. Deposits to a Meridian account are same day.", "submitLabel": "Redeem", "successToast": "Redemption submitted.", "afterSubmit": "/rewards", "purpose": "Redemption form.",
+        { "name": "redeem-points", "kind": "form", "route": "redeem", "deactivate": true, "backLink": "/rewards", "title": "Redeem points", "lede": "Statement credits post within 2 business days. Deposits to a Northgate account are same day.", "submitLabel": "Redeem", "successToast": "Redemption submitted.", "afterSubmit": "/rewards", "purpose": "Redemption form.",
           "fields": [ { "name": "optionId", "label": "Redeem for", "type": "select", "required": true, "i18n": "rewards.redeem.option", "options": [ { "value": "statement-credit", "label": "Statement credit" }, { "value": "deposit", "label": "Deposit to checking or savings" }, { "value": "gift-card", "label": "Gift card" } ] }, { "name": "points", "label": "Points to redeem", "type": "text", "required": true, "maxLength": 7, "i18n": "rewards.redeem.points" } ],
           "submitCall": "this.api.redeem(this.form.value.optionId ?? '', Number(this.form.value.points))" }
       ]
@@ -251,7 +251,7 @@
       "description": "Help centre. Public. Content from the BFF's CMS proxy.",
       "components": [
         { "name": "help-home", "kind": "static", "route": "", "title": "Help", "lede": "Answers to common questions. Still stuck? Send us a secure message or call us.", "purpose": "Help landing with topics.", "paragraphs": ["Browse by topic or search. Articles are updated by the Digital Support team; if something is wrong or missing, use the feedback link at the bottom of any article."], "actions": [ { "id": "contact", "label": "Contact us", "link": "/help/contact" }, { "id": "faq", "label": "Frequently asked questions", "link": "/help/faq" } ] },
-        { "name": "faq", "kind": "static", "route": "faq", "backLink": "/help", "title": "Frequently asked questions", "purpose": "FAQ accordion.", "paragraphs": ["How long do transfers take? Transfers between your Meridian accounts are immediate. External transfers take 1-3 business days depending on the receiving bank.", "Why was I signed out? For your security we end sessions after 10 minutes without activity. Your work is not saved when this happens.", "How do I dispute a charge? Open the transaction and choose Dispute. You have 60 days from the statement date."] },
+        { "name": "faq", "kind": "static", "route": "faq", "backLink": "/help", "title": "Frequently asked questions", "purpose": "FAQ accordion.", "paragraphs": ["How long do transfers take? Transfers between your Northgate accounts are immediate. External transfers take 1-3 business days depending on the receiving bank.", "Why was I signed out? For your security we end sessions after 10 minutes without activity. Your work is not saved when this happens.", "How do I dispute a charge? Open the transaction and choose Dispute. You have 60 days from the statement date."] },
         { "name": "contact-us", "kind": "static", "route": "contact", "backLink": "/help", "title": "Contact us", "purpose": "Phone numbers, hours and secure message link.", "paragraphs": ["Customer care: 1-800-555-0100, 7am-10pm ET every day.", "Lost or stolen cards: 1-800-555-0199, 24 hours.", "Hearing or speech impaired: dial 711 then the number above."], "actions": [ { "id": "message", "label": "Send a secure message", "link": "/messages/new", "variant": "primary" } ] }
       ]
     },

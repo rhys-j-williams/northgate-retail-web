@@ -14,7 +14,7 @@ import { AuthService } from '../../core/auth/auth.service';
   template: `
     <div class="mol-callback" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="16px">
       <cn-progress [value]="null" label="Signing you in"></cn-progress>
-      <p i18n="@@auth.signingIn">Signing you in to Meridian Online…</p>
+      <p i18n="@@auth.signingIn">Signing you in to Northgate Online…</p>
     </div>
   `,
   styles: [`.mol-callback { min-height: 60vh; }`]

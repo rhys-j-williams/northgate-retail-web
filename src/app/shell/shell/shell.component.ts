@@ -4,7 +4,7 @@ import { Store } from '@ngrx/store';
 import { Observable, Subscription, combineLatest } from 'rxjs';
 import { distinctUntilChanged, map } from 'rxjs/operators';
 
-import { CnNavItem } from '@meridian/canopy-ui/layout';
+import { CnNavItem } from '@northgate/canopy-ui/layout';
 
 import { ConfigService } from '../../core/config/config.service';
 import { FeatureFlagService } from '../../core/flags/feature-flag.service';
@@ -21,7 +21,7 @@ import { IdleWarningDialogComponent } from '../idle-warning-dialog/idle-warning-
   selector: 'mol-shell',
   template: `
     <cn-page-shell
-      appName="Meridian Online"
+      appName="Northgate Online"
       [environmentLabel]="environmentLabel"
       [nav]="(nav$ | async) ?? []"
       [userName]="displayName$ | async"

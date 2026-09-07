@@ -122,7 +122,7 @@ function listTemplate(f, c) {
 import { Router } from '@angular/router';
 import { Store } from '@ngrx/store';
 
-import { CnColumn } from '@meridian/canopy-ui/data-display';
+import { CnColumn } from '@northgate/canopy-ui/data-display';
 
 import { ${f.entity} } from '../../../../core/api/models';
 import { ${f.storeName}Actions } from '../../store/${f.name}.actions';
@@ -249,7 +249,7 @@ ${html}
 ${formsImport}
 import { Router } from '@angular/router';
 ${f.entity ? "import { Store } from '@ngrx/store';\n" : ''}
-${selects.length ? `import { CnSelectOption } from '@meridian/canopy-ui/forms';\n` : ''}import { CnToastService } from '@meridian/canopy-ui/overlays';
+${selects.length ? `import { CnSelectOption } from '@northgate/canopy-ui/forms';\n` : ''}import { CnToastService } from '@northgate/canopy-ui/overlays';
 
 import { AppError } from '../../../../core/errors/app-error.model';
 import { HasUnsavedChanges } from '../../../../core/guards/unsaved-changes.guard';
@@ -331,7 +331,7 @@ import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-import { CnListItem } from '@meridian/canopy-ui/data-display';
+import { CnListItem } from '@northgate/canopy-ui/data-display';
 
 import { ${f.entity} } from '../../../../core/api/models';
 import { ${f.storeName}Actions } from '../../store/${f.name}.actions';

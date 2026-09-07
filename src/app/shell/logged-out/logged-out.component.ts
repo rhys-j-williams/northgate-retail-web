@@ -50,7 +50,7 @@ export class LoggedOutComponent {
       case 'token-expired':
       case 'server-401': return $localize`:@@loggedOut.expired.body:Your sign-in expired. Sign in again to carry on where you left off.`;
       case 'step-up-failed': return $localize`:@@loggedOut.stepUp.body:We could not verify it was you, so the transfer was not made. Sign in again to try again.`;
-      default: return $localize`:@@loggedOut.user.body:Thanks for banking with Meridian. Close this window when you are done.`;
+      default: return $localize`:@@loggedOut.user.body:Thanks for banking with Northgate. Close this window when you are done.`;
     }
   }
 

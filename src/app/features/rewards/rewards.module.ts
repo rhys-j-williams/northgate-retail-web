@@ -10,7 +10,7 @@ import { RewardsSummaryComponent } from './components/rewards-summary/rewards-su
 import { RewardsActivityComponent } from './components/rewards-activity/rewards-activity.component';
 import { RedeemPointsComponent } from './components/redeem-points/redeem-points.component';
 
-/** Meridian Rewards points balance and redemption. Behind flag mol.rewards.enabled; credit card customers only. */
+/** Northgate Rewards points balance and redemption. Behind flag mol.rewards.enabled; credit card customers only. */
 @NgModule({
   declarations: [
     RewardsSummaryComponent,

@@ -5,7 +5,7 @@ import { StoreRouterConnectingModule } from '@ngrx/router-store';
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { OAuthModule, OAuthStorage } from 'angular-oauth2-oidc';
-import { LanternModule } from '@meridian/lantern-sdk';
+import { LanternModule } from '@northgate/lantern-sdk';
 
 import { environment } from '../../environments/environment';
 import { AUTH_INITIALIZER } from './auth/auth.initializer';
@@ -21,8 +21,8 @@ import { SessionEffects } from './store/session/session.effects';
  * Imported once by AppModule. Holds everything that has to exist exactly once: HTTP set-up, auth,
  * the root store, the error handler, the Lantern SDK.
  *
- * XSRF: bff-retail sets MERIDIAN-XSRF (double submit cookie) and expects it back in
- * X-MERIDIAN-XSRF on every mutating call. The names are bank wide (PLAT-233), the mobile SDK uses
+ * XSRF: bff-retail sets NORTHGATE-XSRF (double submit cookie) and expects it back in
+ * X-NORTHGATE-XSRF on every mutating call. The names are bank wide (PLAT-233), the mobile SDK uses
  * the same ones. Angular only adds the header for relative URLs, which is fine because the BFF is
  * behind the same origin via nginx.
  *
@@ -36,8 +36,8 @@ import { SessionEffects } from './store/session/session.effects';
   imports: [
     HttpClientModule,
     HttpClientXsrfModule.withOptions({
-      cookieName: 'MERIDIAN-XSRF',
-      headerName: 'X-MERIDIAN-XSRF'
+      cookieName: 'NORTHGATE-XSRF',
+      headerName: 'X-NORTHGATE-XSRF'
     }),
     OAuthModule.forRoot({
       resourceServer: {
@@ -61,7 +61,7 @@ import { SessionEffects } from './store/session/session.effects';
     EffectsModule.forRoot([SessionEffects]),
     StoreRouterConnectingModule.forRoot({ stateKey: 'router' }),
     StoreDevtoolsModule.instrument({
-      name: 'Meridian Online',
+      name: 'Northgate Online',
       maxAge: 50,
       logOnly: environment.production,
       actionsBlocklist: ['@ngrx/router-store/*']

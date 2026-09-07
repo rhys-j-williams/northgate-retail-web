@@ -3,7 +3,7 @@ import { browser, by, element, ExpectedConditions as EC } from 'protractor';
 /**
  * Drives the Keystone mock login screen (mock-external, port 4400). The real Keystone hosted
  * page has different ids; this page object is only good against the mock, which is all CI ever
- * had. Test users live in @meridian/domain-fixtures (see `customers.json`, the first three
+ * had. Test users live in @northgate/domain-fixtures (see `customers.json`, the first three
  * carry the `e2e` tag).
  */
 export class LoginPage {

@@ -9,7 +9,7 @@
       <cn-card *ngFor="let card of cards; trackBy: trackById" fxFlex="50" fxFlex.lt-md="100" [padded]="true" [highlight]="card.status === 'active'">
         <div fxLayout="row" fxLayoutAlign="space-between start" fxLayoutGap="12px">
           <div fxLayout="column" fxLayoutGap="4px">
-            <span class="mol-card__network">{{ card.network === 'meridian-credit' ? 'Meridian Rewards Credit' : 'Meridian Everyday Debit' }}</span>
+            <span class="mol-card__network">{{ card.network === 'northgate-credit' ? 'Northgate Rewards Credit' : 'Northgate Everyday Debit' }}</span>
             <span class="mol-card__number">&bull;&bull;&bull;&bull; {{ last4(card) }}</span>
             <span class="mol-muted mol-small" i18n="@@cards.list.expires">Expires {{ card.expiryMonth | number:'2.0-0' }}/{{ card.expiryYear % 100 }}</span>
             <span *ngIf="card.travelNoticeUntil" class="mol-muted mol-small" i18n="@@cards.list.travel">Travel notice until {{ card.travelNoticeUntil | date:'mediumDate' }}</span>

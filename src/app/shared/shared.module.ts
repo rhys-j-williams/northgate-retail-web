@@ -9,9 +9,9 @@ import { MatInputModule } from '@angular/material/input';
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
-import { CnA11yModule } from '@meridian/canopy-ui/a11y';
-import { CnButtonModule, CnIconButtonModule, CnMenuModule } from '@meridian/canopy-ui/actions';
-import { CnDisclosureModule } from '@meridian/canopy-ui/content';
+import { CnA11yModule } from '@northgate/canopy-ui/a11y';
+import { CnButtonModule, CnIconButtonModule, CnMenuModule } from '@northgate/canopy-ui/actions';
+import { CnDisclosureModule } from '@northgate/canopy-ui/content';
 import {
   CnAccountCardModule,
   CnBadgeModule,
@@ -23,13 +23,13 @@ import {
   CnListModule,
   CnSkeletonModule,
   CnVirtualListModule
-} from '@meridian/canopy-ui/data-display';
-import { CnErrorSummaryModule, CnProgressModule } from '@meridian/canopy-ui/feedback';
-import { CnFormsModule } from '@meridian/canopy-ui/forms';
-import { CnIconModule } from '@meridian/canopy-ui/icons';
-import { CnPageHeaderModule, CnPageShellModule } from '@meridian/canopy-ui/layout';
-import { CnStepperShellModule, CnTabsModule } from '@meridian/canopy-ui/navigation';
-import { CnBottomSheetModule, CnDialogShellModule, CnToastModule, CnTooltipModule } from '@meridian/canopy-ui/overlays';
+} from '@northgate/canopy-ui/data-display';
+import { CnErrorSummaryModule, CnProgressModule } from '@northgate/canopy-ui/feedback';
+import { CnFormsModule } from '@northgate/canopy-ui/forms';
+import { CnIconModule } from '@northgate/canopy-ui/icons';
+import { CnPageHeaderModule, CnPageShellModule } from '@northgate/canopy-ui/layout';
+import { CnStepperShellModule, CnTabsModule } from '@northgate/canopy-ui/navigation';
+import { CnBottomSheetModule, CnDialogShellModule, CnToastModule, CnTooltipModule } from '@northgate/canopy-ui/overlays';
 
 import { EmptyStateComponent } from './components/empty-state/empty-state.component';
 import { ErrorBannerComponent } from './components/error-banner/error-banner.component';

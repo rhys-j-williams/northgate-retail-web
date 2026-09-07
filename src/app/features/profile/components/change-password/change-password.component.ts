@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/
 import { AbstractControl, UntypedFormBuilder, UntypedFormGroup, ValidationErrors, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
-import { CnToastService } from '@meridian/canopy-ui/overlays';
+import { CnToastService } from '@northgate/canopy-ui/overlays';
 
 import { ProfileApiService } from '../../../../core/api/profile-api.service';
 import { AppError } from '../../../../core/errors/app-error.model';

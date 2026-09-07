@@ -2,7 +2,7 @@
   "$schema": "./node_modules/@angular/service-worker/config/schema.json",
   "index": "/index.html",
   "appData": {
-    "name": "Meridian Online",
+    "name": "Northgate Online",
     "ticket": "MOL-2610",
     "note": "Bump appData.version when the shell changes shape so SwUpdate.versionUpdates fires a reload prompt. See docs/runbooks/service-worker.md."
   },

@@ -114,9 +114,6 @@ const routes: Routes = [
       scrollPositionRestoration: 'enabled',
       anchorScrolling: 'enabled',
       paramsInheritanceStrategy: 'always',
-      // Kept on legacy since the Angular 11 upgrade. The transfer wizard's relative links
-      // (`../review`) resolve differently under 'corrected' and MOL-2288 never got finished.
-      relativeLinkResolution: 'legacy',
       onSameUrlNavigation: 'reload'
     })
   ],

@@ -1,0 +1,38 @@
+Using package manager: npm
+Collecting installed dependencies...
+Found 60 dependencies.
+Fetching dependency metadata from registry...
+    Updating package.json with dependency @angular/cdk @ "15.2.9" (was "14.2.7")...
+    Updating package.json with dependency @angular/material @ "15.2.9" (was "14.2.7")...
+    Updating package.json with dependency @angular/material-moment-adapter @ "15.2.9" (was "14.2.7")...
+UPDATE package.json (3273 bytes)
+- Installing packages...
+✔ Packages successfully installed.
+** Executing migrations of package '@angular/cdk' **
+
+▸ Updates the Angular CDK to v15.
+    
+      ✓  Updated Angular CDK to version 15
+    
+  Migration completed (No changes made).
+
+** Executing migrations of package '@angular/material' **
+
+▸ Updates the Angular Material to v15.
+    
+      ✓  Updated Angular Material to version 15
+    
+UPDATE src/app/shared/shared.module.ts (4154 bytes)
+UPDATE src/app/features/accounts/components/transaction-list/transaction-list.component.ts (4349 bytes)
+UPDATE src/app/features/accounts/components/export-transactions/export-transactions.component.ts (1391 bytes)
+UPDATE src/app/features/accounts/components/rename-account/rename-account.component.ts (1285 bytes)
+UPDATE src/app/features/transfers/components/cancel-transfer/cancel-transfer.component.ts (1278 bytes)
+UPDATE src/app/features/bill-pay/components/cancel-payment/cancel-payment.component.ts (1247 bytes)
+UPDATE src/app/features/cards/components/lock-card/lock-card.component.ts (1237 bytes)
+UPDATE src/app/features/alerts/components/test-alert/test-alert.component.ts (1239 bytes)
+UPDATE src/app/shell/shell/shell.component.ts (4636 bytes)
+UPDATE src/app/features/cards/components/card-list/card-list.component.ts (3064 bytes)
+UPDATE src/app/shell/idle-warning-dialog/idle-warning-dialog.component.ts (2042 bytes)
+  Migration completed (11 files modified).
+
+EXIT=0

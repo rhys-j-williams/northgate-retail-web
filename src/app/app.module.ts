@@ -5,7 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
-import { NgxMaskModule } from 'ngx-mask';
+import { provideEnvironmentNgxMask } from 'ngx-mask';
 
 import { CnCoreModule } from '@northgate/canopy-ui/core';
 
@@ -33,7 +33,6 @@ import { SharedModule } from './shared/shared.module';
       defaultLanguage: 'en',
       loader: { provide: TranslateLoader, useFactory: translateLoaderFactory, deps: [HttpClient] }
     }),
-    NgxMaskModule.forRoot({ validation: false }),
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       // Wait for the app to settle before registering so the SW does not compete with the first
@@ -45,7 +44,9 @@ import { SharedModule } from './shared/shared.module';
   providers: [
     // LOCALE_ID is set per bundle by the CLI's localize step; this default is what `ng serve` uses.
     { provide: LOCALE_ID, useValue: 'en-US' },
-    { provide: MAT_DATE_LOCALE, useValue: 'en-US' }
+    { provide: MAT_DATE_LOCALE, useValue: 'en-US' },
+    // Root ngx-mask config consumed by Canopy's cn-masked-input.
+    provideEnvironmentNgxMask({ validation: false })
   ],
   bootstrap: [AppComponent]
 })

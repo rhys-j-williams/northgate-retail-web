@@ -1,0 +1,29 @@
+Using package manager: npm
+Collecting installed dependencies...
+Found 60 dependencies.
+Fetching dependency metadata from registry...
+    Updating package.json with dependency @ngrx/schematics @ "15.4.0" (was "14.3.3")...
+    Updating package.json with dependency @ngrx/effects @ "15.4.0" (was "14.3.3")...
+    Updating package.json with dependency @ngrx/entity @ "15.4.0" (was "14.3.3")...
+    Updating package.json with dependency @ngrx/router-store @ "15.4.0" (was "14.3.3")...
+    Updating package.json with dependency @ngrx/store @ "15.4.0" (was "14.3.3")...
+    Updating package.json with dependency @ngrx/store-devtools @ "15.4.0" (was "14.3.3")...
+UPDATE package.json (3273 bytes)
+- Installing packages...
+✔ Packages successfully installed.
+** Executing migrations of package '@ngrx/effects' **
+
+▸ The road to v15 beta.
+  Migration completed (No changes made).
+
+** Executing migrations of package '@ngrx/router-store' **
+
+▸ The road to v15.2.0.
+  Migration completed (No changes made).
+
+** Executing migrations of package '@ngrx/store' **
+
+▸ The road to v15.2.
+  Migration completed (No changes made).
+
+EXIT=0

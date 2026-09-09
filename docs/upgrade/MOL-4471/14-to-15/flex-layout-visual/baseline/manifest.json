@@ -1,0 +1,2056 @@
+{
+  "app": "http://localhost:4200",
+  "capturedAt": "2026-09-09T22:32:54.118Z",
+  "fixedTime": "Date.prototype.getHours -> 18 (greeting pinned to evening)",
+  "user": "rosalind.ekstrand",
+  "shots": [
+    {
+      "id": "dashboard",
+      "viewport": "1280x800",
+      "route": "/dashboard",
+      "finalUrl": "/dashboard",
+      "title": "Dashboard - Northgate Online",
+      "file": "dashboard--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 1227
+      },
+      "textLength": 765,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "accounts",
+      "viewport": "1280x800",
+      "route": "/accounts",
+      "finalUrl": "/accounts",
+      "title": "Accounts - Northgate Online",
+      "file": "accounts--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 476,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "accounts-detail",
+      "viewport": "1280x800",
+      "route": "/accounts/ACC-477215249",
+      "finalUrl": "/accounts/ACC-477215249",
+      "title": "Accounts - Northgate Online",
+      "file": "accounts-detail--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 314,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "accounts-detail-export-dialog",
+      "viewport": "1280x800",
+      "route": "/accounts/ACC-477215249",
+      "finalUrl": "/accounts/ACC-477215249",
+      "title": "Accounts - Northgate Online",
+      "file": "accounts-detail-export-dialog--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 314,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "button not found",
+      "pageErrors": []
+    },
+    {
+      "id": "accounts-transaction-detail",
+      "viewport": "1280x800",
+      "route": "/accounts/ACC-477215249/transactions/TXN-000001",
+      "finalUrl": "/accounts/ACC-477215249/transactions/TXN-000001",
+      "title": "Accounts - Northgate Online",
+      "file": "accounts-transaction-detail--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 328,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "accounts-transaction-dispute",
+      "viewport": "1280x800",
+      "route": "/accounts/ACC-477215249/transactions/TXN-000001/dispute",
+      "finalUrl": "/accounts/ACC-477215249/transactions/TXN-000001/dispute",
+      "title": "Accounts - Northgate Online",
+      "file": "accounts-transaction-dispute--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 451,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "transfers",
+      "viewport": "1280x800",
+      "route": "/transfers",
+      "finalUrl": "/transfers",
+      "title": "Transfers - Northgate Online",
+      "file": "transfers--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 1169
+      },
+      "textLength": 911,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "transfers-new",
+      "viewport": "1280x800",
+      "route": "/transfers/new",
+      "finalUrl": "/transfers/new",
+      "title": "Transfers - Northgate Online",
+      "file": "transfers-new--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 303,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "transfers-new-review",
+      "viewport": "1280x800",
+      "route": "/transfers/new/review",
+      "finalUrl": "/transfers/new",
+      "title": "Transfers - Northgate Online",
+      "file": "transfers-new-review--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 303,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "transfers-confirmation",
+      "viewport": "1280x800",
+      "route": "/transfers/TRF-000001/confirmation",
+      "finalUrl": "/transfers/TRF-000001/confirmation",
+      "title": "Transfers - Northgate Online",
+      "file": "transfers-confirmation--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 312,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "transfers-history",
+      "viewport": "1280x800",
+      "route": "/transfers/history",
+      "finalUrl": "/transfers/history",
+      "title": "Transfers - Northgate Online",
+      "file": "transfers-history--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 495,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "transfers-detail",
+      "viewport": "1280x800",
+      "route": "/transfers/TRF-000001",
+      "finalUrl": "/transfers/TRF-000001",
+      "title": "Transfers - Northgate Online",
+      "file": "transfers-detail--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 334,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "transfers-payees",
+      "viewport": "1280x800",
+      "route": "/transfers/payees",
+      "finalUrl": "/transfers/payees",
+      "title": "Transfers - Northgate Online",
+      "file": "transfers-payees--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 334,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "transfers-payees-new",
+      "viewport": "1280x800",
+      "route": "/transfers/payees/new",
+      "finalUrl": "/transfers/payees/new",
+      "title": "Transfers - Northgate Online",
+      "file": "transfers-payees-new--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 499,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "transfers-payee-verify",
+      "viewport": "1280x800",
+      "route": "/transfers/payees/PYE-904418309/verify",
+      "finalUrl": "/transfers/payees/PYE-904418309/verify",
+      "title": "Transfers - Northgate Online",
+      "file": "transfers-payee-verify--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 447,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "bill-pay",
+      "viewport": "1280x800",
+      "route": "/bill-pay",
+      "finalUrl": "/bill-pay",
+      "title": "Bill pay - Northgate Online",
+      "file": "bill-pay--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 529,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "bill-pay-bill-detail",
+      "viewport": "1280x800",
+      "route": "/bill-pay/bills/PYE-904418309",
+      "finalUrl": "/bill-pay/bills/PYE-904418309",
+      "title": "Bill pay - Northgate Online",
+      "file": "bill-pay-bill-detail--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 330,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "bill-pay-pay-bill",
+      "viewport": "1280x800",
+      "route": "/bill-pay/bills/PYE-904418309/pay",
+      "finalUrl": "/bill-pay/bills/PYE-904418309/pay",
+      "title": "Bill pay - Northgate Online",
+      "file": "bill-pay-pay-bill--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 452,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "bill-pay-scheduled",
+      "viewport": "1280x800",
+      "route": "/bill-pay/scheduled",
+      "finalUrl": "/bill-pay/scheduled",
+      "title": "Bill pay - Northgate Online",
+      "file": "bill-pay-scheduled--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 434,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "bill-pay-history",
+      "viewport": "1280x800",
+      "route": "/bill-pay/history",
+      "finalUrl": "/bill-pay/history",
+      "title": "Bill pay - Northgate Online",
+      "file": "bill-pay-history--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 424,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "bill-pay-payees-new",
+      "viewport": "1280x800",
+      "route": "/bill-pay/payees/new",
+      "finalUrl": "/bill-pay/payees/new",
+      "title": "Bill pay - Northgate Online",
+      "file": "bill-pay-payees-new--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 498,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "bill-pay-autopay",
+      "viewport": "1280x800",
+      "route": "/bill-pay/bills/PYE-904418309/autopay",
+      "finalUrl": "/bill-pay/bills/PYE-904418309/autopay",
+      "title": "Bill pay - Northgate Online",
+      "file": "bill-pay-autopay--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 455,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "cards",
+      "viewport": "1280x800",
+      "route": "/cards",
+      "finalUrl": "/cards",
+      "title": "Cards - Northgate Online",
+      "file": "cards--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 419,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "cards-detail",
+      "viewport": "1280x800",
+      "route": "/cards/CRD-980719437",
+      "finalUrl": "/cards/CRD-980719437",
+      "title": "Cards - Northgate Online",
+      "file": "cards-detail--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 423,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "cards-controls",
+      "viewport": "1280x800",
+      "route": "/cards/CRD-980719437/controls",
+      "finalUrl": "/cards/CRD-980719437/controls",
+      "title": "Cards - Northgate Online",
+      "file": "cards-controls--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 1021
+      },
+      "textLength": 1125,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "cards-report",
+      "viewport": "1280x800",
+      "route": "/cards/CRD-980719437/report",
+      "finalUrl": "/cards/CRD-980719437/report",
+      "title": "Cards - Northgate Online",
+      "file": "cards-report--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 495,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "cards-travel",
+      "viewport": "1280x800",
+      "route": "/cards/CRD-980719437/travel",
+      "finalUrl": "/cards/CRD-980719437/travel",
+      "title": "Cards - Northgate Online",
+      "file": "cards-travel--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 459,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "cards-activate",
+      "viewport": "1280x800",
+      "route": "/cards/CRD-980719437/activate",
+      "finalUrl": "/cards/CRD-980719437/activate",
+      "title": "Cards - Northgate Online",
+      "file": "cards-activate--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 427,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "statements",
+      "viewport": "1280x800",
+      "route": "/statements",
+      "finalUrl": "/statements",
+      "title": "Statements and documents - Northgate Online",
+      "file": "statements--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 659,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "statements-tax",
+      "viewport": "1280x800",
+      "route": "/statements/tax",
+      "finalUrl": "/statements/tax",
+      "title": "Statements and documents - Northgate Online",
+      "file": "statements-tax--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 548,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "statements-paperless",
+      "viewport": "1280x800",
+      "route": "/statements/paperless",
+      "finalUrl": "/statements/paperless",
+      "title": "Statements and documents - Northgate Online",
+      "file": "statements-paperless--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 331,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "statements-viewer",
+      "viewport": "1280x800",
+      "route": "/statements/STM-000001",
+      "finalUrl": "/statements/STM-000001",
+      "title": "Statements and documents - Northgate Online",
+      "file": "statements-viewer--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 389,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "alerts",
+      "viewport": "1280x800",
+      "route": "/alerts",
+      "finalUrl": "/alerts",
+      "title": "Alerts - Northgate Online",
+      "file": "alerts--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 709,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "alerts-history",
+      "viewport": "1280x800",
+      "route": "/alerts/history",
+      "finalUrl": "/alerts/history",
+      "title": "Alerts - Northgate Online",
+      "file": "alerts-history--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 436,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "profile",
+      "viewport": "1280x800",
+      "route": "/profile",
+      "finalUrl": "/profile",
+      "title": "Profile and security - Northgate Online",
+      "file": "profile--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 359,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "profile-contact",
+      "viewport": "1280x800",
+      "route": "/profile/contact",
+      "finalUrl": "/profile/contact",
+      "title": "Profile and security - Northgate Online",
+      "file": "profile-contact--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 506,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "profile-address",
+      "viewport": "1280x800",
+      "route": "/profile/address",
+      "finalUrl": "/profile/address",
+      "title": "Profile and security - Northgate Online",
+      "file": "profile-address--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 493,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "profile-security",
+      "viewport": "1280x800",
+      "route": "/profile/security",
+      "finalUrl": "/profile/security",
+      "title": "Profile and security - Northgate Online",
+      "file": "profile-security--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 337,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "profile-security-password",
+      "viewport": "1280x800",
+      "route": "/profile/security/password",
+      "finalUrl": "/profile/security/password",
+      "title": "Profile and security - Northgate Online",
+      "file": "profile-security-password--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 827
+      },
+      "textLength": 630,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "profile-security-username",
+      "viewport": "1280x800",
+      "route": "/profile/security/username",
+      "finalUrl": "/profile/security/username",
+      "title": "Profile and security - Northgate Online",
+      "file": "profile-security-username--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 435,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "profile-security-mfa",
+      "viewport": "1280x800",
+      "route": "/profile/security/mfa",
+      "finalUrl": "/profile/security/mfa",
+      "title": "Profile and security - Northgate Online",
+      "file": "profile-security-mfa--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 423,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "profile-security-devices",
+      "viewport": "1280x800",
+      "route": "/profile/security/devices",
+      "finalUrl": "/profile/security/devices",
+      "title": "Profile and security - Northgate Online",
+      "file": "profile-security-devices--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 579,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "profile-security-activity",
+      "viewport": "1280x800",
+      "route": "/profile/security/activity",
+      "finalUrl": "/profile/security/activity",
+      "title": "Profile and security - Northgate Online",
+      "file": "profile-security-activity--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 423,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "messages",
+      "viewport": "1280x800",
+      "route": "/messages",
+      "finalUrl": "/messages",
+      "title": "Secure messages - Northgate Online",
+      "file": "messages--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 583,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "messages-new",
+      "viewport": "1280x800",
+      "route": "/messages/new",
+      "finalUrl": "/messages/new",
+      "title": "Secure messages - Northgate Online",
+      "file": "messages-new--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 293,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "messages-thread",
+      "viewport": "1280x800",
+      "route": "/messages/THR-000001",
+      "finalUrl": "/messages/THR-000001",
+      "title": "Secure messages - Northgate Online",
+      "file": "messages-thread--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 293,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "rewards",
+      "viewport": "1280x800",
+      "route": "/rewards",
+      "finalUrl": "/rewards",
+      "title": "Rewards - Northgate Online",
+      "file": "rewards--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 288,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "rewards-activity",
+      "viewport": "1280x800",
+      "route": "/rewards/activity",
+      "finalUrl": "/rewards/activity",
+      "title": "Rewards - Northgate Online",
+      "file": "rewards-activity--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 439,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "rewards-redeem",
+      "viewport": "1280x800",
+      "route": "/rewards/redeem",
+      "finalUrl": "/rewards/redeem",
+      "title": "Rewards - Northgate Online",
+      "file": "rewards-redeem--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 438,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "help",
+      "viewport": "1280x800",
+      "route": "/help",
+      "finalUrl": "/help",
+      "title": "Help - Northgate Online",
+      "file": "help--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 284,
+      "textHead": "Help Answers to common questions. Still stuck? Send us a secure message or call us. Browse by topic or search. Articles ",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "help-faq",
+      "viewport": "1280x800",
+      "route": "/help/faq",
+      "finalUrl": "/help/faq",
+      "title": "Help - Northgate Online",
+      "file": "help-faq--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 434,
+      "textHead": "Back Frequently asked questions How long do transfers take? Transfers between your Northgate accounts are immediate. Ext",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "help-contact",
+      "viewport": "1280x800",
+      "route": "/help/contact",
+      "finalUrl": "/help/contact",
+      "title": "Help - Northgate Online",
+      "file": "help-contact--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 199,
+      "textHead": "Back Contact us Customer care: 1-800-555-0100, 7am-10pm ET every day. Lost or stolen cards: 1-800-555-0199, 24 hours. He",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "disclosures",
+      "viewport": "1280x800",
+      "route": "/disclosures",
+      "finalUrl": "/disclosures",
+      "title": "Disclosures - Northgate Online",
+      "file": "disclosures--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 223,
+      "textHead": "Disclosures and agreements Current versions of the agreements that govern your accounts. Prior versions are available on",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "disclosures-viewer",
+      "viewport": "1280x800",
+      "route": "/disclosures/privacy-notice",
+      "finalUrl": "/disclosures/privacy-notice",
+      "title": "Disclosures - Northgate Online",
+      "file": "disclosures-viewer--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 10,
+      "textHead": "Disclosure",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "open-account",
+      "viewport": "1280x800",
+      "route": "/open-account",
+      "finalUrl": "/open-account",
+      "title": "Open an account - Northgate Online",
+      "file": "open-account--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 334,
+      "textHead": "Open an account Takes about 10 minutes. You will need a government ID and your Social Security number. Choose a checking",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "open-account-identity",
+      "viewport": "1280x800",
+      "route": "/open-account/identity",
+      "finalUrl": "/open-account/identity",
+      "title": "Open an account - Northgate Online",
+      "file": "open-account-identity--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 146,
+      "textHead": "Back About you Enter your name exactly as it appears on your ID. First name * Last name * Date of birth * Social Securit",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "open-account-contact",
+      "viewport": "1280x800",
+      "route": "/open-account/contact",
+      "finalUrl": "/open-account/contact",
+      "title": "Open an account - Northgate Online",
+      "file": "open-account-contact--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 104,
+      "textHead": "Back How to reach you Email * Mobile number * Street address * City * State * ZIP code * Cancel Continue",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "open-account-product",
+      "viewport": "1280x800",
+      "route": "/open-account/product",
+      "finalUrl": "/open-account/product",
+      "title": "Open an account - Northgate Online",
+      "file": "open-account-product--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 84,
+      "textHead": "Back Choose your account Account * Send me a debit card Go paperless Cancel Continue",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "open-account-funding",
+      "viewport": "1280x800",
+      "route": "/open-account/funding",
+      "finalUrl": "/open-account/funding",
+      "title": "Open an account - Northgate Online",
+      "file": "open-account-funding--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 195,
+      "textHead": "Back Fund your account Minimum opening deposit is $25. You can fund from another bank account or skip and fund later. $ ",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "open-account-review",
+      "viewport": "1280x800",
+      "route": "/open-account/review",
+      "finalUrl": "/open-account/review",
+      "title": "Open an account - Northgate Online",
+      "file": "open-account-review--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 345,
+      "textHead": "Back Review and submit Check everything below. By submitting you agree to the Deposit Account Agreement, the Electronic ",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "errors-not-found",
+      "viewport": "1280x800",
+      "route": "/not-found",
+      "finalUrl": "/not-found",
+      "title": "Northgate Online",
+      "file": "errors-not-found--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 154,
+      "textHead": "We could not find that page The link may be out of date, or the page may have moved. Check the address or start again fr",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "errors-forbidden",
+      "viewport": "1280x800",
+      "route": "/forbidden",
+      "finalUrl": "/forbidden",
+      "title": "Northgate Online",
+      "file": "errors-forbidden--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 171,
+      "textHead": "You do not have access to this This feature is not available on your accounts. If you think it should be, send us a secu",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "errors-generic",
+      "viewport": "1280x800",
+      "route": "/error",
+      "finalUrl": "/error",
+      "title": "Northgate Online",
+      "file": "errors-generic--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 196,
+      "textHead": "Something went wrong We hit a problem loading this page. Nothing has changed on your accounts. Try again in a moment; if",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "logged-out",
+      "viewport": "1280x800",
+      "route": "/logged-out",
+      "finalUrl": "/logged-out",
+      "title": "Northgate Online",
+      "file": "logged-out--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 110,
+      "textHead": "You have signed out Thanks for banking with Northgate. Close this window when you are done. Sign in again Help",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "dashboard",
+      "viewport": "375x812",
+      "route": "/dashboard",
+      "finalUrl": "/dashboard",
+      "title": "Dashboard - Northgate Online",
+      "file": "dashboard--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 1659
+      },
+      "textLength": 765,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "accounts",
+      "viewport": "375x812",
+      "route": "/accounts",
+      "finalUrl": "/accounts",
+      "title": "Accounts - Northgate Online",
+      "file": "accounts--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 476,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "accounts-detail",
+      "viewport": "375x812",
+      "route": "/accounts/ACC-477215249",
+      "finalUrl": "/accounts/ACC-477215249",
+      "title": "Accounts - Northgate Online",
+      "file": "accounts-detail--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 314,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "accounts-detail-export-dialog",
+      "viewport": "375x812",
+      "route": "/accounts/ACC-477215249",
+      "finalUrl": "/accounts/ACC-477215249",
+      "title": "Accounts - Northgate Online",
+      "file": "accounts-detail-export-dialog--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 314,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "button not found",
+      "pageErrors": []
+    },
+    {
+      "id": "accounts-transaction-detail",
+      "viewport": "375x812",
+      "route": "/accounts/ACC-477215249/transactions/TXN-000001",
+      "finalUrl": "/accounts/ACC-477215249/transactions/TXN-000001",
+      "title": "Accounts - Northgate Online",
+      "file": "accounts-transaction-detail--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 328,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "accounts-transaction-dispute",
+      "viewport": "375x812",
+      "route": "/accounts/ACC-477215249/transactions/TXN-000001/dispute",
+      "finalUrl": "/accounts/ACC-477215249/transactions/TXN-000001/dispute",
+      "title": "Accounts - Northgate Online",
+      "file": "accounts-transaction-dispute--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 451,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "transfers",
+      "viewport": "375x812",
+      "route": "/transfers",
+      "finalUrl": "/transfers",
+      "title": "Transfers - Northgate Online",
+      "file": "transfers--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 1625
+      },
+      "textLength": 911,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "transfers-new",
+      "viewport": "375x812",
+      "route": "/transfers/new",
+      "finalUrl": "/transfers/new",
+      "title": "Transfers - Northgate Online",
+      "file": "transfers-new--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 303,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "transfers-new-review",
+      "viewport": "375x812",
+      "route": "/transfers/new/review",
+      "finalUrl": "/transfers/new",
+      "title": "Transfers - Northgate Online",
+      "file": "transfers-new-review--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 303,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "transfers-confirmation",
+      "viewport": "375x812",
+      "route": "/transfers/TRF-000001/confirmation",
+      "finalUrl": "/transfers/TRF-000001/confirmation",
+      "title": "Transfers - Northgate Online",
+      "file": "transfers-confirmation--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 312,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "transfers-history",
+      "viewport": "375x812",
+      "route": "/transfers/history",
+      "finalUrl": "/transfers/history",
+      "title": "Transfers - Northgate Online",
+      "file": "transfers-history--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 495,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "transfers-detail",
+      "viewport": "375x812",
+      "route": "/transfers/TRF-000001",
+      "finalUrl": "/transfers/TRF-000001",
+      "title": "Transfers - Northgate Online",
+      "file": "transfers-detail--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 334,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "transfers-payees",
+      "viewport": "375x812",
+      "route": "/transfers/payees",
+      "finalUrl": "/transfers/payees",
+      "title": "Transfers - Northgate Online",
+      "file": "transfers-payees--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 334,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "transfers-payees-new",
+      "viewport": "375x812",
+      "route": "/transfers/payees/new",
+      "finalUrl": "/transfers/payees/new",
+      "title": "Transfers - Northgate Online",
+      "file": "transfers-payees-new--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 1001
+      },
+      "textLength": 499,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "transfers-payee-verify",
+      "viewport": "375x812",
+      "route": "/transfers/payees/PYE-904418309/verify",
+      "finalUrl": "/transfers/payees/PYE-904418309/verify",
+      "title": "Transfers - Northgate Online",
+      "file": "transfers-payee-verify--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 447,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "bill-pay",
+      "viewport": "375x812",
+      "route": "/bill-pay",
+      "finalUrl": "/bill-pay",
+      "title": "Bill pay - Northgate Online",
+      "file": "bill-pay--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 529,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "bill-pay-bill-detail",
+      "viewport": "375x812",
+      "route": "/bill-pay/bills/PYE-904418309",
+      "finalUrl": "/bill-pay/bills/PYE-904418309",
+      "title": "Bill pay - Northgate Online",
+      "file": "bill-pay-bill-detail--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 330,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "bill-pay-pay-bill",
+      "viewport": "375x812",
+      "route": "/bill-pay/bills/PYE-904418309/pay",
+      "finalUrl": "/bill-pay/bills/PYE-904418309/pay",
+      "title": "Bill pay - Northgate Online",
+      "file": "bill-pay-pay-bill--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 924
+      },
+      "textLength": 452,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "bill-pay-scheduled",
+      "viewport": "375x812",
+      "route": "/bill-pay/scheduled",
+      "finalUrl": "/bill-pay/scheduled",
+      "title": "Bill pay - Northgate Online",
+      "file": "bill-pay-scheduled--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 434,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "bill-pay-history",
+      "viewport": "375x812",
+      "route": "/bill-pay/history",
+      "finalUrl": "/bill-pay/history",
+      "title": "Bill pay - Northgate Online",
+      "file": "bill-pay-history--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 424,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "bill-pay-payees-new",
+      "viewport": "375x812",
+      "route": "/bill-pay/payees/new",
+      "finalUrl": "/bill-pay/payees/new",
+      "title": "Bill pay - Northgate Online",
+      "file": "bill-pay-payees-new--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 936
+      },
+      "textLength": 498,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "bill-pay-autopay",
+      "viewport": "375x812",
+      "route": "/bill-pay/bills/PYE-904418309/autopay",
+      "finalUrl": "/bill-pay/bills/PYE-904418309/autopay",
+      "title": "Bill pay - Northgate Online",
+      "file": "bill-pay-autopay--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 455,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "cards",
+      "viewport": "375x812",
+      "route": "/cards",
+      "finalUrl": "/cards",
+      "title": "Cards - Northgate Online",
+      "file": "cards--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 419,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "cards-detail",
+      "viewport": "375x812",
+      "route": "/cards/CRD-980719437",
+      "finalUrl": "/cards/CRD-980719437",
+      "title": "Cards - Northgate Online",
+      "file": "cards-detail--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 423,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "cards-controls",
+      "viewport": "375x812",
+      "route": "/cards/CRD-980719437/controls",
+      "finalUrl": "/cards/CRD-980719437/controls",
+      "title": "Cards - Northgate Online",
+      "file": "cards-controls--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 1245
+      },
+      "textLength": 1125,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "cards-report",
+      "viewport": "375x812",
+      "route": "/cards/CRD-980719437/report",
+      "finalUrl": "/cards/CRD-980719437/report",
+      "title": "Cards - Northgate Online",
+      "file": "cards-report--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 495,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "cards-travel",
+      "viewport": "375x812",
+      "route": "/cards/CRD-980719437/travel",
+      "finalUrl": "/cards/CRD-980719437/travel",
+      "title": "Cards - Northgate Online",
+      "file": "cards-travel--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 831
+      },
+      "textLength": 459,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "cards-activate",
+      "viewport": "375x812",
+      "route": "/cards/CRD-980719437/activate",
+      "finalUrl": "/cards/CRD-980719437/activate",
+      "title": "Cards - Northgate Online",
+      "file": "cards-activate--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 427,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "statements",
+      "viewport": "375x812",
+      "route": "/statements",
+      "finalUrl": "/statements",
+      "title": "Statements and documents - Northgate Online",
+      "file": "statements--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 909
+      },
+      "textLength": 659,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "statements-tax",
+      "viewport": "375x812",
+      "route": "/statements/tax",
+      "finalUrl": "/statements/tax",
+      "title": "Statements and documents - Northgate Online",
+      "file": "statements-tax--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 548,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "statements-paperless",
+      "viewport": "375x812",
+      "route": "/statements/paperless",
+      "finalUrl": "/statements/paperless",
+      "title": "Statements and documents - Northgate Online",
+      "file": "statements-paperless--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 331,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "statements-viewer",
+      "viewport": "375x812",
+      "route": "/statements/STM-000001",
+      "finalUrl": "/statements/STM-000001",
+      "title": "Statements and documents - Northgate Online",
+      "file": "statements-viewer--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 389,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "alerts",
+      "viewport": "375x812",
+      "route": "/alerts",
+      "finalUrl": "/alerts",
+      "title": "Alerts - Northgate Online",
+      "file": "alerts--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 709,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "alerts-history",
+      "viewport": "375x812",
+      "route": "/alerts/history",
+      "finalUrl": "/alerts/history",
+      "title": "Alerts - Northgate Online",
+      "file": "alerts-history--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 436,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "profile",
+      "viewport": "375x812",
+      "route": "/profile",
+      "finalUrl": "/profile",
+      "title": "Profile and security - Northgate Online",
+      "file": "profile--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 359,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "profile-contact",
+      "viewport": "375x812",
+      "route": "/profile/contact",
+      "finalUrl": "/profile/contact",
+      "title": "Profile and security - Northgate Online",
+      "file": "profile-contact--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 871
+      },
+      "textLength": 506,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "profile-address",
+      "viewport": "375x812",
+      "route": "/profile/address",
+      "finalUrl": "/profile/address",
+      "title": "Profile and security - Northgate Online",
+      "file": "profile-address--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 1025
+      },
+      "textLength": 493,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "profile-security",
+      "viewport": "375x812",
+      "route": "/profile/security",
+      "finalUrl": "/profile/security",
+      "title": "Profile and security - Northgate Online",
+      "file": "profile-security--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 337,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "profile-security-password",
+      "viewport": "375x812",
+      "route": "/profile/security/password",
+      "finalUrl": "/profile/security/password",
+      "title": "Profile and security - Northgate Online",
+      "file": "profile-security-password--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 859
+      },
+      "textLength": 630,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "profile-security-username",
+      "viewport": "375x812",
+      "route": "/profile/security/username",
+      "finalUrl": "/profile/security/username",
+      "title": "Profile and security - Northgate Online",
+      "file": "profile-security-username--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 435,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "profile-security-mfa",
+      "viewport": "375x812",
+      "route": "/profile/security/mfa",
+      "finalUrl": "/profile/security/mfa",
+      "title": "Profile and security - Northgate Online",
+      "file": "profile-security-mfa--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 423,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "profile-security-devices",
+      "viewport": "375x812",
+      "route": "/profile/security/devices",
+      "finalUrl": "/profile/security/devices",
+      "title": "Profile and security - Northgate Online",
+      "file": "profile-security-devices--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 579,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "profile-security-activity",
+      "viewport": "375x812",
+      "route": "/profile/security/activity",
+      "finalUrl": "/profile/security/activity",
+      "title": "Profile and security - Northgate Online",
+      "file": "profile-security-activity--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 423,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "messages",
+      "viewport": "375x812",
+      "route": "/messages",
+      "finalUrl": "/messages",
+      "title": "Secure messages - Northgate Online",
+      "file": "messages--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 583,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "messages-new",
+      "viewport": "375x812",
+      "route": "/messages/new",
+      "finalUrl": "/messages/new",
+      "title": "Secure messages - Northgate Online",
+      "file": "messages-new--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 293,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "messages-thread",
+      "viewport": "375x812",
+      "route": "/messages/THR-000001",
+      "finalUrl": "/messages/THR-000001",
+      "title": "Secure messages - Northgate Online",
+      "file": "messages-thread--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 293,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "rewards",
+      "viewport": "375x812",
+      "route": "/rewards",
+      "finalUrl": "/rewards",
+      "title": "Rewards - Northgate Online",
+      "file": "rewards--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 288,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "rewards-activity",
+      "viewport": "375x812",
+      "route": "/rewards/activity",
+      "finalUrl": "/rewards/activity",
+      "title": "Rewards - Northgate Online",
+      "file": "rewards-activity--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 439,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "rewards-redeem",
+      "viewport": "375x812",
+      "route": "/rewards/redeem",
+      "finalUrl": "/rewards/redeem",
+      "title": "Rewards - Northgate Online",
+      "file": "rewards-redeem--375x812.png",
+      "pageSize": {
+        "w": 424,
+        "h": 812
+      },
+      "textLength": 438,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "help",
+      "viewport": "375x812",
+      "route": "/help",
+      "finalUrl": "/help",
+      "title": "Help - Northgate Online",
+      "file": "help--375x812.png",
+      "pageSize": {
+        "w": 375,
+        "h": 812
+      },
+      "textLength": 284,
+      "textHead": "Help Answers to common questions. Still stuck? Send us a secure message or call us. Browse by topic or search. Articles ",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "help-faq",
+      "viewport": "375x812",
+      "route": "/help/faq",
+      "finalUrl": "/help/faq",
+      "title": "Help - Northgate Online",
+      "file": "help-faq--375x812.png",
+      "pageSize": {
+        "w": 375,
+        "h": 812
+      },
+      "textLength": 434,
+      "textHead": "Back Frequently asked questions How long do transfers take? Transfers between your Northgate accounts are immediate. Ext",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "help-contact",
+      "viewport": "375x812",
+      "route": "/help/contact",
+      "finalUrl": "/help/contact",
+      "title": "Help - Northgate Online",
+      "file": "help-contact--375x812.png",
+      "pageSize": {
+        "w": 375,
+        "h": 812
+      },
+      "textLength": 199,
+      "textHead": "Back Contact us Customer care: 1-800-555-0100, 7am-10pm ET every day. Lost or stolen cards: 1-800-555-0199, 24 hours. He",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "disclosures",
+      "viewport": "375x812",
+      "route": "/disclosures",
+      "finalUrl": "/disclosures",
+      "title": "Disclosures - Northgate Online",
+      "file": "disclosures--375x812.png",
+      "pageSize": {
+        "w": 375,
+        "h": 812
+      },
+      "textLength": 223,
+      "textHead": "Disclosures and agreements Current versions of the agreements that govern your accounts. Prior versions are available on",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "disclosures-viewer",
+      "viewport": "375x812",
+      "route": "/disclosures/privacy-notice",
+      "finalUrl": "/disclosures/privacy-notice",
+      "title": "Disclosures - Northgate Online",
+      "file": "disclosures-viewer--375x812.png",
+      "pageSize": {
+        "w": 375,
+        "h": 812
+      },
+      "textLength": 10,
+      "textHead": "Disclosure",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "open-account",
+      "viewport": "375x812",
+      "route": "/open-account",
+      "finalUrl": "/open-account",
+      "title": "Open an account - Northgate Online",
+      "file": "open-account--375x812.png",
+      "pageSize": {
+        "w": 375,
+        "h": 812
+      },
+      "textLength": 334,
+      "textHead": "Open an account Takes about 10 minutes. You will need a government ID and your Social Security number. Choose a checking",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "open-account-identity",
+      "viewport": "375x812",
+      "route": "/open-account/identity",
+      "finalUrl": "/open-account/identity",
+      "title": "Open an account - Northgate Online",
+      "file": "open-account-identity--375x812.png",
+      "pageSize": {
+        "w": 375,
+        "h": 812
+      },
+      "textLength": 146,
+      "textHead": "Back About you Enter your name exactly as it appears on your ID. First name * Last name * Date of birth * Social Securit",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "open-account-contact",
+      "viewport": "375x812",
+      "route": "/open-account/contact",
+      "finalUrl": "/open-account/contact",
+      "title": "Open an account - Northgate Online",
+      "file": "open-account-contact--375x812.png",
+      "pageSize": {
+        "w": 375,
+        "h": 954
+      },
+      "textLength": 104,
+      "textHead": "Back How to reach you Email * Mobile number * Street address * City * State * ZIP code * Cancel Continue",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "open-account-product",
+      "viewport": "375x812",
+      "route": "/open-account/product",
+      "finalUrl": "/open-account/product",
+      "title": "Open an account - Northgate Online",
+      "file": "open-account-product--375x812.png",
+      "pageSize": {
+        "w": 375,
+        "h": 812
+      },
+      "textLength": 84,
+      "textHead": "Back Choose your account Account * Send me a debit card Go paperless Cancel Continue",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "open-account-funding",
+      "viewport": "375x812",
+      "route": "/open-account/funding",
+      "finalUrl": "/open-account/funding",
+      "title": "Open an account - Northgate Online",
+      "file": "open-account-funding--375x812.png",
+      "pageSize": {
+        "w": 375,
+        "h": 812
+      },
+      "textLength": 195,
+      "textHead": "Back Fund your account Minimum opening deposit is $25. You can fund from another bank account or skip and fund later. $ ",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "open-account-review",
+      "viewport": "375x812",
+      "route": "/open-account/review",
+      "finalUrl": "/open-account/review",
+      "title": "Open an account - Northgate Online",
+      "file": "open-account-review--375x812.png",
+      "pageSize": {
+        "w": 375,
+        "h": 812
+      },
+      "textLength": 345,
+      "textHead": "Back Review and submit Check everything below. By submitting you agree to the Deposit Account Agreement, the Electronic ",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "errors-not-found",
+      "viewport": "375x812",
+      "route": "/not-found",
+      "finalUrl": "/not-found",
+      "title": "Northgate Online",
+      "file": "errors-not-found--375x812.png",
+      "pageSize": {
+        "w": 375,
+        "h": 812
+      },
+      "textLength": 154,
+      "textHead": "We could not find that page The link may be out of date, or the page may have moved. Check the address or start again fr",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "errors-forbidden",
+      "viewport": "375x812",
+      "route": "/forbidden",
+      "finalUrl": "/forbidden",
+      "title": "Northgate Online",
+      "file": "errors-forbidden--375x812.png",
+      "pageSize": {
+        "w": 375,
+        "h": 812
+      },
+      "textLength": 171,
+      "textHead": "You do not have access to this This feature is not available on your accounts. If you think it should be, send us a secu",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "errors-generic",
+      "viewport": "375x812",
+      "route": "/error",
+      "finalUrl": "/error",
+      "title": "Northgate Online",
+      "file": "errors-generic--375x812.png",
+      "pageSize": {
+        "w": 375,
+        "h": 812
+      },
+      "textLength": 196,
+      "textHead": "Something went wrong We hit a problem loading this page. Nothing has changed on your accounts. Try again in a moment; if",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "logged-out",
+      "viewport": "375x812",
+      "route": "/logged-out",
+      "finalUrl": "/logged-out",
+      "title": "Northgate Online",
+      "file": "logged-out--375x812.png",
+      "pageSize": {
+        "w": 375,
+        "h": 812
+      },
+      "textLength": 110,
+      "textHead": "You have signed out Thanks for banking with Northgate. Close this window when you are done. Sign in again Help",
+      "note": "",
+      "pageErrors": []
+    }
+  ]
+}

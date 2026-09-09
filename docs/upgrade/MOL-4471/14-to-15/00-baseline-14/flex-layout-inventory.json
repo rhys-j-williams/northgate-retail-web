@@ -1,0 +1,5677 @@
+{
+  "root": "src",
+  "totalUsages": 724,
+  "templates": 95,
+  "responsiveUsages": 101,
+  "byDirective": {
+    "fxLayout": 315,
+    "fxLayoutGap": 207,
+    "fxLayoutAlign": 77,
+    "fxFlex": 125
+  },
+  "bySuffix": {
+    "lt-md": 101
+  },
+  "tsImportLines": [
+    {
+      "file": "src/app/shared/shared.module.ts",
+      "line": 3,
+      "src": "import { FlexLayoutModule } from '@angular/flex-layout';"
+    },
+    {
+      "file": "src/app/shared/shared.module.ts",
+      "line": 97,
+      "src": "* FlexLayoutModule is here because roughly every feature template still uses fxLayout for its"
+    },
+    {
+      "file": "src/app/shared/shared.module.ts",
+      "line": 102,
+      "src": "imports: [CommonModule, RouterModule, FormsModule, ReactiveFormsModule, FlexLayoutModule, TranslateModule, ...MATERIAL, ...CANOPY],"
+    },
+    {
+      "file": "src/app/shared/shared.module.ts",
+      "line": 103,
+      "src": "exports: [CommonModule, RouterModule, FormsModule, ReactiveFormsModule, FlexLayoutModule, TranslateModule, ...MATERIAL, ...CANOPY, ...DECLARATIONS]"
+    }
+  ],
+  "files": [
+    {
+      "file": "src/app/features/accounts/components/account-detail/account-detail.component.html",
+      "count": 8,
+      "hits": [
+        {
+          "line": 6,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 6,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 7,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\" fxLayoutAlign=\"start stretch\">"
+        },
+        {
+          "line": 7,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\" fxLayoutAlign=\"start stretch\">"
+        },
+        {
+          "line": 7,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\" fxLayoutAlign=\"start stretch\">"
+        },
+        {
+          "line": 7,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\" fxLayoutAlign=\"start stretch\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<cn-account-card fxFlex=\"2 1 0\" [account]=\"summary(d)\" [showAvailable]=\"!isLiability(d)\" [allowHideBalance]=\"true\"></cn-account-card>"
+        },
+        {
+          "line": 10,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<cn-card fxFlex=\"1 1 0\" [padded]=\"true\" title=\"Details\" i18n-title=\"@@accounts.detail.detailsTitle\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/accounts/components/account-list/account-list.component.html",
+      "count": 2,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/accounts/components/dispute-transaction/dispute-transaction.component.html",
+      "count": 11,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<form class=\"mol-page mol-form\" [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<form class=\"mol-page mol-form\" [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 9,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<cn-select formControlName=\"reason\" i18n-label=\"@@accounts.dispute.reason\" label=\"Reason\" [options]=\"reasonOptions\" [required]=\"true\" fxFlex></cn-select>"
+        },
+        {
+          "line": 10,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex=\"100\">"
+        },
+        {
+          "line": 18,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 18,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 18,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 18,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/accounts/components/export-transactions/export-transactions.component.html",
+      "count": 3,
+      "hits": [
+        {
+          "line": 4,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div cnDialogActions fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 4,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div cnDialogActions fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 4,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div cnDialogActions fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/accounts/components/interest-summary/interest-summary.component.html",
+      "count": 2,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-prose\" fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-prose\" fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/accounts/components/pending-transactions/pending-transactions.component.html",
+      "count": 4,
+      "hits": [
+        {
+          "line": 4,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<li *ngFor=\"let t of visible(rows)\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 4,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<li *ngFor=\"let t of visible(rows)\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 4,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<li *ngFor=\"let t of visible(rows)\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 5,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<span fxFlex>{{ t.merchantName || t.description }}</span>"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/accounts/components/rename-account/rename-account.component.html",
+      "count": 3,
+      "hits": [
+        {
+          "line": 4,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div cnDialogActions fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 4,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div cnDialogActions fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 4,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div cnDialogActions fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/accounts/components/routing-details/routing-details.component.html",
+      "count": 12,
+      "hits": [
+        {
+          "line": 2,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"24px\" fxLayoutGap.lt-md=\"12px\">"
+        },
+        {
+          "line": 2,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"24px\" fxLayoutGap.lt-md=\"12px\">"
+        },
+        {
+          "line": 2,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"24px\" fxLayoutGap.lt-md=\"12px\">"
+        },
+        {
+          "line": 2,
+          "attr": "fxLayoutGap.lt-md",
+          "base": "fxLayoutGap",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"24px\" fxLayoutGap.lt-md=\"12px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"column\">"
+        },
+        {
+          "line": 5,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<span fxLayout=\"row\" fxLayoutAlign=\"start center\" fxLayoutGap=\"4px\">"
+        },
+        {
+          "line": 5,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<span fxLayout=\"row\" fxLayoutAlign=\"start center\" fxLayoutGap=\"4px\">"
+        },
+        {
+          "line": 5,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<span fxLayout=\"row\" fxLayoutAlign=\"start center\" fxLayoutGap=\"4px\">"
+        },
+        {
+          "line": 10,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"column\">"
+        },
+        {
+          "line": 12,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<span fxLayout=\"row\" fxLayoutAlign=\"start center\" fxLayoutGap=\"4px\">"
+        },
+        {
+          "line": 12,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<span fxLayout=\"row\" fxLayoutAlign=\"start center\" fxLayoutGap=\"4px\">"
+        },
+        {
+          "line": 12,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<span fxLayout=\"row\" fxLayoutAlign=\"start center\" fxLayoutGap=\"4px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/accounts/components/transaction-detail/transaction-detail.component.html",
+      "count": 6,
+      "hits": [
+        {
+          "line": 4,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 4,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div class=\"mol-page\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 4,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 5,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<cn-card fxFlex=\"1 1 0\" [padded]=\"true\">"
+        },
+        {
+          "line": 29,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<cn-card fxFlex=\"0 0 320px\" fxFlex.lt-md=\"1 1 auto\" [padded]=\"true\" title=\"Something not right?\" i18n-title=\"@@accounts.txn.helpTitle\">"
+        },
+        {
+          "line": 29,
+          "attr": "fxFlex.lt-md",
+          "base": "fxFlex",
+          "suffix": "lt-md",
+          "src": "<cn-card fxFlex=\"0 0 320px\" fxFlex.lt-md=\"1 1 auto\" [padded]=\"true\" title=\"Something not right?\" i18n-title=\"@@accounts.txn.helpTitle\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/accounts/components/transaction-filters/transaction-filters.component.html",
+      "count": 12,
+      "hits": [
+        {
+          "line": 1,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<form [formGroup]=\"form\" class=\"mol-filters\" novalidate fxLayout=\"column\" fxLayoutGap=\"8px\">"
+        },
+        {
+          "line": 1,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<form [formGroup]=\"form\" class=\"mol-filters\" novalidate fxLayout=\"column\" fxLayoutGap=\"8px\">"
+        },
+        {
+          "line": 2,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"12px\" fxLayoutAlign=\"start center\" fxLayoutAlign.lt-md=\"stretch\">"
+        },
+        {
+          "line": 2,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"12px\" fxLayoutAlign=\"start center\" fxLayoutAlign.lt-md=\"stretch\">"
+        },
+        {
+          "line": 2,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"12px\" fxLayoutAlign=\"start center\" fxLayoutAlign.lt-md=\"stretch\">"
+        },
+        {
+          "line": 2,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"12px\" fxLayoutAlign=\"start center\" fxLayoutAlign.lt-md=\"stretch\">"
+        },
+        {
+          "line": 2,
+          "attr": "fxLayoutAlign.lt-md",
+          "base": "fxLayoutAlign",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"12px\" fxLayoutAlign=\"start center\" fxLayoutAlign.lt-md=\"stretch\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex=\"1 1 0\" class=\"mol-filters__search\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<cn-date-range formControlName=\"range\" label=\"Dates\" i18n-label=\"@@accounts.filters.dates\" [showPresets]=\"true\" fxFlex=\"0 0 320px\" fxFlex.lt-md=\"1 1 auto\"></cn-"
+        },
+        {
+          "line": 8,
+          "attr": "fxFlex.lt-md",
+          "base": "fxFlex",
+          "suffix": "lt-md",
+          "src": "<cn-date-range formControlName=\"range\" label=\"Dates\" i18n-label=\"@@accounts.filters.dates\" [showPresets]=\"true\" fxFlex=\"0 0 320px\" fxFlex.lt-md=\"1 1 auto\"></cn-"
+        },
+        {
+          "line": 14,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div *ngIf=\"expanded\" fxLayout=\"column\" fxLayoutGap=\"8px\">"
+        },
+        {
+          "line": 14,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div *ngIf=\"expanded\" fxLayout=\"column\" fxLayoutGap=\"8px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/accounts/components/transaction-list/transaction-list.component.html",
+      "count": 3,
+      "hits": [
+        {
+          "line": 2,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div molSectionAction fxLayout=\"row\" fxLayoutGap=\"8px\">"
+        },
+        {
+          "line": 2,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div molSectionAction fxLayout=\"row\" fxLayoutGap=\"8px\">"
+        },
+        {
+          "line": 25,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"column\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/alerts/components/alert-history/alert-history.component.html",
+      "count": 9,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 9,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<li *ngFor=\"let a of group.items\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\" fxLayoutGap=\"12px\" [class.mol-unread]=\"!a.read\">"
+        },
+        {
+          "line": 9,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<li *ngFor=\"let a of group.items\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\" fxLayoutGap=\"12px\" [class.mol-unread]=\"!a.read\">"
+        },
+        {
+          "line": 9,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<li *ngFor=\"let a of group.items\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\" fxLayoutGap=\"12px\" [class.mol-unread]=\"!a.read\">"
+        },
+        {
+          "line": 10,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<div fxFlex fxLayout=\"column\">"
+        },
+        {
+          "line": 10,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxFlex fxLayout=\"column\">"
+        },
+        {
+          "line": 18,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"center\">"
+        },
+        {
+          "line": 18,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"center\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/alerts/components/alert-preference-row/alert-preference-row.component.html",
+      "count": 13,
+      "hits": [
+        {
+          "line": 1,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-pref-row\" [class.mol-pref-row--busy]=\"busy\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutAlign=\"space-between start\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 1,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div class=\"mol-pref-row\" [class.mol-pref-row--busy]=\"busy\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutAlign=\"space-between start\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 1,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div class=\"mol-pref-row\" [class.mol-pref-row--busy]=\"busy\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutAlign=\"space-between start\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 1,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-pref-row\" [class.mol-pref-row--busy]=\"busy\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutAlign=\"space-between start\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 2,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<div fxFlex fxLayout=\"column\" fxLayoutGap=\"4px\">"
+        },
+        {
+          "line": 2,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxFlex fxLayout=\"column\" fxLayoutGap=\"4px\">"
+        },
+        {
+          "line": 2,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxFlex fxLayout=\"column\" fxLayoutGap=\"4px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"start center\" fxLayoutGap=\"8px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"start center\" fxLayoutGap=\"8px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"start center\" fxLayoutGap=\"8px\">"
+        },
+        {
+          "line": 9,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div *ngIf=\"hasThreshold\" class=\"mol-pref-row__threshold\" fxLayout=\"row\" fxLayoutAlign=\"start center\" fxLayoutGap=\"8px\">"
+        },
+        {
+          "line": 9,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div *ngIf=\"hasThreshold\" class=\"mol-pref-row__threshold\" fxLayout=\"row\" fxLayoutAlign=\"start center\" fxLayoutGap=\"8px\">"
+        },
+        {
+          "line": 9,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div *ngIf=\"hasThreshold\" class=\"mol-pref-row__threshold\" fxLayout=\"row\" fxLayoutAlign=\"start center\" fxLayoutGap=\"8px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/alerts/components/alert-preferences/alert-preferences.component.html",
+      "count": 2,
+      "hits": [
+        {
+          "line": 1,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 1,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/alerts/components/alerts-home/alerts-home.component.html",
+      "count": 2,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/alerts/components/quiet-hours/quiet-hours.component.html",
+      "count": 7,
+      "hits": [
+        {
+          "line": 2,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<form [formGroup]=\"form\" (ngSubmit)=\"save()\" novalidate fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 2,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<form [formGroup]=\"form\" (ngSubmit)=\"save()\" novalidate fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 5,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div *ngIf=\"form.controls.enabled.value\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 5,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div *ngIf=\"form.controls.enabled.value\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 5,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div *ngIf=\"form.controls.enabled.value\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 18,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 18,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"end\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/alerts/components/test-alert/test-alert.component.html",
+      "count": 3,
+      "hits": [
+        {
+          "line": 4,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div cnDialogActions fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 4,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div cnDialogActions fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 4,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div cnDialogActions fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/bill-pay/components/add-bill-payee/add-bill-payee.component.html",
+      "count": 16,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<form class=\"mol-page mol-form\" [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<form class=\"mol-page mol-form\" [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 9,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        },
+        {
+          "line": 14,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        },
+        {
+          "line": 20,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 20,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 20,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 21,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        },
+        {
+          "line": 26,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        },
+        {
+          "line": 34,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 34,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 34,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 34,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/bill-pay/components/autopay-settings/autopay-settings.component.html",
+      "count": 10,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<form class=\"mol-page mol-form\" [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<form class=\"mol-page mol-form\" [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 10,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<cn-select formControlName=\"fromAccountId\" i18n-label=\"@@billPay.autopay.from\" label=\"Pay from\" [options]=\"fromAccountIdOptions\" [required]=\"false\" fxFlex></cn-"
+        },
+        {
+          "line": 14,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 14,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 14,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 14,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/bill-pay/components/bill-detail/bill-detail.component.html",
+      "count": 32,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\" *ngIf=\"item$ | async as item; else loading\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\" *ngIf=\"item$ | async as item; else loading\">"
+        },
+        {
+          "line": 6,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 6,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 6,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 7,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<dt fxFlex=\"220px\" i18n=\"@@billPay.billDetail.payee\">Payee</dt>"
+        },
+        {
+          "line": 8,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<dd fxFlex>{{ item.payeeName }}</dd>"
+        },
+        {
+          "line": 10,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 10,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 10,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 11,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<dt fxFlex=\"220px\" i18n=\"@@billPay.billDetail.amount\">Amount due</dt>"
+        },
+        {
+          "line": 12,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<dd fxFlex>{{ item.amountDueMinor | minorAmount }}</dd>"
+        },
+        {
+          "line": 14,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 14,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 14,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 15,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<dt fxFlex=\"220px\" i18n=\"@@billPay.billDetail.due\">Due date</dt>"
+        },
+        {
+          "line": 16,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<dd fxFlex>{{ item.dueAt | date:'longDate' }}</dd>"
+        },
+        {
+          "line": 18,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 18,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 18,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 19,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<dt fxFlex=\"220px\" i18n=\"@@billPay.billDetail.status\">Status</dt>"
+        },
+        {
+          "line": 20,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<dd fxFlex>{{ item.status | translate }}</dd>"
+        },
+        {
+          "line": 22,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 22,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 22,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 23,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<dt fxFlex=\"220px\" i18n=\"@@billPay.billDetail.ebill\">eBill</dt>"
+        },
+        {
+          "line": 24,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<dd fxFlex>{{ item.ebill ? 'On' : 'Off' }}</dd>"
+        },
+        {
+          "line": 26,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 26,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 26,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 27,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<dt fxFlex=\"220px\" i18n=\"@@billPay.billDetail.autopay\">Autopay</dt>"
+        },
+        {
+          "line": 28,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<dd fxFlex>{{ item.autopay ? 'On' : 'Off' }}</dd>"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/bill-pay/components/bill-pay-home/bill-pay-home.component.html",
+      "count": 2,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/bill-pay/components/cancel-payment/cancel-payment.component.html",
+      "count": 3,
+      "hits": [
+        {
+          "line": 4,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div cnDialogActions fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 4,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div cnDialogActions fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 4,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div cnDialogActions fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/bill-pay/components/pay-bill/pay-bill.component.html",
+      "count": 16,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<form class=\"mol-page mol-form\" [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<form class=\"mol-page mol-form\" [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 9,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<cn-select formControlName=\"fromAccountId\" i18n-label=\"@@billPay.pay.from\" label=\"Pay from\" [options]=\"fromAccountIdOptions\" [required]=\"true\" fxFlex></cn-selec"
+        },
+        {
+          "line": 10,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        },
+        {
+          "line": 16,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 16,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 16,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 17,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        },
+        {
+          "line": 21,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        },
+        {
+          "line": 29,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 29,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 29,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 29,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/bill-pay/components/payment-history/payment-history.component.html",
+      "count": 2,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/bill-pay/components/scheduled-payments/scheduled-payments.component.html",
+      "count": 2,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/cards/components/activate-card/activate-card.component.html",
+      "count": 9,
+      "hits": [
+        {
+          "line": 4,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<form [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 4,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<form [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 9,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        },
+        {
+          "line": 14,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        },
+        {
+          "line": 21,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 21,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"end\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/cards/components/card-controls/card-controls.component.html",
+      "count": 11,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-narrow\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-narrow\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 7,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<form *ngIf=\"!loading\" [formGroup]=\"form\" (ngSubmit)=\"save()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 7,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<form *ngIf=\"!loading\" [formGroup]=\"form\" (ngSubmit)=\"save()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 9,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"column\" fxLayoutGap=\"8px\">"
+        },
+        {
+          "line": 9,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"column\" fxLayoutGap=\"8px\">"
+        },
+        {
+          "line": 19,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"column\" fxLayoutGap=\"8px\">"
+        },
+        {
+          "line": 19,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"column\" fxLayoutGap=\"8px\">"
+        },
+        {
+          "line": 34,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"end\" fxLayoutGap=\"8px\">"
+        },
+        {
+          "line": 34,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"end\" fxLayoutGap=\"8px\">"
+        },
+        {
+          "line": 34,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"end\" fxLayoutGap=\"8px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/cards/components/card-detail/card-detail.component.html",
+      "count": 13,
+      "hits": [
+        {
+          "line": 4,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"24px\">"
+        },
+        {
+          "line": 4,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div class=\"mol-page\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"24px\">"
+        },
+        {
+          "line": 4,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"24px\">"
+        },
+        {
+          "line": 5,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<div fxFlex=\"0 0 360px\" fxFlex.lt-md=\"auto\">"
+        },
+        {
+          "line": 5,
+          "attr": "fxFlex.lt-md",
+          "base": "fxFlex",
+          "suffix": "lt-md",
+          "src": "<div fxFlex=\"0 0 360px\" fxFlex.lt-md=\"auto\">"
+        },
+        {
+          "line": 13,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"space-between center\" class=\"mol-card-reveal\">"
+        },
+        {
+          "line": 13,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"space-between center\" class=\"mol-card-reveal\">"
+        },
+        {
+          "line": 26,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<div fxFlex fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 26,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxFlex fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 26,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxFlex fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 35,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<ul class=\"mol-wallets\" fxLayout=\"row\" fxLayoutGap=\"16px\" fxLayout.lt-md=\"column\">"
+        },
+        {
+          "line": 35,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<ul class=\"mol-wallets\" fxLayout=\"row\" fxLayoutGap=\"16px\" fxLayout.lt-md=\"column\">"
+        },
+        {
+          "line": 35,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<ul class=\"mol-wallets\" fxLayout=\"row\" fxLayoutGap=\"16px\" fxLayout.lt-md=\"column\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/cards/components/card-list/card-list.component.html",
+      "count": 15,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row wrap\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px grid\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row wrap\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px grid\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row wrap\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px grid\">"
+        },
+        {
+          "line": 9,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<cn-card *ngFor=\"let card of cards; trackBy: trackById\" fxFlex=\"50\" fxFlex.lt-md=\"100\" [padded]=\"true\" [highlight]=\"card.status === 'active'\">"
+        },
+        {
+          "line": 9,
+          "attr": "fxFlex.lt-md",
+          "base": "fxFlex",
+          "suffix": "lt-md",
+          "src": "<cn-card *ngFor=\"let card of cards; trackBy: trackById\" fxFlex=\"50\" fxFlex.lt-md=\"100\" [padded]=\"true\" [highlight]=\"card.status === 'active'\">"
+        },
+        {
+          "line": 10,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"space-between start\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 10,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"space-between start\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 10,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"space-between start\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 11,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"column\" fxLayoutGap=\"4px\">"
+        },
+        {
+          "line": 11,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"column\" fxLayoutGap=\"4px\">"
+        },
+        {
+          "line": 19,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayout.lt-md=\"column\" class=\"mol-card__actions\">"
+        },
+        {
+          "line": 19,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayout.lt-md=\"column\" class=\"mol-card__actions\">"
+        },
+        {
+          "line": 19,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayout.lt-md=\"column\" class=\"mol-card__actions\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/cards/components/lock-card/lock-card.component.html",
+      "count": 3,
+      "hits": [
+        {
+          "line": 4,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div cnDialogActions fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 4,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div cnDialogActions fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 4,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div cnDialogActions fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/cards/components/report-card/report-card.component.html",
+      "count": 11,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<form class=\"mol-page mol-form\" [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<form class=\"mol-page mol-form\" [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 9,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<cn-select formControlName=\"reason\" i18n-label=\"@@cards.report.reason\" label=\"What happened?\" [options]=\"reasonOptions\" [required]=\"true\" fxFlex></cn-select>"
+        },
+        {
+          "line": 10,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        },
+        {
+          "line": 17,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 17,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 17,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 17,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/cards/components/travel-notice/travel-notice.component.html",
+      "count": 15,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<form class=\"mol-page mol-form\" [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<form class=\"mol-page mol-form\" [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 9,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        },
+        {
+          "line": 13,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        },
+        {
+          "line": 18,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 18,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 18,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 19,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        },
+        {
+          "line": 27,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 27,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 27,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 27,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/dashboard/components/alerts-digest/alerts-digest.component.html",
+      "count": 5,
+      "hits": [
+        {
+          "line": 4,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<li *ngFor=\"let a of visible(items)\" fxLayout=\"row\" fxLayoutAlign=\"start center\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 4,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<li *ngFor=\"let a of visible(items)\" fxLayout=\"row\" fxLayoutAlign=\"start center\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 4,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<li *ngFor=\"let a of visible(items)\" fxLayout=\"row\" fxLayoutAlign=\"start center\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 6,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<div fxFlex fxLayout=\"column\">"
+        },
+        {
+          "line": 6,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxFlex fxLayout=\"column\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/dashboard/components/dashboard-overview/dashboard-overview.component.html",
+      "count": 14,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-dashboard\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-dashboard\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 6,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\" fxLayoutAlign=\"start stretch\">"
+        },
+        {
+          "line": 6,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\" fxLayoutAlign=\"start stretch\">"
+        },
+        {
+          "line": 6,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\" fxLayoutAlign=\"start stretch\">"
+        },
+        {
+          "line": 6,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\" fxLayoutAlign=\"start stretch\">"
+        },
+        {
+          "line": 7,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<div fxFlex=\"7 1 0\" fxFlex.lt-md=\"1 1 auto\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 7,
+          "attr": "fxFlex.lt-md",
+          "base": "fxFlex",
+          "suffix": "lt-md",
+          "src": "<div fxFlex=\"7 1 0\" fxFlex.lt-md=\"1 1 auto\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 7,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxFlex=\"7 1 0\" fxFlex.lt-md=\"1 1 auto\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 7,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxFlex=\"7 1 0\" fxFlex.lt-md=\"1 1 auto\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 11,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<div fxFlex=\"5 1 0\" fxFlex.lt-md=\"1 1 auto\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 11,
+          "attr": "fxFlex.lt-md",
+          "base": "fxFlex",
+          "suffix": "lt-md",
+          "src": "<div fxFlex=\"5 1 0\" fxFlex.lt-md=\"1 1 auto\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 11,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxFlex=\"5 1 0\" fxFlex.lt-md=\"1 1 auto\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 11,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxFlex=\"5 1 0\" fxFlex.lt-md=\"1 1 auto\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/dashboard/components/promo-banner/promo-banner.component.html",
+      "count": 7,
+      "hits": [
+        {
+          "line": 1,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<aside *ngIf=\"!((dismissed$ | async) ?? []).includes(bannerId)\" class=\"mol-promo\" role=\"complementary\" aria-label=\"Offer\" fxLayout=\"row\" fxLayout.lt-md=\"column\""
+        },
+        {
+          "line": 1,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<aside *ngIf=\"!((dismissed$ | async) ?? []).includes(bannerId)\" class=\"mol-promo\" role=\"complementary\" aria-label=\"Offer\" fxLayout=\"row\" fxLayout.lt-md=\"column\""
+        },
+        {
+          "line": 1,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<aside *ngIf=\"!((dismissed$ | async) ?? []).includes(bannerId)\" class=\"mol-promo\" role=\"complementary\" aria-label=\"Offer\" fxLayout=\"row\" fxLayout.lt-md=\"column\""
+        },
+        {
+          "line": 1,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<aside *ngIf=\"!((dismissed$ | async) ?? []).includes(bannerId)\" class=\"mol-promo\" role=\"complementary\" aria-label=\"Offer\" fxLayout=\"row\" fxLayout.lt-md=\"column\""
+        },
+        {
+          "line": 2,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<div fxFlex>"
+        },
+        {
+          "line": 6,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutGap=\"8px\">"
+        },
+        {
+          "line": 6,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutGap=\"8px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/dashboard/components/quick-transfer/quick-transfer.component.html",
+      "count": 5,
+      "hits": [
+        {
+          "line": 2,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<form [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"8px\">"
+        },
+        {
+          "line": 2,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<form [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"8px\">"
+        },
+        {
+          "line": 16,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"end center\" fxLayoutGap=\"8px\">"
+        },
+        {
+          "line": 16,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"end center\" fxLayoutGap=\"8px\">"
+        },
+        {
+          "line": 16,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"end center\" fxLayoutGap=\"8px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/dashboard/components/recent-activity/recent-activity.component.html",
+      "count": 5,
+      "hits": [
+        {
+          "line": 4,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<li *ngFor=\"let row of rows; trackBy: trackByTxn\" class=\"mol-activity__row\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\" fxLayoutGap=\"12px\""
+        },
+        {
+          "line": 4,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<li *ngFor=\"let row of rows; trackBy: trackByTxn\" class=\"mol-activity__row\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\" fxLayoutGap=\"12px\""
+        },
+        {
+          "line": 4,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<li *ngFor=\"let row of rows; trackBy: trackByTxn\" class=\"mol-activity__row\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\" fxLayoutGap=\"12px\""
+        },
+        {
+          "line": 6,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<div fxFlex fxLayout=\"column\">"
+        },
+        {
+          "line": 6,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxFlex fxLayout=\"column\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/dashboard/components/spending-snapshot/spending-snapshot.component.html",
+      "count": 7,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div *ngIf=\"slices.length; else empty\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\" fxLayoutAlign=\"start center\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div *ngIf=\"slices.length; else empty\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\" fxLayoutAlign=\"start center\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div *ngIf=\"slices.length; else empty\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\" fxLayoutAlign=\"start center\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div *ngIf=\"slices.length; else empty\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\" fxLayoutAlign=\"start center\">"
+        },
+        {
+          "line": 9,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<ul class=\"mol-legend\" fxFlex>"
+        },
+        {
+          "line": 10,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<li *ngFor=\"let s of slices\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\">"
+        },
+        {
+          "line": 10,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<li *ngFor=\"let s of slices\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/dashboard/components/upcoming-payments/upcoming-payments.component.html",
+      "count": 7,
+      "hits": [
+        {
+          "line": 5,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<li *ngFor=\"let item of items\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\" fxLayoutGap=\"12px\" [routerLink]=\"item.link\">"
+        },
+        {
+          "line": 5,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<li *ngFor=\"let item of items\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\" fxLayoutGap=\"12px\" [routerLink]=\"item.link\">"
+        },
+        {
+          "line": 5,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<li *ngFor=\"let item of items\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\" fxLayoutGap=\"12px\" [routerLink]=\"item.link\">"
+        },
+        {
+          "line": 7,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<div fxFlex fxLayout=\"column\">"
+        },
+        {
+          "line": 7,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxFlex fxLayout=\"column\">"
+        },
+        {
+          "line": 14,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-upcoming__foot\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\">"
+        },
+        {
+          "line": 14,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div class=\"mol-upcoming__foot\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/disclosures/components/disclosure-list/disclosure-list.component.html",
+      "count": 2,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-prose\" fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-prose\" fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/disclosures/components/disclosure-viewer/disclosure-viewer.component.html",
+      "count": 2,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-prose\" fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-prose\" fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/errors/components/forbidden/forbidden.component.html",
+      "count": 2,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-prose\" fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-prose\" fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/errors/components/generic-error/generic-error.component.html",
+      "count": 2,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-prose\" fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-prose\" fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/errors/components/not-found/not-found.component.html",
+      "count": 2,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-prose\" fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-prose\" fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/help/components/contact-us/contact-us.component.html",
+      "count": 2,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-prose\" fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-prose\" fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/help/components/faq/faq.component.html",
+      "count": 2,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-prose\" fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-prose\" fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/help/components/help-home/help-home.component.html",
+      "count": 2,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-prose\" fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-prose\" fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/messages/components/compose-message/compose-message.component.html",
+      "count": 15,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<form class=\"mol-page mol-form\" [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<form class=\"mol-page mol-form\" [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 9,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<cn-select formControlName=\"topic\" i18n-label=\"@@messages.compose.topic\" label=\"Topic\" [options]=\"topicOptions\" [required]=\"true\" fxFlex></cn-select>"
+        },
+        {
+          "line": 10,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        },
+        {
+          "line": 16,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 16,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 16,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 17,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex=\"100\">"
+        },
+        {
+          "line": 25,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 25,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 25,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 25,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/messages/components/message-bubble/message-bubble.component.html",
+      "count": 2,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-prose\" fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-prose\" fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/messages/components/thread-list/thread-list.component.html",
+      "count": 2,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/messages/components/thread-view/thread-view.component.html",
+      "count": 2,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-prose\" fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-prose\" fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/onboarding/components/contact-step/contact-step.component.html",
+      "count": 21,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<form class=\"mol-page mol-form\" [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<form class=\"mol-page mol-form\" [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 9,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        },
+        {
+          "line": 14,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<cn-masked-input formControlName=\"mobile\" i18n-label=\"@@onboarding.contact.mobile\" label=\"Mobile number\" preset=\"phone\" [required]=\"true\" fxFlex></cn-masked-inp"
+        },
+        {
+          "line": 16,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 16,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 16,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 17,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        },
+        {
+          "line": 22,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        },
+        {
+          "line": 28,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 28,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 28,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 29,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        },
+        {
+          "line": 34,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        },
+        {
+          "line": 42,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 42,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 42,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 42,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/onboarding/components/funding-step/funding-step.component.html",
+      "count": 15,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<form class=\"mol-page mol-form\" [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<form class=\"mol-page mol-form\" [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 9,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        },
+        {
+          "line": 14,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<cn-masked-input formControlName=\"routingNumber\" i18n-label=\"@@onboarding.funding.routing\" label=\"Routing number\" preset=\"routing\" [required]=\"true\" fxFlex></cn"
+        },
+        {
+          "line": 16,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 16,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 16,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 17,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<cn-masked-input formControlName=\"accountNumber\" i18n-label=\"@@onboarding.funding.account\" label=\"Account number\" preset=\"account\" [required]=\"true\" fxFlex></cn"
+        },
+        {
+          "line": 21,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 21,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 21,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 21,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/onboarding/components/identity-step/identity-step.component.html",
+      "count": 16,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<form class=\"mol-page mol-form\" [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<form class=\"mol-page mol-form\" [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 9,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        },
+        {
+          "line": 14,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        },
+        {
+          "line": 20,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 20,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 20,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 21,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        },
+        {
+          "line": 25,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<cn-masked-input formControlName=\"ssn\" i18n-label=\"@@onboarding.identity.ssn\" label=\"Social Security number\" preset=\"ssn\" [required]=\"true\" fxFlex></cn-masked-i"
+        },
+        {
+          "line": 29,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 29,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 29,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 29,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/onboarding/components/onboarding-start/onboarding-start.component.html",
+      "count": 2,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-prose\" fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-prose\" fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/onboarding/components/product-step/product-step.component.html",
+      "count": 13,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<form class=\"mol-page mol-form\" [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<form class=\"mol-page mol-form\" [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 9,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<cn-select formControlName=\"productCode\" i18n-label=\"@@onboarding.product.code\" label=\"Account\" [options]=\"productCodeOptions\" [required]=\"true\" fxFlex></cn-sel"
+        },
+        {
+          "line": 12,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 12,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 12,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 17,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 17,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 17,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 17,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/onboarding/components/review-step/review-step.component.html",
+      "count": 2,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-prose\" fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-prose\" fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/profile/components/address-form/address-form.component.html",
+      "count": 20,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<form class=\"mol-page mol-form\" [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<form class=\"mol-page mol-form\" [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 9,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        },
+        {
+          "line": 14,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        },
+        {
+          "line": 20,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 20,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 20,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 21,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        },
+        {
+          "line": 26,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        },
+        {
+          "line": 32,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 32,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 32,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 33,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        },
+        {
+          "line": 41,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 41,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 41,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 41,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/profile/components/change-password/change-password.component.html",
+      "count": 8,
+      "hits": [
+        {
+          "line": 4,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<form [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"12px\" autocomplete=\"off\">"
+        },
+        {
+          "line": 4,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<form [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"12px\" autocomplete=\"off\">"
+        },
+        {
+          "line": 21,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<li *ngFor=\"let rule of rules\" [class.mol-rules__ok]=\"passes(rule)\" fxLayout=\"row\" fxLayoutGap=\"6px\" fxLayoutAlign=\"start center\">"
+        },
+        {
+          "line": 21,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<li *ngFor=\"let rule of rules\" [class.mol-rules__ok]=\"passes(rule)\" fxLayout=\"row\" fxLayoutGap=\"6px\" fxLayoutAlign=\"start center\">"
+        },
+        {
+          "line": 21,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<li *ngFor=\"let rule of rules\" [class.mol-rules__ok]=\"passes(rule)\" fxLayout=\"row\" fxLayoutGap=\"6px\" fxLayoutAlign=\"start center\">"
+        },
+        {
+          "line": 33,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"end\" fxLayoutGap=\"8px\">"
+        },
+        {
+          "line": 33,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"end\" fxLayoutGap=\"8px\">"
+        },
+        {
+          "line": 33,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"end\" fxLayoutGap=\"8px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/profile/components/change-username/change-username.component.html",
+      "count": 10,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<form class=\"mol-page mol-form\" [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<form class=\"mol-page mol-form\" [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 9,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        },
+        {
+          "line": 17,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 17,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 17,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 17,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/profile/components/contact-details/contact-details.component.html",
+      "count": 15,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<form class=\"mol-page mol-form\" [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<form class=\"mol-page mol-form\" [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 9,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        },
+        {
+          "line": 14,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<cn-masked-input formControlName=\"mobile\" i18n-label=\"@@profile.contact.mobile\" label=\"Mobile number\" preset=\"phone\" [required]=\"true\" fxFlex></cn-masked-input>"
+        },
+        {
+          "line": 16,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 16,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 16,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 17,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<cn-select formControlName=\"preferredLanguage\" i18n-label=\"@@profile.contact.language\" label=\"Preferred language\" [options]=\"preferredLanguageOptions\" [required"
+        },
+        {
+          "line": 22,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 22,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 22,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 22,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/profile/components/login-history/login-history.component.html",
+      "count": 2,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/profile/components/mfa-settings/mfa-settings.component.html",
+      "count": 4,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-narrow\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-narrow\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 9,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 9,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"end\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/profile/components/profile-home/profile-home.component.html",
+      "count": 20,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div class=\"mol-page\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 4,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<cn-card fxFlex=\"1 1 0\" [padded]=\"true\" title=\"Contact details\" i18n-title=\"@@profile.home.contact\" *ngIf=\"profile$ | async as p\">"
+        },
+        {
+          "line": 19,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayout.lt-md=\"column\">"
+        },
+        {
+          "line": 19,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayout.lt-md=\"column\">"
+        },
+        {
+          "line": 19,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayout.lt-md=\"column\">"
+        },
+        {
+          "line": 25,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<cn-card fxFlex=\"1 1 0\" [padded]=\"true\" title=\"Security\" i18n-title=\"@@profile.home.security\">"
+        },
+        {
+          "line": 27,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"start center\" fxLayoutGap=\"8px\" class=\"mol-posture\">"
+        },
+        {
+          "line": 27,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"start center\" fxLayoutGap=\"8px\" class=\"mol-posture\">"
+        },
+        {
+          "line": 27,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"start center\" fxLayoutGap=\"8px\" class=\"mol-posture\">"
+        },
+        {
+          "line": 32,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<li fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayoutAlign=\"start center\">"
+        },
+        {
+          "line": 32,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<li fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayoutAlign=\"start center\">"
+        },
+        {
+          "line": 32,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<li fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayoutAlign=\"start center\">"
+        },
+        {
+          "line": 37,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<li fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayoutAlign=\"start center\">"
+        },
+        {
+          "line": 37,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<li fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayoutAlign=\"start center\">"
+        },
+        {
+          "line": 37,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<li fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayoutAlign=\"start center\">"
+        },
+        {
+          "line": 41,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<li fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayoutAlign=\"start center\">"
+        },
+        {
+          "line": 41,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<li fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayoutAlign=\"start center\">"
+        },
+        {
+          "line": 41,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<li fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayoutAlign=\"start center\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/profile/components/security-settings/security-settings.component.html",
+      "count": 2,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\" *ngIf=\"settings$ | async as s; else loading\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\" *ngIf=\"settings$ | async as s; else loading\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/profile/components/trusted-devices/trusted-devices.component.html",
+      "count": 7,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<li *ngFor=\"let d of devices; trackBy: trackById\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<li *ngFor=\"let d of devices; trackBy: trackById\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<li *ngFor=\"let d of devices; trackBy: trackById\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 10,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<div fxFlex fxLayout=\"column\">"
+        },
+        {
+          "line": 10,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxFlex fxLayout=\"column\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/rewards/components/redeem-points/redeem-points.component.html",
+      "count": 11,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<form class=\"mol-page mol-form\" [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<form class=\"mol-page mol-form\" [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 9,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<cn-select formControlName=\"optionId\" i18n-label=\"@@rewards.redeem.option\" label=\"Redeem for\" [options]=\"optionIdOptions\" [required]=\"true\" fxFlex></cn-select>"
+        },
+        {
+          "line": 10,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        },
+        {
+          "line": 18,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 18,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 18,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 18,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/rewards/components/rewards-activity/rewards-activity.component.html",
+      "count": 2,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/rewards/components/rewards-summary/rewards-summary.component.html",
+      "count": 2,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-prose\" fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-prose\" fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/statements/components/document-search/document-search.component.html",
+      "count": 2,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-prose\" fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-prose\" fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/statements/components/paperless-settings/paperless-settings.component.html",
+      "count": 11,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-narrow\" fxLayout=\"column\" fxLayoutGap=\"16px\" *ngIf=\"accounts$ | async as accounts\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-narrow\" fxLayout=\"column\" fxLayoutGap=\"16px\" *ngIf=\"accounts$ | async as accounts\">"
+        },
+        {
+          "line": 7,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<li *ngFor=\"let a of accounts\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 7,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<li *ngFor=\"let a of accounts\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 7,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<li *ngFor=\"let a of accounts\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<div fxFlex fxLayout=\"column\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxFlex fxLayout=\"column\">"
+        },
+        {
+          "line": 16,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"space-between center\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" *ngIf=\"accounts.length\">"
+        },
+        {
+          "line": 16,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"space-between center\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" *ngIf=\"accounts.length\">"
+        },
+        {
+          "line": 16,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"space-between center\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" *ngIf=\"accounts.length\">"
+        },
+        {
+          "line": 16,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"space-between center\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" *ngIf=\"accounts.length\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/statements/components/statement-list/statement-list.component.html",
+      "count": 10,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 4,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<nav fxLayout=\"row\" fxLayoutGap=\"16px\" class=\"mol-subnav\">"
+        },
+        {
+          "line": 4,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<nav fxLayout=\"row\" fxLayoutGap=\"16px\" class=\"mol-subnav\">"
+        },
+        {
+          "line": 9,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<form [formGroup]=\"form\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 9,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<form [formGroup]=\"form\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 9,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<form [formGroup]=\"form\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 10,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<cn-select fxFlex=\"1 1 0\" label=\"Account\" i18n-label=\"@@statements.list.account\" [options]=\"(accountOptions$ | async) || []\" formControlName=\"accountId\"></cn-se"
+        },
+        {
+          "line": 11,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<cn-select fxFlex=\"0 0 160px\" fxFlex.lt-md=\"auto\" label=\"Year\" i18n-label=\"@@statements.list.year\" [options]=\"years\" formControlName=\"year\"></cn-select>"
+        },
+        {
+          "line": 11,
+          "attr": "fxFlex.lt-md",
+          "base": "fxFlex",
+          "suffix": "lt-md",
+          "src": "<cn-select fxFlex=\"0 0 160px\" fxFlex.lt-md=\"auto\" label=\"Year\" i18n-label=\"@@statements.list.year\" [options]=\"years\" formControlName=\"year\"></cn-select>"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/statements/components/statement-viewer/statement-viewer.component.html",
+      "count": 5,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 5,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"end\" fxLayoutGap=\"8px\" *ngIf=\"src\">"
+        },
+        {
+          "line": 5,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"end\" fxLayoutGap=\"8px\" *ngIf=\"src\">"
+        },
+        {
+          "line": 5,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"end\" fxLayoutGap=\"8px\" *ngIf=\"src\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/statements/components/tax-documents/tax-documents.component.html",
+      "count": 7,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-narrow\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-narrow\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 12,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<li *ngFor=\"let d of docs\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 12,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<li *ngFor=\"let d of docs\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 12,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<li *ngFor=\"let d of docs\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 14,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<div fxFlex fxLayout=\"column\">"
+        },
+        {
+          "line": 14,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxFlex fxLayout=\"column\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/transfers/components/add-payee/add-payee.component.html",
+      "count": 20,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<form class=\"mol-page mol-form\" [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<form class=\"mol-page mol-form\" [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 9,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        },
+        {
+          "line": 14,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        },
+        {
+          "line": 20,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 20,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 20,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 21,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<cn-masked-input formControlName=\"routingNumber\" i18n-label=\"@@transfers.addPayee.routing\" label=\"Routing number\" preset=\"routing\" [required]=\"true\" fxFlex></cn"
+        },
+        {
+          "line": 22,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<cn-masked-input formControlName=\"accountNumber\" i18n-label=\"@@transfers.addPayee.account\" label=\"Account number\" preset=\"account\" [required]=\"true\" fxFlex></cn"
+        },
+        {
+          "line": 24,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 24,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 24,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 25,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<cn-select formControlName=\"accountType\" i18n-label=\"@@transfers.addPayee.type\" label=\"Account type\" [options]=\"accountTypeOptions\" [required]=\"true\" fxFlex></c"
+        },
+        {
+          "line": 29,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 29,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 29,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 29,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/transfers/components/cancel-transfer/cancel-transfer.component.html",
+      "count": 3,
+      "hits": [
+        {
+          "line": 4,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div cnDialogActions fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 4,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div cnDialogActions fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 4,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div cnDialogActions fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/transfers/components/payee-list/payee-list.component.html",
+      "count": 13,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 5,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 5,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 11,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<li *ngFor=\"let p of payees; trackBy: trackById\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutAlign=\"space-between center\" fxLayoutAlign.lt-md=\"start stretch\""
+        },
+        {
+          "line": 11,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<li *ngFor=\"let p of payees; trackBy: trackById\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutAlign=\"space-between center\" fxLayoutAlign.lt-md=\"start stretch\""
+        },
+        {
+          "line": 11,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<li *ngFor=\"let p of payees; trackBy: trackById\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutAlign=\"space-between center\" fxLayoutAlign.lt-md=\"start stretch\""
+        },
+        {
+          "line": 11,
+          "attr": "fxLayoutAlign.lt-md",
+          "base": "fxLayoutAlign",
+          "suffix": "lt-md",
+          "src": "<li *ngFor=\"let p of payees; trackBy: trackById\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutAlign=\"space-between center\" fxLayoutAlign.lt-md=\"start stretch\""
+        },
+        {
+          "line": 11,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<li *ngFor=\"let p of payees; trackBy: trackById\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutAlign=\"space-between center\" fxLayoutAlign.lt-md=\"start stretch\""
+        },
+        {
+          "line": 12,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<div fxFlex fxLayout=\"column\">"
+        },
+        {
+          "line": 12,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxFlex fxLayout=\"column\">"
+        },
+        {
+          "line": 17,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutGap=\"4px\">"
+        },
+        {
+          "line": 17,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutGap=\"4px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/transfers/components/scheduled-transfers/scheduled-transfers.component.html",
+      "count": 2,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/transfers/components/transfer-confirmation/transfer-confirmation.component.html",
+      "count": 6,
+      "hits": [
+        {
+          "line": 2,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-confirmation\" fxLayout=\"column\" fxLayoutAlign=\"center center\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 2,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-confirmation\" fxLayout=\"column\" fxLayoutAlign=\"center center\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 2,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-confirmation\" fxLayout=\"column\" fxLayoutAlign=\"center center\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 24,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\">"
+        },
+        {
+          "line": 24,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\">"
+        },
+        {
+          "line": 24,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/transfers/components/transfer-detail/transfer-detail.component.html",
+      "count": 37,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\" *ngIf=\"item$ | async as item; else loading\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\" *ngIf=\"item$ | async as item; else loading\">"
+        },
+        {
+          "line": 6,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 6,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 6,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 7,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<dt fxFlex=\"220px\" i18n=\"@@transfers.transferDetail.confirmation\">Confirmation number</dt>"
+        },
+        {
+          "line": 8,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<dd fxFlex>{{ item.confirmationNumber }}</dd>"
+        },
+        {
+          "line": 10,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 10,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 10,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 11,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<dt fxFlex=\"220px\" i18n=\"@@transfers.transferDetail.amount\">Amount</dt>"
+        },
+        {
+          "line": 12,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<dd fxFlex>{{ item.amountMinor | minorAmount }}</dd>"
+        },
+        {
+          "line": 14,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 14,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 14,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 15,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<dt fxFlex=\"220px\" i18n=\"@@transfers.transferDetail.status\">Status</dt>"
+        },
+        {
+          "line": 16,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<dd fxFlex>{{ item.status | translate }}</dd>"
+        },
+        {
+          "line": 18,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 18,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 18,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 19,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<dt fxFlex=\"220px\" i18n=\"@@transfers.transferDetail.scheduledFor\">Scheduled for</dt>"
+        },
+        {
+          "line": 20,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<dd fxFlex>{{ item.scheduledFor | date:'longDate' }}</dd>"
+        },
+        {
+          "line": 22,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 22,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 22,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 23,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<dt fxFlex=\"220px\" i18n=\"@@transfers.transferDetail.arrival\">Expected arrival</dt>"
+        },
+        {
+          "line": 24,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<dd fxFlex>{{ item.estimatedArrival | date:'longDate' }}</dd>"
+        },
+        {
+          "line": 26,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 26,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 26,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 27,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<dt fxFlex=\"220px\" i18n=\"@@transfers.transferDetail.frequency\">Frequency</dt>"
+        },
+        {
+          "line": 28,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<dd fxFlex>{{ item.frequency | translate }}</dd>"
+        },
+        {
+          "line": 30,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 30,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 30,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-dl__row\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 31,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<dt fxFlex=\"220px\" i18n=\"@@transfers.transferDetail.memo\">Memo</dt>"
+        },
+        {
+          "line": 32,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<dd fxFlex>{{ item.memo || '—' }}</dd>"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/transfers/components/transfer-details-step/transfer-details-step.component.html",
+      "count": 15,
+      "hits": [
+        {
+          "line": 1,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<form [formGroup]=\"form\" novalidate fxLayout=\"column\" fxLayoutGap=\"12px\" class=\"mol-step\">"
+        },
+        {
+          "line": 1,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<form [formGroup]=\"form\" novalidate fxLayout=\"column\" fxLayoutGap=\"12px\" class=\"mol-step\">"
+        },
+        {
+          "line": 4,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 4,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 4,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 5,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<cn-select fxFlex formControlName=\"fromAccountId\" label=\"From\" i18n-label=\"@@transfer.from\" [options]=\"fromOptions\" [required]=\"true\""
+        },
+        {
+          "line": 8,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<cn-select *ngIf=\"form.controls.type.value === 'internal'\" fxFlex formControlName=\"toAccountId\" label=\"To\" i18n-label=\"@@transfer.to\" [options]=\"toOptions\" [req"
+        },
+        {
+          "line": 11,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<cn-select *ngIf=\"form.controls.type.value !== 'internal'\" fxFlex formControlName=\"payeeId\" label=\"To\" i18n-label=\"@@transfer.to\" [options]=\"(payees$ | async) ?"
+        },
+        {
+          "line": 16,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\" fxLayoutAlign=\"start start\">"
+        },
+        {
+          "line": 16,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\" fxLayoutAlign=\"start start\">"
+        },
+        {
+          "line": 16,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\" fxLayoutAlign=\"start start\">"
+        },
+        {
+          "line": 16,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\" fxLayoutAlign=\"start start\">"
+        },
+        {
+          "line": 17,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex=\"0 0 260px\" fxFlex.lt-md=\"1 1 auto\">"
+        },
+        {
+          "line": 17,
+          "attr": "fxFlex.lt-md",
+          "base": "fxFlex",
+          "suffix": "lt-md",
+          "src": "<mat-form-field appearance=\"outline\" fxFlex=\"0 0 260px\" fxFlex.lt-md=\"1 1 auto\">"
+        },
+        {
+          "line": 26,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/transfers/components/transfer-history/transfer-history.component.html",
+      "count": 2,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/transfers/components/transfer-limits-panel/transfer-limits-panel.component.html",
+      "count": 2,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-prose\" fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-prose\" fxLayout=\"column\" fxLayoutGap=\"12px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/transfers/components/transfer-review-step/transfer-review-step.component.html",
+      "count": 9,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-review\" fxLayout=\"column\" fxLayoutGap=\"16px\" *ngIf=\"draft\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page mol-review\" fxLayout=\"column\" fxLayoutGap=\"16px\" *ngIf=\"draft\">"
+        },
+        {
+          "line": 30,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<p *ngIf=\"isHighValue\" class=\"mol-note\" fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayoutAlign=\"start center\">"
+        },
+        {
+          "line": 30,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<p *ngIf=\"isHighValue\" class=\"mol-note\" fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayoutAlign=\"start center\">"
+        },
+        {
+          "line": 30,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<p *ngIf=\"isHighValue\" class=\"mol-note\" fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayoutAlign=\"start center\">"
+        },
+        {
+          "line": 39,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column-reverse\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 39,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column-reverse\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 39,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column-reverse\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 39,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column-reverse\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/transfers/components/transfer-schedule-step/transfer-schedule-step.component.html",
+      "count": 4,
+      "hits": [
+        {
+          "line": 1,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<form [formGroup]=\"form\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\" class=\"mol-step\">"
+        },
+        {
+          "line": 1,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<form [formGroup]=\"form\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\" class=\"mol-step\">"
+        },
+        {
+          "line": 4,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field *ngIf=\"form.controls.when.value === 'later'\" appearance=\"outline\" fxFlex=\"0 0 260px\">"
+        },
+        {
+          "line": 16,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field *ngIf=\"form.controls.frequency.value !== 'once'\" appearance=\"outline\" fxFlex=\"0 0 260px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/transfers/components/transfers-home/transfers-home.component.html",
+      "count": 11,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-page\" fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 4,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-entry-points\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 4,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div class=\"mol-entry-points\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 4,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-entry-points\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 5,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<cn-card fxFlex [padded]=\"true\" title=\"Between my accounts\" i18n-title=\"@@transfers.home.internal\">"
+        },
+        {
+          "line": 9,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<cn-card fxFlex [padded]=\"true\" title=\"To an external account\" i18n-title=\"@@transfers.home.external\" *ngIf=\"externalEntitled$ | async\">"
+        },
+        {
+          "line": 11,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutGap=\"8px\">"
+        },
+        {
+          "line": 11,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutGap=\"8px\">"
+        },
+        {
+          "line": 16,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<cn-card fxFlex [padded]=\"true\" title=\"Send with PayLink\" i18n-title=\"@@transfers.home.paylink\">"
+        },
+        {
+          "line": 20,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<cn-card fxFlex [padded]=\"true\" title=\"Wire\" i18n-title=\"@@transfers.home.wire\" *ngIf=\"wiresEnabled$ | async\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/features/transfers/components/verify-payee/verify-payee.component.html",
+      "count": 11,
+      "hits": [
+        {
+          "line": 3,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<form class=\"mol-page mol-form\" [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 3,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<form class=\"mol-page mol-form\" [formGroup]=\"form\" (ngSubmit)=\"submit()\" novalidate fxLayout=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 9,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        },
+        {
+          "line": 14,
+          "attr": "fxFlex",
+          "base": "fxFlex",
+          "suffix": null,
+          "src": "<mat-form-field appearance=\"outline\" fxFlex>"
+        },
+        {
+          "line": 22,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 22,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 22,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 22,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/shared/components/empty-state/empty-state.component.ts",
+      "count": 3,
+      "hits": [
+        {
+          "line": 6,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-empty\" fxLayout=\"column\" fxLayoutAlign=\"center center\" fxLayoutGap=\"8px\" role=\"status\">"
+        },
+        {
+          "line": 6,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div class=\"mol-empty\" fxLayout=\"column\" fxLayoutAlign=\"center center\" fxLayoutGap=\"8px\" role=\"status\">"
+        },
+        {
+          "line": 6,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-empty\" fxLayout=\"column\" fxLayoutAlign=\"center center\" fxLayoutGap=\"8px\" role=\"status\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/shared/components/error-banner/error-banner.component.ts",
+      "count": 7,
+      "hits": [
+        {
+          "line": 13,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-error-banner\" role=\"alert\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutAlign=\"space-between center\" fxLayoutGap=\"12px\" *ngIf=\"error\">"
+        },
+        {
+          "line": 13,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div class=\"mol-error-banner\" role=\"alert\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutAlign=\"space-between center\" fxLayoutGap=\"12px\" *ngIf=\"error\">"
+        },
+        {
+          "line": 13,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div class=\"mol-error-banner\" role=\"alert\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutAlign=\"space-between center\" fxLayoutGap=\"12px\" *ngIf=\"error\">"
+        },
+        {
+          "line": 13,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-error-banner\" role=\"alert\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutAlign=\"space-between center\" fxLayoutGap=\"12px\" *ngIf=\"error\">"
+        },
+        {
+          "line": 14,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutGap=\"12px\" fxLayoutAlign=\"start center\">"
+        },
+        {
+          "line": 14,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutGap=\"12px\" fxLayoutAlign=\"start center\">"
+        },
+        {
+          "line": 14,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div fxLayout=\"row\" fxLayoutGap=\"12px\" fxLayoutAlign=\"start center\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/shared/components/masked-number/masked-number.component.ts",
+      "count": 3,
+      "hits": [
+        {
+          "line": 11,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<span class=\"mol-masked\" fxLayout=\"row\" fxLayoutAlign=\"start center\" fxLayoutGap=\"4px\">"
+        },
+        {
+          "line": 11,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<span class=\"mol-masked\" fxLayout=\"row\" fxLayoutAlign=\"start center\" fxLayoutGap=\"4px\">"
+        },
+        {
+          "line": 11,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<span class=\"mol-masked\" fxLayout=\"row\" fxLayoutAlign=\"start center\" fxLayoutGap=\"4px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/shared/components/page-section/page-section.component.ts",
+      "count": 5,
+      "hits": [
+        {
+          "line": 8,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<header class=\"mol-section__head\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutAlign=\"space-between center\" fxLayoutAlign.lt-md=\"start start\" fxLayoutGap=\"8px"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<header class=\"mol-section__head\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutAlign=\"space-between center\" fxLayoutAlign.lt-md=\"start start\" fxLayoutGap=\"8px"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<header class=\"mol-section__head\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutAlign=\"space-between center\" fxLayoutAlign.lt-md=\"start start\" fxLayoutGap=\"8px"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayoutAlign.lt-md",
+          "base": "fxLayoutAlign",
+          "suffix": "lt-md",
+          "src": "<header class=\"mol-section__head\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutAlign=\"space-between center\" fxLayoutAlign.lt-md=\"start start\" fxLayoutGap=\"8px"
+        },
+        {
+          "line": 8,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<header class=\"mol-section__head\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutAlign=\"space-between center\" fxLayoutAlign.lt-md=\"start start\" fxLayoutGap=\"8px"
+        }
+      ]
+    },
+    {
+      "file": "src/app/shell/auth-callback/auth-callback.component.ts",
+      "count": 3,
+      "hits": [
+        {
+          "line": 15,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-callback\" fxLayout=\"column\" fxLayoutAlign=\"center center\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 15,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div class=\"mol-callback\" fxLayout=\"column\" fxLayoutAlign=\"center center\" fxLayoutGap=\"16px\">"
+        },
+        {
+          "line": 15,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-callback\" fxLayout=\"column\" fxLayoutAlign=\"center center\" fxLayoutGap=\"16px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/shell/idle-warning-dialog/idle-warning-dialog.component.ts",
+      "count": 3,
+      "hits": [
+        {
+          "line": 21,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div cnDialogActions fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 21,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div cnDialogActions fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        },
+        {
+          "line": 21,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div cnDialogActions fxLayout=\"row\" fxLayoutGap=\"8px\" fxLayoutAlign=\"end\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/shell/logged-out/logged-out.component.ts",
+      "count": 5,
+      "hits": [
+        {
+          "line": 10,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-logged-out\" fxLayout=\"column\" fxLayoutAlign=\"center center\">"
+        },
+        {
+          "line": 10,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div class=\"mol-logged-out\" fxLayout=\"column\" fxLayoutAlign=\"center center\">"
+        },
+        {
+          "line": 16,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div cnCardFooter fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\">"
+        },
+        {
+          "line": 16,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div cnCardFooter fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\">"
+        },
+        {
+          "line": 16,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div cnCardFooter fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutGap=\"8px\">"
+        }
+      ]
+    },
+    {
+      "file": "src/app/shell/sw-update-banner/sw-update-banner.component.ts",
+      "count": 4,
+      "hits": [
+        {
+          "line": 14,
+          "attr": "fxLayout",
+          "base": "fxLayout",
+          "suffix": null,
+          "src": "<div class=\"mol-sw-banner\" *ngIf=\"ready\" role=\"status\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutAlign=\"center center\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 14,
+          "attr": "fxLayout.lt-md",
+          "base": "fxLayout",
+          "suffix": "lt-md",
+          "src": "<div class=\"mol-sw-banner\" *ngIf=\"ready\" role=\"status\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutAlign=\"center center\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 14,
+          "attr": "fxLayoutAlign",
+          "base": "fxLayoutAlign",
+          "suffix": null,
+          "src": "<div class=\"mol-sw-banner\" *ngIf=\"ready\" role=\"status\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutAlign=\"center center\" fxLayoutGap=\"12px\">"
+        },
+        {
+          "line": 14,
+          "attr": "fxLayoutGap",
+          "base": "fxLayoutGap",
+          "suffix": null,
+          "src": "<div class=\"mol-sw-banner\" *ngIf=\"ready\" role=\"status\" fxLayout=\"row\" fxLayout.lt-md=\"column\" fxLayoutAlign=\"center center\" fxLayoutGap=\"12px\">"
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 <mol-page-section title="Transactions" i18n-title="@@accounts.transactions.title">
-  <div molSectionAction fxLayout="row" fxLayoutGap="8px">
+  <div class="mol-flex-row mol-gap-8" molSectionAction>
     <cn-button variant="tertiary" size="small" icon="download" (pressed)="exportCsv()" i18n="@@accounts.transactions.export">Download</cn-button>
   </div>
 
@@ -22,7 +22,7 @@
     (rowClick)="open($event)"
     (pageChange)="onPage($event)">
     <ng-template cnColumnDef="description" let-row>
-      <div fxLayout="column">
+      <div class="mol-flex-col">
         <span>{{ row.merchantName || row.description }}</span>
         <span class="mol-muted" *ngIf="row.merchantName && row.description !== row.merchantName">{{ row.description }}</span>
       </div>

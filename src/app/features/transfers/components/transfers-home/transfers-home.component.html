@@ -1,23 +1,23 @@
 <cn-page-header title="Transfers" i18n-title="@@transfers.home.title" lede="Move money between your accounts, to other people, or to accounts you hold elsewhere." i18n-lede="@@transfers.home.lede"></cn-page-header>
 
-<div class="mol-page" fxLayout="column" fxLayoutGap="16px">
-  <div class="mol-entry-points" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="12px">
-    <cn-card fxFlex [padded]="true" title="Between my accounts" i18n-title="@@transfers.home.internal">
+<div class="mol-page mol-flex-col mol-gap-16">
+  <div class="mol-entry-points mol-flex-row mol-flex-col--lt-md mol-gap-12">
+    <cn-card class="mol-flex" [padded]="true" title="Between my accounts" i18n-title="@@transfers.home.internal">
       <p class="mol-muted" i18n="@@transfers.home.internalBody">Immediate. No limit other than your available balance.</p>
       <cn-button variant="primary" routerLink="new" [queryParams]="{ type: 'internal' }" i18n="@@transfers.home.start">Start</cn-button>
     </cn-card>
-    <cn-card fxFlex [padded]="true" title="To an external account" i18n-title="@@transfers.home.external" *ngIf="externalEntitled$ | async">
+    <cn-card class="mol-flex" [padded]="true" title="To an external account" i18n-title="@@transfers.home.external" *ngIf="externalEntitled$ | async">
       <p class="mol-muted" i18n="@@transfers.home.externalBody">ACH, 1 to 3 business days. Daily limits apply and new accounts need verifying first.</p>
-      <div fxLayout="row" fxLayoutGap="8px">
+      <div class="mol-flex-row mol-gap-8">
         <cn-button variant="secondary" routerLink="new" [queryParams]="{ type: 'external' }" i18n="@@transfers.home.start">Start</cn-button>
         <cn-button variant="tertiary" routerLink="payees" i18n="@@transfers.home.payees">Manage accounts</cn-button>
       </div>
     </cn-card>
-    <cn-card fxFlex [padded]="true" title="Send with PayLink" i18n-title="@@transfers.home.paylink">
+    <cn-card class="mol-flex" [padded]="true" title="Send with PayLink" i18n-title="@@transfers.home.paylink">
       <p class="mol-muted" i18n="@@transfers.home.paylinkBody">To a person by mobile number or email. Usually arrives within minutes.</p>
       <cn-button variant="secondary" routerLink="new" [queryParams]="{ type: 'paylink' }" i18n="@@transfers.home.start">Start</cn-button>
     </cn-card>
-    <cn-card fxFlex [padded]="true" title="Wire" i18n-title="@@transfers.home.wire" *ngIf="wiresEnabled$ | async">
+    <cn-card class="mol-flex" [padded]="true" title="Wire" i18n-title="@@transfers.home.wire" *ngIf="wiresEnabled$ | async">
       <p class="mol-muted" i18n="@@transfers.home.wireBody">Same day if requested before 4:00 PM Eastern. A fee applies; see the schedule of fees.</p>
       <cn-button variant="secondary" routerLink="new" [queryParams]="{ type: 'wire' }" i18n="@@transfers.home.start">Start</cn-button>
     </cn-card>

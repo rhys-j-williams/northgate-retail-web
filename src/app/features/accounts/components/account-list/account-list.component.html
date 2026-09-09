@@ -1,6 +1,6 @@
 <cn-page-header title="Accounts" i18n-title="@@accounts.accountList.title" lede="Balances refresh each time you open this page." i18n-lede="@@accounts.accountList.lede"></cn-page-header>
 
-<div class="mol-page" fxLayout="column" fxLayoutGap="16px">
+<div class="mol-page mol-flex-col mol-gap-16">
   <mol-error-banner [error]="error$ | async" (retry)="reload()"></mol-error-banner>
 
   <mol-page-section title="Deposit and credit accounts" i18n-title="@@accounts.accountList.section">

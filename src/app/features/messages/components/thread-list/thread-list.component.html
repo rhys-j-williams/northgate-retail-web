@@ -1,6 +1,6 @@
 <cn-page-header title="Secure messages" i18n-title="@@messages.threadList.title" lede="We reply within 1 business day. For anything urgent, call the number on the back of your card." i18n-lede="@@messages.threadList.lede"></cn-page-header>
 
-<div class="mol-page" fxLayout="column" fxLayoutGap="16px">
+<div class="mol-page mol-flex-col mol-gap-16">
   <mol-error-banner [error]="error$ | async" (retry)="reload()"></mol-error-banner>
 
   <mol-page-section title="Conversations" i18n-title="@@messages.threadList.section">

@@ -1,11 +1,11 @@
 <cn-page-header title="Paperless" i18n-title="@@statements.paperless.title" lede="Choose paperless per account. Statements and notices are still available here for seven years either way." i18n-lede="@@statements.paperless.lede" backLink="/statements" backLabel="Statements"></cn-page-header>
 
-<div class="mol-page mol-narrow" fxLayout="column" fxLayoutGap="16px" *ngIf="accounts$ | async as accounts">
+<div class="mol-page mol-narrow mol-flex-col mol-gap-16" *ngIf="accounts$ | async as accounts">
   <mol-loading-panel *ngIf="!accounts.length" [rows]="4"></mol-loading-panel>
 
   <ul class="mol-paperless" *ngIf="accounts.length">
-    <li *ngFor="let a of accounts" fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="12px">
-      <div fxFlex fxLayout="column">
+    <li class="mol-flex-row mol-justify-between mol-align-center mol-gap-12" *ngFor="let a of accounts">
+      <div class="mol-flex mol-flex-col">
         <span>{{ a.nickname }}</span>
         <span class="mol-muted mol-small">Ending {{ a.accountNumber.slice(-4) }}</span>
       </div>
@@ -13,7 +13,7 @@
     </li>
   </ul>
 
-  <div fxLayout="row" fxLayoutAlign="space-between center" fxLayout.lt-md="column" fxLayoutGap="8px" *ngIf="accounts.length">
+  <div class="mol-flex-row mol-justify-between mol-align-center mol-flex-col--lt-md mol-gap-8" *ngIf="accounts.length">
     <a routerLink="/disclosures/esign" class="mol-link mol-small" i18n="@@statements.paperless.esign">Read the electronic delivery consent</a>
     <cn-button variant="secondary" size="small" [disabled]="allPaperless(accounts)" (pressed)="enrolAll(accounts)" i18n="@@statements.paperless.all">Go paperless on every account</cn-button>
   </div>

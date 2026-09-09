@@ -3,7 +3,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 @Component({
   selector: 'mol-empty-state',
   template: `
-    <div class="mol-empty" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="8px" role="status">
+    <div class="mol-empty mol-flex-col mol-justify-center mol-align-center mol-gap-8" role="status">
       <mat-icon *ngIf="icon" class="mol-empty__icon" aria-hidden="true">{{ icon }}</mat-icon>
       <h3 class="mol-empty__title">{{ title }}</h3>
       <p class="mol-empty__body" *ngIf="body">{{ body }}</p>

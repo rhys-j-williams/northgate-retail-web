@@ -1,8 +1,8 @@
 <ng-container *ngIf="txn$ | async as t; else loading">
   <cn-page-header [title]="t.merchantName || t.description" [eyebrow]="channelLabel(t.channel)" [backLink]="['/accounts', accountId]" backLabel="Back to account" i18n-backLabel="@@accounts.txn.back"></cn-page-header>
 
-  <div class="mol-page" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="16px">
-    <cn-card fxFlex="1 1 0" [padded]="true">
+  <div class="mol-page mol-flex-row mol-flex-col--lt-md mol-gap-16">
+    <cn-card class="mol-flex-1-1-0" [padded]="true">
       <p class="mol-amount" [class.mol-credit]="t.amountMinor > 0">{{ t.amountMinor | minorAmount:'USD':true }}</p>
       <dl class="mol-dl">
         <dt i18n="@@accounts.txn.status">Status</dt>
@@ -26,7 +26,7 @@
       </dl>
     </cn-card>
 
-    <cn-card fxFlex="0 0 320px" fxFlex.lt-md="1 1 auto" [padded]="true" title="Something not right?" i18n-title="@@accounts.txn.helpTitle">
+    <cn-card class="mol-flex-fixed-320 mol-flex-auto--lt-md" [padded]="true" title="Something not right?" i18n-title="@@accounts.txn.helpTitle">
       <ng-container *ngIf="t.disputeId; else disputeActions">
         <p i18n="@@accounts.txn.disputeOpen">A dispute is already open for this transaction. Reference {{ t.disputeId }}.</p>
         <a routerLink="/messages" class="mol-link" i18n="@@accounts.txn.disputeMessage">Ask about this dispute</a>

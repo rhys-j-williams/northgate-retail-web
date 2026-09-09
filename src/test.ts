@@ -13,17 +13,8 @@ getTestBed().initTestEnvironment(
   platformBrowserDynamicTesting(),
 );
 
-declare const require: {
-  context(path: string, deep?: boolean, filter?: RegExp): {
-    <T>(id: string): T;
-    keys(): string[];
-  };
-};
-
-// The CLI 15 karma builder discovers the specs itself (angular.json `test.options.include`). Pull
-// every source file under app/ into the bundle so the coverage denominator is the whole
-// application, not just what the specs happen to import. Sonar was reporting 61% while the
-// honest figure was in the thirties (MOL-2911). Module files are safe to import here; nothing
-// bootstraps. Keep this in step with codeCoverageExclude in angular.json.
-const sources = require.context('./app', true, /^(?!.*\.spec\.ts$).*\.ts$/);
-sources.keys().forEach(sources);
+// Spec discovery and the coverage denominator are both driven by `test.options.include` in
+// angular.json (`**/*.spec.ts` plus `app/**/*.ts`). The Angular 15 Karma builder disables webpack's
+// `require.context`, so every source file under app/ is added as an entry point instead of being
+// required from here; files without a spec still count towards coverage (MOL-2911). Module files
+// are safe to include; nothing bootstraps. Keep this in step with codeCoverageExclude.

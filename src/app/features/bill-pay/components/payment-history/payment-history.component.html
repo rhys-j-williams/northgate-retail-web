@@ -1,6 +1,6 @@
 <cn-page-header title="Payment history" i18n-title="@@billPay.paymentHistory.title"></cn-page-header>
 
-<div class="mol-page" fxLayout="column" fxLayoutGap="16px">
+<div class="mol-page mol-flex-col mol-gap-16">
   <mol-error-banner [error]="error$ | async" (retry)="reload()"></mol-error-banner>
 
   <mol-page-section title="Payment history" i18n-title="@@billPay.paymentHistory.section">

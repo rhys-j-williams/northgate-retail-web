@@ -1,0 +1,179 @@
+// Layout utilities (MOL-4471 / MOL-4478): the CSS equivalent of the @angular/flex-layout
+// directives this app used until Angular 15. One class per former directive value so templates
+// read the same way (`mol-flex-row mol-gap-16` for `fxLayout="row" fxLayoutGap="16px"`).
+//
+// The computed styles mirror what flex-layout 14 wrote inline, including its quirks (basis of
+// `0.000000001px` in columns, min/max on the main axis for sized fxFlex), so the visual diff in
+// docs/upgrade/MOL-4471/14-to-15/flex-layout-visual/ stays explainable. Only the `lt-md`
+// breakpoint was ever used; it is flex-layout's `screen and (max-width: 959.98px)`, which is also
+// the width Canopy's cn-page-shell collapses its nav at.
+
+$mol-bp-lt-md: 959.98px;
+$mol-gaps: 4, 6, 8, 12, 16, 24;
+$mol-flex-sized: 160, 220, 260, 320, 360;
+
+@mixin lt-md {
+  @media screen and (max-width: $mol-bp-lt-md) {
+    @content;
+  }
+}
+
+// ---- fxLayout ---------------------------------------------------------------------------------
+.mol-flex-row,
+.mol-flex-col {
+  box-sizing: border-box;
+  display: flex;
+}
+
+.mol-flex-row {
+  flex-direction: row;
+}
+
+.mol-flex-col {
+  flex-direction: column;
+}
+
+.mol-flex-wrap {
+  flex-wrap: wrap;
+}
+
+// ---- fxLayoutGap ------------------------------------------------------------------------------
+@each $gap in $mol-gaps {
+  .mol-gap-#{$gap} {
+    gap: #{$gap}px;
+  }
+}
+
+// ---- fxLayoutAlign ("main cross") -------------------------------------------------------------
+.mol-justify-start { justify-content: flex-start; }
+.mol-justify-center { justify-content: center; }
+.mol-justify-end { justify-content: flex-end; }
+.mol-justify-between { justify-content: space-between; }
+
+.mol-align-start { align-content: flex-start; align-items: flex-start; }
+.mol-align-center { align-content: center; align-items: center; }
+.mol-align-end { align-content: flex-end; align-items: flex-end; }
+.mol-align-stretch { align-content: stretch; align-items: stretch; }
+
+.mol-flex-row.mol-align-stretch { max-height: 100%; }
+.mol-flex-col.mol-align-stretch { max-width: 100%; }
+
+// ---- fxFlex (children) ------------------------------------------------------------------------
+// The main axis comes from the direct parent's direction, exactly as flex-layout resolved it.
+.mol-flex {
+  box-sizing: border-box;
+  flex: 1 1 0%;
+}
+
+.mol-flex-col > .mol-flex {
+  flex: 1 1 0.000000001px;
+}
+
+@each $grow in 1, 2, 5, 7 {
+  .mol-flex-#{$grow}-1-0 {
+    box-sizing: border-box;
+    flex: #{$grow} 1 0%;
+  }
+}
+
+.mol-flex-100 {
+  box-sizing: border-box;
+  flex: 1 1 100%;
+  max-width: 100%;
+}
+
+.mol-flex-col > .mol-flex-100 {
+  max-height: 100%;
+  max-width: none;
+}
+
+@each $px in $mol-flex-sized {
+  // fxFlex="<px>": grow/shrink 1 with a hard main-axis size.
+  .mol-flex-basis-#{$px} {
+    box-sizing: border-box;
+    flex: 1 1 #{$px}px;
+    max-width: #{$px}px;
+    min-width: #{$px}px;
+  }
+
+  // fxFlex="0 0 <px>": inflexible box.
+  .mol-flex-fixed-#{$px} {
+    box-sizing: border-box;
+    flex: 0 0 #{$px}px;
+    max-width: #{$px}px;
+    min-width: #{$px}px;
+  }
+
+  .mol-flex-col > .mol-flex-basis-#{$px},
+  .mol-flex-col > .mol-flex-fixed-#{$px} {
+    max-height: #{$px}px;
+    max-width: none;
+    min-height: #{$px}px;
+    min-width: auto;
+  }
+}
+
+// ---- .lt-md responsive suffixes ---------------------------------------------------------------
+@include lt-md {
+  .mol-flex-col--lt-md {
+    flex-direction: column;
+  }
+
+  .mol-flex-col-reverse--lt-md {
+    flex-direction: column-reverse;
+  }
+
+  @each $gap in $mol-gaps {
+    .mol-gap-#{$gap}--lt-md {
+      gap: #{$gap}px;
+    }
+  }
+
+  .mol-justify-start--lt-md { justify-content: flex-start; }
+  .mol-align-start--lt-md { align-content: flex-start; align-items: flex-start; }
+  .mol-align-stretch--lt-md { align-content: stretch; align-items: stretch; }
+
+  .mol-flex-col--lt-md.mol-align-stretch,
+  .mol-flex-col--lt-md.mol-align-stretch--lt-md,
+  .mol-flex-col-reverse--lt-md.mol-align-stretch,
+  .mol-flex-col-reverse--lt-md.mol-align-stretch--lt-md {
+    max-height: none;
+    max-width: 100%;
+  }
+
+  // Children of a container that stacks below md take their column-axis sizing.
+  .mol-flex-col--lt-md > .mol-flex,
+  .mol-flex-col-reverse--lt-md > .mol-flex {
+    flex: 1 1 0.000000001px;
+  }
+
+  .mol-flex-col--lt-md > .mol-flex-100,
+  .mol-flex-col-reverse--lt-md > .mol-flex-100 {
+    max-height: 100%;
+    max-width: none;
+  }
+
+  @each $px in $mol-flex-sized {
+    .mol-flex-col--lt-md > .mol-flex-basis-#{$px},
+    .mol-flex-col--lt-md > .mol-flex-fixed-#{$px},
+    .mol-flex-col-reverse--lt-md > .mol-flex-basis-#{$px},
+    .mol-flex-col-reverse--lt-md > .mol-flex-fixed-#{$px} {
+      max-height: #{$px}px;
+      max-width: none;
+      min-height: #{$px}px;
+      min-width: auto;
+    }
+  }
+
+  // fxFlex.lt-md="auto" / "1 1 auto": last so it wins over the parent-direction rules above.
+  .mol-flex-auto--lt-md,
+  .mol-flex-col > .mol-flex-auto--lt-md,
+  .mol-flex-col--lt-md > .mol-flex-auto--lt-md,
+  .mol-flex-col-reverse--lt-md > .mol-flex-auto--lt-md {
+    flex: 1 1 auto;
+    max-height: none;
+    max-width: none;
+    min-height: auto;
+    min-width: auto;
+  }
+}

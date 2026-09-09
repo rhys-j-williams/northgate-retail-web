@@ -12,7 +12,7 @@ import { AuthService } from '../../core/auth/auth.service';
 @Component({
   selector: 'mol-auth-callback',
   template: `
-    <div class="mol-callback" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="16px">
+    <div class="mol-callback mol-flex-col mol-justify-center mol-align-center mol-gap-16">
       <cn-progress [value]="null" label="Signing you in"></cn-progress>
       <p i18n="@@auth.signingIn">Signing you in to Northgate Online…</p>
     </div>

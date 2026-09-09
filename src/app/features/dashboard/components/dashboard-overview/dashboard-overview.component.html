@@ -1,14 +1,14 @@
 <cn-page-header [title]="(greeting$ | async) ?? ''" lede="Here is where things stand today." i18n-lede="@@dashboard.lede"></cn-page-header>
 
-<div class="mol-page mol-dashboard" fxLayout="column" fxLayoutGap="16px">
+<div class="mol-page mol-dashboard mol-flex-col mol-gap-16">
   <mol-promo-banner *ngIf="showPromo$ | async"></mol-promo-banner>
 
-  <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="16px" fxLayoutAlign="start stretch">
-    <div fxFlex="7 1 0" fxFlex.lt-md="1 1 auto" fxLayout="column" fxLayoutGap="16px">
+  <div class="mol-flex-row mol-flex-col--lt-md mol-gap-16 mol-justify-start mol-align-stretch">
+    <div class="mol-flex-7-1-0 mol-flex-auto--lt-md mol-flex-col mol-gap-16">
       <mol-accounts-summary [limit]="5"></mol-accounts-summary>
       <mol-recent-activity></mol-recent-activity>
     </div>
-    <div fxFlex="5 1 0" fxFlex.lt-md="1 1 auto" fxLayout="column" fxLayoutGap="16px">
+    <div class="mol-flex-5-1-0 mol-flex-auto--lt-md mol-flex-col mol-gap-16">
       <mol-quick-transfer></mol-quick-transfer>
       <mol-upcoming-payments></mol-upcoming-payments>
       <mol-alerts-digest></mol-alerts-digest>

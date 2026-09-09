@@ -5,7 +5,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
   selector: 'mol-page-section',
   template: `
     <section class="mol-section" [attr.aria-labelledby]="headingId">
-      <header class="mol-section__head" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-between center" fxLayoutAlign.lt-md="start start" fxLayoutGap="8px">
+      <header class="mol-section__head mol-flex-row mol-flex-col--lt-md mol-justify-between mol-align-center mol-justify-start--lt-md mol-align-start--lt-md mol-gap-8">
         <div>
           <h2 class="mol-section__title" [id]="headingId">{{ title }}</h2>
           <p class="mol-section__lede" *ngIf="lede">{{ lede }}</p>

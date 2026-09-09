@@ -11,7 +11,7 @@ import { filter } from 'rxjs/operators';
 @Component({
   selector: 'mol-sw-update-banner',
   template: `
-    <div class="mol-sw-banner" *ngIf="ready" role="status" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center center" fxLayoutGap="12px">
+    <div class="mol-sw-banner mol-flex-row mol-flex-col--lt-md mol-justify-center mol-align-center mol-gap-12" *ngIf="ready" role="status">
       <span i18n="@@sw.ready">A new version of Northgate Online is available.</span>
       <cn-button variant="secondary" size="small" (pressed)="reload()" i18n="@@sw.reload">Refresh now</cn-button>
       <cn-button variant="tertiary" size="small" (pressed)="ready = false" i18n="@@sw.later">Later</cn-button>

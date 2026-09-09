@@ -1,5 +1,5 @@
 <ng-container *ngIf="transfer$ | async as t; else loading">
-  <div class="mol-page mol-confirmation" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="16px">
+  <div class="mol-page mol-confirmation mol-flex-col mol-justify-center mol-align-center mol-gap-16">
     <mat-icon class="mol-confirmation__icon" [class.mol-confirmation__icon--failed]="t.status === 'failed'" aria-hidden="true">{{ t.status === 'failed' ? 'error_outline' : 'check_circle' }}</mat-icon>
     <h1 class="mol-confirmation__title">{{ headline(t) }}</h1>
     <p class="mol-amount">{{ t.amountMinor | minorAmount }}</p>
@@ -21,7 +21,7 @@
 
     <p class="mol-muted mol-small" *ngIf="t.status !== 'failed'" i18n="@@transfers.confirm.note">We have sent a confirmation to your alert channels. Scheduled transfers can be cancelled up to 5:00 PM Eastern the business day before.</p>
 
-    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="8px">
+    <div class="mol-flex-row mol-flex-col--lt-md mol-gap-8">
       <cn-button variant="primary" routerLink="/dashboard" i18n="@@action.done">Done</cn-button>
       <cn-button variant="secondary" routerLink="/transfers/new" i18n="@@transfers.confirm.another">Make another transfer</cn-button>
       <cn-button variant="tertiary" icon="print" (pressed)="print()" i18n="@@action.print">Print</cn-button>

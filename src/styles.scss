@@ -11,6 +11,7 @@
 @use 'themes' as canopy;
 @use 'tokens' as tokens;
 @use 'material-icons';
+@use 'layout';
 
 @include canopy.theme();
 

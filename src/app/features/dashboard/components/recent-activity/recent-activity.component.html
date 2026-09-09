@@ -1,9 +1,10 @@
 <cn-card title="Recent activity" i18n-title="@@dashboard.recentActivity.title" [padded]="false" class="mol-widget">
   <ng-container *ngIf="rows$ | async as rows; else loading">
     <ul class="mol-activity" *ngIf="rows.length; else empty">
-      <li *ngFor="let row of rows; trackBy: trackByTxn" class="mol-activity__row" fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="12px"
+      <li *ngFor="let row of rows; trackBy: trackByTxn"
+          class="mol-activity__row mol-flex-row mol-justify-between mol-align-center mol-gap-12"
           [routerLink]="['/accounts', row.account.accountId, 'transactions', row.transaction.transactionId]">
-        <div fxFlex fxLayout="column">
+        <div class="mol-flex mol-flex-col">
           <span class="mol-activity__desc">{{ row.transaction.merchantName || row.transaction.description }}</span>
           <span class="mol-muted">{{ row.account | accountLabel:'short' }} &middot; {{ row.transaction.postedAt | relativeDate }}</span>
         </div>

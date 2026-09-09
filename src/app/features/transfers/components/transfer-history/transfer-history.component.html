@@ -1,6 +1,6 @@
 <cn-page-header title="Transfer history" i18n-title="@@transfers.transferHistory.title" lede="Up to 24 months of transfers. Older activity is on your statements." i18n-lede="@@transfers.transferHistory.lede"></cn-page-header>
 
-<div class="mol-page" fxLayout="column" fxLayoutGap="16px">
+<div class="mol-page mol-flex-col mol-gap-16">
   <mol-error-banner [error]="error$ | async" (retry)="reload()"></mol-error-banner>
 
   <mol-page-section title="Transfer history" i18n-title="@@transfers.transferHistory.section">

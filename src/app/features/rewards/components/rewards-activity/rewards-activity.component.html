@@ -1,6 +1,6 @@
 <cn-page-header title="Points activity" i18n-title="@@rewards.rewardsActivity.title" [backLink]="'/rewards'"></cn-page-header>
 
-<div class="mol-page" fxLayout="column" fxLayoutGap="16px">
+<div class="mol-page mol-flex-col mol-gap-16">
   <mol-error-banner [error]="error$ | async" (retry)="reload()"></mol-error-banner>
 
   <mol-page-section title="Earned and redeemed" i18n-title="@@rewards.rewardsActivity.section">

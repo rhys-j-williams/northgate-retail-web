@@ -1,6 +1,6 @@
 <cn-page-header title="Scheduled payments" i18n-title="@@billPay.scheduledPayments.title"></cn-page-header>
 
-<div class="mol-page" fxLayout="column" fxLayoutGap="16px">
+<div class="mol-page mol-flex-col mol-gap-16">
   <mol-error-banner [error]="error$ | async" (retry)="reload()"></mol-error-banner>
 
   <mol-page-section title="Scheduled payments" i18n-title="@@billPay.scheduledPayments.section">

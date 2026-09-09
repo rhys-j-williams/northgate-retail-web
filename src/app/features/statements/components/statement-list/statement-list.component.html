@@ -1,14 +1,14 @@
 <cn-page-header title="Statements and documents" i18n-title="@@statements.list.title" lede="Monthly and annual statements are kept for seven years. Notices are kept for two." i18n-lede="@@statements.list.lede"></cn-page-header>
 
-<div class="mol-page" fxLayout="column" fxLayoutGap="16px">
-  <nav fxLayout="row" fxLayoutGap="16px" class="mol-subnav">
+<div class="mol-page mol-flex-col mol-gap-16">
+  <nav class="mol-subnav mol-flex-row mol-gap-16">
     <a routerLink="tax" i18n="@@statements.list.tax">Tax documents</a>
     <a routerLink="paperless" i18n="@@statements.list.paperless">Paperless settings</a>
   </nav>
 
-  <form [formGroup]="form" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="16px">
-    <cn-select fxFlex="1 1 0" label="Account" i18n-label="@@statements.list.account" [options]="(accountOptions$ | async) || []" formControlName="accountId"></cn-select>
-    <cn-select fxFlex="0 0 160px" fxFlex.lt-md="auto" label="Year" i18n-label="@@statements.list.year" [options]="years" formControlName="year"></cn-select>
+  <form class="mol-flex-row mol-flex-col--lt-md mol-gap-16" [formGroup]="form">
+    <cn-select class="mol-flex-1-1-0" label="Account" i18n-label="@@statements.list.account" [options]="(accountOptions$ | async) || []" formControlName="accountId"></cn-select>
+    <cn-select class="mol-flex-fixed-160 mol-flex-auto--lt-md" label="Year" i18n-label="@@statements.list.year" [options]="years" formControlName="year"></cn-select>
   </form>
 
   <mol-error-banner [error]="error$ | async" (retry)="retry()"></mol-error-banner>

@@ -1,6 +1,6 @@
 <cn-page-header title="Bill pay" i18n-title="@@billPay.billPayHome.title" lede="Bills due in the next 30 days. eBills update automatically." i18n-lede="@@billPay.billPayHome.lede"></cn-page-header>
 
-<div class="mol-page" fxLayout="column" fxLayoutGap="16px">
+<div class="mol-page mol-flex-col mol-gap-16">
   <mol-error-banner [error]="error$ | async" (retry)="reload()"></mol-error-banner>
 
   <mol-page-section title="Due soon" i18n-title="@@billPay.billPayHome.section">

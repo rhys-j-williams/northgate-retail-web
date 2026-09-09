@@ -3,11 +3,11 @@
     [breadcrumbs]="[{ label: 'Accounts', link: '/accounts' }, { label: d.nickname }]">
   </cn-page-header>
 
-  <div class="mol-page" fxLayout="column" fxLayoutGap="16px">
-    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="16px" fxLayoutAlign="start stretch">
-      <cn-account-card fxFlex="2 1 0" [account]="summary(d)" [showAvailable]="!isLiability(d)" [allowHideBalance]="true"></cn-account-card>
+  <div class="mol-page mol-flex-col mol-gap-16">
+    <div class="mol-flex-row mol-flex-col--lt-md mol-gap-16 mol-justify-start mol-align-stretch">
+      <cn-account-card class="mol-flex-2-1-0" [account]="summary(d)" [showAvailable]="!isLiability(d)" [allowHideBalance]="true"></cn-account-card>
 
-      <cn-card fxFlex="1 1 0" [padded]="true" title="Details" i18n-title="@@accounts.detail.detailsTitle">
+      <cn-card class="mol-flex-1-1-0" [padded]="true" title="Details" i18n-title="@@accounts.detail.detailsTitle">
         <dl class="mol-dl">
           <ng-container *ngIf="isLiability(d)">
             <dt i18n="@@accounts.detail.paymentDue">Payment due</dt>

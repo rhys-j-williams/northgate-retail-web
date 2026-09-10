@@ -18,7 +18,7 @@ import { selectIdleWarningSeconds } from '../../core/store/session/session.reduc
       <p class="mol-idle__countdown" role="timer" aria-live="polite" i18n="@@idle.countdown">
         You will be signed out in {{ (seconds$ | async) ?? 0 }} seconds.
       </p>
-      <div cnDialogActions fxLayout="row" fxLayoutGap="8px" fxLayoutAlign="end">
+      <div class="mol-flex-row mol-gap-8 mol-justify-end mol-align-stretch" cnDialogActions>
         <cn-button variant="tertiary" (pressed)="signOut()" i18n="@@idle.signOut">Sign out now</cn-button>
         <cn-button variant="primary" (pressed)="stay()" molAutofocus i18n="@@idle.stay">I'm still here</cn-button>
       </div>

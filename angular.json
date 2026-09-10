@@ -182,6 +182,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
+            "include": ["**/*.spec.ts", "app/**/*.ts"],
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
@@ -214,6 +215,14 @@
           }
         }
       }
+    }
+  },
+  "schematics": {
+    "@angular-eslint/schematics:application": {
+      "setParserOptionsProject": true
+    },
+    "@angular-eslint/schematics:library": {
+      "setParserOptionsProject": true
     }
   }
 }

@@ -1,7 +1,7 @@
 <cn-page-header title="Profile and security" i18n-title="@@profile.home.title"></cn-page-header>
 
-<div class="mol-page" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="16px">
-  <cn-card fxFlex="1 1 0" [padded]="true" title="Contact details" i18n-title="@@profile.home.contact" *ngIf="profile$ | async as p">
+<div class="mol-page mol-flex-row mol-flex-col--lt-md mol-gap-16">
+  <cn-card class="mol-flex-1-1-0" [padded]="true" title="Contact details" i18n-title="@@profile.home.contact" *ngIf="profile$ | async as p">
     <dl class="mol-dl">
       <dt i18n="@@profile.home.name">Name</dt>
       <dd>{{ p.displayName }}</dd>
@@ -16,29 +16,29 @@
       <dt i18n="@@profile.home.since">Customer since</dt>
       <dd>{{ p.enrolledAt | date:'MMMM y' }}</dd>
     </dl>
-    <div fxLayout="row" fxLayoutGap="8px" fxLayout.lt-md="column">
+    <div class="mol-flex-row mol-gap-8 mol-flex-col--lt-md">
       <cn-button variant="secondary" size="small" routerLink="contact" i18n="@@profile.home.editContact">Edit email and mobile</cn-button>
       <cn-button variant="tertiary" size="small" routerLink="address" i18n="@@profile.home.editAddress">Change address</cn-button>
     </div>
   </cn-card>
 
-  <cn-card fxFlex="1 1 0" [padded]="true" title="Security" i18n-title="@@profile.home.security">
+  <cn-card class="mol-flex-1-1-0" [padded]="true" title="Security" i18n-title="@@profile.home.security">
     <ng-container *ngIf="posture$ | async as posture; else postureLoading">
-      <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px" class="mol-posture">
+      <div class="mol-posture mol-flex-row mol-justify-start mol-align-center mol-gap-8">
         <cn-badge [tone]="postureTone(posture)">{{ postureLabel(posture) }}</cn-badge>
         <span class="mol-muted" i18n="@@profile.home.postureBlurb">{{ posture.score }} of 3 checks passed</span>
       </div>
       <ul class="mol-checks">
-        <li fxLayout="row" fxLayoutGap="8px" fxLayoutAlign="start center">
+        <li class="mol-flex-row mol-gap-8 mol-justify-start mol-align-center">
           <mat-icon [class.mol-ok]="posture.mfaMethod !== 'sms'" [class.mol-warn]="posture.mfaMethod === 'sms'" aria-hidden="true">{{ posture.mfaMethod !== 'sms' ? 'check_circle' : 'warning' }}</mat-icon>
           <span *ngIf="posture.mfaMethod !== 'sms'" i18n="@@profile.home.mfaOk">Two-step verification uses {{ posture.mfaMethod === 'push' ? 'push notifications' : 'an authenticator app' }}</span>
           <span *ngIf="posture.mfaMethod === 'sms'" i18n="@@profile.home.mfaSms">Two-step verification uses text messages. An authenticator app is safer.</span>
         </li>
-        <li fxLayout="row" fxLayoutGap="8px" fxLayoutAlign="start center">
+        <li class="mol-flex-row mol-gap-8 mol-justify-start mol-align-center">
           <mat-icon [class.mol-ok]="posture.passwordAgeDays <= 365" [class.mol-warn]="posture.passwordAgeDays > 365" aria-hidden="true">{{ posture.passwordAgeDays <= 365 ? 'check_circle' : 'warning' }}</mat-icon>
           <span i18n="@@profile.home.passwordAge">Password last changed {{ posture.passwordAgeDays }} days ago</span>
         </li>
-        <li fxLayout="row" fxLayoutGap="8px" fxLayoutAlign="start center">
+        <li class="mol-flex-row mol-gap-8 mol-justify-start mol-align-center">
           <mat-icon [class.mol-ok]="posture.recentFailures < 3" [class.mol-warn]="posture.recentFailures >= 3" aria-hidden="true">{{ posture.recentFailures < 3 ? 'check_circle' : 'warning' }}</mat-icon>
           <span i18n="@@profile.home.failures">{{ posture.recentFailures }} failed sign-in attempts recently, {{ posture.deviceCount }} trusted devices</span>
         </li>

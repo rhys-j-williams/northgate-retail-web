@@ -1,6 +1,6 @@
 <cn-page-header title="Sign-in activity" i18n-title="@@profile.activity.title" lede="The last 30 days of sign-ins to Northgate Online and the mobile app." i18n-lede="@@profile.activity.lede" backLink="/profile/security" backLabel="Security"></cn-page-header>
 
-<div class="mol-page" fxLayout="column" fxLayoutGap="16px">
+<div class="mol-page mol-flex-col mol-gap-16">
   <ng-container *ngIf="history$ | async as list; else loading">
     <mol-error-banner *ngIf="failures(list) >= 3" [error]="{ kind: 'unknown', status: 0, title: 'There have been ' + failures(list) + ' failed sign-in attempts recently.', detail: 'If this was not you, change your password and remove any trusted devices you do not recognise.', retryable: false, url: '', method: '' }" [showRetry]="false"></mol-error-banner>
     <table class="mol-table" *ngIf="list.length; else empty">

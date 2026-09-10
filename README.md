@@ -1,6 +1,6 @@
 # Northgate Online (`retail-web`)
 
-Consumer online banking. Angular 14, NgRx, Canopy. Owned by @northgate/retail-digital (Charlotte
+Consumer online banking. Angular 15, NgRx, Canopy. Owned by @northgate/retail-digital (Charlotte
 and Plano, with the payments work shared with @northgate/payments-platform in Jersey City and
 Chennai). Jira project `MOL`. On call rota is in the team space; the app is Tier 1 so the rota is
 real.
@@ -15,24 +15,28 @@ served from here; it has been its own repo since MOL-3410) but the shape is righ
 |---|---|---|
 | Node | 16.20.2 | `.nvmrc`, Jenkins agent label `nodejs16-rhel8` |
 | npm | 8.19.4 | comes with Node 16 |
-| Angular | 14.3.0 | `package.json`, exact |
-| Angular CLI | 14.2.13 | `package.json` |
-| TypeScript | 4.7.4 | `package.json` |
+| Angular | 15.2.10 | `package.json`, exact |
+| Angular CLI | 15.2.11 | `package.json` |
+| Angular Material / CDK | 15.2.9 (MDC components) | `package.json` |
+| TypeScript | 4.9.5 | `package.json` |
 | RxJS | 7.5.7 | `package.json` |
-| NgRx | 14.3.3 | `package.json` |
-| Canopy UI | 3.7.2 | `package.json`, `@northgate/canopy-ui` |
-| Lantern SDK | 2.4.1 | `package.json`, `@northgate/lantern-sdk` |
+| zone.js | 0.12.0 | `package.json` |
+| NgRx | 15.4.0 | `package.json` |
+| Canopy UI | 4.0.0 | `package.json`, `@northgate/canopy-ui` |
+| Lantern SDK | 5.0.0 | `package.json`, `@northgate/lantern-sdk` |
 
 Everything is exact-pinned. `save-exact=true` is in `.npmrc` so `npm install <thing>` does the
 right thing. Do not add `^` back; we have been bitten (MOL-2270, the zone.js patch that broke
 `fakeAsync` across 40 specs overnight).
 
 `@types/node` is pinned to 16.18.11 on purpose. Newer 16.x builds ship `Disposable` declarations
-that TypeScript 4.7 cannot parse and the build dies with TS2304. See BUILD notes in MOL-4433.
+that TypeScript 4.7 could not parse and the build died with TS2304 (MOL-4433). TypeScript 4.9
+parses them, but the pin stays until the next deliberate bump.
 
-The Angular upgrade is deferred, again. `docs/adr/0014-defer-angular-upgrade-2024.md` has the
-reasons and `backlog/MOL-4471/` has the epic. Do not `ng update` on `develop`. Someone tried on
-`feature/MOL-3801-angular15-spike`; `SPIKE_NOTES.md` is what came back.
+Angular 14 -> 15 landed under MOL-4471 (`docs/adr/0015-angular-14-to-15.md`, which supersedes
+0014; artefacts in `docs/upgrade/MOL-4471/14-to-15/`, matrix in
+`docs/upgrade/MOL-4471/COMPATIBILITY_MATRIX.md`, release notes in `CHANGELOG.md`). One major at a
+time: 16 is a separate hop with its own ticket. Do not `ng update` on `develop`; always a feature branch.
 
 ## Running it
 
@@ -48,10 +52,12 @@ from `mock-external/estate-up.sh` at the repo root; without them you get a login
 nothing. Keystone (the mock, port 4400) accepts any customer from `@northgate/domain-fixtures` with
 the OTP `000000`.
 
-`postinstall` runs `ngcc` because the Lantern SDK is still shipped as View Engine (LNTN-140, the
-vendor's Ivy build has been "next quarter" since 2022). If `npm ci` hangs for a minute on the
-postinstall line that is what it is doing. Do not remove it; the app compiles without it and then
-fails at runtime with `LanternModule.forRoot is not a function`, which is a fun one at 02:00.
+There is no `postinstall` step any more. The `ngcc` run that used to be there existed for the
+View Engine Lantern SDK 2.x; Lantern 5.0.0 is partial Ivy and every other Angular package in the
+tree is Ivy, so `ngcc` has nothing to do (proof in
+`docs/upgrade/MOL-4471/14-to-15/logs/ngcc-proof.txt`). If a View Engine package ever comes back,
+the build fails at compile time with a clear "not compatible with Angular Ivy" error rather than
+at runtime.
 
 Runtime configuration is `src/assets/config/env.json`, loaded by an `APP_INITIALIZER` before
 anything else. Per-developer overrides go in `env.local.json` (gitignored). In every deployed
@@ -127,4 +133,8 @@ gates it (rewards, messages, onboarding).
   in that order. The threshold is runtime config (`transfers.mfaStepUpThresholdMinor`) and the
   claim age is ten minutes (`mfaMaxAgeSeconds`). `MfaStepUpGuard`.
 - Why is the Iris chat widget not here? MOL-3410, it is its own repo and loads from the CDN.
-- Why flex-layout? 2020. It is on the deferral list.
+- Why no flex-layout? It was end of life with Angular 14. MOL-4471 replaced every `fxLayout`/
+  `fxFlex`/`fxLayoutGap`/`fxLayoutAlign` with the `mol-*` utility classes in
+  `src/styles/_layout.scss` (responsive `.lt-md` variants are media queries at the estate `md`
+  breakpoint). The pixel-level evidence is in
+  `docs/upgrade/MOL-4471/14-to-15/flex-layout-visual/`.

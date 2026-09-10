@@ -1,6 +1,6 @@
 <cn-page-header title="Review your transfer" i18n-title="@@transfers.review.title" backLink="/transfers/new" backLabel="Edit" i18n-backLabel="@@action.edit"></cn-page-header>
 
-<div class="mol-page mol-review" fxLayout="column" fxLayoutGap="16px" *ngIf="draft">
+<div class="mol-page mol-review mol-flex-col mol-gap-16" *ngIf="draft">
   <mol-error-banner [error]="error" [showRetry]="error?.retryable ?? false" (retry)="submit()"></mol-error-banner>
 
   <cn-card [padded]="true" [highlight]="true">
@@ -27,7 +27,7 @@
     </dl>
   </cn-card>
 
-  <p *ngIf="isHighValue" class="mol-note" fxLayout="row" fxLayoutGap="8px" fxLayoutAlign="start center">
+  <p *ngIf="isHighValue" class="mol-note mol-flex-row mol-gap-8 mol-justify-start mol-align-center">
     <mat-icon aria-hidden="true">verified_user</mat-icon>
     <span i18n="@@transfers.review.stepUpDone">You verified your identity {{ mfaAgeSeconds ?? 0 }} seconds ago. Large transfers need a recent verification.</span>
   </p>
@@ -36,7 +36,7 @@
     I have checked the recipient details. Transfers to the wrong account may not be recoverable.
   </cn-checkbox>
 
-  <div fxLayout="row" fxLayout.lt-md="column-reverse" fxLayoutGap="8px" fxLayoutAlign="end">
+  <div class="mol-flex-row mol-flex-col-reverse--lt-md mol-gap-8 mol-justify-end mol-align-stretch">
     <cn-button variant="tertiary" (pressed)="edit()" [disabled]="busy" i18n="@@action.edit">Edit</cn-button>
     <cn-button variant="primary" [loading]="busy" [disabled]="needsAcknowledgement && !acknowledged" (pressed)="submit()" i18n="@@transfers.review.confirm">Confirm transfer</cn-button>
   </div>

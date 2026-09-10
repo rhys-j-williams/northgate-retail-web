@@ -1,0 +1,38 @@
+    Limiting migration to: src
+    Migrating components:
+    autocomplete
+    form-field
+    input
+    option
+    optgroup
+    select
+    button
+    card
+    checkbox
+    chips
+    dialog
+    list
+    menu
+    paginator
+    progress-bar
+    progress-spinner
+    radio
+    slide-toggle
+    slider
+    snack-bar
+    table
+    tabs
+    tooltip
+    Migrating project: retail-web
+    Successfully migrated the project.
+UPDATE src/app/shell/idle-warning-dialog/idle-warning-dialog.component.ts (2013 bytes)
+UPDATE src/app/shell/shell/shell.component.ts (4610 bytes)
+UPDATE src/app/shared/shared.module.ts (4056 bytes)
+UPDATE src/app/features/accounts/components/transaction-list/transaction-list.component.ts (4323 bytes)
+UPDATE src/app/features/accounts/components/export-transactions/export-transactions.component.ts (1336 bytes)
+UPDATE src/app/features/accounts/components/rename-account/rename-account.component.ts (1230 bytes)
+UPDATE src/app/features/transfers/components/cancel-transfer/cancel-transfer.component.ts (1223 bytes)
+UPDATE src/app/features/bill-pay/components/cancel-payment/cancel-payment.component.ts (1192 bytes)
+UPDATE src/app/features/cards/components/lock-card/lock-card.component.ts (1182 bytes)
+UPDATE src/app/features/alerts/components/test-alert/test-alert.component.ts (1184 bytes)
+UPDATE src/app/features/cards/components/card-list/card-list.component.ts (3038 bytes)

@@ -1,0 +1,4 @@
+Initial Chunk Files             | Names                                   |  Raw Size | Estimated Transfer Size
+| Initial Total                           |   2.27 MB |               411.43 kB
+Lazy Chunk Files                | Names                                   |  Raw Size | Estimated Transfer Size
+Warning: bundle initial exceeded maximum budget. Budget 2.00 MB was not met by 274.86 kB with a total of 2.27 MB.

@@ -1,6 +1,6 @@
 <cn-page-header title="Alerts" i18n-title="@@alerts.home.title" lede="Choose what we tell you about and how. Some alerts are required by law and cannot be switched off." i18n-lede="@@alerts.home.lede"></cn-page-header>
 
-<div class="mol-page" fxLayout="column" fxLayoutGap="16px">
+<div class="mol-page mol-flex-col mol-gap-16">
   <cn-tabs [selectedIndex]="tab" (selectedChange)="onTab($event)" ariaLabel="Alert settings">
     <ng-template cnTab label="Preferences" i18n-label="@@alerts.home.tabPreferences">
       <mol-alert-preferences></mol-alert-preferences>

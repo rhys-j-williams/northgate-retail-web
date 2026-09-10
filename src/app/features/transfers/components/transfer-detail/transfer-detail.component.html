@@ -1,35 +1,35 @@
 <cn-page-header title="Transfer" i18n-title="@@transfers.transferDetail.title" [backLink]="'/transfers'"></cn-page-header>
 
-<div class="mol-page" fxLayout="column" fxLayoutGap="16px" *ngIf="item$ | async as item; else loading">
+<div class="mol-page mol-flex-col mol-gap-16" *ngIf="item$ | async as item; else loading">
   <cn-card [padded]="true">
     <dl class="mol-dl">
-      <div class="mol-dl__row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="16px">
-        <dt fxFlex="220px" i18n="@@transfers.transferDetail.confirmation">Confirmation number</dt>
-        <dd fxFlex>{{ item.confirmationNumber }}</dd>
+      <div class="mol-dl__row mol-flex-row mol-flex-col--lt-md mol-gap-16">
+        <dt class="mol-flex-basis-220" i18n="@@transfers.transferDetail.confirmation">Confirmation number</dt>
+        <dd class="mol-flex">{{ item.confirmationNumber }}</dd>
       </div>
-      <div class="mol-dl__row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="16px">
-        <dt fxFlex="220px" i18n="@@transfers.transferDetail.amount">Amount</dt>
-        <dd fxFlex>{{ item.amountMinor | minorAmount }}</dd>
+      <div class="mol-dl__row mol-flex-row mol-flex-col--lt-md mol-gap-16">
+        <dt class="mol-flex-basis-220" i18n="@@transfers.transferDetail.amount">Amount</dt>
+        <dd class="mol-flex">{{ item.amountMinor | minorAmount }}</dd>
       </div>
-      <div class="mol-dl__row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="16px">
-        <dt fxFlex="220px" i18n="@@transfers.transferDetail.status">Status</dt>
-        <dd fxFlex>{{ item.status | translate }}</dd>
+      <div class="mol-dl__row mol-flex-row mol-flex-col--lt-md mol-gap-16">
+        <dt class="mol-flex-basis-220" i18n="@@transfers.transferDetail.status">Status</dt>
+        <dd class="mol-flex">{{ item.status | translate }}</dd>
       </div>
-      <div class="mol-dl__row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="16px">
-        <dt fxFlex="220px" i18n="@@transfers.transferDetail.scheduledFor">Scheduled for</dt>
-        <dd fxFlex>{{ item.scheduledFor | date:'longDate' }}</dd>
+      <div class="mol-dl__row mol-flex-row mol-flex-col--lt-md mol-gap-16">
+        <dt class="mol-flex-basis-220" i18n="@@transfers.transferDetail.scheduledFor">Scheduled for</dt>
+        <dd class="mol-flex">{{ item.scheduledFor | date:'longDate' }}</dd>
       </div>
-      <div class="mol-dl__row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="16px">
-        <dt fxFlex="220px" i18n="@@transfers.transferDetail.arrival">Expected arrival</dt>
-        <dd fxFlex>{{ item.estimatedArrival | date:'longDate' }}</dd>
+      <div class="mol-dl__row mol-flex-row mol-flex-col--lt-md mol-gap-16">
+        <dt class="mol-flex-basis-220" i18n="@@transfers.transferDetail.arrival">Expected arrival</dt>
+        <dd class="mol-flex">{{ item.estimatedArrival | date:'longDate' }}</dd>
       </div>
-      <div class="mol-dl__row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="16px">
-        <dt fxFlex="220px" i18n="@@transfers.transferDetail.frequency">Frequency</dt>
-        <dd fxFlex>{{ item.frequency | translate }}</dd>
+      <div class="mol-dl__row mol-flex-row mol-flex-col--lt-md mol-gap-16">
+        <dt class="mol-flex-basis-220" i18n="@@transfers.transferDetail.frequency">Frequency</dt>
+        <dd class="mol-flex">{{ item.frequency | translate }}</dd>
       </div>
-      <div class="mol-dl__row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="16px">
-        <dt fxFlex="220px" i18n="@@transfers.transferDetail.memo">Memo</dt>
-        <dd fxFlex>{{ item.memo || '—' }}</dd>
+      <div class="mol-dl__row mol-flex-row mol-flex-col--lt-md mol-gap-16">
+        <dt class="mol-flex-basis-220" i18n="@@transfers.transferDetail.memo">Memo</dt>
+        <dd class="mol-flex">{{ item.memo || '—' }}</dd>
       </div>
     </dl>
   </cn-card>

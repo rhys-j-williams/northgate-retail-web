@@ -1,20 +1,38 @@
-<form [formGroup]="form" novalidate fxLayout="column" fxLayoutGap="12px" class="mol-step">
+<form [formGroup]="form" novalidate class="mol-step mol-flex-col mol-gap-12">
   <cn-radio-group formControlName="type" legend="What kind of transfer?" i18n-legend="@@transfers.details.type" [options]="typeOptions" [required]="true"></cn-radio-group>
 
-  <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="16px">
-    <cn-select fxFlex formControlName="fromAccountId" label="From" i18n-label="@@transfer.from" [options]="fromOptions" [required]="true"
+  <div class="mol-flex-row mol-flex-col--lt-md mol-gap-16">
+    <cn-select class="mol-flex"
+      formControlName="fromAccountId"
+      label="From"
+      i18n-label="@@transfer.from"
+      [options]="fromOptions"
+      [required]="true"
       [errorText]="form.controls.fromAccountId.touched && form.controls.fromAccountId.invalid ? 'Choose the account to take the money from' : null"></cn-select>
 
-    <cn-select *ngIf="form.controls.type.value === 'internal'" fxFlex formControlName="toAccountId" label="To" i18n-label="@@transfer.to" [options]="toOptions" [required]="true"
+    <cn-select class="mol-flex"
+      *ngIf="form.controls.type.value === 'internal'"
+      formControlName="toAccountId"
+      label="To"
+      i18n-label="@@transfer.to"
+      [options]="toOptions"
+      [required]="true"
       [errorText]="form.touched && form.errors?.['sameAccount'] ? 'From and to must be different accounts' : form.touched && form.errors?.['destinationRequired'] ? 'Choose where the money is going' : null"></cn-select>
 
-    <cn-select *ngIf="form.controls.type.value !== 'internal'" fxFlex formControlName="payeeId" label="To" i18n-label="@@transfer.to" [options]="(payees$ | async) ?? []" [required]="true"
-      hint="Only verified accounts can receive transfers" i18n-hint="@@transfers.details.payeeHint"
+    <cn-select class="mol-flex"
+      *ngIf="form.controls.type.value !== 'internal'"
+      formControlName="payeeId"
+      label="To"
+      i18n-label="@@transfer.to"
+      [options]="(payees$ | async) ?? []"
+      [required]="true"
+      hint="Only verified accounts can receive transfers"
+      i18n-hint="@@transfers.details.payeeHint"
       [errorText]="form.touched && form.errors?.['payeeRequired'] ? 'Choose a recipient' : null"></cn-select>
   </div>
 
-  <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="16px" fxLayoutAlign="start start">
-    <mat-form-field appearance="outline" fxFlex="0 0 260px" fxFlex.lt-md="1 1 auto">
+  <div class="mol-flex-row mol-flex-col--lt-md mol-gap-16 mol-justify-start mol-align-start">
+    <mat-form-field class="mol-flex-fixed-260 mol-flex-auto--lt-md" appearance="outline">
       <mat-label i18n="@@transfer.amount">Amount</mat-label>
       <cn-currency-input formControlName="amount" [min]="0.01" [max]="perTransactionMaxMinor / 100" [allowNegative]="false"></cn-currency-input>
       <mat-hint *ngIf="!overLimit && insufficient === null" i18n="@@transfers.details.limitHint">Up to {{ perTransactionMaxMinor | minorAmount }} per transfer</mat-hint>
@@ -23,7 +41,7 @@
       <mat-error *ngIf="form.controls.amount.hasError('required')" i18n="@@transfers.details.amountRequired">Enter an amount</mat-error>
     </mat-form-field>
 
-    <mat-form-field appearance="outline" fxFlex>
+    <mat-form-field class="mol-flex" appearance="outline">
       <mat-label i18n="@@transfers.details.memo">Memo (optional)</mat-label>
       <input matInput formControlName="memo" maxlength="60" molTrimOnBlur autocomplete="off" />
       <mat-hint align="end">{{ form.controls.memo.value.length }}/60</mat-hint>

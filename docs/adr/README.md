@@ -18,8 +18,9 @@ ways. Reviews go to @northgate/cswt-architecture via CODEOWNERS; they are slow, 
 | 0011 | Angular 14 upgrade | Accepted | 2022-11 |
 | 0012 | Untyped forms retained in profile and onboarding | Accepted | 2023-01 |
 | 0013 | Iris chat widget moved out of retail-web | Accepted | 2023-09 |
-| 0014 | Defer the Angular 15+ upgrade to 2025 | Accepted | 2024-06 |
+| 0014 | Defer the Angular 15+ upgrade to 2025 | Superseded by 0015 | 2024-06 |
+| 0015 | Angular 14 -> 15 (Canopy 4, Lantern 5, flex-layout removal, ngcc removal) | Proposed (MOL-4471) | 2026-09 |
 
-Only 0005 and 0014 are in this directory in full. The rest were written in the wiki before we moved
+Only 0005, 0014 and 0015 are in this directory in full. The rest were written in the wiki before we moved
 ADRs into the repo (MOL-2905) and were never migrated. The wiki space is `CSWT-ARCH`, search by
 number.

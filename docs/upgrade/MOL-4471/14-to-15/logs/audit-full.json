@@ -1,0 +1,3056 @@
+{
+  "auditReportVersion": 2,
+  "vulnerabilities": {
+    "@angular-devkit/architect": {
+      "name": "@angular-devkit/architect",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@angular-devkit/core"
+      ],
+      "effects": [
+        "@angular-devkit/build-webpack"
+      ],
+      "range": "0.1000.0-next.0 - 0.1000.0-rc.1 || 0.1200.0-next.0 - 0.1902.21 || 0.2000.0-next.0 - 0.2003.17 || 0.2100.0-next.0 - 0.2101.4 || 0.2102.0-next.0 - 0.2102.0-rc.2",
+      "nodes": [
+        "node_modules/@angular-devkit/architect"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "22.1.7",
+        "isSemVerMajor": true
+      }
+    },
+    "@angular-devkit/build-angular": {
+      "name": "@angular-devkit/build-angular",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@angular-devkit/architect",
+        "@angular-devkit/build-webpack",
+        "@angular-devkit/core",
+        "@angular/localize",
+        "@angular/service-worker",
+        "@babel/core",
+        "@babel/runtime",
+        "browserslist",
+        "cacache",
+        "copy-webpack-plugin",
+        "esbuild",
+        "inquirer",
+        "less",
+        "loader-utils",
+        "piscina",
+        "postcss",
+        "protractor",
+        "resolve-url-loader",
+        "webpack",
+        "webpack-dev-server"
+      ],
+      "effects": [],
+      "range": "*",
+      "nodes": [
+        "node_modules/@angular-devkit/build-angular"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "22.1.7",
+        "isSemVerMajor": true
+      }
+    },
+    "@angular-devkit/build-webpack": {
+      "name": "@angular-devkit/build-webpack",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@angular-devkit/architect",
+        "webpack-dev-server"
+      ],
+      "effects": [
+        "@angular-devkit/build-angular"
+      ],
+      "range": "<=0.1902.21 || 0.2000.0-next.0 - 0.2003.17 || 0.2100.0-next.0 - 0.2101.4 || 0.2102.0-next.0 - 0.2102.0-rc.2",
+      "nodes": [
+        "node_modules/@angular-devkit/build-webpack"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "22.1.7",
+        "isSemVerMajor": true
+      }
+    },
+    "@angular-devkit/core": {
+      "name": "@angular-devkit/core",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "ajv"
+      ],
+      "effects": [
+        "@angular-devkit/architect",
+        "@angular-devkit/build-angular",
+        "@angular-devkit/schematics",
+        "@angular/cli",
+        "@schematics/angular"
+      ],
+      "range": "12.0.0-next.0 - 19.2.21 || 20.0.0-next.0 - 20.3.17 || 21.0.0-next.0 - 21.1.4 || 21.2.0-next.0 - 21.2.0-rc.2",
+      "nodes": [
+        "node_modules/@angular-devkit/core"
+      ],
+      "fixAvailable": {
+        "name": "@angular/cli",
+        "version": "22.1.7",
+        "isSemVerMajor": true
+      }
+    },
+    "@angular-devkit/schematics": {
+      "name": "@angular-devkit/schematics",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@angular-devkit/core"
+      ],
+      "effects": [],
+      "range": "12.0.0-next.0 - 19.2.21 || 20.0.0-next.0 - 20.3.17 || 21.0.0-next.0 - 21.1.4 || 21.2.0-next.0 - 21.2.0-rc.2",
+      "nodes": [
+        "node_modules/@angular-devkit/schematics"
+      ],
+      "fixAvailable": true
+    },
+    "@angular-eslint/schematics": {
+      "name": "@angular-eslint/schematics",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@angular/cli",
+        "tmp"
+      ],
+      "effects": [],
+      "range": "4.0.1-alpha.0 - 18.0.0-alpha.16",
+      "nodes": [
+        "node_modules/@angular-eslint/schematics"
+      ],
+      "fixAvailable": {
+        "name": "@angular-eslint/schematics",
+        "version": "22.5.0",
+        "isSemVerMajor": true
+      }
+    },
+    "@angular/animations": {
+      "name": "@angular/animations",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@angular/core"
+      ],
+      "effects": [
+        "@angular/platform-browser"
+      ],
+      "range": "<=18.2.14",
+      "nodes": [
+        "node_modules/@angular/animations"
+      ],
+      "fixAvailable": {
+        "name": "@angular/animations",
+        "version": "22.1.6",
+        "isSemVerMajor": true
+      }
+    },
+    "@angular/cdk": {
+      "name": "@angular/cdk",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@angular/common",
+        "@angular/core"
+      ],
+      "effects": [],
+      "range": "<=6.4.7 || 8.0.0-beta.0 - 17.3.10",
+      "nodes": [
+        "node_modules/@angular/cdk"
+      ],
+      "fixAvailable": {
+        "name": "@angular/cdk",
+        "version": "22.1.6",
+        "isSemVerMajor": true
+      }
+    },
+    "@angular/cli": {
+      "name": "@angular/cli",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@angular-devkit/architect",
+        "@angular-devkit/core",
+        "@angular-devkit/schematics",
+        "@schematics/angular",
+        "inquirer",
+        "pacote"
+      ],
+      "effects": [
+        "@angular-eslint/schematics"
+      ],
+      "range": "<=1.4.0-rc.2 || 7.0.0-beta.0 - 20.3.28 || 21.0.0-next.0 - 21.2.15 || 22.0.0-next.0 - 22.0.1 || 22.1.0-next.0 - 22.1.0-rc.0",
+      "nodes": [
+        "node_modules/@angular/cli"
+      ],
+      "fixAvailable": {
+        "name": "@angular/cli",
+        "version": "22.1.7",
+        "isSemVerMajor": true
+      }
+    },
+    "@angular/common": {
+      "name": "@angular/common",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@angular/core",
+        {
+          "source": 1120387,
+          "name": "@angular/common",
+          "dependency": "@angular/common",
+          "title": "Angular is Vulnerable to XSRF Token Leakage via Protocol-Relative URLs in Angular HTTP Client",
+          "url": "https://github.com/advisories/GHSA-58c5-g7wp-6w37",
+          "severity": "high",
+          "cwe": [
+            "CWE-201",
+            "CWE-359"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<19.2.16"
+        },
+        {
+          "source": 1123497,
+          "name": "@angular/common",
+          "dependency": "@angular/common",
+          "title": "@angular/common: Denial of Service (DoS) via OOM in Date Formatting (formatDate)",
+          "url": "https://github.com/advisories/GHSA-48r7-hpm6-gfxm",
+          "severity": "high",
+          "cwe": [
+            "CWE-400",
+            "CWE-1333"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": "<=19.2.25"
+        },
+        {
+          "source": 1123501,
+          "name": "@angular/common",
+          "dependency": "@angular/common",
+          "title": "@angular/common: Weak 32-Bit Cache Key Hashing in `HttpTransferCache` Leading to Cross-Request Data Leakage and State Poisoning",
+          "url": "https://github.com/advisories/GHSA-39pv-4j6c-2g6v",
+          "severity": "high",
+          "cwe": [
+            "CWE-328",
+            "CWE-345"
+          ],
+          "cvss": {
+            "score": 6.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+          },
+          "range": "<=19.2.25"
+        },
+        {
+          "source": 1123536,
+          "name": "@angular/common",
+          "dependency": "@angular/common",
+          "title": "@angular/common: Denial of Service (DoS) via OOM in Number Formatting (digitsInfo)",
+          "url": "https://github.com/advisories/GHSA-p3vc-36g9-x9gr",
+          "severity": "high",
+          "cwe": [
+            "CWE-400",
+            "CWE-834"
+          ],
+          "cvss": {
+            "score": 6.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+          },
+          "range": "<=18.2.14"
+        },
+        {
+          "source": 1123541,
+          "name": "@angular/common",
+          "dependency": "@angular/common",
+          "title": "@angular/common: Information Leak via Default Caching of Credentialed Requests in HttpTransferCache",
+          "url": "https://github.com/advisories/GHSA-q6f4-qqrg-jv6x",
+          "severity": "high",
+          "cwe": [
+            "CWE-524"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+          },
+          "range": "<=18.2.14"
+        },
+        {
+          "source": 1130677,
+          "name": "@angular/common",
+          "dependency": "@angular/common",
+          "title": "Angular: Cache-Key Ambiguity in HttpTransferCache Leading to Cross-Request Response Reuse and State Poisoning",
+          "url": "https://github.com/advisories/GHSA-jhpw-976m-542j",
+          "severity": "high",
+          "cwe": [
+            "CWE-345"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<=19.2.25"
+        }
+      ],
+      "effects": [
+        "@angular/cdk",
+        "@angular/forms",
+        "@angular/material",
+        "@angular/platform-browser",
+        "@angular/platform-browser-dynamic",
+        "@angular/router",
+        "@angular/service-worker",
+        "@ngrx/router-store",
+        "@northgate/canopy-ui",
+        "@northgate/lantern-sdk",
+        "ngx-cookie-service"
+      ],
+      "range": "<=19.2.25",
+      "nodes": [
+        "node_modules/@angular/common"
+      ],
+      "fixAvailable": {
+        "name": "@angular/material",
+        "version": "22.1.6",
+        "isSemVerMajor": true
+      }
+    },
+    "@angular/compiler": {
+      "name": "@angular/compiler",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@angular/core",
+        {
+          "source": 1120372,
+          "name": "@angular/compiler",
+          "dependency": "@angular/compiler",
+          "title": "Angular has XSS Vulnerability via Unsanitized SVG Script Attributes",
+          "url": "https://github.com/advisories/GHSA-jrmj-c5cx-3cw6",
+          "severity": "high",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<=18.2.14"
+        },
+        {
+          "source": 1120383,
+          "name": "@angular/compiler",
+          "dependency": "@angular/compiler",
+          "title": "Angular Stored XSS Vulnerability via SVG Animation, SVG URL and MathML Attributes",
+          "url": "https://github.com/advisories/GHSA-v4hv-rgfq-gp49",
+          "severity": "high",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<=18.2.14"
+        },
+        {
+          "source": 1123505,
+          "name": "@angular/compiler",
+          "dependency": "@angular/compiler",
+          "title": "@angular/compiler: Two-Way Property Binding Sanitization Bypass (XSS)",
+          "url": "https://github.com/advisories/GHSA-58w9-8g37-x9v5",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 6.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+          },
+          "range": "<=19.2.25"
+        },
+        {
+          "source": 1123509,
+          "name": "@angular/compiler",
+          "dependency": "@angular/compiler",
+          "title": "Angular: Template and Attribute Namespace Sanitization Bypass (XSS)",
+          "url": "https://github.com/advisories/GHSA-f3m7-gqxr-g87x",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 6.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+          },
+          "range": "<=18.2.14"
+        },
+        {
+          "source": 1130697,
+          "name": "@angular/compiler",
+          "dependency": "@angular/compiler",
+          "title": "Angular i18n: Cross-Site Scripting (XSS) via event-handler attributes",
+          "url": "https://github.com/advisories/GHSA-jj27-h5hq-8x99",
+          "severity": "high",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<=19.2.25"
+        }
+      ],
+      "effects": [
+        "@angular/compiler-cli",
+        "@angular/localize",
+        "@angular/platform-browser-dynamic"
+      ],
+      "range": "<=19.2.25",
+      "nodes": [
+        "node_modules/@angular/compiler"
+      ],
+      "fixAvailable": {
+        "name": "@angular/compiler",
+        "version": "22.1.6",
+        "isSemVerMajor": true
+      }
+    },
+    "@angular/compiler-cli": {
+      "name": "@angular/compiler-cli",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@angular/compiler",
+        "@babel/core"
+      ],
+      "effects": [
+        "@angular/localize"
+      ],
+      "range": "<=20.3.25 || 21.0.0-next.0 - 21.2.17 || 22.0.0-next.0 - 22.0.2",
+      "nodes": [
+        "node_modules/@angular/compiler-cli"
+      ],
+      "fixAvailable": {
+        "name": "@angular/compiler-cli",
+        "version": "22.1.6",
+        "isSemVerMajor": true
+      }
+    },
+    "@angular/core": {
+      "name": "@angular/core",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        {
+          "source": 1113587,
+          "name": "@angular/core",
+          "dependency": "@angular/core",
+          "title": "Angular i18n vulnerable to Cross-Site Scripting",
+          "url": "https://github.com/advisories/GHSA-prjf-86w9-mfqv",
+          "severity": "high",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 6.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+          },
+          "range": "<=18.2.14"
+        },
+        {
+          "source": 1120371,
+          "name": "@angular/core",
+          "dependency": "@angular/core",
+          "title": "Angular has XSS Vulnerability via Unsanitized SVG Script Attributes",
+          "url": "https://github.com/advisories/GHSA-jrmj-c5cx-3cw6",
+          "severity": "high",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<=18.2.14"
+        },
+        {
+          "source": 1123514,
+          "name": "@angular/core",
+          "dependency": "@angular/core",
+          "title": "Angular: Template and Attribute Namespace Sanitization Bypass (XSS)",
+          "url": "https://github.com/advisories/GHSA-f3m7-gqxr-g87x",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 6.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+          },
+          "range": "<=18.2.14"
+        },
+        {
+          "source": 1123546,
+          "name": "@angular/core",
+          "dependency": "@angular/core",
+          "title": "@angular/core: Angular Template and Dynamic Component Namespace Bypass leading to Cross-Site Scripting (XSS)",
+          "url": "https://github.com/advisories/GHSA-692r-grfm-v8x7",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 6.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+          },
+          "range": "<=18.2.14"
+        },
+        {
+          "source": 1123560,
+          "name": "@angular/core",
+          "dependency": "@angular/core",
+          "title": "Angular Client Hydration DOM Clobbering & Response-Cache Poisoning",
+          "url": "https://github.com/advisories/GHSA-rgjc-h3x7-9mwg",
+          "severity": "high",
+          "cwe": [
+            "CWE-79",
+            "CWE-471"
+          ],
+          "cvss": {
+            "score": 6.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+          },
+          "range": "<=19.2.25"
+        },
+        {
+          "source": 1130693,
+          "name": "@angular/core",
+          "dependency": "@angular/core",
+          "title": "Angular i18n: Cross-Site Scripting (XSS) via event-handler attributes",
+          "url": "https://github.com/advisories/GHSA-jj27-h5hq-8x99",
+          "severity": "high",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<=19.2.25"
+        }
+      ],
+      "effects": [
+        "@angular/animations",
+        "@angular/compiler",
+        "@angular/forms",
+        "@angular/material-moment-adapter",
+        "@angular/platform-browser",
+        "@angular/router",
+        "@ngrx/effects",
+        "@ngrx/entity",
+        "@ngrx/router-store",
+        "@ngrx/store",
+        "ngx-cookie-service"
+      ],
+      "range": "<=19.2.25",
+      "nodes": [
+        "node_modules/@angular/core"
+      ],
+      "fixAvailable": {
+        "name": "@angular/core",
+        "version": "22.1.6",
+        "isSemVerMajor": true
+      }
+    },
+    "@angular/forms": {
+      "name": "@angular/forms",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@angular/common",
+        "@angular/core",
+        "@angular/platform-browser"
+      ],
+      "effects": [
+        "@angular/material"
+      ],
+      "range": "<=19.2.15",
+      "nodes": [
+        "node_modules/@angular/forms"
+      ],
+      "fixAvailable": {
+        "name": "@angular/forms",
+        "version": "22.1.6",
+        "isSemVerMajor": true
+      }
+    },
+    "@angular/localize": {
+      "name": "@angular/localize",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@angular/compiler",
+        "@angular/compiler-cli",
+        "@babel/core"
+      ],
+      "effects": [
+        "@angular-devkit/build-angular"
+      ],
+      "range": "<=20.3.25 || 21.0.0-next.0 - 21.2.17 || 22.0.0-next.0 - 22.0.2",
+      "nodes": [
+        "node_modules/@angular/localize"
+      ],
+      "fixAvailable": {
+        "name": "@angular/localize",
+        "version": "22.1.6",
+        "isSemVerMajor": true
+      }
+    },
+    "@angular/material": {
+      "name": "@angular/material",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@angular/animations",
+        "@angular/cdk",
+        "@angular/common",
+        "@angular/core",
+        "@angular/forms",
+        "@angular/platform-browser"
+      ],
+      "effects": [],
+      "range": "<=6.4.7 || 8.0.0-beta.0 - 17.3.10",
+      "nodes": [
+        "node_modules/@angular/material"
+      ],
+      "fixAvailable": {
+        "name": "@angular/material",
+        "version": "22.1.6",
+        "isSemVerMajor": true
+      }
+    },
+    "@angular/material-moment-adapter": {
+      "name": "@angular/material-moment-adapter",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@angular/core",
+        "@angular/material"
+      ],
+      "effects": [],
+      "range": "<=6.4.7 || 8.0.0-beta.0 - 17.3.10",
+      "nodes": [
+        "node_modules/@angular/material-moment-adapter"
+      ],
+      "fixAvailable": {
+        "name": "@angular/material-moment-adapter",
+        "version": "22.1.6",
+        "isSemVerMajor": true
+      }
+    },
+    "@angular/platform-browser": {
+      "name": "@angular/platform-browser",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@angular/animations",
+        "@angular/common",
+        "@angular/core"
+      ],
+      "effects": [
+        "@angular/forms",
+        "@angular/material"
+      ],
+      "range": "<=19.2.15",
+      "nodes": [
+        "node_modules/@angular/platform-browser"
+      ],
+      "fixAvailable": {
+        "name": "@angular/platform-browser",
+        "version": "22.1.6",
+        "isSemVerMajor": true
+      }
+    },
+    "@angular/platform-browser-dynamic": {
+      "name": "@angular/platform-browser-dynamic",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@angular/common",
+        "@angular/compiler",
+        "@angular/core",
+        "@angular/platform-browser"
+      ],
+      "effects": [],
+      "range": "<=19.2.15",
+      "nodes": [
+        "node_modules/@angular/platform-browser-dynamic"
+      ],
+      "fixAvailable": {
+        "name": "@angular/platform-browser-dynamic",
+        "version": "22.1.6",
+        "isSemVerMajor": true
+      }
+    },
+    "@angular/router": {
+      "name": "@angular/router",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@angular/common",
+        "@angular/core",
+        "@angular/platform-browser"
+      ],
+      "effects": [],
+      "range": "<=0.0.0-ROUTERPLACEHOLDER || 2.0.0-rc.0 - 19.2.15",
+      "nodes": [
+        "node_modules/@angular/router"
+      ],
+      "fixAvailable": {
+        "name": "@angular/router",
+        "version": "22.1.6",
+        "isSemVerMajor": true
+      }
+    },
+    "@angular/service-worker": {
+      "name": "@angular/service-worker",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@angular/common",
+        "@angular/core",
+        {
+          "source": 1123493,
+          "name": "@angular/service-worker",
+          "dependency": "@angular/service-worker",
+          "title": "@angular/service-worker: Sensitive Header Leakage on Cross-Origin Redirects in Angular Service Worker",
+          "url": "https://github.com/advisories/GHSA-qxh6-94w6-9r5p",
+          "severity": "high",
+          "cwe": [
+            "CWE-200",
+            "CWE-359"
+          ],
+          "cvss": {
+            "score": 6.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+          },
+          "range": "<=19.2.25"
+        },
+        {
+          "source": 1123530,
+          "name": "@angular/service-worker",
+          "dependency": "@angular/service-worker",
+          "title": "@angular/service-worker: Request Credential & Cache Policy Stripping",
+          "url": "https://github.com/advisories/GHSA-95qp-cmmw-mgqv",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-200",
+            "CWE-524"
+          ],
+          "cvss": {
+            "score": 6.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+          },
+          "range": "<=18.2.14"
+        },
+        {
+          "source": 1123551,
+          "name": "@angular/service-worker",
+          "dependency": "@angular/service-worker",
+          "title": "Angular Service Worker Policy-Bypass & Credential-Stripping Vulnerabilities",
+          "url": "https://github.com/advisories/GHSA-gv2q-mqqv-365m",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-200",
+            "CWE-441",
+            "CWE-524"
+          ],
+          "cvss": {
+            "score": 6.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+          },
+          "range": "<=18.2.14"
+        }
+      ],
+      "effects": [
+        "@angular-devkit/build-angular"
+      ],
+      "range": "<=19.2.25",
+      "nodes": [
+        "node_modules/@angular/service-worker"
+      ],
+      "fixAvailable": {
+        "name": "@angular/service-worker",
+        "version": "22.1.6",
+        "isSemVerMajor": true
+      }
+    },
+    "@babel/core": {
+      "name": "@babel/core",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1123528,
+          "name": "@babel/core",
+          "dependency": "@babel/core",
+          "title": "@babel/core: Arbitrary File Read via sourceMappingURL Comment",
+          "url": "https://github.com/advisories/GHSA-4x5r-pxfx-6jf8",
+          "severity": "low",
+          "cwe": [
+            "CWE-22",
+            "CWE-200"
+          ],
+          "cvss": {
+            "score": 3.2,
+            "vectorString": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:L/I:N/A:N"
+          },
+          "range": "<=7.29.0"
+        }
+      ],
+      "effects": [
+        "@angular-devkit/build-angular",
+        "@angular/compiler-cli",
+        "@angular/localize"
+      ],
+      "range": "<=7.29.0",
+      "nodes": [
+        "node_modules/@angular-devkit/build-angular/node_modules/@babel/core",
+        "node_modules/@babel/core"
+      ],
+      "fixAvailable": {
+        "name": "@angular/compiler-cli",
+        "version": "22.1.6",
+        "isSemVerMajor": true
+      }
+    },
+    "@babel/runtime": {
+      "name": "@babel/runtime",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1104000,
+          "name": "@babel/runtime",
+          "dependency": "@babel/runtime",
+          "title": "Babel has inefficient RegExp complexity in generated code with .replace when transpiling named capturing groups",
+          "url": "https://github.com/advisories/GHSA-968p-4wvh-cqc8",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-1333"
+          ],
+          "cvss": {
+            "score": 6.2,
+            "vectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": "<7.26.10"
+        }
+      ],
+      "effects": [
+        "@angular-devkit/build-angular"
+      ],
+      "range": "<7.26.10",
+      "nodes": [
+        "node_modules/@babel/runtime"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "22.1.7",
+        "isSemVerMajor": true
+      }
+    },
+    "@ngrx/effects": {
+      "name": "@ngrx/effects",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@angular/core",
+        "@ngrx/store"
+      ],
+      "effects": [],
+      "range": "<=18.1.1",
+      "nodes": [
+        "node_modules/@ngrx/effects"
+      ],
+      "fixAvailable": {
+        "name": "@ngrx/effects",
+        "version": "22.0.0",
+        "isSemVerMajor": true
+      }
+    },
+    "@ngrx/entity": {
+      "name": "@ngrx/entity",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@angular/core",
+        "@ngrx/store"
+      ],
+      "effects": [],
+      "range": "<=18.1.1",
+      "nodes": [
+        "node_modules/@ngrx/entity"
+      ],
+      "fixAvailable": {
+        "name": "@ngrx/entity",
+        "version": "22.0.0",
+        "isSemVerMajor": true
+      }
+    },
+    "@ngrx/router-store": {
+      "name": "@ngrx/router-store",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@angular/common",
+        "@angular/core",
+        "@angular/router",
+        "@ngrx/store"
+      ],
+      "effects": [],
+      "range": "<=18.1.1",
+      "nodes": [
+        "node_modules/@ngrx/router-store"
+      ],
+      "fixAvailable": {
+        "name": "@ngrx/router-store",
+        "version": "22.0.0",
+        "isSemVerMajor": true
+      }
+    },
+    "@ngrx/store": {
+      "name": "@ngrx/store",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@angular/core"
+      ],
+      "effects": [
+        "@ngrx/effects",
+        "@ngrx/router-store",
+        "@ngrx/store-devtools"
+      ],
+      "range": "1.5.0 - 2.0.0 || 2.1.1 - 18.1.1",
+      "nodes": [
+        "node_modules/@ngrx/store"
+      ],
+      "fixAvailable": {
+        "name": "@ngrx/store",
+        "version": "22.0.0",
+        "isSemVerMajor": true
+      }
+    },
+    "@ngrx/store-devtools": {
+      "name": "@ngrx/store-devtools",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@ngrx/store"
+      ],
+      "effects": [],
+      "range": "4.0.0 - 18.1.1",
+      "nodes": [
+        "node_modules/@ngrx/store-devtools"
+      ],
+      "fixAvailable": {
+        "name": "@ngrx/store-devtools",
+        "version": "22.0.0",
+        "isSemVerMajor": true
+      }
+    },
+    "@northgate/canopy-ui": {
+      "name": "@northgate/canopy-ui",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@angular/animations",
+        "@angular/cdk",
+        "@angular/common",
+        "@angular/core",
+        "@angular/forms",
+        "@angular/material",
+        "@angular/material-moment-adapter",
+        "@angular/router"
+      ],
+      "effects": [],
+      "range": "*",
+      "nodes": [
+        "node_modules/@northgate/canopy-ui"
+      ],
+      "fixAvailable": false
+    },
+    "@northgate/lantern-sdk": {
+      "name": "@northgate/lantern-sdk",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@angular/common",
+        "@angular/core",
+        "@angular/router"
+      ],
+      "effects": [],
+      "range": "*",
+      "nodes": [
+        "node_modules/@northgate/lantern-sdk"
+      ],
+      "fixAvailable": false
+    },
+    "@npmcli/run-script": {
+      "name": "@npmcli/run-script",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "node-gyp"
+      ],
+      "effects": [
+        "pacote"
+      ],
+      "range": "1.1.1 - 9.0.1",
+      "nodes": [
+        "node_modules/@npmcli/run-script"
+      ],
+      "fixAvailable": {
+        "name": "@angular/cli",
+        "version": "22.1.7",
+        "isSemVerMajor": true
+      }
+    },
+    "@schematics/angular": {
+      "name": "@schematics/angular",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@angular-devkit/core",
+        "@angular-devkit/schematics"
+      ],
+      "effects": [],
+      "range": "12.0.0-next.0 - 19.2.21 || 20.0.0-next.0 - 20.3.17 || 21.0.0-next.0 - 21.1.4 || 21.2.0-next.0 - 21.2.0-rc.2",
+      "nodes": [
+        "node_modules/@schematics/angular"
+      ],
+      "fixAvailable": true
+    },
+    "@sigstore/sign": {
+      "name": "@sigstore/sign",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "make-fetch-happen"
+      ],
+      "effects": [
+        "sigstore"
+      ],
+      "range": "<=2.3.2",
+      "nodes": [
+        "node_modules/@sigstore/sign"
+      ],
+      "fixAvailable": {
+        "name": "@angular/cli",
+        "version": "22.1.7",
+        "isSemVerMajor": true
+      }
+    },
+    "@sigstore/tuf": {
+      "name": "@sigstore/tuf",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "tuf-js"
+      ],
+      "effects": [
+        "sigstore"
+      ],
+      "range": "<=2.3.4",
+      "nodes": [
+        "node_modules/@sigstore/tuf"
+      ],
+      "fixAvailable": {
+        "name": "@angular/cli",
+        "version": "22.1.7",
+        "isSemVerMajor": true
+      }
+    },
+    "adjust-sourcemap-loader": {
+      "name": "adjust-sourcemap-loader",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "loader-utils"
+      ],
+      "effects": [
+        "resolve-url-loader"
+      ],
+      "range": "",
+      "nodes": [
+        "node_modules/adjust-sourcemap-loader"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "22.1.7",
+        "isSemVerMajor": true
+      }
+    },
+    "adm-zip": {
+      "name": "adm-zip",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1123686,
+          "name": "adm-zip",
+          "dependency": "adm-zip",
+          "title": "adm-zip: Crafted ZIP file triggers 4GB memory allocation",
+          "url": "https://github.com/advisories/GHSA-xcpc-8h2w-3j85",
+          "severity": "high",
+          "cwe": [
+            "CWE-400",
+            "CWE-789"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": "<0.6.0"
+        },
+        {
+          "source": 1193734,
+          "name": "adm-zip",
+          "dependency": "adm-zip",
+          "title": "adm-zip extraction follows destination symlinks, allowing arbitrary file overwrite",
+          "url": "https://github.com/advisories/GHSA-vwc7-r8mq-g2x9",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-59"
+          ],
+          "cvss": {
+            "score": 6.5,
+            "vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N"
+          },
+          "range": ">=0.5.9 <=0.6.0"
+        }
+      ],
+      "effects": [
+        "webdriver-manager"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/adm-zip"
+      ],
+      "fixAvailable": {
+        "name": "protractor",
+        "version": "3.3.0",
+        "isSemVerMajor": true
+      }
+    },
+    "ajv": {
+      "name": "ajv",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1113715,
+          "name": "ajv",
+          "dependency": "ajv",
+          "title": "ajv has ReDoS when using `$data` option",
+          "url": "https://github.com/advisories/GHSA-2g4f-4pwh-qvx6",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-400",
+            "CWE-1333"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": ">=7.0.0-alpha.0 <8.18.0"
+        }
+      ],
+      "effects": [
+        "@angular-devkit/core"
+      ],
+      "range": "7.0.0-alpha.0 - 8.17.1",
+      "nodes": [
+        "node_modules/@angular-devkit/core/node_modules/ajv"
+      ],
+      "fixAvailable": {
+        "name": "@angular/cli",
+        "version": "22.1.7",
+        "isSemVerMajor": true
+      }
+    },
+    "blocking-proxy": {
+      "name": "blocking-proxy",
+      "severity": "critical",
+      "isDirect": false,
+      "via": [
+        "minimist"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/blocking-proxy"
+      ],
+      "fixAvailable": true
+    },
+    "body-parser": {
+      "name": "body-parser",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1099520,
+          "name": "body-parser",
+          "dependency": "body-parser",
+          "title": "body-parser vulnerable to denial of service when url encoding is enabled",
+          "url": "https://github.com/advisories/GHSA-qwcr-r2fm-qrc7",
+          "severity": "high",
+          "cwe": [
+            "CWE-405"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": "<1.20.3"
+        },
+        {
+          "source": 1123977,
+          "name": "body-parser",
+          "dependency": "body-parser",
+          "title": "body-parser vulnerable to denial of service when invalid limit value silently disables size enforcement",
+          "url": "https://github.com/advisories/GHSA-v422-hmwv-36x6",
+          "severity": "low",
+          "cwe": [
+            "CWE-770"
+          ],
+          "cvss": {
+            "score": 3.7,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L"
+          },
+          "range": "<1.20.6"
+        },
+        "qs"
+      ],
+      "effects": [
+        "express"
+      ],
+      "range": "<=1.20.6 || 2.0.0-beta.1 - 2.0.2",
+      "nodes": [
+        "node_modules/body-parser"
+      ],
+      "fixAvailable": {
+        "name": "express",
+        "version": "4.22.2",
+        "isSemVerMajor": false
+      }
+    },
+    "browserslist": {
+      "name": "browserslist",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1153171,
+          "name": "browserslist",
+          "dependency": "browserslist",
+          "title": "Browserslist: Unbounded memory growth (no cache eviction) via distinct query results, leading to eventual OOM",
+          "url": "https://github.com/advisories/GHSA-c83g-rgw3-j3cx",
+          "severity": "high",
+          "cwe": [
+            "CWE-770"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": "<=4.28.6"
+        },
+        {
+          "source": 1153172,
+          "name": "browserslist",
+          "dependency": "browserslist",
+          "title": "Browserslist: Uncaught crash / prototype write via untrusted browserslist-stats.json custom stats (normalizeStats)",
+          "url": "https://github.com/advisories/GHSA-73wf-gq98-2v4g",
+          "severity": "high",
+          "cwe": [
+            "CWE-248",
+            "CWE-1321"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": "<=4.28.6"
+        }
+      ],
+      "effects": [
+        "@angular-devkit/build-angular"
+      ],
+      "range": "<=4.28.6",
+      "nodes": [
+        "node_modules/@angular-devkit/build-angular/node_modules/browserslist"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "22.1.7",
+        "isSemVerMajor": true
+      }
+    },
+    "cacache": {
+      "name": "cacache",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "tar"
+      ],
+      "effects": [
+        "@angular-devkit/build-angular",
+        "make-fetch-happen",
+        "pacote"
+      ],
+      "range": "14.0.0 - 18.0.4",
+      "nodes": [
+        "node_modules/cacache",
+        "node_modules/make-fetch-happen/node_modules/cacache"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "22.1.7",
+        "isSemVerMajor": true
+      }
+    },
+    "cookie": {
+      "name": "cookie",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1103907,
+          "name": "cookie",
+          "dependency": "cookie",
+          "title": "cookie accepts cookie name, path, and domain with out of bounds characters",
+          "url": "https://github.com/advisories/GHSA-pxg6-pf52-xh8x",
+          "severity": "low",
+          "cwe": [
+            "CWE-74"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<0.7.0"
+        }
+      ],
+      "effects": [
+        "express"
+      ],
+      "range": "<0.7.0",
+      "nodes": [
+        "node_modules/cookie"
+      ],
+      "fixAvailable": {
+        "name": "express",
+        "version": "4.22.2",
+        "isSemVerMajor": false
+      }
+    },
+    "copy-webpack-plugin": {
+      "name": "copy-webpack-plugin",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "serialize-javascript"
+      ],
+      "effects": [
+        "@angular-devkit/build-angular"
+      ],
+      "range": "6.1.1 - 13.0.1",
+      "nodes": [
+        "node_modules/copy-webpack-plugin"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "22.1.7",
+        "isSemVerMajor": true
+      }
+    },
+    "esbuild": {
+      "name": "esbuild",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1102341,
+          "name": "esbuild",
+          "dependency": "esbuild",
+          "title": "esbuild enables any website to send any requests to the development server and read the response",
+          "url": "https://github.com/advisories/GHSA-67mh-4wv8-2f99",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-346"
+          ],
+          "cvss": {
+            "score": 5.3,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N"
+          },
+          "range": "<=0.24.2"
+        }
+      ],
+      "effects": [
+        "@angular-devkit/build-angular"
+      ],
+      "range": "<=0.24.2",
+      "nodes": [
+        "node_modules/esbuild"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "22.1.7",
+        "isSemVerMajor": true
+      }
+    },
+    "express": {
+      "name": "express",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        {
+          "source": 1100530,
+          "name": "express",
+          "dependency": "express",
+          "title": "express vulnerable to XSS via response.redirect()",
+          "url": "https://github.com/advisories/GHSA-qw6h-vgh9-j6wx",
+          "severity": "low",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 5,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:L"
+          },
+          "range": "<4.20.0"
+        },
+        {
+          "source": 1111636,
+          "name": "express",
+          "dependency": "express",
+          "title": "Express.js Open Redirect in malformed URLs",
+          "url": "https://github.com/advisories/GHSA-rv95-896h-c2vc",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-601",
+            "CWE-1286"
+          ],
+          "cvss": {
+            "score": 6.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+          },
+          "range": "<4.19.2"
+        },
+        "body-parser",
+        "cookie",
+        "path-to-regexp",
+        "qs",
+        "send",
+        "serve-static"
+      ],
+      "effects": [],
+      "range": "<=5.0.1",
+      "nodes": [
+        "node_modules/express"
+      ],
+      "fixAvailable": {
+        "name": "express",
+        "version": "4.22.2",
+        "isSemVerMajor": false
+      }
+    },
+    "external-editor": {
+      "name": "external-editor",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "tmp"
+      ],
+      "effects": [
+        "inquirer"
+      ],
+      "range": ">=1.1.1",
+      "nodes": [
+        "node_modules/external-editor"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "22.1.7",
+        "isSemVerMajor": true
+      }
+    },
+    "form-data": {
+      "name": "form-data",
+      "severity": "critical",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1109540,
+          "name": "form-data",
+          "dependency": "form-data",
+          "title": "form-data uses unsafe random function in form-data for choosing boundary",
+          "url": "https://github.com/advisories/GHSA-fjxv-7rqg-78g4",
+          "severity": "critical",
+          "cwe": [
+            "CWE-330"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<2.5.4"
+        },
+        {
+          "source": 1120745,
+          "name": "form-data",
+          "dependency": "form-data",
+          "title": "form-data: CRLF injection in form-data via unescaped multipart field names and filenames",
+          "url": "https://github.com/advisories/GHSA-hmw2-7cc7-3qxx",
+          "severity": "high",
+          "cwe": [
+            "CWE-93"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+          },
+          "range": "<2.5.6"
+        }
+      ],
+      "effects": [
+        "request"
+      ],
+      "range": "<=2.5.5",
+      "nodes": [
+        "node_modules/form-data"
+      ],
+      "fixAvailable": true
+    },
+    "image-size": {
+      "name": "image-size",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1138808,
+          "name": "image-size",
+          "dependency": "image-size",
+          "title": "image-size: ICNS parser allows denial of service through an infinite loop",
+          "url": "https://github.com/advisories/GHSA-w3rx-r6r6-pgpr",
+          "severity": "high",
+          "cwe": [
+            "CWE-835"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": "<=2.0.2"
+        },
+        {
+          "source": 1138809,
+          "name": "image-size",
+          "dependency": "image-size",
+          "title": "image-size: JXL and HEIF parsers allow denial of service through infinite loops",
+          "url": "https://github.com/advisories/GHSA-5p2g-fcmc-qvqq",
+          "severity": "high",
+          "cwe": [
+            "CWE-835"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": "<=2.0.2"
+        }
+      ],
+      "effects": [
+        "less"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/image-size"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "22.1.7",
+        "isSemVerMajor": true
+      }
+    },
+    "inquirer": {
+      "name": "inquirer",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "external-editor"
+      ],
+      "effects": [
+        "@angular-devkit/build-angular",
+        "@angular/cli"
+      ],
+      "range": "3.0.0 - 8.2.6 || 9.0.0 - 9.3.7",
+      "nodes": [
+        "node_modules/inquirer"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "22.1.7",
+        "isSemVerMajor": true
+      }
+    },
+    "less": {
+      "name": "less",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "image-size"
+      ],
+      "effects": [
+        "@angular-devkit/build-angular"
+      ],
+      "range": "2.2.0 - 4.6.7",
+      "nodes": [
+        "node_modules/less"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "22.1.7",
+        "isSemVerMajor": true
+      }
+    },
+    "loader-utils": {
+      "name": "loader-utils",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1095054,
+          "name": "loader-utils",
+          "dependency": "loader-utils",
+          "title": "loader-utils is vulnerable to Regular Expression Denial of Service (ReDoS) via url variable",
+          "url": "https://github.com/advisories/GHSA-3rfm-jhwj-7488",
+          "severity": "high",
+          "cwe": [
+            "CWE-1333"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": ">=2.0.0 <2.0.4"
+        },
+        {
+          "source": 1109587,
+          "name": "loader-utils",
+          "dependency": "loader-utils",
+          "title": "loader-utils is vulnerable to Regular Expression Denial of Service (ReDoS)",
+          "url": "https://github.com/advisories/GHSA-hhq3-ff78-jv3g",
+          "severity": "high",
+          "cwe": [
+            "CWE-400",
+            "CWE-1333"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": ">=2.0.0 <2.0.4"
+        }
+      ],
+      "effects": [
+        "@angular-devkit/build-angular",
+        "adjust-sourcemap-loader",
+        "resolve-url-loader"
+      ],
+      "range": "2.0.0 - 2.0.3",
+      "nodes": [
+        "node_modules/loader-utils"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "22.1.7",
+        "isSemVerMajor": true
+      }
+    },
+    "make-fetch-happen": {
+      "name": "make-fetch-happen",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "cacache"
+      ],
+      "effects": [
+        "@sigstore/sign",
+        "node-gyp",
+        "npm-registry-fetch",
+        "sigstore",
+        "tuf-js"
+      ],
+      "range": "7.1.1 - 14.0.0",
+      "nodes": [
+        "node_modules/@sigstore/sign/node_modules/make-fetch-happen",
+        "node_modules/make-fetch-happen",
+        "node_modules/npm-registry-fetch/node_modules/make-fetch-happen",
+        "node_modules/sigstore/node_modules/make-fetch-happen",
+        "node_modules/tuf-js/node_modules/make-fetch-happen"
+      ],
+      "fixAvailable": {
+        "name": "@angular/cli",
+        "version": "22.1.7",
+        "isSemVerMajor": true
+      }
+    },
+    "minimist": {
+      "name": "minimist",
+      "severity": "critical",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1097678,
+          "name": "minimist",
+          "dependency": "minimist",
+          "title": "Prototype Pollution in minimist",
+          "url": "https://github.com/advisories/GHSA-xvch-5gv4-984h",
+          "severity": "critical",
+          "cwe": [
+            "CWE-1321"
+          ],
+          "cvss": {
+            "score": 9.8,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+          },
+          "range": ">=1.0.0 <1.2.6"
+        }
+      ],
+      "effects": [
+        "blocking-proxy",
+        "mkdirp",
+        "webdriver-manager"
+      ],
+      "range": "1.0.0 - 1.2.5",
+      "nodes": [
+        "node_modules/minimist"
+      ],
+      "fixAvailable": {
+        "name": "protractor",
+        "version": "3.3.0",
+        "isSemVerMajor": true
+      }
+    },
+    "mkdirp": {
+      "name": "mkdirp",
+      "severity": "critical",
+      "isDirect": false,
+      "via": [
+        "minimist"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/karma/node_modules/mkdirp"
+      ],
+      "fixAvailable": true
+    },
+    "ngx-cookie-service": {
+      "name": "ngx-cookie-service",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@angular/common",
+        "@angular/core"
+      ],
+      "effects": [],
+      "range": "<=1.0.8 || 3.0.0 - 18.0.0",
+      "nodes": [
+        "node_modules/ngx-cookie-service"
+      ],
+      "fixAvailable": {
+        "name": "ngx-cookie-service",
+        "version": "22.0.0",
+        "isSemVerMajor": true
+      }
+    },
+    "node-gyp": {
+      "name": "node-gyp",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "make-fetch-happen",
+        "tar"
+      ],
+      "effects": [
+        "@npmcli/run-script"
+      ],
+      "range": "<=10.3.1",
+      "nodes": [
+        "node_modules/node-gyp"
+      ],
+      "fixAvailable": {
+        "name": "@angular/cli",
+        "version": "22.1.7",
+        "isSemVerMajor": true
+      }
+    },
+    "npm-registry-fetch": {
+      "name": "npm-registry-fetch",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "make-fetch-happen"
+      ],
+      "effects": [
+        "pacote"
+      ],
+      "range": "7.0.0 - 18.0.0",
+      "nodes": [
+        "node_modules/npm-registry-fetch"
+      ],
+      "fixAvailable": {
+        "name": "@angular/cli",
+        "version": "22.1.7",
+        "isSemVerMajor": true
+      }
+    },
+    "pacote": {
+      "name": "pacote",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "@npmcli/run-script",
+        {
+          "source": 1146559,
+          "name": "pacote",
+          "dependency": "pacote",
+          "title": "pacote is vulnerable to Denial of Service (DoS) via the addGitSha function",
+          "url": "https://github.com/advisories/GHSA-w4pp-8pjf-rmxw",
+          "severity": "high",
+          "cwe": [
+            "CWE-400",
+            "CWE-1333"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": ">=11.2.7 <21.5.1"
+        },
+        "cacache",
+        "npm-registry-fetch",
+        "sigstore",
+        "tar"
+      ],
+      "effects": [
+        "@angular/cli"
+      ],
+      "range": "5.0.0 - 21.5.0",
+      "nodes": [
+        "node_modules/pacote"
+      ],
+      "fixAvailable": {
+        "name": "@angular/cli",
+        "version": "22.1.7",
+        "isSemVerMajor": true
+      }
+    },
+    "path-to-regexp": {
+      "name": "path-to-regexp",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1101850,
+          "name": "path-to-regexp",
+          "dependency": "path-to-regexp",
+          "title": "path-to-regexp outputs backtracking regular expressions",
+          "url": "https://github.com/advisories/GHSA-9wv6-86v2-598j",
+          "severity": "high",
+          "cwe": [
+            "CWE-1333"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": "<0.1.10"
+        },
+        {
+          "source": 1105199,
+          "name": "path-to-regexp",
+          "dependency": "path-to-regexp",
+          "title": "path-to-regexp contains a ReDoS",
+          "url": "https://github.com/advisories/GHSA-rhx6-c78j-4q9w",
+          "severity": "high",
+          "cwe": [
+            "CWE-1333"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": "<0.1.12"
+        },
+        {
+          "source": 1115527,
+          "name": "path-to-regexp",
+          "dependency": "path-to-regexp",
+          "title": "path-to-regexp vulnerable to Regular Expression Denial of Service via multiple route parameters",
+          "url": "https://github.com/advisories/GHSA-37ch-88jc-xwx2",
+          "severity": "high",
+          "cwe": [
+            "CWE-1333"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": "<0.1.13"
+        }
+      ],
+      "effects": [
+        "express"
+      ],
+      "range": "<=0.1.12",
+      "nodes": [
+        "node_modules/path-to-regexp"
+      ],
+      "fixAvailable": {
+        "name": "express",
+        "version": "4.22.2",
+        "isSemVerMajor": false
+      }
+    },
+    "piscina": {
+      "name": "piscina",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1121167,
+          "name": "piscina",
+          "dependency": "piscina",
+          "title": "piscina: Prototype Pollution Gadget → RCE via inherited options.filename",
+          "url": "https://github.com/advisories/GHSA-x9g3-xrwr-cwfg",
+          "severity": "high",
+          "cwe": [
+            "CWE-94",
+            "CWE-1321"
+          ],
+          "cvss": {
+            "score": 8.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+          },
+          "range": "<=4.9.2"
+        }
+      ],
+      "effects": [
+        "@angular-devkit/build-angular"
+      ],
+      "range": "<=4.9.2",
+      "nodes": [
+        "node_modules/piscina"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "22.1.7",
+        "isSemVerMajor": true
+      }
+    },
+    "postcss": {
+      "name": "postcss",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1117015,
+          "name": "postcss",
+          "dependency": "postcss",
+          "title": "PostCSS has XSS via Unescaped </style> in its CSS Stringify Output",
+          "url": "https://github.com/advisories/GHSA-qx2v-qp2m-jg93",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 6.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+          },
+          "range": "<8.5.10"
+        },
+        {
+          "source": 1124252,
+          "name": "postcss",
+          "dependency": "postcss",
+          "title": "PostCSS: Arbitrary file read and information disclosure via attacker-controlled sourceMappingURL in CSS comments",
+          "url": "https://github.com/advisories/GHSA-6g55-p6wh-862q",
+          "severity": "high",
+          "cwe": [
+            "CWE-22",
+            "CWE-200"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+          },
+          "range": "<=8.5.11"
+        },
+        {
+          "source": 1130709,
+          "name": "postcss",
+          "dependency": "postcss",
+          "title": "PostCSS: incomplete fix of GHSA-6g55-p6wh-862q — attacker-controlled sourceMappingURL reads arbitrary .map files when `from` is unset",
+          "url": "https://github.com/advisories/GHSA-fxqj-rqcc-2cmp",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-22",
+            "CWE-200"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<=8.5.22"
+        },
+        {
+          "source": 1139510,
+          "name": "postcss",
+          "dependency": "postcss",
+          "title": "PostCSS: Path Traversal in Previous Source Map Auto-Loading (sourceMappingURL) leads to Arbitrary .map File Disclosure",
+          "url": "https://github.com/advisories/GHSA-r28c-9q8g-f849",
+          "severity": "high",
+          "cwe": [
+            "CWE-22"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+          },
+          "range": "<=8.5.17"
+        }
+      ],
+      "effects": [
+        "@angular-devkit/build-angular"
+      ],
+      "range": "<=8.5.22",
+      "nodes": [
+        "node_modules/postcss"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "22.1.7",
+        "isSemVerMajor": true
+      }
+    },
+    "protractor": {
+      "name": "protractor",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "selenium-webdriver",
+        "webdriver-js-extender",
+        "webdriver-manager"
+      ],
+      "effects": [
+        "@angular-devkit/build-angular"
+      ],
+      "range": ">=1.3.0",
+      "nodes": [
+        "node_modules/protractor"
+      ],
+      "fixAvailable": {
+        "name": "protractor",
+        "version": "3.3.0",
+        "isSemVerMajor": true
+      }
+    },
+    "qs": {
+      "name": "qs",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1113161,
+          "name": "qs",
+          "dependency": "qs",
+          "title": "qs's arrayLimit bypass in comma parsing allows denial of service",
+          "url": "https://github.com/advisories/GHSA-w7fw-mjwx-w883",
+          "severity": "low",
+          "cwe": [
+            "CWE-20"
+          ],
+          "cvss": {
+            "score": 3.7,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L"
+          },
+          "range": ">=6.7.0 <=6.14.1"
+        },
+        {
+          "source": 1113719,
+          "name": "qs",
+          "dependency": "qs",
+          "title": "qs's arrayLimit bypass in its bracket notation allows DoS via memory exhaustion",
+          "url": "https://github.com/advisories/GHSA-6rw7-vpxm-498p",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-20"
+          ],
+          "cvss": {
+            "score": 3.7,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L"
+          },
+          "range": "<6.14.1"
+        },
+        {
+          "source": 1158507,
+          "name": "qs",
+          "dependency": "qs",
+          "title": "qs: Denial of Service via Attacker Controlled isBuffer",
+          "url": "https://github.com/advisories/GHSA-4mjr-xmp4-gh2g",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-248",
+            "CWE-703"
+          ],
+          "cvss": {
+            "score": 5.3,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+          },
+          "range": ">=2.2.5 <6.16.0"
+        }
+      ],
+      "effects": [
+        "body-parser",
+        "express",
+        "request"
+      ],
+      "range": "<=6.15.3",
+      "nodes": [
+        "node_modules/qs",
+        "node_modules/request/node_modules/qs"
+      ],
+      "fixAvailable": {
+        "name": "express",
+        "version": "4.22.2",
+        "isSemVerMajor": false
+      }
+    },
+    "request": {
+      "name": "request",
+      "severity": "critical",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1096727,
+          "name": "request",
+          "dependency": "request",
+          "title": "Server-Side Request Forgery in Request",
+          "url": "https://github.com/advisories/GHSA-p8p7-x288-28g6",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-918"
+          ],
+          "cvss": {
+            "score": 6.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+          },
+          "range": "<=2.88.2"
+        },
+        "form-data",
+        "qs",
+        "tough-cookie",
+        "uuid"
+      ],
+      "effects": [],
+      "range": "*",
+      "nodes": [
+        "node_modules/request"
+      ],
+      "fixAvailable": true
+    },
+    "resolve-url-loader": {
+      "name": "resolve-url-loader",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "adjust-sourcemap-loader",
+        "loader-utils"
+      ],
+      "effects": [
+        "@angular-devkit/build-angular"
+      ],
+      "range": ">=4.0.0-alpha.1",
+      "nodes": [
+        "node_modules/resolve-url-loader"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "22.1.7",
+        "isSemVerMajor": true
+      }
+    },
+    "selenium-webdriver": {
+      "name": "selenium-webdriver",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "tmp",
+        "xml2js"
+      ],
+      "effects": [
+        "protractor",
+        "webdriver-js-extender"
+      ],
+      "range": "2.43.1 - 4.0.0-rc-2",
+      "nodes": [
+        "node_modules/selenium-webdriver"
+      ],
+      "fixAvailable": {
+        "name": "protractor",
+        "version": "3.3.0",
+        "isSemVerMajor": true
+      }
+    },
+    "send": {
+      "name": "send",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1109556,
+          "name": "send",
+          "dependency": "send",
+          "title": "send vulnerable to template injection that can lead to XSS",
+          "url": "https://github.com/advisories/GHSA-m6fv-jmcg-4jfg",
+          "severity": "low",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 5,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:L"
+          },
+          "range": "<0.19.0"
+        }
+      ],
+      "effects": [
+        "express",
+        "serve-static"
+      ],
+      "range": "<0.19.0",
+      "nodes": [
+        "node_modules/send"
+      ],
+      "fixAvailable": {
+        "name": "express",
+        "version": "4.22.2",
+        "isSemVerMajor": false
+      }
+    },
+    "serialize-javascript": {
+      "name": "serialize-javascript",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1113686,
+          "name": "serialize-javascript",
+          "dependency": "serialize-javascript",
+          "title": "Serialize JavaScript is Vulnerable to RCE via RegExp.flags and Date.prototype.toISOString()",
+          "url": "https://github.com/advisories/GHSA-5c6j-r48x-rmvq",
+          "severity": "high",
+          "cwe": [
+            "CWE-96"
+          ],
+          "cvss": {
+            "score": 8.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+          },
+          "range": "<=7.0.2"
+        },
+        {
+          "source": 1119440,
+          "name": "serialize-javascript",
+          "dependency": "serialize-javascript",
+          "title": "Serialize JavaScript has CPU Exhaustion Denial of Service via crafted array-like objects",
+          "url": "https://github.com/advisories/GHSA-qj8w-gfj5-8c6v",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-400",
+            "CWE-834"
+          ],
+          "cvss": {
+            "score": 5.9,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": ">=5.0.0 <7.0.5"
+        }
+      ],
+      "effects": [
+        "copy-webpack-plugin"
+      ],
+      "range": "<=7.0.4",
+      "nodes": [
+        "node_modules/serialize-javascript"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "22.1.7",
+        "isSemVerMajor": true
+      }
+    },
+    "serve-static": {
+      "name": "serve-static",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1100528,
+          "name": "serve-static",
+          "dependency": "serve-static",
+          "title": "serve-static vulnerable to template injection that can lead to XSS",
+          "url": "https://github.com/advisories/GHSA-cm22-4g7w-348p",
+          "severity": "low",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 5,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:L"
+          },
+          "range": "<1.16.0"
+        },
+        "send"
+      ],
+      "effects": [],
+      "range": "<=1.16.0",
+      "nodes": [
+        "node_modules/serve-static"
+      ],
+      "fixAvailable": true
+    },
+    "sigstore": {
+      "name": "sigstore",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "@sigstore/sign",
+        "@sigstore/tuf",
+        {
+          "source": 1122163,
+          "name": "sigstore",
+          "dependency": "sigstore",
+          "title": "sigstore's `certificateOIDs` verification constraints are silently dropped and never enforced",
+          "url": "https://github.com/advisories/GHSA-52v5-jr5w-gjxr",
+          "severity": "high",
+          "cwe": [
+            "CWE-347"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+          },
+          "range": "<=4.1.0"
+        },
+        "make-fetch-happen"
+      ],
+      "effects": [
+        "pacote"
+      ],
+      "range": "<=4.1.0",
+      "nodes": [
+        "node_modules/sigstore"
+      ],
+      "fixAvailable": {
+        "name": "@angular/cli",
+        "version": "22.1.7",
+        "isSemVerMajor": true
+      }
+    },
+    "sockjs": {
+      "name": "sockjs",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "uuid"
+      ],
+      "effects": [
+        "webpack-dev-server"
+      ],
+      "range": ">=0.3.17",
+      "nodes": [
+        "node_modules/sockjs"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "22.1.7",
+        "isSemVerMajor": true
+      }
+    },
+    "tar": {
+      "name": "tar",
+      "severity": "critical",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1112659,
+          "name": "tar",
+          "dependency": "tar",
+          "title": "node-tar Vulnerable to Arbitrary File Creation/Overwrite via Hardlink Path Traversal",
+          "url": "https://github.com/advisories/GHSA-34x7-hfp2-rc4v",
+          "severity": "high",
+          "cwe": [
+            "CWE-22",
+            "CWE-59"
+          ],
+          "cvss": {
+            "score": 8.2,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:L/A:N"
+          },
+          "range": "<7.5.7"
+        },
+        {
+          "source": 1113300,
+          "name": "tar",
+          "dependency": "tar",
+          "title": "node-tar is Vulnerable to Arbitrary File Overwrite and Symlink Poisoning via Insufficient Path Sanitization",
+          "url": "https://github.com/advisories/GHSA-8qq5-rm4j-mr97",
+          "severity": "high",
+          "cwe": [
+            "CWE-22"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<=7.5.2"
+        },
+        {
+          "source": 1113375,
+          "name": "tar",
+          "dependency": "tar",
+          "title": "Arbitrary File Read/Write via Hardlink Target Escape Through Symlink Chain in node-tar Extraction",
+          "url": "https://github.com/advisories/GHSA-83g3-92jg-28cx",
+          "severity": "high",
+          "cwe": [
+            "CWE-22"
+          ],
+          "cvss": {
+            "score": 7.1,
+            "vectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N"
+          },
+          "range": "<7.5.8"
+        },
+        {
+          "source": 1114200,
+          "name": "tar",
+          "dependency": "tar",
+          "title": "tar has Hardlink Path Traversal via Drive-Relative Linkpath",
+          "url": "https://github.com/advisories/GHSA-qffp-2rhf-9h96",
+          "severity": "high",
+          "cwe": [
+            "CWE-22",
+            "CWE-59"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<=7.5.9"
+        },
+        {
+          "source": 1114302,
+          "name": "tar",
+          "dependency": "tar",
+          "title": "node-tar Symlink Path Traversal via Drive-Relative Linkpath",
+          "url": "https://github.com/advisories/GHSA-9ppj-qmqm-q256",
+          "severity": "high",
+          "cwe": [
+            "CWE-22"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<=7.5.10"
+        },
+        {
+          "source": 1114680,
+          "name": "tar",
+          "dependency": "tar",
+          "title": "Race Condition in node-tar Path Reservations via Unicode Ligature Collisions on macOS APFS",
+          "url": "https://github.com/advisories/GHSA-r6q2-hw4h-h46w",
+          "severity": "high",
+          "cwe": [
+            "CWE-176",
+            "CWE-367"
+          ],
+          "cvss": {
+            "score": 8.8,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L"
+          },
+          "range": "<=7.5.3"
+        },
+        {
+          "source": 1120782,
+          "name": "tar",
+          "dependency": "tar",
+          "title": "node-tar applies PAX size override to intermediary GNU long-name/long-link headers, causing tar parser interpretation differential (file smuggling)",
+          "url": "https://github.com/advisories/GHSA-vmf3-w455-68vh",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-436"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<=7.5.15"
+        },
+        {
+          "source": 1123939,
+          "name": "tar",
+          "dependency": "tar",
+          "title": "node-tar: Process crash via PAX numeric path type confusion",
+          "url": "https://github.com/advisories/GHSA-w8wr-v893-vjvp",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-704"
+          ],
+          "cvss": {
+            "score": 5.3,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+          },
+          "range": "<=7.5.17"
+        },
+        {
+          "source": 1123940,
+          "name": "tar",
+          "dependency": "tar",
+          "title": "node-tar: Decompression/parse DoS via unlimited input",
+          "url": "https://github.com/advisories/GHSA-23hp-3jrh-7fpw",
+          "severity": "critical",
+          "cwe": [
+            "CWE-770"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": "<=7.5.18"
+        },
+        {
+          "source": 1123941,
+          "name": "tar",
+          "dependency": "tar",
+          "title": "node-tar: Negative tar entry size causes infinite loop in archive replace",
+          "url": "https://github.com/advisories/GHSA-8x88-c5mf-7j5w",
+          "severity": "high",
+          "cwe": [
+            "CWE-835"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": "<=7.5.17"
+        },
+        {
+          "source": 1123942,
+          "name": "tar",
+          "dependency": "tar",
+          "title": "node-tar: Uncaught Exception DoS via NUL byte in PAX path/linkpath records",
+          "url": "https://github.com/advisories/GHSA-gvwx-54wh-qm9j",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-248"
+          ],
+          "cvss": {
+            "score": 5.3,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+          },
+          "range": "<=7.5.16"
+        },
+        {
+          "source": 1145647,
+          "name": "tar",
+          "dependency": "tar",
+          "title": "node-tar: Uncontrolled recursion in mapHas/filesFilter allows uncatchable stack-overflow DoS via crafted long-path tar with member selection",
+          "url": "https://github.com/advisories/GHSA-r292-9mhp-454m",
+          "severity": "high",
+          "cwe": [
+            "CWE-400",
+            "CWE-674"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": "<=7.5.20"
+        }
+      ],
+      "effects": [
+        "cacache",
+        "node-gyp",
+        "pacote"
+      ],
+      "range": "<=7.5.20",
+      "nodes": [
+        "node_modules/tar"
+      ],
+      "fixAvailable": {
+        "name": "@angular/cli",
+        "version": "22.1.7",
+        "isSemVerMajor": true
+      }
+    },
+    "tmp": {
+      "name": "tmp",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1109537,
+          "name": "tmp",
+          "dependency": "tmp",
+          "title": "tmp allows arbitrary temporary file / directory write via symbolic link `dir` parameter",
+          "url": "https://github.com/advisories/GHSA-52f5-9888-hmc6",
+          "severity": "low",
+          "cwe": [
+            "CWE-59"
+          ],
+          "cvss": {
+            "score": 2.5,
+            "vectorString": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N"
+          },
+          "range": "<=0.2.3"
+        },
+        {
+          "source": 1120654,
+          "name": "tmp",
+          "dependency": "tmp",
+          "title": "tmp has Path Traversal via unsanitized prefix/postfix that enables directory escape",
+          "url": "https://github.com/advisories/GHSA-ph9p-34f9-6g65",
+          "severity": "high",
+          "cwe": [
+            "CWE-22"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<0.2.6"
+        }
+      ],
+      "effects": [
+        "@angular-eslint/schematics",
+        "external-editor",
+        "selenium-webdriver"
+      ],
+      "range": "<=0.2.5",
+      "nodes": [
+        "node_modules/external-editor/node_modules/tmp",
+        "node_modules/selenium-webdriver/node_modules/tmp",
+        "node_modules/tmp"
+      ],
+      "fixAvailable": {
+        "name": "@angular-eslint/schematics",
+        "version": "22.5.0",
+        "isSemVerMajor": true
+      }
+    },
+    "tough-cookie": {
+      "name": "tough-cookie",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1097682,
+          "name": "tough-cookie",
+          "dependency": "tough-cookie",
+          "title": "tough-cookie Prototype Pollution vulnerability",
+          "url": "https://github.com/advisories/GHSA-72xf-g2v4-qvf3",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-1321"
+          ],
+          "cvss": {
+            "score": 6.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+          },
+          "range": "<4.1.3"
+        }
+      ],
+      "effects": [
+        "request"
+      ],
+      "range": "<4.1.3",
+      "nodes": [
+        "node_modules/tough-cookie"
+      ],
+      "fixAvailable": true
+    },
+    "tuf-js": {
+      "name": "tuf-js",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "make-fetch-happen"
+      ],
+      "effects": [
+        "@sigstore/tuf"
+      ],
+      "range": "<=2.2.1",
+      "nodes": [
+        "node_modules/tuf-js"
+      ],
+      "fixAvailable": {
+        "name": "@angular/cli",
+        "version": "22.1.7",
+        "isSemVerMajor": true
+      }
+    },
+    "uuid": {
+      "name": "uuid",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1119441,
+          "name": "uuid",
+          "dependency": "uuid",
+          "title": "uuid: Missing buffer bounds check in v3/v5/v6 when buf is provided",
+          "url": "https://github.com/advisories/GHSA-w5hq-g745-h8pq",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-787",
+            "CWE-1285"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+          },
+          "range": "<11.1.1"
+        }
+      ],
+      "effects": [
+        "request",
+        "sockjs"
+      ],
+      "range": "<11.1.1",
+      "nodes": [
+        "node_modules/request/node_modules/uuid",
+        "node_modules/uuid"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "22.1.7",
+        "isSemVerMajor": true
+      }
+    },
+    "webdriver-js-extender": {
+      "name": "webdriver-js-extender",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "selenium-webdriver"
+      ],
+      "effects": [
+        "protractor"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/webdriver-js-extender"
+      ],
+      "fixAvailable": {
+        "name": "protractor",
+        "version": "3.3.0",
+        "isSemVerMajor": true
+      }
+    },
+    "webdriver-manager": {
+      "name": "webdriver-manager",
+      "severity": "critical",
+      "isDirect": false,
+      "via": [
+        "adm-zip",
+        "minimist",
+        "request",
+        "xml2js"
+      ],
+      "effects": [
+        "protractor"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/webdriver-manager"
+      ],
+      "fixAvailable": {
+        "name": "protractor",
+        "version": "3.3.0",
+        "isSemVerMajor": true
+      }
+    },
+    "webpack": {
+      "name": "webpack",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1099351,
+          "name": "webpack",
+          "dependency": "webpack",
+          "title": "Webpack's AutoPublicPathRuntimeModule has a DOM Clobbering Gadget that leads to XSS",
+          "url": "https://github.com/advisories/GHSA-4vvj-4cpr-p986",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 6.4,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:H"
+          },
+          "range": ">=5.0.0-alpha.0 <5.94.0"
+        },
+        {
+          "source": 1113041,
+          "name": "webpack",
+          "dependency": "webpack",
+          "title": "webpack buildHttp: allowedUris allow-list bypass via URL userinfo (@) leading to build-time SSRF behavior",
+          "url": "https://github.com/advisories/GHSA-8fgc-7cc6-rx7x",
+          "severity": "low",
+          "cwe": [
+            "CWE-918"
+          ],
+          "cvss": {
+            "score": 3.7,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:L/I:L/A:N"
+          },
+          "range": ">=5.49.0 <=5.104.0"
+        },
+        {
+          "source": 1113042,
+          "name": "webpack",
+          "dependency": "webpack",
+          "title": "webpack buildHttp HttpUriPlugin allowedUris bypass via HTTP redirects → SSRF + cache persistence",
+          "url": "https://github.com/advisories/GHSA-38r7-794h-5758",
+          "severity": "low",
+          "cwe": [
+            "CWE-918"
+          ],
+          "cvss": {
+            "score": 3.7,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:L/I:L/A:N"
+          },
+          "range": ">=5.49.0 <5.104.0"
+        }
+      ],
+      "effects": [
+        "@angular-devkit/build-angular"
+      ],
+      "range": "5.0.0-alpha.0 - 5.104.0",
+      "nodes": [
+        "node_modules/webpack"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "22.1.7",
+        "isSemVerMajor": true
+      }
+    },
+    "webpack-dev-server": {
+      "name": "webpack-dev-server",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1108429,
+          "name": "webpack-dev-server",
+          "dependency": "webpack-dev-server",
+          "title": "webpack-dev-server users' source code may be stolen when they access a malicious web site with non-Chromium based browser",
+          "url": "https://github.com/advisories/GHSA-9jgg-88mc-972h",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-346"
+          ],
+          "cvss": {
+            "score": 6.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N"
+          },
+          "range": "<=5.2.0"
+        },
+        {
+          "source": 1108430,
+          "name": "webpack-dev-server",
+          "dependency": "webpack-dev-server",
+          "title": "webpack-dev-server users' source code may be stolen when they access a malicious web site",
+          "url": "https://github.com/advisories/GHSA-4v9v-hfq4-rm2v",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-749"
+          ],
+          "cvss": {
+            "score": 5.3,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N"
+          },
+          "range": "<=5.2.0"
+        },
+        {
+          "source": 1119074,
+          "name": "webpack-dev-server",
+          "dependency": "webpack-dev-server",
+          "title": "webpack-dev-server vulnerable to cross-origin source code exposure on non-HTTPS origins",
+          "url": "https://github.com/advisories/GHSA-79cf-xcqc-c78w",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-749"
+          ],
+          "cvss": {
+            "score": 5.3,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N"
+          },
+          "range": "<=5.2.3"
+        },
+        {
+          "source": 1121087,
+          "name": "webpack-dev-server",
+          "dependency": "webpack-dev-server",
+          "title": "webpack-dev-server vulnerable to HMR WebSocket interception via permissive user proxies",
+          "url": "https://github.com/advisories/GHSA-mx8g-39q3-5c79",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-346",
+            "CWE-441"
+          ],
+          "cvss": {
+            "score": 5.3,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+          },
+          "range": "<5.2.5"
+        },
+        {
+          "source": 1123965,
+          "name": "webpack-dev-server",
+          "dependency": "webpack-dev-server",
+          "title": "webpack-dev-server vulnerable to cross-site request forgery via internal developer endpoints",
+          "url": "https://github.com/advisories/GHSA-f5vj-f2hx-8m93",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-352",
+            "CWE-749"
+          ],
+          "cvss": {
+            "score": 4.7,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:N/A:L"
+          },
+          "range": "<=5.2.5"
+        },
+        {
+          "source": 1123966,
+          "name": "webpack-dev-server",
+          "dependency": "webpack-dev-server",
+          "title": "webpack-dev-server vulnerable to denial of service via a malformed Host or Origin header",
+          "url": "https://github.com/advisories/GHSA-m28w-2pqf-7qgj",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-20",
+            "CWE-248"
+          ],
+          "cvss": {
+            "score": 5.3,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+          },
+          "range": "<=5.2.5"
+        },
+        "sockjs"
+      ],
+      "effects": [
+        "@angular-devkit/build-angular",
+        "@angular-devkit/build-webpack"
+      ],
+      "range": "<=5.2.6",
+      "nodes": [
+        "node_modules/webpack-dev-server"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "22.1.7",
+        "isSemVerMajor": true
+      }
+    },
+    "xml2js": {
+      "name": "xml2js",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1096693,
+          "name": "xml2js",
+          "dependency": "xml2js",
+          "title": "xml2js is vulnerable to prototype pollution",
+          "url": "https://github.com/advisories/GHSA-776f-qx25-q3cc",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-1321"
+          ],
+          "cvss": {
+            "score": 5.3,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+          },
+          "range": "<0.5.0"
+        }
+      ],
+      "effects": [
+        "webdriver-manager"
+      ],
+      "range": "<0.5.0",
+      "nodes": [
+        "node_modules/xml2js"
+      ],
+      "fixAvailable": {
+        "name": "protractor",
+        "version": "3.3.0",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 7,
+      "moderate": 17,
+      "high": 50,
+      "critical": 7,
+      "total": 81
+    },
+    "dependencies": {
+      "prod": 181,
+      "dev": 1141,
+      "optional": 40,
+      "peer": 0,
+      "peerOptional": 0,
+      "total": 1322
+    }
+  }
+}

@@ -1,0 +1,17 @@
+# ngcc / View Engine proof after clean npm ci (postinstall ngcc removed, legacy-peer-deps removed)
+date: 2026-09-10T00:26:31Z  node v16.20.2 npm 8.19.4 (see npm-ci-clean-no-ngcc.log)
+
+$ find node_modules -name '*.metadata.json' | wc -l
+0
+$ find node_modules -type d -name __ivy_ngcc__ | wc -l
+0
+$ grep -rl __processed_by_ivy_ngcc__ node_modules --include=package.json | wc -l
+0
+
+$ npx ngcc --properties es2015 browser module main --first-only --create-ivy-entry-points   (explicit run; no output = nothing to process)
+(exit 0, 1.2s; markers after run: metadata=0 __ivy_ngcc__=0 __processed_by_ivy_ngcc__=0)
+
+$ grep -rl 'ɵɵngDeclare' node_modules/@northgate/canopy-ui --include=*.mjs | wc -l -> 109 (partial Ivy)
+$ grep -rl 'ɵɵngDeclare' node_modules/@northgate/lantern-sdk --include=*.mjs | wc -l -> 7 (partial Ivy)
+
+Per-package format table: angular-packages-format.txt (every package depending on @angular/*; 'no-angular-decl' = barrel/plain package without Angular decorators, e.g. @angular/material root entry, @ngx-translate/http-loader 7.0.0, @ngrx/entity)

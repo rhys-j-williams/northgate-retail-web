@@ -8,7 +8,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 @Component({
   selector: 'mol-masked-number',
   template: `
-    <span class="mol-masked" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="4px">
+    <span class="mol-masked mol-flex-row mol-justify-start mol-align-center mol-gap-4">
       <span class="mol-masked__value" [attr.aria-label]="revealed ? fullLabel : maskedLabel">{{ revealed ? grouped : masked }}</span>
       <cn-icon-button *ngIf="full" [icon]="revealed ? 'visibility_off' : 'visibility'"
         [ariaLabel]="revealed ? hideLabel : showLabel" (pressed)="toggle()"></cn-icon-button>

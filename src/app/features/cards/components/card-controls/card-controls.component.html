@@ -1,12 +1,12 @@
 <cn-page-header title="Card controls" i18n-title="@@cards.controls.title" lede="Decide where and how this card can be used. Changes take effect on the next authorisation." i18n-lede="@@cards.controls.lede" [backLink]="['/cards', cardId]" backLabel="Card"></cn-page-header>
 
-<div class="mol-page mol-narrow" fxLayout="column" fxLayoutGap="16px">
+<div class="mol-page mol-narrow mol-flex-col mol-gap-16">
   <mol-error-banner [error]="error" [showRetry]="false"></mol-error-banner>
   <mol-loading-panel *ngIf="loading" [rows]="6"></mol-loading-panel>
 
-  <form *ngIf="!loading" [formGroup]="form" (ngSubmit)="save()" novalidate fxLayout="column" fxLayoutGap="16px">
+  <form class="mol-flex-col mol-gap-16" *ngIf="!loading" [formGroup]="form" (ngSubmit)="save()" novalidate>
     <mol-page-section title="Where the card works" i18n-title="@@cards.controls.where">
-      <div fxLayout="column" fxLayoutGap="8px">
+      <div class="mol-flex-col mol-gap-8">
         <cn-toggle formControlName="internationalEnabled" hint="Purchases and ATM withdrawals outside the United States" i18n-hint="@@cards.controls.intlHint">International</cn-toggle>
         <cn-toggle formControlName="onlineEnabled" hint="Web, app and phone purchases where the card is not present" i18n-hint="@@cards.controls.onlineHint">Online and phone</cn-toggle>
         <cn-toggle formControlName="atmEnabled" hint="Cash withdrawals at any ATM" i18n-hint="@@cards.controls.atmHint">ATM withdrawals</cn-toggle>
@@ -16,7 +16,7 @@
     </mol-page-section>
 
     <mol-page-section title="Daily spend limit" i18n-title="@@cards.controls.limit">
-      <div fxLayout="column" fxLayoutGap="8px">
+      <div class="mol-flex-col mol-gap-8">
         <cn-toggle formControlName="limitEnabled" i18n="@@cards.controls.limitToggle">Set a daily limit</cn-toggle>
         <mat-form-field *ngIf="form.controls.limitEnabled.value" appearance="outline">
           <mat-label i18n="@@cards.controls.limitLabel">Limit per calendar day</mat-label>
@@ -31,7 +31,7 @@
       <cn-filter-chips formControlName="blockedMerchantCategories" [chips]="categories" [multiple]="true" ariaLabel="Blocked merchant types"></cn-filter-chips>
     </mol-page-section>
 
-    <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="8px">
+    <div class="mol-flex-row mol-justify-end mol-align-stretch mol-gap-8">
       <cn-button variant="tertiary" [routerLink]="['/cards', cardId]" i18n="@@action.cancel">Cancel</cn-button>
       <cn-button type="submit" variant="primary" [loading]="saving" [disabled]="form.pristine || form.invalid" i18n="@@action.save">Save</cn-button>
     </div>

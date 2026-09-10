@@ -1,8 +1,8 @@
 <mol-page-section title="Quiet hours" i18n-title="@@alerts.quiet.title" lede="Hold optional alerts overnight and deliver them in the morning. Security and regulatory alerts are always sent immediately." i18n-lede="@@alerts.quiet.lede">
-  <form [formGroup]="form" (ngSubmit)="save()" novalidate fxLayout="column" fxLayoutGap="12px">
+  <form class="mol-flex-col mol-gap-12" [formGroup]="form" (ngSubmit)="save()" novalidate>
     <cn-toggle formControlName="enabled" onText="Quiet hours on" offText="Quiet hours off"></cn-toggle>
 
-    <div *ngIf="form.controls.enabled.value" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="16px">
+    <div class="mol-flex-row mol-flex-col--lt-md mol-gap-16" *ngIf="form.controls.enabled.value">
       <mat-form-field appearance="outline">
         <mat-label i18n="@@alerts.quiet.from">From</mat-label>
         <input matInput type="time" formControlName="start" step="900" />
@@ -15,7 +15,7 @@
     </div>
     <p class="mol-muted mol-small" i18n="@@alerts.quiet.tz">Times are Eastern. Alerts held overnight are delivered together when quiet hours end.</p>
 
-    <div fxLayout="row" fxLayoutAlign="end">
+    <div class="mol-flex-row mol-justify-end mol-align-stretch">
       <cn-button type="submit" variant="primary" [loading]="saving" [disabled]="form.pristine || form.invalid" i18n="@@action.save">Save</cn-button>
     </div>
   </form>

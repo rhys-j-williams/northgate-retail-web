@@ -1,0 +1,200 @@
+{
+  "app": "http://localhost:4200",
+  "capturedAt": "2026-09-10T00:03:02.749Z",
+  "fixedTime": "Date.prototype.getHours -> 18 (greeting pinned to evening)",
+  "user": "rosalind.ekstrand",
+  "shots": [
+    {
+      "id": "cards",
+      "viewport": "1280x800",
+      "route": "/cards",
+      "finalUrl": "/cards",
+      "title": "Cards - Northgate Online",
+      "file": "cards--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 419,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "cards-detail",
+      "viewport": "1280x800",
+      "route": "/cards/CRD-980719437",
+      "finalUrl": "/cards/CRD-980719437",
+      "title": "Cards - Northgate Online",
+      "file": "cards-detail--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 423,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "cards-controls",
+      "viewport": "1280x800",
+      "route": "/cards/CRD-980719437/controls",
+      "finalUrl": "/cards/CRD-980719437/controls",
+      "title": "Cards - Northgate Online",
+      "file": "cards-controls--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 1021
+      },
+      "textLength": 1125,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "cards-report",
+      "viewport": "1280x800",
+      "route": "/cards/CRD-980719437/report",
+      "finalUrl": "/cards/CRD-980719437/report",
+      "title": "Cards - Northgate Online",
+      "file": "cards-report--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 493,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "cards-travel",
+      "viewport": "1280x800",
+      "route": "/cards/CRD-980719437/travel",
+      "finalUrl": "/cards/CRD-980719437/travel",
+      "title": "Cards - Northgate Online",
+      "file": "cards-travel--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 453,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "cards-activate",
+      "viewport": "1280x800",
+      "route": "/cards/CRD-980719437/activate",
+      "finalUrl": "/cards/CRD-980719437/activate",
+      "title": "Cards - Northgate Online",
+      "file": "cards-activate--1280x800.png",
+      "pageSize": {
+        "w": 1280,
+        "h": 800
+      },
+      "textLength": 423,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "cards",
+      "viewport": "375x812",
+      "route": "/cards",
+      "finalUrl": "/cards",
+      "title": "Cards - Northgate Online",
+      "file": "cards--375x812.png",
+      "pageSize": {
+        "w": 400,
+        "h": 812
+      },
+      "textLength": 419,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "cards-detail",
+      "viewport": "375x812",
+      "route": "/cards/CRD-980719437",
+      "finalUrl": "/cards/CRD-980719437",
+      "title": "Cards - Northgate Online",
+      "file": "cards-detail--375x812.png",
+      "pageSize": {
+        "w": 400,
+        "h": 812
+      },
+      "textLength": 423,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "cards-controls",
+      "viewport": "375x812",
+      "route": "/cards/CRD-980719437/controls",
+      "finalUrl": "/cards/CRD-980719437/controls",
+      "title": "Cards - Northgate Online",
+      "file": "cards-controls--375x812.png",
+      "pageSize": {
+        "w": 400,
+        "h": 1245
+      },
+      "textLength": 1125,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "cards-report",
+      "viewport": "375x812",
+      "route": "/cards/CRD-980719437/report",
+      "finalUrl": "/cards/CRD-980719437/report",
+      "title": "Cards - Northgate Online",
+      "file": "cards-report--375x812.png",
+      "pageSize": {
+        "w": 400,
+        "h": 812
+      },
+      "textLength": 493,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "cards-travel",
+      "viewport": "375x812",
+      "route": "/cards/CRD-980719437/travel",
+      "finalUrl": "/cards/CRD-980719437/travel",
+      "title": "Cards - Northgate Online",
+      "file": "cards-travel--375x812.png",
+      "pageSize": {
+        "w": 400,
+        "h": 812
+      },
+      "textLength": 453,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    },
+    {
+      "id": "cards-activate",
+      "viewport": "375x812",
+      "route": "/cards/CRD-980719437/activate",
+      "finalUrl": "/cards/CRD-980719437/activate",
+      "title": "Cards - Northgate Online",
+      "file": "cards-activate--375x812.png",
+      "pageSize": {
+        "w": 400,
+        "h": 812
+      },
+      "textLength": 423,
+      "textHead": "Skip to main content Northgate Online LOCAL Rosalind Sign out home Dashboard account_balance Accounts swap_horiz Transfe",
+      "note": "",
+      "pageErrors": []
+    }
+  ]
+}

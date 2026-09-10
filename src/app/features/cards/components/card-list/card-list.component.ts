@@ -19,6 +19,7 @@ import { LockCardComponent, LockCardData } from '../lock-card/lock-card.componen
 @Component({
   selector: 'mol-card-list',
   templateUrl: './card-list.component.html',
+  styleUrls: ['./card-list.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CardListComponent implements OnInit {

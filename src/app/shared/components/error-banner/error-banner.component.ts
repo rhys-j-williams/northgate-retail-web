@@ -10,8 +10,8 @@ import { AppError } from '../../../core/errors/app-error.model';
 @Component({
   selector: 'mol-error-banner',
   template: `
-    <div class="mol-error-banner" role="alert" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-between center" fxLayoutGap="12px" *ngIf="error">
-      <div fxLayout="row" fxLayoutGap="12px" fxLayoutAlign="start center">
+    <div class="mol-error-banner mol-flex-row mol-flex-col--lt-md mol-justify-between mol-align-center mol-gap-12" role="alert" *ngIf="error">
+      <div class="mol-flex-row mol-gap-12 mol-justify-start mol-align-center">
         <mat-icon aria-hidden="true">error_outline</mat-icon>
         <div>
           <div class="mol-error-banner__title">{{ error.title }}</div>

@@ -1,8 +1,8 @@
 <cn-page-header title="Statement" i18n-title="@@statements.viewer.title" backLink="/statements" backLabel="Statements"></cn-page-header>
 
-<div class="mol-page" fxLayout="column" fxLayoutGap="12px">
+<div class="mol-page mol-flex-col mol-gap-12">
   <mol-error-banner [error]="error" [showRetry]="false"></mol-error-banner>
-  <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="8px" *ngIf="src">
+  <div class="mol-flex-row mol-justify-end mol-align-stretch mol-gap-8" *ngIf="src">
     <cn-button variant="tertiary" size="small" icon="print" (pressed)="print()" i18n="@@action.print">Print</cn-button>
     <cn-button variant="secondary" size="small" icon="download" (pressed)="download()" i18n="@@action.download">Download PDF</cn-button>
   </div>

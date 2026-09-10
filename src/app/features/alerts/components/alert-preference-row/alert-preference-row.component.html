@@ -1,12 +1,12 @@
-<div class="mol-pref-row" [class.mol-pref-row--busy]="busy" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-between start" fxLayoutGap="16px">
-  <div fxFlex fxLayout="column" fxLayoutGap="4px">
-    <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px">
+<div class="mol-pref-row mol-flex-row mol-flex-col--lt-md mol-justify-between mol-align-start mol-gap-16" [class.mol-pref-row--busy]="busy">
+  <div class="mol-flex mol-flex-col mol-gap-4">
+    <div class="mol-flex-row mol-justify-start mol-align-center mol-gap-8">
       <strong>{{ preference.label }}</strong>
       <cn-badge *ngIf="preference.regulatory" tone="info" size="small" i18n="@@alerts.row.required">Required</cn-badge>
     </div>
     <span class="mol-muted">{{ preference.description }}</span>
 
-    <div *ngIf="hasThreshold" class="mol-pref-row__threshold" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px">
+    <div *ngIf="hasThreshold" class="mol-pref-row__threshold mol-flex-row mol-justify-start mol-align-center mol-gap-8">
       <ng-container *ngIf="!editingThreshold">
         <span i18n="@@alerts.row.threshold">When over {{ preference.thresholdMinor | minorAmount }}</span>
         <cn-button variant="tertiary" size="small" (pressed)="startThreshold()" [disabled]="!preference.enabled || busy" i18n="@@action.change">Change</cn-button>

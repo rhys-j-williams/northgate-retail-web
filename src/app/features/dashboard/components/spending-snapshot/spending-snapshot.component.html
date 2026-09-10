@@ -1,13 +1,13 @@
 <cn-card title="Spending this month" i18n-title="@@dashboard.spending.title" class="mol-widget">
   <ng-container *ngIf="slices$ | async as slices; else loading">
-    <div *ngIf="slices.length; else empty" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="16px" fxLayoutAlign="start center">
+    <div class="mol-flex-row mol-flex-col--lt-md mol-gap-16 mol-justify-start mol-align-center" *ngIf="slices.length; else empty">
       <div class="mol-doughnut" role="img" [attr.aria-label]="'Spending by category, total ' + (total | minorAmount)" [style.background]="gradient(slices)">
         <div class="mol-doughnut__hole">
           <span class="mol-doughnut__total">{{ total | minorAmount }}</span>
         </div>
       </div>
-      <ul class="mol-legend" fxFlex>
-        <li *ngFor="let s of slices" fxLayout="row" fxLayoutAlign="space-between center">
+      <ul class="mol-legend mol-flex">
+        <li class="mol-flex-row mol-justify-between mol-align-center" *ngFor="let s of slices">
           <span><i class="mol-legend__swatch" [style.background]="s.colour"></i>{{ s.label }}</span>
           <span class="mol-muted">{{ s.minor | minorAmount }} &middot; {{ s.share }}%</span>
         </li>

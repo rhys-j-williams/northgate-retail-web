@@ -1,0 +1,536 @@
+npm WARN config production Use `--omit=dev` instead.
+{
+  "auditReportVersion": 2,
+  "vulnerabilities": {
+    "@angular/common": {
+      "name": "@angular/common",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        {
+          "source": 1120387,
+          "name": "@angular/common",
+          "dependency": "@angular/common",
+          "title": "Angular is Vulnerable to XSRF Token Leakage via Protocol-Relative URLs in Angular HTTP Client",
+          "url": "https://github.com/advisories/GHSA-58c5-g7wp-6w37",
+          "severity": "high",
+          "cwe": [
+            "CWE-201",
+            "CWE-359"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<19.2.16"
+        },
+        {
+          "source": 1123497,
+          "name": "@angular/common",
+          "dependency": "@angular/common",
+          "title": "@angular/common: Denial of Service (DoS) via OOM in Date Formatting (formatDate)",
+          "url": "https://github.com/advisories/GHSA-48r7-hpm6-gfxm",
+          "severity": "high",
+          "cwe": [
+            "CWE-400",
+            "CWE-1333"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": "<=19.2.25"
+        },
+        {
+          "source": 1123501,
+          "name": "@angular/common",
+          "dependency": "@angular/common",
+          "title": "@angular/common: Weak 32-Bit Cache Key Hashing in `HttpTransferCache` Leading to Cross-Request Data Leakage and State Poisoning",
+          "url": "https://github.com/advisories/GHSA-39pv-4j6c-2g6v",
+          "severity": "high",
+          "cwe": [
+            "CWE-328",
+            "CWE-345"
+          ],
+          "cvss": {
+            "score": 6.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+          },
+          "range": "<=19.2.25"
+        },
+        {
+          "source": 1123536,
+          "name": "@angular/common",
+          "dependency": "@angular/common",
+          "title": "@angular/common: Denial of Service (DoS) via OOM in Number Formatting (digitsInfo)",
+          "url": "https://github.com/advisories/GHSA-p3vc-36g9-x9gr",
+          "severity": "high",
+          "cwe": [
+            "CWE-400",
+            "CWE-834"
+          ],
+          "cvss": {
+            "score": 6.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+          },
+          "range": "<=18.2.14"
+        },
+        {
+          "source": 1123541,
+          "name": "@angular/common",
+          "dependency": "@angular/common",
+          "title": "@angular/common: Information Leak via Default Caching of Credentialed Requests in HttpTransferCache",
+          "url": "https://github.com/advisories/GHSA-q6f4-qqrg-jv6x",
+          "severity": "high",
+          "cwe": [
+            "CWE-524"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+          },
+          "range": "<=18.2.14"
+        },
+        {
+          "source": 1130677,
+          "name": "@angular/common",
+          "dependency": "@angular/common",
+          "title": "Angular: Cache-Key Ambiguity in HttpTransferCache Leading to Cross-Request Response Reuse and State Poisoning",
+          "url": "https://github.com/advisories/GHSA-jhpw-976m-542j",
+          "severity": "high",
+          "cwe": [
+            "CWE-345"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<=19.2.25"
+        }
+      ],
+      "effects": [],
+      "range": "<=19.2.25",
+      "nodes": [
+        "node_modules/@angular/common"
+      ],
+      "fixAvailable": {
+        "name": "@angular/common",
+        "version": "22.1.6",
+        "isSemVerMajor": true
+      }
+    },
+    "@angular/compiler": {
+      "name": "@angular/compiler",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        {
+          "source": 1120372,
+          "name": "@angular/compiler",
+          "dependency": "@angular/compiler",
+          "title": "Angular has XSS Vulnerability via Unsanitized SVG Script Attributes",
+          "url": "https://github.com/advisories/GHSA-jrmj-c5cx-3cw6",
+          "severity": "high",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<=18.2.14"
+        },
+        {
+          "source": 1120383,
+          "name": "@angular/compiler",
+          "dependency": "@angular/compiler",
+          "title": "Angular Stored XSS Vulnerability via SVG Animation, SVG URL and MathML Attributes",
+          "url": "https://github.com/advisories/GHSA-v4hv-rgfq-gp49",
+          "severity": "high",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<=18.2.14"
+        },
+        {
+          "source": 1123505,
+          "name": "@angular/compiler",
+          "dependency": "@angular/compiler",
+          "title": "@angular/compiler: Two-Way Property Binding Sanitization Bypass (XSS)",
+          "url": "https://github.com/advisories/GHSA-58w9-8g37-x9v5",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 6.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+          },
+          "range": "<=19.2.25"
+        },
+        {
+          "source": 1123509,
+          "name": "@angular/compiler",
+          "dependency": "@angular/compiler",
+          "title": "Angular: Template and Attribute Namespace Sanitization Bypass (XSS)",
+          "url": "https://github.com/advisories/GHSA-f3m7-gqxr-g87x",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 6.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+          },
+          "range": "<=18.2.14"
+        },
+        {
+          "source": 1130697,
+          "name": "@angular/compiler",
+          "dependency": "@angular/compiler",
+          "title": "Angular i18n: Cross-Site Scripting (XSS) via event-handler attributes",
+          "url": "https://github.com/advisories/GHSA-jj27-h5hq-8x99",
+          "severity": "high",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<=19.2.25"
+        }
+      ],
+      "effects": [],
+      "range": "<=19.2.25",
+      "nodes": [
+        "node_modules/@angular/compiler"
+      ],
+      "fixAvailable": {
+        "name": "@angular/compiler",
+        "version": "22.1.6",
+        "isSemVerMajor": true
+      }
+    },
+    "@angular/core": {
+      "name": "@angular/core",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        {
+          "source": 1113587,
+          "name": "@angular/core",
+          "dependency": "@angular/core",
+          "title": "Angular i18n vulnerable to Cross-Site Scripting",
+          "url": "https://github.com/advisories/GHSA-prjf-86w9-mfqv",
+          "severity": "high",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 6.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+          },
+          "range": "<=18.2.14"
+        },
+        {
+          "source": 1120371,
+          "name": "@angular/core",
+          "dependency": "@angular/core",
+          "title": "Angular has XSS Vulnerability via Unsanitized SVG Script Attributes",
+          "url": "https://github.com/advisories/GHSA-jrmj-c5cx-3cw6",
+          "severity": "high",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<=18.2.14"
+        },
+        {
+          "source": 1123514,
+          "name": "@angular/core",
+          "dependency": "@angular/core",
+          "title": "Angular: Template and Attribute Namespace Sanitization Bypass (XSS)",
+          "url": "https://github.com/advisories/GHSA-f3m7-gqxr-g87x",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 6.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+          },
+          "range": "<=18.2.14"
+        },
+        {
+          "source": 1123546,
+          "name": "@angular/core",
+          "dependency": "@angular/core",
+          "title": "@angular/core: Angular Template and Dynamic Component Namespace Bypass leading to Cross-Site Scripting (XSS)",
+          "url": "https://github.com/advisories/GHSA-692r-grfm-v8x7",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 6.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+          },
+          "range": "<=18.2.14"
+        },
+        {
+          "source": 1123560,
+          "name": "@angular/core",
+          "dependency": "@angular/core",
+          "title": "Angular Client Hydration DOM Clobbering & Response-Cache Poisoning",
+          "url": "https://github.com/advisories/GHSA-rgjc-h3x7-9mwg",
+          "severity": "high",
+          "cwe": [
+            "CWE-79",
+            "CWE-471"
+          ],
+          "cvss": {
+            "score": 6.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+          },
+          "range": "<=19.2.25"
+        },
+        {
+          "source": 1130693,
+          "name": "@angular/core",
+          "dependency": "@angular/core",
+          "title": "Angular i18n: Cross-Site Scripting (XSS) via event-handler attributes",
+          "url": "https://github.com/advisories/GHSA-jj27-h5hq-8x99",
+          "severity": "high",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<=19.2.25"
+        }
+      ],
+      "effects": [],
+      "range": "<=19.2.25",
+      "nodes": [
+        "node_modules/@angular/core"
+      ],
+      "fixAvailable": {
+        "name": "@angular/core",
+        "version": "22.1.6",
+        "isSemVerMajor": true
+      }
+    },
+    "@angular/localize": {
+      "name": "@angular/localize",
+      "severity": "low",
+      "isDirect": true,
+      "via": [
+        "@babel/core"
+      ],
+      "effects": [],
+      "range": "<=20.3.25 || 21.0.0-next.0 - 21.2.17 || 22.0.0-next.0 - 22.0.2",
+      "nodes": [
+        "node_modules/@angular/localize"
+      ],
+      "fixAvailable": {
+        "name": "@angular/localize",
+        "version": "22.1.6",
+        "isSemVerMajor": true
+      }
+    },
+    "@angular/service-worker": {
+      "name": "@angular/service-worker",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        {
+          "source": 1123493,
+          "name": "@angular/service-worker",
+          "dependency": "@angular/service-worker",
+          "title": "@angular/service-worker: Sensitive Header Leakage on Cross-Origin Redirects in Angular Service Worker",
+          "url": "https://github.com/advisories/GHSA-qxh6-94w6-9r5p",
+          "severity": "high",
+          "cwe": [
+            "CWE-200",
+            "CWE-359"
+          ],
+          "cvss": {
+            "score": 6.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+          },
+          "range": "<=19.2.25"
+        },
+        {
+          "source": 1123530,
+          "name": "@angular/service-worker",
+          "dependency": "@angular/service-worker",
+          "title": "@angular/service-worker: Request Credential & Cache Policy Stripping",
+          "url": "https://github.com/advisories/GHSA-95qp-cmmw-mgqv",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-200",
+            "CWE-524"
+          ],
+          "cvss": {
+            "score": 6.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+          },
+          "range": "<=18.2.14"
+        },
+        {
+          "source": 1123551,
+          "name": "@angular/service-worker",
+          "dependency": "@angular/service-worker",
+          "title": "Angular Service Worker Policy-Bypass & Credential-Stripping Vulnerabilities",
+          "url": "https://github.com/advisories/GHSA-gv2q-mqqv-365m",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-200",
+            "CWE-441",
+            "CWE-524"
+          ],
+          "cvss": {
+            "score": 6.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+          },
+          "range": "<=18.2.14"
+        }
+      ],
+      "effects": [],
+      "range": "<=19.2.25",
+      "nodes": [
+        "node_modules/@angular/service-worker"
+      ],
+      "fixAvailable": {
+        "name": "@angular/service-worker",
+        "version": "22.1.6",
+        "isSemVerMajor": true
+      }
+    },
+    "@babel/core": {
+      "name": "@babel/core",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1123528,
+          "name": "@babel/core",
+          "dependency": "@babel/core",
+          "title": "@babel/core: Arbitrary File Read via sourceMappingURL Comment",
+          "url": "https://github.com/advisories/GHSA-4x5r-pxfx-6jf8",
+          "severity": "low",
+          "cwe": [
+            "CWE-22",
+            "CWE-200"
+          ],
+          "cvss": {
+            "score": 3.2,
+            "vectorString": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:L/I:N/A:N"
+          },
+          "range": "<=7.29.0"
+        }
+      ],
+      "effects": [
+        "@angular/localize"
+      ],
+      "range": "<=7.29.0",
+      "nodes": [
+        "node_modules/@angular/localize/node_modules/@babel/core"
+      ],
+      "fixAvailable": {
+        "name": "@angular/localize",
+        "version": "22.1.6",
+        "isSemVerMajor": true
+      }
+    },
+    "minimatch": {
+      "name": "minimatch",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1113461,
+          "name": "minimatch",
+          "dependency": "minimatch",
+          "title": "minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern",
+          "url": "https://github.com/advisories/GHSA-3ppc-4f35-3m26",
+          "severity": "high",
+          "cwe": [
+            "CWE-1333"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": ">=5.0.0 <5.1.7"
+        },
+        {
+          "source": 1113540,
+          "name": "minimatch",
+          "dependency": "minimatch",
+          "title": "minimatch has ReDoS: matchOne() combinatorial backtracking via multiple non-adjacent GLOBSTAR segments",
+          "url": "https://github.com/advisories/GHSA-7r86-cg39-jmmj",
+          "severity": "high",
+          "cwe": [
+            "CWE-407"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": ">=5.0.0 <5.1.8"
+        },
+        {
+          "source": 1113548,
+          "name": "minimatch",
+          "dependency": "minimatch",
+          "title": "minimatch ReDoS: nested *() extglobs generate catastrophically backtracking regular expressions",
+          "url": "https://github.com/advisories/GHSA-23c5-xmqv-rm74",
+          "severity": "high",
+          "cwe": [
+            "CWE-1333"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": ">=5.0.0 <5.1.8"
+        }
+      ],
+      "effects": [],
+      "range": "5.0.0 - 5.1.7",
+      "nodes": [
+        "node_modules/minimatch"
+      ],
+      "fixAvailable": true
+    }
+  },
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 2,
+      "moderate": 0,
+      "high": 5,
+      "critical": 0,
+      "total": 7
+    },
+    "dependencies": {
+      "prod": 107,
+      "dev": 1141,
+      "optional": 39,
+      "peer": 0,
+      "peerOptional": 0,
+      "total": 1248
+    }
+  }
+}

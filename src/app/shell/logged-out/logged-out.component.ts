@@ -7,13 +7,13 @@ import { LogoutReason } from '../../core/auth/session-claims.model';
 @Component({
   selector: 'mol-logged-out',
   template: `
-    <div class="mol-logged-out" fxLayout="column" fxLayoutAlign="center center">
+    <div class="mol-logged-out mol-flex-col mol-justify-center mol-align-center">
       <cn-card [title]="heading" [padded]="true" class="mol-logged-out__card">
         <p>{{ body }}</p>
         <p class="mol-logged-out__hint" *ngIf="reason === 'idle'" i18n="@@loggedOut.idleHint">
           Nothing has changed on your accounts. Any transfer you had not confirmed was not sent.
         </p>
-        <div cnCardFooter fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="8px">
+        <div class="mol-flex-row mol-flex-col--lt-md mol-gap-8" cnCardFooter>
           <cn-button variant="primary" (pressed)="signIn()" i18n="@@loggedOut.signIn">Sign in again</cn-button>
           <cn-button variant="tertiary" routerLink="/help" i18n="@@loggedOut.help">Help</cn-button>
         </div>

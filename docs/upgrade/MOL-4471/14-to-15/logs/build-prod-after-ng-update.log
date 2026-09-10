@@ -1,0 +1,49 @@
+
+> @northgate/retail-web@14.31.2 build:prod
+> ng build --configuration production
+
+- Generating browser application bundles (phase: setup)...
+✔ Browser application bundle generation complete.
+✔ Browser application bundle generation complete.
+- Generating localized bundles...
+✔ Localized bundle generation complete.
+- Copying assets...
+✔ Copying assets complete.
+- Generating index html...
+✔ Index html generation complete.
+- Generating service worker...
+✔ Service worker generation complete.
+
+Initial Chunk Files             | Names                                   |  Raw Size | Estimated Transfer Size
+main.da9192ae844dbdde.js        | main                                    |   1.93 MB |               383.55 kB
+styles.e9e5071c61c233b7.css     | styles                                  | 331.33 kB |                20.21 kB
+polyfills.917e8a8a73dd6693.js   | polyfills                               |  45.30 kB |                13.91 kB
+runtime.60fd92f3c81eb960.js     | runtime                                 |   3.58 kB |                 1.71 kB
+scripts.dbc2c17609580f67d471.js | scripts                                 | 305 bytes |               184 bytes
+
+| Initial Total                           |   2.30 MB |               419.55 kB
+
+Lazy Chunk Files                | Names                                   |  Raw Size | Estimated Transfer Size
+55.9ea48d6d2685df7b.js          | features-transfers-transfers-module     |  60.83 kB |                13.05 kB
+487.5cb47263167bbc59.js         | features-profile-profile-module         |  49.74 kB |                11.63 kB
+803.e30fcbb76b3c0b87.js         | features-cards-cards-module             |  43.93 kB |                11.33 kB
+278.f471034a7d380b5d.js         | features-accounts-accounts-module       |  42.71 kB |                10.29 kB
+679.86afdeb23f166451.js         | features-dashboard-dashboard-module     |  35.30 kB |                 9.35 kB
+400.826127017d0ad254.js         | features-bill-pay-bill-pay-module       |  33.29 kB |                 7.30 kB
+489.15e3fa4f93c8710c.js         | features-alerts-alerts-module           |  27.22 kB |                 7.80 kB
+963.d0c20d9a6feea635.js         | features-statements-statements-module   |  26.85 kB |                 7.55 kB
+244.e20a4a56bfc35651.js         | features-onboarding-onboarding-module   |  23.11 kB |                 4.55 kB
+997.a93576274358600a.js         | features-messages-messages-module       |  17.58 kB |                 5.72 kB
+665.b786a0054d314193.js         | features-rewards-rewards-module         |  17.11 kB |                 5.61 kB
+261.c527022e2fe362ab.js         | features-accounts-accounts-module       |  10.85 kB |                 3.38 kB
+350.baa3f18e84dced72.js         | features-help-help-module               |   3.78 kB |                 1.14 kB
+common.1c2ef5fe66309b46.js      | common                                  |   3.29 kB |                 1.14 kB
+739.3ab0a8dec43483d4.js         | features-errors-errors-module           |   3.10 kB |               861 bytes
+276.40b2a9b1de62fa02.js         | features-disclosures-disclosures-module |   2.29 kB |               760 bytes
+
+Build at: 2026-09-09T22:55:25.975Z - Hash: 0bd07e24d1b866f3 - Time: 52820ms
+
+Warning: bundle initial exceeded maximum budget. Budget 2.00 MB was not met by 307.65 kB with a total of 2.30 MB.
+
+
+EXIT=0

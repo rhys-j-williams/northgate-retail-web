@@ -1,9 +1,9 @@
-<aside *ngIf="!((dismissed$ | async) ?? []).includes(bannerId)" class="mol-promo" role="complementary" aria-label="Offer" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-between center" fxLayoutGap="16px">
-  <div fxFlex>
+<aside *ngIf="!((dismissed$ | async) ?? []).includes(bannerId)" class="mol-promo mol-flex-row mol-flex-col--lt-md mol-justify-between mol-align-center mol-gap-16" role="complementary" aria-label="Offer">
+  <div class="mol-flex">
     <strong i18n="@@dashboard.promoBanner.headline">Earn 4.10% APY with Northgate Reserve Savings</strong>
     <p class="mol-muted" i18n="@@dashboard.promoBanner.p1">Rate as of today and subject to change. See disclosures for details.</p>
   </div>
-  <div fxLayout="row" fxLayoutGap="8px">
+  <div class="mol-flex-row mol-gap-8">
     <cn-button variant="secondary" size="small" routerLink="/open-account" (pressed)="learnMore()" i18n="@@dashboard.promoBanner.learnMore">Learn more</cn-button>
     <cn-icon-button icon="close" ariaLabel="Dismiss offer" i18n-ariaLabel="@@dashboard.promoBanner.dismiss" (pressed)="dismiss()"></cn-icon-button>
   </div>

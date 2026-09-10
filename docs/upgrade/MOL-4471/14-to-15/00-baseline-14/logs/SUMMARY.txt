@@ -1,0 +1,48 @@
+node v16.20.2 npm 8.19.4
+== ng-version: npx ng version
+   exit=0  (1s)
+== npm-ls: npm ls --depth=0
+   exit=0  (1s)
+== build-prod: npm run build:prod
+   exit=0  (52s)
+== lint: npm run lint
+   exit=0  (10s)
+== test-ci: npm run test:ci
+   exit=0  (52s)
+== audit-full: npm audit --json
+   exit=1  (3s)
+== audit-prod: npm audit --production --json
+   exit=1  (1s)
+| Module | Lines covered | Lines total | Line % |
+|---|---|---|---|
+| core | 283 | 762 | 37.14% |
+| features/accounts | 135 | 240 | 56.25% |
+| features/alerts | 77 | 158 | 48.73% |
+| features/bill-pay | 23 | 162 | 14.20% |
+| features/cards | 97 | 251 | 38.65% |
+| features/dashboard | 109 | 178 | 61.24% |
+| features/disclosures | 2 | 2 | 100.00% |
+| features/errors | 3 | 3 | 100.00% |
+| features/help | 3 | 3 | 100.00% |
+| features/messages | 27 | 72 | 37.50% |
+| features/onboarding | 6 | 103 | 5.83% |
+| features/profile | 103 | 245 | 42.04% |
+| features/rewards | 26 | 70 | 37.14% |
+| features/statements | 80 | 153 | 52.29% |
+| features/transfers | 32 | 352 | 9.09% |
+| other | 14 | 27 | 51.85% |
+| shared | 32 | 64 | 50.00% |
+| shell | 5 | 75 | 6.67% |
+| **TOTAL** | 1057 | 2920 | **36.20%** |
+
+[1A[2KChrome Headless 137.0.0.0 (Linux 0.0.0): Executed 196 of 198 (skipped 2) SUCCESS (0 secs / 2.252 secs)
+[1A[2KChrome Headless 137.0.0.0 (Linux 0.0.0): Executed 196 of 198 (skipped 2) SUCCESS (2.963 secs / 2.252 secs)
+TOTAL: 196 SUCCESS
+=============================== Coverage summary ===============================
+Statements   : 35.41% ( 1138/3213 )
+Branches     : 22.19% ( 311/1401 )
+Functions    : 28.63% ( 335/1170 )
+Lines        : 36.19% ( 1057/2920 )
+================================================================================
+✔ Browser application bundle generation complete.
+DONE

@@ -1,0 +1,12 @@
+{
+  "name": "mol-4471-flex-layout-visual-tools",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright capture / pixelmatch diff / computed-style verification tooling for the MOL-4471 flex-layout visual evidence. Not part of the application build.",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "pixelmatch": "5.3.0",
+    "playwright-core": "1.47.2",
+    "pngjs": "7.0.0"
+  }
+}

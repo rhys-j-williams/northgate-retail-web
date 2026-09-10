@@ -1,0 +1,2178 @@
+[
+  {
+    "file": "accounts--1280x800.png",
+    "diffFile": "accounts--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 3239,
+    "total": 1024000,
+    "pct": 0.32,
+    "firstRow": 20,
+    "lastRow": 503
+  },
+  {
+    "file": "accounts--375x812.png",
+    "diffFile": "accounts--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 2052,
+    "total": 344288,
+    "pct": 0.6,
+    "firstRow": 12,
+    "lastRow": 563
+  },
+  {
+    "file": "accounts-detail--1280x800.png",
+    "diffFile": "accounts-detail--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 1656,
+    "total": 1024000,
+    "pct": 0.16,
+    "firstRow": 20,
+    "lastRow": 273
+  },
+  {
+    "file": "accounts-detail--375x812.png",
+    "diffFile": "accounts-detail--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 2007,
+    "total": 344288,
+    "pct": 0.58,
+    "firstRow": 12,
+    "lastRow": 273
+  },
+  {
+    "file": "accounts-detail-export-dialog--1280x800.png",
+    "diffFile": "accounts-detail-export-dialog--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 1329,
+    "total": 1024000,
+    "pct": 0.13,
+    "firstRow": 20,
+    "lastRow": 225
+  },
+  {
+    "file": "accounts-detail-export-dialog--375x812.png",
+    "diffFile": "accounts-detail-export-dialog--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 1970,
+    "total": 344288,
+    "pct": 0.57,
+    "firstRow": 12,
+    "lastRow": 305
+  },
+  {
+    "file": "accounts-transaction-detail--1280x800.png",
+    "diffFile": "accounts-transaction-detail--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 141,
+    "total": 1024000,
+    "pct": 0.01,
+    "firstRow": 20,
+    "lastRow": 40
+  },
+  {
+    "file": "accounts-transaction-detail--375x812.png",
+    "diffFile": "accounts-transaction-detail--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 341,
+    "total": 344288,
+    "pct": 0.1,
+    "firstRow": 12,
+    "lastRow": 46
+  },
+  {
+    "file": "accounts-transaction-dispute--1280x800.png",
+    "diffFile": "accounts-transaction-dispute--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 5569,
+    "total": 1024000,
+    "pct": 0.54,
+    "firstRow": 20,
+    "lastRow": 418
+  },
+  {
+    "file": "accounts-transaction-dispute--375x812.png",
+    "diffFile": "accounts-transaction-dispute--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 8788,
+    "total": 344288,
+    "pct": 2.55,
+    "firstRow": 12,
+    "lastRow": 696
+  },
+  {
+    "file": "alerts--1280x800.png",
+    "diffFile": "alerts--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 328,
+    "total": 1024000,
+    "pct": 0.03,
+    "firstRow": 20,
+    "lastRow": 351
+  },
+  {
+    "file": "alerts--375x812.png",
+    "diffFile": "alerts--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 548,
+    "total": 344288,
+    "pct": 0.16,
+    "firstRow": 12,
+    "lastRow": 415
+  },
+  {
+    "file": "alerts-history--1280x800.png",
+    "diffFile": "alerts-history--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 141,
+    "total": 1024000,
+    "pct": 0.01,
+    "firstRow": 20,
+    "lastRow": 40
+  },
+  {
+    "file": "alerts-history--375x812.png",
+    "diffFile": "alerts-history--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 341,
+    "total": 344288,
+    "pct": 0.1,
+    "firstRow": 12,
+    "lastRow": 46
+  },
+  {
+    "file": "bill-pay--1280x800.png",
+    "diffFile": "bill-pay--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 328,
+    "total": 1024000,
+    "pct": 0.03,
+    "firstRow": 20,
+    "lastRow": 262
+  },
+  {
+    "file": "bill-pay--375x812.png",
+    "diffFile": "bill-pay--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 548,
+    "total": 344288,
+    "pct": 0.16,
+    "firstRow": 12,
+    "lastRow": 326
+  },
+  {
+    "file": "bill-pay-autopay--1280x800.png",
+    "diffFile": "bill-pay-autopay--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 9214,
+    "total": 1024000,
+    "pct": 0.9,
+    "firstRow": 20,
+    "lastRow": 463
+  },
+  {
+    "file": "bill-pay-autopay--375x812.png",
+    "diffFile": "bill-pay-autopay--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 6523,
+    "total": 344288,
+    "pct": 1.89,
+    "firstRow": 12,
+    "lastRow": 595
+  },
+  {
+    "file": "bill-pay-bill-detail--1280x800.png",
+    "diffFile": "bill-pay-bill-detail--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 141,
+    "total": 1024000,
+    "pct": 0.01,
+    "firstRow": 20,
+    "lastRow": 40
+  },
+  {
+    "file": "bill-pay-bill-detail--375x812.png",
+    "diffFile": "bill-pay-bill-detail--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 341,
+    "total": 344288,
+    "pct": 0.1,
+    "firstRow": 12,
+    "lastRow": 46
+  },
+  {
+    "file": "bill-pay-history--1280x800.png",
+    "diffFile": "bill-pay-history--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 328,
+    "total": 1024000,
+    "pct": 0.03,
+    "firstRow": 20,
+    "lastRow": 226
+  },
+  {
+    "file": "bill-pay-history--375x812.png",
+    "diffFile": "bill-pay-history--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 548,
+    "total": 344288,
+    "pct": 0.16,
+    "firstRow": 12,
+    "lastRow": 266
+  },
+  {
+    "file": "bill-pay-pay-bill--1280x800.png",
+    "diffFile": "bill-pay-pay-bill--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 21613,
+    "total": 1024000,
+    "pct": 2.11,
+    "firstRow": 20,
+    "lastRow": 540
+  },
+  {
+    "file": "bill-pay-pay-bill--375x812.png",
+    "diffFile": "bill-pay-pay-bill--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 924
+    },
+    "candidate": {
+      "w": 400,
+      "h": 863
+    },
+    "changed": 21061,
+    "total": 391776,
+    "pct": 5.38,
+    "firstRow": 12,
+    "lastRow": 843
+  },
+  {
+    "file": "bill-pay-payees-new--1280x800.png",
+    "diffFile": "bill-pay-payees-new--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 16065,
+    "total": 1024000,
+    "pct": 1.57,
+    "firstRow": 20,
+    "lastRow": 552
+  },
+  {
+    "file": "bill-pay-payees-new--375x812.png",
+    "diffFile": "bill-pay-payees-new--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 936
+    },
+    "candidate": {
+      "w": 400,
+      "h": 887
+    },
+    "changed": 17230,
+    "total": 396864,
+    "pct": 4.34,
+    "firstRow": 12,
+    "lastRow": 855
+  },
+  {
+    "file": "bill-pay-scheduled--1280x800.png",
+    "diffFile": "bill-pay-scheduled--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 328,
+    "total": 1024000,
+    "pct": 0.03,
+    "firstRow": 20,
+    "lastRow": 226
+  },
+  {
+    "file": "bill-pay-scheduled--375x812.png",
+    "diffFile": "bill-pay-scheduled--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 548,
+    "total": 344288,
+    "pct": 0.16,
+    "firstRow": 12,
+    "lastRow": 266
+  },
+  {
+    "file": "cards--1280x800.png",
+    "diffFile": "cards--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 601,
+    "total": 1024000,
+    "pct": 0.06,
+    "firstRow": 20,
+    "lastRow": 283
+  },
+  {
+    "file": "cards--375x812.png",
+    "diffFile": "cards--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 648,
+    "total": 344288,
+    "pct": 0.19,
+    "firstRow": 12,
+    "lastRow": 323
+  },
+  {
+    "file": "cards-activate--1280x800.png",
+    "diffFile": "cards-activate--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 9692,
+    "total": 1024000,
+    "pct": 0.95,
+    "firstRow": 20,
+    "lastRow": 399
+  },
+  {
+    "file": "cards-activate--375x812.png",
+    "diffFile": "cards-activate--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 10887,
+    "total": 344288,
+    "pct": 3.16,
+    "firstRow": 12,
+    "lastRow": 544
+  },
+  {
+    "file": "cards-controls--1280x800.png",
+    "diffFile": "cards-controls--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 1021
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 1021
+    },
+    "changed": 4587,
+    "total": 1306880,
+    "pct": 0.35,
+    "firstRow": 20,
+    "lastRow": 915
+  },
+  {
+    "file": "cards-controls--375x812.png",
+    "diffFile": "cards-controls--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 1245
+    },
+    "candidate": {
+      "w": 400,
+      "h": 1245
+    },
+    "changed": 4772,
+    "total": 527880,
+    "pct": 0.9,
+    "firstRow": 12,
+    "lastRow": 1147
+  },
+  {
+    "file": "cards-detail--1280x800.png",
+    "diffFile": "cards-detail--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 4712,
+    "total": 1024000,
+    "pct": 0.46,
+    "firstRow": 20,
+    "lastRow": 325
+  },
+  {
+    "file": "cards-detail--375x812.png",
+    "diffFile": "cards-detail--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 4989,
+    "total": 344288,
+    "pct": 1.45,
+    "firstRow": 12,
+    "lastRow": 469
+  },
+  {
+    "file": "cards-report--1280x800.png",
+    "diffFile": "cards-report--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 15028,
+    "total": 1024000,
+    "pct": 1.47,
+    "firstRow": 20,
+    "lastRow": 475
+  },
+  {
+    "file": "cards-report--375x812.png",
+    "diffFile": "cards-report--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 17295,
+    "total": 344288,
+    "pct": 5.02,
+    "firstRow": 12,
+    "lastRow": 672
+  },
+  {
+    "file": "cards-travel--1280x800.png",
+    "diffFile": "cards-travel--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 21322,
+    "total": 1024000,
+    "pct": 2.08,
+    "firstRow": 20,
+    "lastRow": 540
+  },
+  {
+    "file": "cards-travel--375x812.png",
+    "diffFile": "cards-travel--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 831
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 19407,
+    "total": 352344,
+    "pct": 5.51,
+    "firstRow": 12,
+    "lastRow": 750
+  },
+  {
+    "file": "dashboard--1280x800.png",
+    "diffFile": "dashboard--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 1227
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 1190
+    },
+    "changed": 19460,
+    "total": 1570560,
+    "pct": 1.24,
+    "firstRow": 20,
+    "lastRow": 1226
+  },
+  {
+    "file": "dashboard--375x812.png",
+    "diffFile": "dashboard--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 1659
+    },
+    "candidate": {
+      "w": 400,
+      "h": 1622
+    },
+    "changed": 18122,
+    "total": 703416,
+    "pct": 2.58,
+    "firstRow": 12,
+    "lastRow": 1573
+  },
+  {
+    "file": "disclosures--1280x800.png",
+    "diffFile": "disclosures--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 0,
+    "total": 1024000,
+    "pct": 0,
+    "firstRow": -1,
+    "lastRow": -1
+  },
+  {
+    "file": "disclosures--375x812.png",
+    "diffFile": "disclosures--375x812.diff.png",
+    "baseline": {
+      "w": 375,
+      "h": 812
+    },
+    "candidate": {
+      "w": 375,
+      "h": 812
+    },
+    "changed": 0,
+    "total": 304500,
+    "pct": 0,
+    "firstRow": -1,
+    "lastRow": -1
+  },
+  {
+    "file": "disclosures-viewer--1280x800.png",
+    "diffFile": "disclosures-viewer--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 0,
+    "total": 1024000,
+    "pct": 0,
+    "firstRow": -1,
+    "lastRow": -1
+  },
+  {
+    "file": "disclosures-viewer--375x812.png",
+    "diffFile": "disclosures-viewer--375x812.diff.png",
+    "baseline": {
+      "w": 375,
+      "h": 812
+    },
+    "candidate": {
+      "w": 375,
+      "h": 812
+    },
+    "changed": 0,
+    "total": 304500,
+    "pct": 0,
+    "firstRow": -1,
+    "lastRow": -1
+  },
+  {
+    "file": "errors-forbidden--1280x800.png",
+    "diffFile": "errors-forbidden--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 0,
+    "total": 1024000,
+    "pct": 0,
+    "firstRow": -1,
+    "lastRow": -1
+  },
+  {
+    "file": "errors-forbidden--375x812.png",
+    "diffFile": "errors-forbidden--375x812.diff.png",
+    "baseline": {
+      "w": 375,
+      "h": 812
+    },
+    "candidate": {
+      "w": 375,
+      "h": 812
+    },
+    "changed": 0,
+    "total": 304500,
+    "pct": 0,
+    "firstRow": -1,
+    "lastRow": -1
+  },
+  {
+    "file": "errors-generic--1280x800.png",
+    "diffFile": "errors-generic--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 0,
+    "total": 1024000,
+    "pct": 0,
+    "firstRow": -1,
+    "lastRow": -1
+  },
+  {
+    "file": "errors-generic--375x812.png",
+    "diffFile": "errors-generic--375x812.diff.png",
+    "baseline": {
+      "w": 375,
+      "h": 812
+    },
+    "candidate": {
+      "w": 375,
+      "h": 812
+    },
+    "changed": 0,
+    "total": 304500,
+    "pct": 0,
+    "firstRow": -1,
+    "lastRow": -1
+  },
+  {
+    "file": "errors-not-found--1280x800.png",
+    "diffFile": "errors-not-found--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 0,
+    "total": 1024000,
+    "pct": 0,
+    "firstRow": -1,
+    "lastRow": -1
+  },
+  {
+    "file": "errors-not-found--375x812.png",
+    "diffFile": "errors-not-found--375x812.diff.png",
+    "baseline": {
+      "w": 375,
+      "h": 812
+    },
+    "candidate": {
+      "w": 375,
+      "h": 812
+    },
+    "changed": 0,
+    "total": 304500,
+    "pct": 0,
+    "firstRow": -1,
+    "lastRow": -1
+  },
+  {
+    "file": "help--1280x800.png",
+    "diffFile": "help--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 0,
+    "total": 1024000,
+    "pct": 0,
+    "firstRow": -1,
+    "lastRow": -1
+  },
+  {
+    "file": "help--375x812.png",
+    "diffFile": "help--375x812.diff.png",
+    "baseline": {
+      "w": 375,
+      "h": 812
+    },
+    "candidate": {
+      "w": 375,
+      "h": 812
+    },
+    "changed": 0,
+    "total": 304500,
+    "pct": 0,
+    "firstRow": -1,
+    "lastRow": -1
+  },
+  {
+    "file": "help-contact--1280x800.png",
+    "diffFile": "help-contact--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 0,
+    "total": 1024000,
+    "pct": 0,
+    "firstRow": -1,
+    "lastRow": -1
+  },
+  {
+    "file": "help-contact--375x812.png",
+    "diffFile": "help-contact--375x812.diff.png",
+    "baseline": {
+      "w": 375,
+      "h": 812
+    },
+    "candidate": {
+      "w": 375,
+      "h": 812
+    },
+    "changed": 0,
+    "total": 304500,
+    "pct": 0,
+    "firstRow": -1,
+    "lastRow": -1
+  },
+  {
+    "file": "help-faq--1280x800.png",
+    "diffFile": "help-faq--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 0,
+    "total": 1024000,
+    "pct": 0,
+    "firstRow": -1,
+    "lastRow": -1
+  },
+  {
+    "file": "help-faq--375x812.png",
+    "diffFile": "help-faq--375x812.diff.png",
+    "baseline": {
+      "w": 375,
+      "h": 812
+    },
+    "candidate": {
+      "w": 375,
+      "h": 812
+    },
+    "changed": 0,
+    "total": 304500,
+    "pct": 0,
+    "firstRow": -1,
+    "lastRow": -1
+  },
+  {
+    "file": "logged-out--1280x800.png",
+    "diffFile": "logged-out--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 0,
+    "total": 1024000,
+    "pct": 0,
+    "firstRow": -1,
+    "lastRow": -1
+  },
+  {
+    "file": "logged-out--375x812.png",
+    "diffFile": "logged-out--375x812.diff.png",
+    "baseline": {
+      "w": 375,
+      "h": 812
+    },
+    "candidate": {
+      "w": 375,
+      "h": 812
+    },
+    "changed": 0,
+    "total": 304500,
+    "pct": 0,
+    "firstRow": -1,
+    "lastRow": -1
+  },
+  {
+    "file": "messages--1280x800.png",
+    "diffFile": "messages--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 328,
+    "total": 1024000,
+    "pct": 0.03,
+    "firstRow": 20,
+    "lastRow": 286
+  },
+  {
+    "file": "messages--375x812.png",
+    "diffFile": "messages--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 548,
+    "total": 344288,
+    "pct": 0.16,
+    "firstRow": 12,
+    "lastRow": 350
+  },
+  {
+    "file": "messages-new--1280x800.png",
+    "diffFile": "messages-new--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 141,
+    "total": 1024000,
+    "pct": 0.01,
+    "firstRow": 20,
+    "lastRow": 40
+  },
+  {
+    "file": "messages-new--375x812.png",
+    "diffFile": "messages-new--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 341,
+    "total": 344288,
+    "pct": 0.1,
+    "firstRow": 12,
+    "lastRow": 46
+  },
+  {
+    "file": "messages-thread--1280x800.png",
+    "diffFile": "messages-thread--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 141,
+    "total": 1024000,
+    "pct": 0.01,
+    "firstRow": 20,
+    "lastRow": 40
+  },
+  {
+    "file": "messages-thread--375x812.png",
+    "diffFile": "messages-thread--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 341,
+    "total": 344288,
+    "pct": 0.1,
+    "firstRow": 12,
+    "lastRow": 46
+  },
+  {
+    "file": "open-account--1280x800.png",
+    "diffFile": "open-account--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 0,
+    "total": 1024000,
+    "pct": 0,
+    "firstRow": -1,
+    "lastRow": -1
+  },
+  {
+    "file": "open-account--375x812.png",
+    "diffFile": "open-account--375x812.diff.png",
+    "baseline": {
+      "w": 375,
+      "h": 812
+    },
+    "candidate": {
+      "w": 375,
+      "h": 812
+    },
+    "changed": 0,
+    "total": 304500,
+    "pct": 0,
+    "firstRow": -1,
+    "lastRow": -1
+  },
+  {
+    "file": "open-account-contact--1280x800.png",
+    "diffFile": "open-account-contact--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 25112,
+    "total": 1024000,
+    "pct": 2.45,
+    "firstRow": 179,
+    "lastRow": 522
+  },
+  {
+    "file": "open-account-contact--375x812.png",
+    "diffFile": "open-account-contact--375x812.diff.png",
+    "baseline": {
+      "w": 375,
+      "h": 954
+    },
+    "candidate": {
+      "w": 375,
+      "h": 881
+    },
+    "changed": 19742,
+    "total": 357750,
+    "pct": 5.52,
+    "firstRow": 195,
+    "lastRow": 905
+  },
+  {
+    "file": "open-account-funding--1280x800.png",
+    "diffFile": "open-account-funding--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 20295,
+    "total": 1024000,
+    "pct": 1.98,
+    "firstRow": 239,
+    "lastRow": 492
+  },
+  {
+    "file": "open-account-funding--375x812.png",
+    "diffFile": "open-account-funding--375x812.diff.png",
+    "baseline": {
+      "w": 375,
+      "h": 812
+    },
+    "candidate": {
+      "w": 375,
+      "h": 812
+    },
+    "changed": 18123,
+    "total": 304500,
+    "pct": 5.95,
+    "firstRow": 255,
+    "lastRow": 666
+  },
+  {
+    "file": "open-account-identity--1280x800.png",
+    "diffFile": "open-account-identity--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 19972,
+    "total": 1024000,
+    "pct": 1.95,
+    "firstRow": 215,
+    "lastRow": 480
+  },
+  {
+    "file": "open-account-identity--375x812.png",
+    "diffFile": "open-account-identity--375x812.diff.png",
+    "baseline": {
+      "w": 375,
+      "h": 812
+    },
+    "candidate": {
+      "w": 375,
+      "h": 812
+    },
+    "changed": 16157,
+    "total": 304500,
+    "pct": 5.31,
+    "firstRow": 231,
+    "lastRow": 759
+  },
+  {
+    "file": "open-account-product--1280x800.png",
+    "diffFile": "open-account-product--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 10702,
+    "total": 1024000,
+    "pct": 1.05,
+    "firstRow": 179,
+    "lastRow": 367
+  },
+  {
+    "file": "open-account-product--375x812.png",
+    "diffFile": "open-account-product--375x812.diff.png",
+    "baseline": {
+      "w": 375,
+      "h": 812
+    },
+    "candidate": {
+      "w": 375,
+      "h": 812
+    },
+    "changed": 7284,
+    "total": 304500,
+    "pct": 2.39,
+    "firstRow": 195,
+    "lastRow": 475
+  },
+  {
+    "file": "open-account-review--1280x800.png",
+    "diffFile": "open-account-review--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 0,
+    "total": 1024000,
+    "pct": 0,
+    "firstRow": -1,
+    "lastRow": -1
+  },
+  {
+    "file": "open-account-review--375x812.png",
+    "diffFile": "open-account-review--375x812.diff.png",
+    "baseline": {
+      "w": 375,
+      "h": 812
+    },
+    "candidate": {
+      "w": 375,
+      "h": 812
+    },
+    "changed": 0,
+    "total": 304500,
+    "pct": 0,
+    "firstRow": -1,
+    "lastRow": -1
+  },
+  {
+    "file": "profile--1280x800.png",
+    "diffFile": "profile--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 141,
+    "total": 1024000,
+    "pct": 0.01,
+    "firstRow": 20,
+    "lastRow": 40
+  },
+  {
+    "file": "profile--375x812.png",
+    "diffFile": "profile--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 341,
+    "total": 344288,
+    "pct": 0.1,
+    "firstRow": 12,
+    "lastRow": 46
+  },
+  {
+    "file": "profile-address--1280x800.png",
+    "diffFile": "profile-address--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 23116,
+    "total": 1024000,
+    "pct": 2.26,
+    "firstRow": 20,
+    "lastRow": 642
+  },
+  {
+    "file": "profile-address--375x812.png",
+    "diffFile": "profile-address--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 1025
+    },
+    "candidate": {
+      "w": 400,
+      "h": 964
+    },
+    "changed": 19115,
+    "total": 434600,
+    "pct": 4.4,
+    "firstRow": 12,
+    "lastRow": 944
+  },
+  {
+    "file": "profile-contact--1280x800.png",
+    "diffFile": "profile-contact--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 18693,
+    "total": 1024000,
+    "pct": 1.83,
+    "firstRow": 20,
+    "lastRow": 552
+  },
+  {
+    "file": "profile-contact--375x812.png",
+    "diffFile": "profile-contact--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 871
+    },
+    "candidate": {
+      "w": 400,
+      "h": 834
+    },
+    "changed": 19773,
+    "total": 369304,
+    "pct": 5.35,
+    "firstRow": 12,
+    "lastRow": 790
+  },
+  {
+    "file": "profile-security--1280x800.png",
+    "diffFile": "profile-security--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 141,
+    "total": 1024000,
+    "pct": 0.01,
+    "firstRow": 20,
+    "lastRow": 40
+  },
+  {
+    "file": "profile-security--375x812.png",
+    "diffFile": "profile-security--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 341,
+    "total": 344288,
+    "pct": 0.1,
+    "firstRow": 12,
+    "lastRow": 46
+  },
+  {
+    "file": "profile-security-activity--1280x800.png",
+    "diffFile": "profile-security-activity--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 141,
+    "total": 1024000,
+    "pct": 0.01,
+    "firstRow": 20,
+    "lastRow": 40
+  },
+  {
+    "file": "profile-security-activity--375x812.png",
+    "diffFile": "profile-security-activity--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 341,
+    "total": 344288,
+    "pct": 0.1,
+    "firstRow": 12,
+    "lastRow": 46
+  },
+  {
+    "file": "profile-security-devices--1280x800.png",
+    "diffFile": "profile-security-devices--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 328,
+    "total": 1024000,
+    "pct": 0.03,
+    "firstRow": 20,
+    "lastRow": 318
+  },
+  {
+    "file": "profile-security-devices--375x812.png",
+    "diffFile": "profile-security-devices--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 548,
+    "total": 344288,
+    "pct": 0.16,
+    "firstRow": 12,
+    "lastRow": 358
+  },
+  {
+    "file": "profile-security-mfa--1280x800.png",
+    "diffFile": "profile-security-mfa--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 141,
+    "total": 1024000,
+    "pct": 0.01,
+    "firstRow": 20,
+    "lastRow": 40
+  },
+  {
+    "file": "profile-security-mfa--375x812.png",
+    "diffFile": "profile-security-mfa--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 341,
+    "total": 344288,
+    "pct": 0.1,
+    "firstRow": 12,
+    "lastRow": 46
+  },
+  {
+    "file": "profile-security-password--1280x800.png",
+    "diffFile": "profile-security-password--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 827
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 31693,
+    "total": 1058560,
+    "pct": 2.99,
+    "firstRow": 20,
+    "lastRow": 826
+  },
+  {
+    "file": "profile-security-password--375x812.png",
+    "diffFile": "profile-security-password--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 859
+    },
+    "candidate": {
+      "w": 400,
+      "h": 822
+    },
+    "changed": 21690,
+    "total": 364216,
+    "pct": 5.96,
+    "firstRow": 12,
+    "lastRow": 778
+  },
+  {
+    "file": "profile-security-username--1280x800.png",
+    "diffFile": "profile-security-username--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 10442,
+    "total": 1024000,
+    "pct": 1.02,
+    "firstRow": 20,
+    "lastRow": 463
+  },
+  {
+    "file": "profile-security-username--375x812.png",
+    "diffFile": "profile-security-username--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 7391,
+    "total": 344288,
+    "pct": 2.15,
+    "firstRow": 12,
+    "lastRow": 555
+  },
+  {
+    "file": "rewards--1280x800.png",
+    "diffFile": "rewards--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 141,
+    "total": 1024000,
+    "pct": 0.01,
+    "firstRow": 20,
+    "lastRow": 40
+  },
+  {
+    "file": "rewards--375x812.png",
+    "diffFile": "rewards--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 341,
+    "total": 344288,
+    "pct": 0.1,
+    "firstRow": 12,
+    "lastRow": 46
+  },
+  {
+    "file": "rewards-activity--1280x800.png",
+    "diffFile": "rewards-activity--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 328,
+    "total": 1024000,
+    "pct": 0.03,
+    "firstRow": 20,
+    "lastRow": 258
+  },
+  {
+    "file": "rewards-activity--375x812.png",
+    "diffFile": "rewards-activity--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 548,
+    "total": 344288,
+    "pct": 0.16,
+    "firstRow": 12,
+    "lastRow": 298
+  },
+  {
+    "file": "rewards-redeem--1280x800.png",
+    "diffFile": "rewards-redeem--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 8747,
+    "total": 1024000,
+    "pct": 0.85,
+    "firstRow": 20,
+    "lastRow": 463
+  },
+  {
+    "file": "rewards-redeem--375x812.png",
+    "diffFile": "rewards-redeem--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 8550,
+    "total": 344288,
+    "pct": 2.48,
+    "firstRow": 12,
+    "lastRow": 636
+  },
+  {
+    "file": "statements--1280x800.png",
+    "diffFile": "statements--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 10795,
+    "total": 1024000,
+    "pct": 1.05,
+    "firstRow": 20,
+    "lastRow": 623
+  },
+  {
+    "file": "statements--375x812.png",
+    "diffFile": "statements--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 909
+    },
+    "candidate": {
+      "w": 400,
+      "h": 885
+    },
+    "changed": 10899,
+    "total": 385416,
+    "pct": 2.83,
+    "firstRow": 12,
+    "lastRow": 792
+  },
+  {
+    "file": "statements-paperless--1280x800.png",
+    "diffFile": "statements-paperless--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 1362,
+    "total": 1024000,
+    "pct": 0.13,
+    "firstRow": 20,
+    "lastRow": 209
+  },
+  {
+    "file": "statements-paperless--375x812.png",
+    "diffFile": "statements-paperless--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 3865,
+    "total": 344288,
+    "pct": 1.12,
+    "firstRow": 12,
+    "lastRow": 260
+  },
+  {
+    "file": "statements-tax--1280x800.png",
+    "diffFile": "statements-tax--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 141,
+    "total": 1024000,
+    "pct": 0.01,
+    "firstRow": 20,
+    "lastRow": 40
+  },
+  {
+    "file": "statements-tax--375x812.png",
+    "diffFile": "statements-tax--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 371,
+    "total": 344288,
+    "pct": 0.11,
+    "firstRow": 12,
+    "lastRow": 322
+  },
+  {
+    "file": "statements-viewer--1280x800.png",
+    "diffFile": "statements-viewer--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 328,
+    "total": 1024000,
+    "pct": 0.03,
+    "firstRow": 20,
+    "lastRow": 258
+  },
+  {
+    "file": "statements-viewer--375x812.png",
+    "diffFile": "statements-viewer--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 548,
+    "total": 344288,
+    "pct": 0.16,
+    "firstRow": 12,
+    "lastRow": 298
+  },
+  {
+    "file": "transfers--1280x800.png",
+    "diffFile": "transfers--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 1169
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 1169
+    },
+    "changed": 328,
+    "total": 1496320,
+    "pct": 0.02,
+    "firstRow": 20,
+    "lastRow": 682
+  },
+  {
+    "file": "transfers--375x812.png",
+    "diffFile": "transfers--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 1625
+    },
+    "candidate": {
+      "w": 400,
+      "h": 1625
+    },
+    "changed": 548,
+    "total": 689000,
+    "pct": 0.08,
+    "firstRow": 12,
+    "lastRow": 1114
+  },
+  {
+    "file": "transfers-confirmation--1280x800.png",
+    "diffFile": "transfers-confirmation--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 141,
+    "total": 1024000,
+    "pct": 0.01,
+    "firstRow": 20,
+    "lastRow": 40
+  },
+  {
+    "file": "transfers-confirmation--375x812.png",
+    "diffFile": "transfers-confirmation--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 341,
+    "total": 344288,
+    "pct": 0.1,
+    "firstRow": 12,
+    "lastRow": 46
+  },
+  {
+    "file": "transfers-detail--1280x800.png",
+    "diffFile": "transfers-detail--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 141,
+    "total": 1024000,
+    "pct": 0.01,
+    "firstRow": 20,
+    "lastRow": 40
+  },
+  {
+    "file": "transfers-detail--375x812.png",
+    "diffFile": "transfers-detail--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 341,
+    "total": 344288,
+    "pct": 0.1,
+    "firstRow": 12,
+    "lastRow": 46
+  },
+  {
+    "file": "transfers-history--1280x800.png",
+    "diffFile": "transfers-history--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 328,
+    "total": 1024000,
+    "pct": 0.03,
+    "firstRow": 20,
+    "lastRow": 262
+  },
+  {
+    "file": "transfers-history--375x812.png",
+    "diffFile": "transfers-history--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 548,
+    "total": 344288,
+    "pct": 0.16,
+    "firstRow": 12,
+    "lastRow": 326
+  },
+  {
+    "file": "transfers-new--1280x800.png",
+    "diffFile": "transfers-new--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 141,
+    "total": 1024000,
+    "pct": 0.01,
+    "firstRow": 20,
+    "lastRow": 40
+  },
+  {
+    "file": "transfers-new--375x812.png",
+    "diffFile": "transfers-new--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 341,
+    "total": 344288,
+    "pct": 0.1,
+    "firstRow": 12,
+    "lastRow": 46
+  },
+  {
+    "file": "transfers-new-review--1280x800.png",
+    "diffFile": "transfers-new-review--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 141,
+    "total": 1024000,
+    "pct": 0.01,
+    "firstRow": 20,
+    "lastRow": 40
+  },
+  {
+    "file": "transfers-new-review--375x812.png",
+    "diffFile": "transfers-new-review--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 341,
+    "total": 344288,
+    "pct": 0.1,
+    "firstRow": 12,
+    "lastRow": 46
+  },
+  {
+    "file": "transfers-payee-verify--1280x800.png",
+    "diffFile": "transfers-payee-verify--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 8371,
+    "total": 1024000,
+    "pct": 0.82,
+    "firstRow": 20,
+    "lastRow": 463
+  },
+  {
+    "file": "transfers-payee-verify--375x812.png",
+    "diffFile": "transfers-payee-verify--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 8047,
+    "total": 344288,
+    "pct": 2.34,
+    "firstRow": 12,
+    "lastRow": 636
+  },
+  {
+    "file": "transfers-payees--1280x800.png",
+    "diffFile": "transfers-payees--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 141,
+    "total": 1024000,
+    "pct": 0.01,
+    "firstRow": 20,
+    "lastRow": 40
+  },
+  {
+    "file": "transfers-payees--375x812.png",
+    "diffFile": "transfers-payees--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 812
+    },
+    "candidate": {
+      "w": 400,
+      "h": 812
+    },
+    "changed": 341,
+    "total": 344288,
+    "pct": 0.1,
+    "firstRow": 12,
+    "lastRow": 46
+  },
+  {
+    "file": "transfers-payees-new--1280x800.png",
+    "diffFile": "transfers-payees-new--1280x800.diff.png",
+    "baseline": {
+      "w": 1280,
+      "h": 800
+    },
+    "candidate": {
+      "w": 1280,
+      "h": 800
+    },
+    "changed": 23652,
+    "total": 1024000,
+    "pct": 2.31,
+    "firstRow": 20,
+    "lastRow": 642
+  },
+  {
+    "file": "transfers-payees-new--375x812.png",
+    "diffFile": "transfers-payees-new--375x812.diff.png",
+    "baseline": {
+      "w": 424,
+      "h": 1001
+    },
+    "candidate": {
+      "w": 400,
+      "h": 940
+    },
+    "changed": 19432,
+    "total": 424424,
+    "pct": 4.58,
+    "firstRow": 12,
+    "lastRow": 920
+  }
+]

@@ -1,0 +1,18 @@
+# Iris host check - retail-web Angular 15 host page x iris-widget scratch build
+iris manifest: element=northgate-iris-widget file=main.a02a28579e486dca.js stable=iris.js bytes=480207 angular=15.2.10 zoneJsCompatible=0.12.0 builtAt=2026-09-10T00:30:40.592Z
+host /help: ng-version=15.2.10 zonePresent=true zoneRoot=<root> unpatchedEvents=[scroll,mousemove]
+host as committed: #iris-root=false <northgate-iris-widget>=false /assets/widgets script=false customElement defined=false  -> no Iris mount in source (KAN-42 confirmed)
+injected <northgate-iris-widget>: defined=true .iris-root=true launcher=true open panel=true
+ng-version roots on page after mount: mol-root@15.2.10 northgate-iris-widget@15.2.10  (host app + widget, both Angular 15)
+zone: single host Zone reused (root=<root>); widget did not throw "Zone already loaded"; host still rendered=true
+assets served from iris dist via interception: iris.js, assets/canopy/canopy-sprite.svg
+host console noise ignored (NgRx dev logger / CSP meta notice): 27 lines
+iris console lines: 2
+  error: Refused to connect to 'http://localhost:4517/iris/v1/sessions' because it violates the following Content Security Policy directive: "connect-src 'self' http://localhost:4400 http://localhost:4500 http://localhost:4606 http://localhost:4607 http://localhost:4608".
+
+  error: [iris-widget] session start failed fh
+failed / 4xx+ requests: 2
+  GET http://localhost:4200/assets/config/env.local.json?v=14.31.2-local -> HTTP 404
+  POST http://localhost:4517/iris/v1/sessions -> csp
+other console errors/warnings: 0
+RESULT: MOUNTED

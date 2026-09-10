@@ -1,13 +1,13 @@
 <cn-page-header title="Dispute a transaction" i18n-title="@@accounts.disputeTransaction.title" lede="We will credit your account while we investigate, usually within 2 business days." i18n-lede="@@accounts.disputeTransaction.lede" [backLink]="'/accounts'"></cn-page-header>
 
-<form class="mol-page mol-form" [formGroup]="form" (ngSubmit)="submit()" novalidate fxLayout="column" fxLayoutGap="16px">
+<form class="mol-page mol-form mol-flex-col mol-gap-16" [formGroup]="form" (ngSubmit)="submit()" novalidate>
   <cn-error-summary [form]="form" *ngIf="submitted && form.invalid"></cn-error-summary>
   <mol-error-banner [error]="error" [showRetry]="false"></mol-error-banner>
 
   <cn-card [padded]="true">
-    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="16px">
-      <cn-select formControlName="reason" i18n-label="@@accounts.dispute.reason" label="Reason" [options]="reasonOptions" [required]="true" fxFlex></cn-select>
-      <mat-form-field appearance="outline" fxFlex="100">
+    <div class="mol-flex-row mol-flex-col--lt-md mol-gap-16">
+      <cn-select class="mol-flex" formControlName="reason" i18n-label="@@accounts.dispute.reason" label="Reason" [options]="reasonOptions" [required]="true"></cn-select>
+      <mat-form-field class="mol-flex-100" appearance="outline">
         <mat-label i18n="@@accounts.dispute.detail">Tell us what happened</mat-label>
         <textarea matInput formControlName="detail" rows="4" maxlength="1000"></textarea>
         <mat-hint align="end">{{ form.get('detail')?.value?.length || 0 }}/1000</mat-hint>
@@ -15,7 +15,7 @@
     </div>
   </cn-card>
 
-  <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="8px" fxLayoutAlign="end">
+  <div class="mol-flex-row mol-flex-col--lt-md mol-gap-8 mol-justify-end mol-align-stretch">
     <cn-button variant="tertiary" type="button" (pressed)="cancel()" i18n="@@action.cancel">Cancel</cn-button>
     <cn-button variant="primary" type="submit" [loading]="saving" i18n="@@accounts.disputeTransaction.submit">Submit dispute</cn-button>
   </div>

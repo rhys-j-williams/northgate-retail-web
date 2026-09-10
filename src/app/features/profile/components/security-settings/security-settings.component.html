@@ -1,6 +1,6 @@
 <cn-page-header title="Security" i18n-title="@@profile.security.title" backLink="/profile" backLabel="Profile"></cn-page-header>
 
-<div class="mol-page" fxLayout="column" fxLayoutGap="16px" *ngIf="settings$ | async as s; else loading">
+<div class="mol-page mol-flex-col mol-gap-16" *ngIf="settings$ | async as s; else loading">
   <cn-list [interactive]="true" [dividers]="true" ariaLabel="Security settings" [items]="[
     { id: 'password', primary: 'Password', secondary: 'Last changed ' + (s.passwordChangedAt | date:'mediumDate'), icon: 'password', link: 'password' },
     { id: 'username', primary: 'Username', secondary: username, icon: 'badge', link: 'username' },

@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -90,16 +89,14 @@ const DECLARATIONS = [
 ];
 
 /**
- * Imported by every feature module. Re-exports Canopy, flex-layout, forms and ngx-translate so
- * feature modules have one import. Do not add services here; providedIn: 'root' or the feature
- * module.
+ * Imported by every feature module. Re-exports Canopy, forms and ngx-translate so feature modules
+ * have one import. Do not add services here; providedIn: 'root' or the feature module.
  *
- * FlexLayoutModule is here because roughly every feature template still uses fxLayout for its
- * grid. Replacing it with CSS grid is MOL-4478 and has been "next quarter" since 2023.
+ * Layout comes from the utility classes in src/styles/_layout.scss (MOL-4478).
  */
 @NgModule({
   declarations: DECLARATIONS,
-  imports: [CommonModule, RouterModule, FormsModule, ReactiveFormsModule, FlexLayoutModule, TranslateModule, ...MATERIAL, ...CANOPY],
-  exports: [CommonModule, RouterModule, FormsModule, ReactiveFormsModule, FlexLayoutModule, TranslateModule, ...MATERIAL, ...CANOPY, ...DECLARATIONS]
+  imports: [CommonModule, RouterModule, FormsModule, ReactiveFormsModule, TranslateModule, ...MATERIAL, ...CANOPY],
+  exports: [CommonModule, RouterModule, FormsModule, ReactiveFormsModule, TranslateModule, ...MATERIAL, ...CANOPY, ...DECLARATIONS]
 })
 export class SharedModule {}

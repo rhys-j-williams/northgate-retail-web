@@ -1,9 +1,9 @@
 <cn-card title="Alerts" i18n-title="@@dashboard.alerts.title" class="mol-widget" [padded]="false">
   <ng-container *ngIf="items$ | async as items; else loading">
     <ul class="mol-digest" *ngIf="visible(items).length; else empty">
-      <li *ngFor="let a of visible(items)" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="12px">
+      <li class="mol-flex-row mol-justify-start mol-align-center mol-gap-12" *ngFor="let a of visible(items)">
         <mat-icon class="mol-muted" aria-hidden="true">{{ iconFor(a.code) }}</mat-icon>
-        <div fxFlex fxLayout="column">
+        <div class="mol-flex mol-flex-col">
           <span>{{ a.summary }}</span>
           <span class="mol-muted">{{ a.sentAt | relativeDate }} &middot; {{ a.channel }}</span>
         </div>

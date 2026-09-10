@@ -1,8 +1,14 @@
 <cn-dialog-shell title="Rename account" i18n-title="@@accounts.renameAccount.title" [busy]="busy" [destructive]="false">
   <p i18n="@@accounts.renameAccount.body">Nicknames only show in Northgate Online and the mobile app. Statements keep the product name.</p>
+  <mat-form-field appearance="outline" fxFlex="100">
+    <mat-label i18n="@@accounts.renameAccount.nickname">Nickname</mat-label>
+    <input matInput [formControl]="nickname" molTrimOnBlur maxlength="40" cdkFocusInitial>
+    <mat-hint align="end">{{ nickname.value.length }}/40</mat-hint>
+    <mat-error *ngIf="nickname.hasError('required')" i18n="@@validation.required">This field is required</mat-error>
+  </mat-form-field>
   <mol-error-banner [error]="error" [showRetry]="false"></mol-error-banner>
   <div cnDialogActions fxLayout="row" fxLayoutGap="8px" fxLayoutAlign="end">
     <cn-button variant="tertiary" (pressed)="ref.close(false)" i18n="@@action.cancel">Cancel</cn-button>
-    <cn-button variant="primary" [loading]="busy" (pressed)="confirm()" i18n="@@accounts.renameAccount.confirm">Save name</cn-button>
+    <cn-button variant="primary" [loading]="busy" [disabled]="nickname.invalid || unchanged" (pressed)="confirm()" i18n="@@accounts.renameAccount.confirm">Save name</cn-button>
   </div>
 </cn-dialog-shell>

@@ -1,0 +1,1163 @@
+{
+  "app": "http://localhost:4200",
+  "checkedAt": "2026-09-09T23:38:54.501Z",
+  "routes": [
+    {
+      "id": "dashboard",
+      "viewport": "1280x800",
+      "route": "/dashboard",
+      "finalUrl": "/dashboard",
+      "checks": 70,
+      "elements": 10,
+      "mismatches": []
+    },
+    {
+      "id": "accounts",
+      "viewport": "1280x800",
+      "route": "/accounts",
+      "finalUrl": "/accounts",
+      "checks": 11,
+      "elements": 2,
+      "mismatches": []
+    },
+    {
+      "id": "accounts-detail",
+      "viewport": "1280x800",
+      "route": "/accounts/ACC-477215249",
+      "finalUrl": "/accounts/ACC-477215249",
+      "checks": 19,
+      "elements": 4,
+      "mismatches": []
+    },
+    {
+      "id": "accounts-detail-export-dialog",
+      "viewport": "1280x800",
+      "route": "/accounts/ACC-477215249",
+      "finalUrl": "/accounts/ACC-477215249",
+      "checks": 19,
+      "elements": 4,
+      "mismatches": []
+    },
+    {
+      "id": "accounts-transaction-detail",
+      "viewport": "1280x800",
+      "route": "/accounts/ACC-477215249/transactions/TXN-000001",
+      "finalUrl": "/accounts/ACC-477215249/transactions/TXN-000001",
+      "checks": 0,
+      "elements": 0,
+      "mismatches": []
+    },
+    {
+      "id": "accounts-transaction-dispute",
+      "viewport": "1280x800",
+      "route": "/accounts/ACC-477215249/transactions/TXN-000001/dispute",
+      "finalUrl": "/accounts/ACC-477215249/transactions/TXN-000001/dispute",
+      "checks": 25,
+      "elements": 5,
+      "mismatches": []
+    },
+    {
+      "id": "transfers",
+      "viewport": "1280x800",
+      "route": "/transfers",
+      "finalUrl": "/transfers",
+      "checks": 58,
+      "elements": 11,
+      "mismatches": []
+    },
+    {
+      "id": "transfers-new",
+      "viewport": "1280x800",
+      "route": "/transfers/new",
+      "finalUrl": "/transfers/new",
+      "checks": 0,
+      "elements": 0,
+      "mismatches": []
+    },
+    {
+      "id": "transfers-new-review",
+      "viewport": "1280x800",
+      "route": "/transfers/new/review",
+      "finalUrl": "/transfers/new",
+      "checks": 0,
+      "elements": 0,
+      "mismatches": []
+    },
+    {
+      "id": "transfers-confirmation",
+      "viewport": "1280x800",
+      "route": "/transfers/TRF-000001/confirmation",
+      "finalUrl": "/transfers/TRF-000001/confirmation",
+      "checks": 0,
+      "elements": 0,
+      "mismatches": []
+    },
+    {
+      "id": "transfers-history",
+      "viewport": "1280x800",
+      "route": "/transfers/history",
+      "finalUrl": "/transfers/history",
+      "checks": 31,
+      "elements": 5,
+      "mismatches": []
+    },
+    {
+      "id": "transfers-detail",
+      "viewport": "1280x800",
+      "route": "/transfers/TRF-000001",
+      "finalUrl": "/transfers/TRF-000001",
+      "checks": 0,
+      "elements": 0,
+      "mismatches": []
+    },
+    {
+      "id": "transfers-payees",
+      "viewport": "1280x800",
+      "route": "/transfers/payees",
+      "finalUrl": "/transfers/payees",
+      "checks": 0,
+      "elements": 0,
+      "mismatches": []
+    },
+    {
+      "id": "transfers-payees-new",
+      "viewport": "1280x800",
+      "route": "/transfers/payees/new",
+      "finalUrl": "/transfers/payees/new",
+      "checks": 43,
+      "elements": 10,
+      "mismatches": []
+    },
+    {
+      "id": "transfers-payee-verify",
+      "viewport": "1280x800",
+      "route": "/transfers/payees/PYE-904418309/verify",
+      "finalUrl": "/transfers/payees/PYE-904418309/verify",
+      "checks": 24,
+      "elements": 5,
+      "mismatches": []
+    },
+    {
+      "id": "bill-pay",
+      "viewport": "1280x800",
+      "route": "/bill-pay",
+      "finalUrl": "/bill-pay",
+      "checks": 32,
+      "elements": 5,
+      "mismatches": []
+    },
+    {
+      "id": "bill-pay-bill-detail",
+      "viewport": "1280x800",
+      "route": "/bill-pay/bills/PYE-904418309",
+      "finalUrl": "/bill-pay/bills/PYE-904418309",
+      "checks": 0,
+      "elements": 0,
+      "mismatches": []
+    },
+    {
+      "id": "bill-pay-pay-bill",
+      "viewport": "1280x800",
+      "route": "/bill-pay/bills/PYE-904418309/pay",
+      "finalUrl": "/bill-pay/bills/PYE-904418309/pay",
+      "checks": 36,
+      "elements": 8,
+      "mismatches": []
+    },
+    {
+      "id": "bill-pay-scheduled",
+      "viewport": "1280x800",
+      "route": "/bill-pay/scheduled",
+      "finalUrl": "/bill-pay/scheduled",
+      "checks": 31,
+      "elements": 5,
+      "mismatches": []
+    },
+    {
+      "id": "bill-pay-history",
+      "viewport": "1280x800",
+      "route": "/bill-pay/history",
+      "finalUrl": "/bill-pay/history",
+      "checks": 31,
+      "elements": 5,
+      "mismatches": []
+    },
+    {
+      "id": "bill-pay-payees-new",
+      "viewport": "1280x800",
+      "route": "/bill-pay/payees/new",
+      "finalUrl": "/bill-pay/payees/new",
+      "checks": 36,
+      "elements": 8,
+      "mismatches": []
+    },
+    {
+      "id": "bill-pay-autopay",
+      "viewport": "1280x800",
+      "route": "/bill-pay/bills/PYE-904418309/autopay",
+      "finalUrl": "/bill-pay/bills/PYE-904418309/autopay",
+      "checks": 20,
+      "elements": 4,
+      "mismatches": []
+    },
+    {
+      "id": "cards",
+      "viewport": "1280x800",
+      "route": "/cards",
+      "finalUrl": "/cards",
+      "checks": 19,
+      "elements": 4,
+      "mismatches": []
+    },
+    {
+      "id": "cards-detail",
+      "viewport": "1280x800",
+      "route": "/cards/CRD-980719437",
+      "finalUrl": "/cards/CRD-980719437",
+      "checks": 30,
+      "elements": 5,
+      "mismatches": []
+    },
+    {
+      "id": "cards-controls",
+      "viewport": "1280x800",
+      "route": "/cards/CRD-980719437/controls",
+      "finalUrl": "/cards/CRD-980719437/controls",
+      "checks": 60,
+      "elements": 10,
+      "mismatches": []
+    },
+    {
+      "id": "cards-report",
+      "viewport": "1280x800",
+      "route": "/cards/CRD-980719437/report",
+      "finalUrl": "/cards/CRD-980719437/report",
+      "checks": 24,
+      "elements": 5,
+      "mismatches": []
+    },
+    {
+      "id": "cards-travel",
+      "viewport": "1280x800",
+      "route": "/cards/CRD-980719437/travel",
+      "finalUrl": "/cards/CRD-980719437/travel",
+      "checks": 31,
+      "elements": 7,
+      "mismatches": []
+    },
+    {
+      "id": "cards-activate",
+      "viewport": "1280x800",
+      "route": "/cards/CRD-980719437/activate",
+      "finalUrl": "/cards/CRD-980719437/activate",
+      "checks": 23,
+      "elements": 5,
+      "mismatches": []
+    },
+    {
+      "id": "statements",
+      "viewport": "1280x800",
+      "route": "/statements",
+      "finalUrl": "/statements",
+      "checks": 45,
+      "elements": 8,
+      "mismatches": []
+    },
+    {
+      "id": "statements-tax",
+      "viewport": "1280x800",
+      "route": "/statements/tax",
+      "finalUrl": "/statements/tax",
+      "checks": 5,
+      "elements": 1,
+      "mismatches": []
+    },
+    {
+      "id": "statements-paperless",
+      "viewport": "1280x800",
+      "route": "/statements/paperless",
+      "finalUrl": "/statements/paperless",
+      "checks": 39,
+      "elements": 6,
+      "mismatches": []
+    },
+    {
+      "id": "statements-viewer",
+      "viewport": "1280x800",
+      "route": "/statements/STM-000001",
+      "finalUrl": "/statements/STM-000001",
+      "checks": 16,
+      "elements": 3,
+      "mismatches": []
+    },
+    {
+      "id": "alerts",
+      "viewport": "1280x800",
+      "route": "/alerts",
+      "finalUrl": "/alerts",
+      "checks": 21,
+      "elements": 4,
+      "mismatches": []
+    },
+    {
+      "id": "alerts-history",
+      "viewport": "1280x800",
+      "route": "/alerts/history",
+      "finalUrl": "/alerts/history",
+      "checks": 3,
+      "elements": 1,
+      "mismatches": []
+    },
+    {
+      "id": "profile",
+      "viewport": "1280x800",
+      "route": "/profile",
+      "finalUrl": "/profile",
+      "checks": 7,
+      "elements": 2,
+      "mismatches": []
+    },
+    {
+      "id": "profile-contact",
+      "viewport": "1280x800",
+      "route": "/profile/contact",
+      "finalUrl": "/profile/contact",
+      "checks": 32,
+      "elements": 7,
+      "mismatches": []
+    },
+    {
+      "id": "profile-address",
+      "viewport": "1280x800",
+      "route": "/profile/address",
+      "finalUrl": "/profile/address",
+      "checks": 43,
+      "elements": 10,
+      "mismatches": []
+    },
+    {
+      "id": "profile-security",
+      "viewport": "1280x800",
+      "route": "/profile/security",
+      "finalUrl": "/profile/security",
+      "checks": 0,
+      "elements": 0,
+      "mismatches": []
+    },
+    {
+      "id": "profile-security-password",
+      "viewport": "1280x800",
+      "route": "/profile/security/password",
+      "finalUrl": "/profile/security/password",
+      "checks": 57,
+      "elements": 8,
+      "mismatches": []
+    },
+    {
+      "id": "profile-security-username",
+      "viewport": "1280x800",
+      "route": "/profile/security/username",
+      "finalUrl": "/profile/security/username",
+      "checks": 19,
+      "elements": 4,
+      "mismatches": []
+    },
+    {
+      "id": "profile-security-mfa",
+      "viewport": "1280x800",
+      "route": "/profile/security/mfa",
+      "finalUrl": "/profile/security/mfa",
+      "checks": 4,
+      "elements": 1,
+      "mismatches": []
+    },
+    {
+      "id": "profile-security-devices",
+      "viewport": "1280x800",
+      "route": "/profile/security/devices",
+      "finalUrl": "/profile/security/devices",
+      "checks": 25,
+      "elements": 4,
+      "mismatches": []
+    },
+    {
+      "id": "profile-security-activity",
+      "viewport": "1280x800",
+      "route": "/profile/security/activity",
+      "finalUrl": "/profile/security/activity",
+      "checks": 3,
+      "elements": 1,
+      "mismatches": []
+    },
+    {
+      "id": "messages",
+      "viewport": "1280x800",
+      "route": "/messages",
+      "finalUrl": "/messages",
+      "checks": 32,
+      "elements": 5,
+      "mismatches": []
+    },
+    {
+      "id": "messages-new",
+      "viewport": "1280x800",
+      "route": "/messages/new",
+      "finalUrl": "/messages/new",
+      "checks": 3,
+      "elements": 1,
+      "mismatches": []
+    },
+    {
+      "id": "messages-thread",
+      "viewport": "1280x800",
+      "route": "/messages/THR-000001",
+      "finalUrl": "/messages/THR-000001",
+      "checks": 3,
+      "elements": 1,
+      "mismatches": []
+    },
+    {
+      "id": "rewards",
+      "viewport": "1280x800",
+      "route": "/rewards",
+      "finalUrl": "/rewards",
+      "checks": 3,
+      "elements": 1,
+      "mismatches": []
+    },
+    {
+      "id": "rewards-activity",
+      "viewport": "1280x800",
+      "route": "/rewards/activity",
+      "finalUrl": "/rewards/activity",
+      "checks": 31,
+      "elements": 5,
+      "mismatches": []
+    },
+    {
+      "id": "rewards-redeem",
+      "viewport": "1280x800",
+      "route": "/rewards/redeem",
+      "finalUrl": "/rewards/redeem",
+      "checks": 24,
+      "elements": 5,
+      "mismatches": []
+    },
+    {
+      "id": "help",
+      "viewport": "1280x800",
+      "route": "/help",
+      "finalUrl": "/help",
+      "checks": 5,
+      "elements": 1,
+      "mismatches": []
+    },
+    {
+      "id": "help-faq",
+      "viewport": "1280x800",
+      "route": "/help/faq",
+      "finalUrl": "/help/faq",
+      "checks": 5,
+      "elements": 1,
+      "mismatches": []
+    },
+    {
+      "id": "help-contact",
+      "viewport": "1280x800",
+      "route": "/help/contact",
+      "finalUrl": "/help/contact",
+      "checks": 6,
+      "elements": 1,
+      "mismatches": []
+    },
+    {
+      "id": "disclosures",
+      "viewport": "1280x800",
+      "route": "/disclosures",
+      "finalUrl": "/disclosures",
+      "checks": 6,
+      "elements": 1,
+      "mismatches": []
+    },
+    {
+      "id": "disclosures-viewer",
+      "viewport": "1280x800",
+      "route": "/disclosures/privacy-notice",
+      "finalUrl": "/disclosures/privacy-notice",
+      "checks": 3,
+      "elements": 1,
+      "mismatches": []
+    },
+    {
+      "id": "open-account",
+      "viewport": "1280x800",
+      "route": "/open-account",
+      "finalUrl": "/open-account",
+      "checks": 6,
+      "elements": 1,
+      "mismatches": []
+    },
+    {
+      "id": "open-account-identity",
+      "viewport": "1280x800",
+      "route": "/open-account/identity",
+      "finalUrl": "/open-account/identity",
+      "checks": 36,
+      "elements": 8,
+      "mismatches": []
+    },
+    {
+      "id": "open-account-contact",
+      "viewport": "1280x800",
+      "route": "/open-account/contact",
+      "finalUrl": "/open-account/contact",
+      "checks": 48,
+      "elements": 11,
+      "mismatches": []
+    },
+    {
+      "id": "open-account-product",
+      "viewport": "1280x800",
+      "route": "/open-account/product",
+      "finalUrl": "/open-account/product",
+      "checks": 23,
+      "elements": 5,
+      "mismatches": []
+    },
+    {
+      "id": "open-account-funding",
+      "viewport": "1280x800",
+      "route": "/open-account/funding",
+      "finalUrl": "/open-account/funding",
+      "checks": 31,
+      "elements": 7,
+      "mismatches": []
+    },
+    {
+      "id": "open-account-review",
+      "viewport": "1280x800",
+      "route": "/open-account/review",
+      "finalUrl": "/open-account/review",
+      "checks": 6,
+      "elements": 1,
+      "mismatches": []
+    },
+    {
+      "id": "errors-not-found",
+      "viewport": "1280x800",
+      "route": "/not-found",
+      "finalUrl": "/not-found",
+      "checks": 4,
+      "elements": 1,
+      "mismatches": []
+    },
+    {
+      "id": "errors-forbidden",
+      "viewport": "1280x800",
+      "route": "/forbidden",
+      "finalUrl": "/forbidden",
+      "checks": 4,
+      "elements": 1,
+      "mismatches": []
+    },
+    {
+      "id": "errors-generic",
+      "viewport": "1280x800",
+      "route": "/error",
+      "finalUrl": "/error",
+      "checks": 4,
+      "elements": 1,
+      "mismatches": []
+    },
+    {
+      "id": "logged-out",
+      "viewport": "1280x800",
+      "route": "/logged-out",
+      "finalUrl": "/logged-out",
+      "checks": 10,
+      "elements": 2,
+      "mismatches": []
+    },
+    {
+      "id": "dashboard",
+      "viewport": "375x812",
+      "route": "/dashboard",
+      "finalUrl": "/dashboard",
+      "checks": 76,
+      "elements": 10,
+      "mismatches": []
+    },
+    {
+      "id": "accounts",
+      "viewport": "375x812",
+      "route": "/accounts",
+      "finalUrl": "/accounts",
+      "checks": 12,
+      "elements": 2,
+      "mismatches": []
+    },
+    {
+      "id": "accounts-detail",
+      "viewport": "375x812",
+      "route": "/accounts/ACC-477215249",
+      "finalUrl": "/accounts/ACC-477215249",
+      "checks": 19,
+      "elements": 4,
+      "mismatches": []
+    },
+    {
+      "id": "accounts-detail-export-dialog",
+      "viewport": "375x812",
+      "route": "/accounts/ACC-477215249",
+      "finalUrl": "/accounts/ACC-477215249",
+      "checks": 19,
+      "elements": 4,
+      "mismatches": []
+    },
+    {
+      "id": "accounts-transaction-detail",
+      "viewport": "375x812",
+      "route": "/accounts/ACC-477215249/transactions/TXN-000001",
+      "finalUrl": "/accounts/ACC-477215249/transactions/TXN-000001",
+      "checks": 0,
+      "elements": 0,
+      "mismatches": []
+    },
+    {
+      "id": "accounts-transaction-dispute",
+      "viewport": "375x812",
+      "route": "/accounts/ACC-477215249/transactions/TXN-000001/dispute",
+      "finalUrl": "/accounts/ACC-477215249/transactions/TXN-000001/dispute",
+      "checks": 25,
+      "elements": 5,
+      "mismatches": []
+    },
+    {
+      "id": "transfers",
+      "viewport": "375x812",
+      "route": "/transfers",
+      "finalUrl": "/transfers",
+      "checks": 59,
+      "elements": 11,
+      "mismatches": []
+    },
+    {
+      "id": "transfers-new",
+      "viewport": "375x812",
+      "route": "/transfers/new",
+      "finalUrl": "/transfers/new",
+      "checks": 0,
+      "elements": 0,
+      "mismatches": []
+    },
+    {
+      "id": "transfers-new-review",
+      "viewport": "375x812",
+      "route": "/transfers/new/review",
+      "finalUrl": "/transfers/new",
+      "checks": 0,
+      "elements": 0,
+      "mismatches": []
+    },
+    {
+      "id": "transfers-confirmation",
+      "viewport": "375x812",
+      "route": "/transfers/TRF-000001/confirmation",
+      "finalUrl": "/transfers/TRF-000001/confirmation",
+      "checks": 0,
+      "elements": 0,
+      "mismatches": []
+    },
+    {
+      "id": "transfers-history",
+      "viewport": "375x812",
+      "route": "/transfers/history",
+      "finalUrl": "/transfers/history",
+      "checks": 32,
+      "elements": 5,
+      "mismatches": []
+    },
+    {
+      "id": "transfers-detail",
+      "viewport": "375x812",
+      "route": "/transfers/TRF-000001",
+      "finalUrl": "/transfers/TRF-000001",
+      "checks": 0,
+      "elements": 0,
+      "mismatches": []
+    },
+    {
+      "id": "transfers-payees",
+      "viewport": "375x812",
+      "route": "/transfers/payees",
+      "finalUrl": "/transfers/payees",
+      "checks": 0,
+      "elements": 0,
+      "mismatches": []
+    },
+    {
+      "id": "transfers-payees-new",
+      "viewport": "375x812",
+      "route": "/transfers/payees/new",
+      "finalUrl": "/transfers/payees/new",
+      "checks": 43,
+      "elements": 10,
+      "mismatches": []
+    },
+    {
+      "id": "transfers-payee-verify",
+      "viewport": "375x812",
+      "route": "/transfers/payees/PYE-904418309/verify",
+      "finalUrl": "/transfers/payees/PYE-904418309/verify",
+      "checks": 24,
+      "elements": 5,
+      "mismatches": []
+    },
+    {
+      "id": "bill-pay",
+      "viewport": "375x812",
+      "route": "/bill-pay",
+      "finalUrl": "/bill-pay",
+      "checks": 33,
+      "elements": 5,
+      "mismatches": []
+    },
+    {
+      "id": "bill-pay-bill-detail",
+      "viewport": "375x812",
+      "route": "/bill-pay/bills/PYE-904418309",
+      "finalUrl": "/bill-pay/bills/PYE-904418309",
+      "checks": 0,
+      "elements": 0,
+      "mismatches": []
+    },
+    {
+      "id": "bill-pay-pay-bill",
+      "viewport": "375x812",
+      "route": "/bill-pay/bills/PYE-904418309/pay",
+      "finalUrl": "/bill-pay/bills/PYE-904418309/pay",
+      "checks": 36,
+      "elements": 8,
+      "mismatches": []
+    },
+    {
+      "id": "bill-pay-scheduled",
+      "viewport": "375x812",
+      "route": "/bill-pay/scheduled",
+      "finalUrl": "/bill-pay/scheduled",
+      "checks": 32,
+      "elements": 5,
+      "mismatches": []
+    },
+    {
+      "id": "bill-pay-history",
+      "viewport": "375x812",
+      "route": "/bill-pay/history",
+      "finalUrl": "/bill-pay/history",
+      "checks": 32,
+      "elements": 5,
+      "mismatches": []
+    },
+    {
+      "id": "bill-pay-payees-new",
+      "viewport": "375x812",
+      "route": "/bill-pay/payees/new",
+      "finalUrl": "/bill-pay/payees/new",
+      "checks": 36,
+      "elements": 8,
+      "mismatches": []
+    },
+    {
+      "id": "bill-pay-autopay",
+      "viewport": "375x812",
+      "route": "/bill-pay/bills/PYE-904418309/autopay",
+      "finalUrl": "/bill-pay/bills/PYE-904418309/autopay",
+      "checks": 20,
+      "elements": 4,
+      "mismatches": []
+    },
+    {
+      "id": "cards",
+      "viewport": "375x812",
+      "route": "/cards",
+      "finalUrl": "/cards",
+      "checks": 19,
+      "elements": 4,
+      "mismatches": []
+    },
+    {
+      "id": "cards-detail",
+      "viewport": "375x812",
+      "route": "/cards/CRD-980719437",
+      "finalUrl": "/cards/CRD-980719437",
+      "checks": 31,
+      "elements": 5,
+      "mismatches": []
+    },
+    {
+      "id": "cards-controls",
+      "viewport": "375x812",
+      "route": "/cards/CRD-980719437/controls",
+      "finalUrl": "/cards/CRD-980719437/controls",
+      "checks": 63,
+      "elements": 10,
+      "mismatches": []
+    },
+    {
+      "id": "cards-report",
+      "viewport": "375x812",
+      "route": "/cards/CRD-980719437/report",
+      "finalUrl": "/cards/CRD-980719437/report",
+      "checks": 24,
+      "elements": 5,
+      "mismatches": []
+    },
+    {
+      "id": "cards-travel",
+      "viewport": "375x812",
+      "route": "/cards/CRD-980719437/travel",
+      "finalUrl": "/cards/CRD-980719437/travel",
+      "checks": 31,
+      "elements": 7,
+      "mismatches": []
+    },
+    {
+      "id": "cards-activate",
+      "viewport": "375x812",
+      "route": "/cards/CRD-980719437/activate",
+      "finalUrl": "/cards/CRD-980719437/activate",
+      "checks": 23,
+      "elements": 5,
+      "mismatches": []
+    },
+    {
+      "id": "statements",
+      "viewport": "375x812",
+      "route": "/statements",
+      "finalUrl": "/statements",
+      "checks": 46,
+      "elements": 8,
+      "mismatches": []
+    },
+    {
+      "id": "statements-tax",
+      "viewport": "375x812",
+      "route": "/statements/tax",
+      "finalUrl": "/statements/tax",
+      "checks": 5,
+      "elements": 1,
+      "mismatches": []
+    },
+    {
+      "id": "statements-paperless",
+      "viewport": "375x812",
+      "route": "/statements/paperless",
+      "finalUrl": "/statements/paperless",
+      "checks": 39,
+      "elements": 6,
+      "mismatches": []
+    },
+    {
+      "id": "statements-viewer",
+      "viewport": "375x812",
+      "route": "/statements/STM-000001",
+      "finalUrl": "/statements/STM-000001",
+      "checks": 16,
+      "elements": 3,
+      "mismatches": []
+    },
+    {
+      "id": "alerts",
+      "viewport": "375x812",
+      "route": "/alerts",
+      "finalUrl": "/alerts",
+      "checks": 21,
+      "elements": 4,
+      "mismatches": []
+    },
+    {
+      "id": "alerts-history",
+      "viewport": "375x812",
+      "route": "/alerts/history",
+      "finalUrl": "/alerts/history",
+      "checks": 3,
+      "elements": 1,
+      "mismatches": []
+    },
+    {
+      "id": "profile",
+      "viewport": "375x812",
+      "route": "/profile",
+      "finalUrl": "/profile",
+      "checks": 7,
+      "elements": 2,
+      "mismatches": []
+    },
+    {
+      "id": "profile-contact",
+      "viewport": "375x812",
+      "route": "/profile/contact",
+      "finalUrl": "/profile/contact",
+      "checks": 32,
+      "elements": 7,
+      "mismatches": []
+    },
+    {
+      "id": "profile-address",
+      "viewport": "375x812",
+      "route": "/profile/address",
+      "finalUrl": "/profile/address",
+      "checks": 43,
+      "elements": 10,
+      "mismatches": []
+    },
+    {
+      "id": "profile-security",
+      "viewport": "375x812",
+      "route": "/profile/security",
+      "finalUrl": "/profile/security",
+      "checks": 0,
+      "elements": 0,
+      "mismatches": []
+    },
+    {
+      "id": "profile-security-password",
+      "viewport": "375x812",
+      "route": "/profile/security/password",
+      "finalUrl": "/profile/security/password",
+      "checks": 57,
+      "elements": 8,
+      "mismatches": []
+    },
+    {
+      "id": "profile-security-username",
+      "viewport": "375x812",
+      "route": "/profile/security/username",
+      "finalUrl": "/profile/security/username",
+      "checks": 19,
+      "elements": 4,
+      "mismatches": []
+    },
+    {
+      "id": "profile-security-mfa",
+      "viewport": "375x812",
+      "route": "/profile/security/mfa",
+      "finalUrl": "/profile/security/mfa",
+      "checks": 4,
+      "elements": 1,
+      "mismatches": []
+    },
+    {
+      "id": "profile-security-devices",
+      "viewport": "375x812",
+      "route": "/profile/security/devices",
+      "finalUrl": "/profile/security/devices",
+      "checks": 25,
+      "elements": 4,
+      "mismatches": []
+    },
+    {
+      "id": "profile-security-activity",
+      "viewport": "375x812",
+      "route": "/profile/security/activity",
+      "finalUrl": "/profile/security/activity",
+      "checks": 3,
+      "elements": 1,
+      "mismatches": []
+    },
+    {
+      "id": "messages",
+      "viewport": "375x812",
+      "route": "/messages",
+      "finalUrl": "/messages",
+      "checks": 33,
+      "elements": 5,
+      "mismatches": []
+    },
+    {
+      "id": "messages-new",
+      "viewport": "375x812",
+      "route": "/messages/new",
+      "finalUrl": "/messages/new",
+      "checks": 3,
+      "elements": 1,
+      "mismatches": []
+    },
+    {
+      "id": "messages-thread",
+      "viewport": "375x812",
+      "route": "/messages/THR-000001",
+      "finalUrl": "/messages/THR-000001",
+      "checks": 3,
+      "elements": 1,
+      "mismatches": []
+    },
+    {
+      "id": "rewards",
+      "viewport": "375x812",
+      "route": "/rewards",
+      "finalUrl": "/rewards",
+      "checks": 3,
+      "elements": 1,
+      "mismatches": []
+    },
+    {
+      "id": "rewards-activity",
+      "viewport": "375x812",
+      "route": "/rewards/activity",
+      "finalUrl": "/rewards/activity",
+      "checks": 32,
+      "elements": 5,
+      "mismatches": []
+    },
+    {
+      "id": "rewards-redeem",
+      "viewport": "375x812",
+      "route": "/rewards/redeem",
+      "finalUrl": "/rewards/redeem",
+      "checks": 24,
+      "elements": 5,
+      "mismatches": []
+    },
+    {
+      "id": "help",
+      "viewport": "375x812",
+      "route": "/help",
+      "finalUrl": "/help",
+      "checks": 5,
+      "elements": 1,
+      "mismatches": []
+    },
+    {
+      "id": "help-faq",
+      "viewport": "375x812",
+      "route": "/help/faq",
+      "finalUrl": "/help/faq",
+      "checks": 5,
+      "elements": 1,
+      "mismatches": []
+    },
+    {
+      "id": "help-contact",
+      "viewport": "375x812",
+      "route": "/help/contact",
+      "finalUrl": "/help/contact",
+      "checks": 6,
+      "elements": 1,
+      "mismatches": []
+    },
+    {
+      "id": "disclosures",
+      "viewport": "375x812",
+      "route": "/disclosures",
+      "finalUrl": "/disclosures",
+      "checks": 6,
+      "elements": 1,
+      "mismatches": []
+    },
+    {
+      "id": "disclosures-viewer",
+      "viewport": "375x812",
+      "route": "/disclosures/privacy-notice",
+      "finalUrl": "/disclosures/privacy-notice",
+      "checks": 3,
+      "elements": 1,
+      "mismatches": []
+    },
+    {
+      "id": "open-account",
+      "viewport": "375x812",
+      "route": "/open-account",
+      "finalUrl": "/open-account",
+      "checks": 6,
+      "elements": 1,
+      "mismatches": []
+    },
+    {
+      "id": "open-account-identity",
+      "viewport": "375x812",
+      "route": "/open-account/identity",
+      "finalUrl": "/open-account/identity",
+      "checks": 36,
+      "elements": 8,
+      "mismatches": []
+    },
+    {
+      "id": "open-account-contact",
+      "viewport": "375x812",
+      "route": "/open-account/contact",
+      "finalUrl": "/open-account/contact",
+      "checks": 48,
+      "elements": 11,
+      "mismatches": []
+    },
+    {
+      "id": "open-account-product",
+      "viewport": "375x812",
+      "route": "/open-account/product",
+      "finalUrl": "/open-account/product",
+      "checks": 23,
+      "elements": 5,
+      "mismatches": []
+    },
+    {
+      "id": "open-account-funding",
+      "viewport": "375x812",
+      "route": "/open-account/funding",
+      "finalUrl": "/open-account/funding",
+      "checks": 31,
+      "elements": 7,
+      "mismatches": []
+    },
+    {
+      "id": "open-account-review",
+      "viewport": "375x812",
+      "route": "/open-account/review",
+      "finalUrl": "/open-account/review",
+      "checks": 6,
+      "elements": 1,
+      "mismatches": []
+    },
+    {
+      "id": "errors-not-found",
+      "viewport": "375x812",
+      "route": "/not-found",
+      "finalUrl": "/not-found",
+      "checks": 4,
+      "elements": 1,
+      "mismatches": []
+    },
+    {
+      "id": "errors-forbidden",
+      "viewport": "375x812",
+      "route": "/forbidden",
+      "finalUrl": "/forbidden",
+      "checks": 4,
+      "elements": 1,
+      "mismatches": []
+    },
+    {
+      "id": "errors-generic",
+      "viewport": "375x812",
+      "route": "/error",
+      "finalUrl": "/error",
+      "checks": 4,
+      "elements": 1,
+      "mismatches": []
+    },
+    {
+      "id": "logged-out",
+      "viewport": "375x812",
+      "route": "/logged-out",
+      "finalUrl": "/logged-out",
+      "checks": 10,
+      "elements": 2,
+      "mismatches": []
+    }
+  ],
+  "totals": {
+    "elements": 496,
+    "checks": 2589,
+    "mismatches": 0
+  }
+}

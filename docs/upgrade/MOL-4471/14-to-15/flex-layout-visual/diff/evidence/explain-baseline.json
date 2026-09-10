@@ -1,0 +1,2608 @@
+{
+  "app": "http://localhost:4200",
+  "at": "2026-09-10T00:11:49.334Z",
+  "routes": {
+    "dashboard--1280x800": {
+      "route": "/dashboard",
+      "finalUrl": "/dashboard",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 5
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-dashboard-overview",
+        "mol-accounts-summary",
+        "mol-empty-state",
+        "mol-recent-activity",
+        "mol-quick-transfer",
+        "mol-error-banner",
+        "mol-upcoming-payments",
+        "mol-alerts-digest"
+      ],
+      "docWidth": 1280,
+      "docHeight": 1227,
+      "overflowing": []
+    },
+    "accounts--1280x800": {
+      "route": "/accounts",
+      "finalUrl": "/accounts",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-account-list",
+        "mol-error-banner",
+        "mol-page-section"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "accounts-detail--1280x800": {
+      "route": "/accounts/ACC-477215249",
+      "finalUrl": "/accounts/ACC-477215249",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-account-detail",
+        "mol-account-actions-menu"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "accounts-detail-export-dialog--1280x800": {
+      "route": "/accounts/ACC-477215249",
+      "finalUrl": "/accounts/ACC-477215249",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-account-detail",
+        "mol-account-actions-menu"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "accounts-transaction-detail--1280x800": {
+      "route": "/accounts/ACC-477215249/transactions/TXN-000001",
+      "finalUrl": "/accounts/ACC-477215249/transactions/TXN-000001",
+      "families": {
+        "cn-page-shell": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-transaction-detail",
+        "mol-loading-panel"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "accounts-transaction-dispute--1280x800": {
+      "route": "/accounts/ACC-477215249/transactions/TXN-000001/dispute",
+      "finalUrl": "/accounts/ACC-477215249/transactions/TXN-000001/dispute",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-dispute-transaction",
+        "mol-error-banner"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "transfers--1280x800": {
+      "route": "/transfers",
+      "finalUrl": "/transfers",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 2,
+        "cn-card": 3
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-transfers-home",
+        "mol-scheduled-transfers",
+        "mol-error-banner",
+        "mol-page-section",
+        "mol-empty-state"
+      ],
+      "docWidth": 1280,
+      "docHeight": 1169,
+      "overflowing": []
+    },
+    "transfers-new--1280x800": {
+      "route": "/transfers/new",
+      "finalUrl": "/transfers/new",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-transfer-wizard"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "transfers-new-review--1280x800": {
+      "route": "/transfers/new/review",
+      "finalUrl": "/transfers/new",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-transfer-wizard"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "transfers-confirmation--1280x800": {
+      "route": "/transfers/TRF-000001/confirmation",
+      "finalUrl": "/transfers/TRF-000001/confirmation",
+      "families": {
+        "cn-page-shell": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-transfer-confirmation",
+        "mol-loading-panel"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "transfers-history--1280x800": {
+      "route": "/transfers/history",
+      "finalUrl": "/transfers/history",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-transfer-history",
+        "mol-error-banner",
+        "mol-page-section",
+        "mol-empty-state"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "transfers-detail--1280x800": {
+      "route": "/transfers/TRF-000001",
+      "finalUrl": "/transfers/TRF-000001",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-transfer-detail",
+        "mol-loading-panel"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "transfers-payees--1280x800": {
+      "route": "/transfers/payees",
+      "finalUrl": "/transfers/payees",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-transfer-detail",
+        "mol-loading-panel"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "transfers-payees-new--1280x800": {
+      "route": "/transfers/payees/new",
+      "finalUrl": "/transfers/payees/new",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-add-payee",
+        "mol-error-banner"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "transfers-payee-verify--1280x800": {
+      "route": "/transfers/payees/PYE-904418309/verify",
+      "finalUrl": "/transfers/payees/PYE-904418309/verify",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-verify-payee",
+        "mol-error-banner"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "bill-pay--1280x800": {
+      "route": "/bill-pay",
+      "finalUrl": "/bill-pay",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-bill-pay-home",
+        "mol-error-banner",
+        "mol-page-section",
+        "mol-empty-state"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "bill-pay-bill-detail--1280x800": {
+      "route": "/bill-pay/bills/PYE-904418309",
+      "finalUrl": "/bill-pay/bills/PYE-904418309",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-bill-detail",
+        "mol-loading-panel"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "bill-pay-pay-bill--1280x800": {
+      "route": "/bill-pay/bills/PYE-904418309/pay",
+      "finalUrl": "/bill-pay/bills/PYE-904418309/pay",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-pay-bill",
+        "mol-error-banner"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "bill-pay-scheduled--1280x800": {
+      "route": "/bill-pay/scheduled",
+      "finalUrl": "/bill-pay/scheduled",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-scheduled-payments",
+        "mol-error-banner",
+        "mol-page-section",
+        "mol-empty-state"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "bill-pay-history--1280x800": {
+      "route": "/bill-pay/history",
+      "finalUrl": "/bill-pay/history",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-payment-history",
+        "mol-error-banner",
+        "mol-page-section",
+        "mol-empty-state"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "bill-pay-payees-new--1280x800": {
+      "route": "/bill-pay/payees/new",
+      "finalUrl": "/bill-pay/payees/new",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-add-bill-payee",
+        "mol-error-banner"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "bill-pay-autopay--1280x800": {
+      "route": "/bill-pay/bills/PYE-904418309/autopay",
+      "finalUrl": "/bill-pay/bills/PYE-904418309/autopay",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-autopay-settings",
+        "mol-error-banner"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "cards--1280x800": {
+      "route": "/cards",
+      "finalUrl": "/cards",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-card-list",
+        "mol-error-banner"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "cards-detail--1280x800": {
+      "route": "/cards/CRD-980719437",
+      "finalUrl": "/cards/CRD-980719437",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-card-detail",
+        "mol-error-banner"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "cards-controls--1280x800": {
+      "route": "/cards/CRD-980719437/controls",
+      "finalUrl": "/cards/CRD-980719437/controls",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-filter-chips (legacy, KAN-28)": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-card-controls",
+        "mol-error-banner",
+        "mol-page-section"
+      ],
+      "docWidth": 1280,
+      "docHeight": 1021,
+      "overflowing": []
+    },
+    "cards-report--1280x800": {
+      "route": "/cards/CRD-980719437/report",
+      "finalUrl": "/cards/CRD-980719437/report",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-report-card",
+        "mol-error-banner"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "cards-travel--1280x800": {
+      "route": "/cards/CRD-980719437/travel",
+      "finalUrl": "/cards/CRD-980719437/travel",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-travel-notice",
+        "mol-error-banner"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "cards-activate--1280x800": {
+      "route": "/cards/CRD-980719437/activate",
+      "finalUrl": "/cards/CRD-980719437/activate",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-activate-card",
+        "mol-error-banner"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "statements--1280x800": {
+      "route": "/statements",
+      "finalUrl": "/statements",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-statement-list",
+        "mol-error-banner",
+        "mol-empty-state"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "statements-tax--1280x800": {
+      "route": "/statements/tax",
+      "finalUrl": "/statements/tax",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-tax-documents",
+        "mol-loading-panel"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "statements-paperless--1280x800": {
+      "route": "/statements/paperless",
+      "finalUrl": "/statements/paperless",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-paperless-settings"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "statements-viewer--1280x800": {
+      "route": "/statements/STM-000001",
+      "finalUrl": "/statements/STM-000001",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-statement-viewer",
+        "mol-error-banner"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "alerts--1280x800": {
+      "route": "/alerts",
+      "finalUrl": "/alerts",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-alerts-home",
+        "mol-alert-preferences",
+        "mol-error-banner"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "alerts-history--1280x800": {
+      "route": "/alerts/history",
+      "finalUrl": "/alerts/history",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-alert-history",
+        "mol-loading-panel"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "profile--1280x800": {
+      "route": "/profile",
+      "finalUrl": "/profile",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-profile-home",
+        "mol-loading-panel"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "profile-contact--1280x800": {
+      "route": "/profile/contact",
+      "finalUrl": "/profile/contact",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-contact-details",
+        "mol-error-banner"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "profile-address--1280x800": {
+      "route": "/profile/address",
+      "finalUrl": "/profile/address",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-address-form",
+        "mol-error-banner"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "profile-security--1280x800": {
+      "route": "/profile/security",
+      "finalUrl": "/profile/security",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-security-settings",
+        "mol-loading-panel"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "profile-security-password--1280x800": {
+      "route": "/profile/security/password",
+      "finalUrl": "/profile/security/password",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-change-password",
+        "mol-error-banner"
+      ],
+      "docWidth": 1280,
+      "docHeight": 827,
+      "overflowing": []
+    },
+    "profile-security-username--1280x800": {
+      "route": "/profile/security/username",
+      "finalUrl": "/profile/security/username",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-change-username",
+        "mol-error-banner"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "profile-security-mfa--1280x800": {
+      "route": "/profile/security/mfa",
+      "finalUrl": "/profile/security/mfa",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-mfa-settings",
+        "mol-error-banner",
+        "mol-loading-panel"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "profile-security-devices--1280x800": {
+      "route": "/profile/security/devices",
+      "finalUrl": "/profile/security/devices",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-trusted-devices",
+        "mol-error-banner",
+        "mol-empty-state"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "profile-security-activity--1280x800": {
+      "route": "/profile/security/activity",
+      "finalUrl": "/profile/security/activity",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-login-history",
+        "mol-loading-panel"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "messages--1280x800": {
+      "route": "/messages",
+      "finalUrl": "/messages",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-thread-list",
+        "mol-error-banner",
+        "mol-page-section",
+        "mol-empty-state"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "messages-new--1280x800": {
+      "route": "/messages/new",
+      "finalUrl": "/messages/new",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-thread-view"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "messages-thread--1280x800": {
+      "route": "/messages/THR-000001",
+      "finalUrl": "/messages/THR-000001",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-thread-view"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "rewards--1280x800": {
+      "route": "/rewards",
+      "finalUrl": "/rewards",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-rewards-summary"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "rewards-activity--1280x800": {
+      "route": "/rewards/activity",
+      "finalUrl": "/rewards/activity",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-rewards-activity",
+        "mol-error-banner",
+        "mol-page-section",
+        "mol-empty-state"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "rewards-redeem--1280x800": {
+      "route": "/rewards/redeem",
+      "finalUrl": "/rewards/redeem",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-redeem-points",
+        "mol-error-banner"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "help--1280x800": {
+      "route": "/help",
+      "finalUrl": "/help",
+      "families": {
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-help-home"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "help-faq--1280x800": {
+      "route": "/help/faq",
+      "finalUrl": "/help/faq",
+      "families": {
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-faq"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "help-contact--1280x800": {
+      "route": "/help/contact",
+      "finalUrl": "/help/contact",
+      "families": {
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-contact-us"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "disclosures--1280x800": {
+      "route": "/disclosures",
+      "finalUrl": "/disclosures",
+      "families": {
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-disclosure-list"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "disclosures-viewer--1280x800": {
+      "route": "/disclosures/privacy-notice",
+      "finalUrl": "/disclosures/privacy-notice",
+      "families": {
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-disclosure-viewer"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "open-account--1280x800": {
+      "route": "/open-account",
+      "finalUrl": "/open-account",
+      "families": {
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-onboarding-start"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "open-account-identity--1280x800": {
+      "route": "/open-account/identity",
+      "finalUrl": "/open-account/identity",
+      "families": {
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-identity-step",
+        "mol-error-banner"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "open-account-contact--1280x800": {
+      "route": "/open-account/contact",
+      "finalUrl": "/open-account/contact",
+      "families": {
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-contact-step",
+        "mol-error-banner"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "open-account-product--1280x800": {
+      "route": "/open-account/product",
+      "finalUrl": "/open-account/product",
+      "families": {
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-product-step",
+        "mol-error-banner"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "open-account-funding--1280x800": {
+      "route": "/open-account/funding",
+      "finalUrl": "/open-account/funding",
+      "families": {
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-funding-step",
+        "mol-error-banner"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "open-account-review--1280x800": {
+      "route": "/open-account/review",
+      "finalUrl": "/open-account/review",
+      "families": {
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-review-step"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "errors-not-found--1280x800": {
+      "route": "/not-found",
+      "finalUrl": "/not-found",
+      "families": {
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-not-found"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "errors-forbidden--1280x800": {
+      "route": "/forbidden",
+      "finalUrl": "/forbidden",
+      "families": {
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-forbidden"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "errors-generic--1280x800": {
+      "route": "/error",
+      "finalUrl": "/error",
+      "families": {
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-generic-error"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "logged-out--1280x800": {
+      "route": "/logged-out",
+      "finalUrl": "/logged-out",
+      "families": {
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-logged-out"
+      ],
+      "docWidth": 1280,
+      "docHeight": 800,
+      "overflowing": []
+    },
+    "dashboard--375x812": {
+      "route": "/dashboard",
+      "finalUrl": "/dashboard",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 5
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-dashboard-overview",
+        "mol-accounts-summary",
+        "mol-empty-state",
+        "mol-recent-activity",
+        "mol-quick-transfer",
+        "mol-error-banner",
+        "mol-upcoming-payments",
+        "mol-alerts-digest"
+      ],
+      "docWidth": 424,
+      "docHeight": 1659,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "accounts--375x812": {
+      "route": "/accounts",
+      "finalUrl": "/accounts",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-account-list",
+        "mol-error-banner",
+        "mol-page-section"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "accounts-detail--375x812": {
+      "route": "/accounts/ACC-477215249",
+      "finalUrl": "/accounts/ACC-477215249",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-account-detail",
+        "mol-account-actions-menu"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "accounts-detail-export-dialog--375x812": {
+      "route": "/accounts/ACC-477215249",
+      "finalUrl": "/accounts/ACC-477215249",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-account-detail",
+        "mol-account-actions-menu"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "accounts-transaction-detail--375x812": {
+      "route": "/accounts/ACC-477215249/transactions/TXN-000001",
+      "finalUrl": "/accounts/ACC-477215249/transactions/TXN-000001",
+      "families": {
+        "cn-page-shell": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-transaction-detail",
+        "mol-loading-panel"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "accounts-transaction-dispute--375x812": {
+      "route": "/accounts/ACC-477215249/transactions/TXN-000001/dispute",
+      "finalUrl": "/accounts/ACC-477215249/transactions/TXN-000001/dispute",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-dispute-transaction",
+        "mol-error-banner"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "transfers--375x812": {
+      "route": "/transfers",
+      "finalUrl": "/transfers",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 2,
+        "cn-card": 3
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-transfers-home",
+        "mol-scheduled-transfers",
+        "mol-error-banner",
+        "mol-page-section",
+        "mol-empty-state"
+      ],
+      "docWidth": 424,
+      "docHeight": 1625,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "transfers-new--375x812": {
+      "route": "/transfers/new",
+      "finalUrl": "/transfers/new",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-transfer-wizard"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "transfers-new-review--375x812": {
+      "route": "/transfers/new/review",
+      "finalUrl": "/transfers/new",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-transfer-wizard"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "transfers-confirmation--375x812": {
+      "route": "/transfers/TRF-000001/confirmation",
+      "finalUrl": "/transfers/TRF-000001/confirmation",
+      "families": {
+        "cn-page-shell": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-transfer-confirmation",
+        "mol-loading-panel"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "transfers-history--375x812": {
+      "route": "/transfers/history",
+      "finalUrl": "/transfers/history",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-transfer-history",
+        "mol-error-banner",
+        "mol-page-section",
+        "mol-empty-state"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "transfers-detail--375x812": {
+      "route": "/transfers/TRF-000001",
+      "finalUrl": "/transfers/TRF-000001",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-transfer-detail",
+        "mol-loading-panel"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "transfers-payees--375x812": {
+      "route": "/transfers/payees",
+      "finalUrl": "/transfers/payees",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-transfer-detail",
+        "mol-loading-panel"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "transfers-payees-new--375x812": {
+      "route": "/transfers/payees/new",
+      "finalUrl": "/transfers/payees/new",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-add-payee",
+        "mol-error-banner"
+      ],
+      "docWidth": 424,
+      "docHeight": 1001,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "transfers-payee-verify--375x812": {
+      "route": "/transfers/payees/PYE-904418309/verify",
+      "finalUrl": "/transfers/payees/PYE-904418309/verify",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-verify-payee",
+        "mol-error-banner"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "bill-pay--375x812": {
+      "route": "/bill-pay",
+      "finalUrl": "/bill-pay",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-bill-pay-home",
+        "mol-error-banner",
+        "mol-page-section",
+        "mol-empty-state"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "bill-pay-bill-detail--375x812": {
+      "route": "/bill-pay/bills/PYE-904418309",
+      "finalUrl": "/bill-pay/bills/PYE-904418309",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-bill-detail",
+        "mol-loading-panel"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "bill-pay-pay-bill--375x812": {
+      "route": "/bill-pay/bills/PYE-904418309/pay",
+      "finalUrl": "/bill-pay/bills/PYE-904418309/pay",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-pay-bill",
+        "mol-error-banner"
+      ],
+      "docWidth": 424,
+      "docHeight": 924,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "bill-pay-scheduled--375x812": {
+      "route": "/bill-pay/scheduled",
+      "finalUrl": "/bill-pay/scheduled",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-scheduled-payments",
+        "mol-error-banner",
+        "mol-page-section",
+        "mol-empty-state"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "bill-pay-history--375x812": {
+      "route": "/bill-pay/history",
+      "finalUrl": "/bill-pay/history",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-payment-history",
+        "mol-error-banner",
+        "mol-page-section",
+        "mol-empty-state"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "bill-pay-payees-new--375x812": {
+      "route": "/bill-pay/payees/new",
+      "finalUrl": "/bill-pay/payees/new",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-add-bill-payee",
+        "mol-error-banner"
+      ],
+      "docWidth": 424,
+      "docHeight": 936,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "bill-pay-autopay--375x812": {
+      "route": "/bill-pay/bills/PYE-904418309/autopay",
+      "finalUrl": "/bill-pay/bills/PYE-904418309/autopay",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-autopay-settings",
+        "mol-error-banner"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "cards--375x812": {
+      "route": "/cards",
+      "finalUrl": "/cards",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-card-list",
+        "mol-error-banner"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "cards-detail--375x812": {
+      "route": "/cards/CRD-980719437",
+      "finalUrl": "/cards/CRD-980719437",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-card-detail",
+        "mol-error-banner"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "cards-controls--375x812": {
+      "route": "/cards/CRD-980719437/controls",
+      "finalUrl": "/cards/CRD-980719437/controls",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-filter-chips (legacy, KAN-28)": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-card-controls",
+        "mol-error-banner",
+        "mol-page-section"
+      ],
+      "docWidth": 424,
+      "docHeight": 1245,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "cards-report--375x812": {
+      "route": "/cards/CRD-980719437/report",
+      "finalUrl": "/cards/CRD-980719437/report",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-report-card",
+        "mol-error-banner"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "cards-travel--375x812": {
+      "route": "/cards/CRD-980719437/travel",
+      "finalUrl": "/cards/CRD-980719437/travel",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-travel-notice",
+        "mol-error-banner"
+      ],
+      "docWidth": 424,
+      "docHeight": 831,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "cards-activate--375x812": {
+      "route": "/cards/CRD-980719437/activate",
+      "finalUrl": "/cards/CRD-980719437/activate",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-activate-card",
+        "mol-error-banner"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "statements--375x812": {
+      "route": "/statements",
+      "finalUrl": "/statements",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-statement-list",
+        "mol-error-banner",
+        "mol-empty-state"
+      ],
+      "docWidth": 424,
+      "docHeight": 909,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "statements-tax--375x812": {
+      "route": "/statements/tax",
+      "finalUrl": "/statements/tax",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-tax-documents",
+        "mol-loading-panel"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "statements-paperless--375x812": {
+      "route": "/statements/paperless",
+      "finalUrl": "/statements/paperless",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-paperless-settings"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "statements-viewer--375x812": {
+      "route": "/statements/STM-000001",
+      "finalUrl": "/statements/STM-000001",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-statement-viewer",
+        "mol-error-banner"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "alerts--375x812": {
+      "route": "/alerts",
+      "finalUrl": "/alerts",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-alerts-home",
+        "mol-alert-preferences",
+        "mol-error-banner"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "alerts-history--375x812": {
+      "route": "/alerts/history",
+      "finalUrl": "/alerts/history",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-alert-history",
+        "mol-loading-panel"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "profile--375x812": {
+      "route": "/profile",
+      "finalUrl": "/profile",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-profile-home",
+        "mol-loading-panel"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "profile-contact--375x812": {
+      "route": "/profile/contact",
+      "finalUrl": "/profile/contact",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-contact-details",
+        "mol-error-banner"
+      ],
+      "docWidth": 424,
+      "docHeight": 871,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "profile-address--375x812": {
+      "route": "/profile/address",
+      "finalUrl": "/profile/address",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-address-form",
+        "mol-error-banner"
+      ],
+      "docWidth": 424,
+      "docHeight": 1025,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "profile-security--375x812": {
+      "route": "/profile/security",
+      "finalUrl": "/profile/security",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-security-settings",
+        "mol-loading-panel"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "profile-security-password--375x812": {
+      "route": "/profile/security/password",
+      "finalUrl": "/profile/security/password",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-change-password",
+        "mol-error-banner"
+      ],
+      "docWidth": 424,
+      "docHeight": 859,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "profile-security-username--375x812": {
+      "route": "/profile/security/username",
+      "finalUrl": "/profile/security/username",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-change-username",
+        "mol-error-banner"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "profile-security-mfa--375x812": {
+      "route": "/profile/security/mfa",
+      "finalUrl": "/profile/security/mfa",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-mfa-settings",
+        "mol-error-banner",
+        "mol-loading-panel"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "profile-security-devices--375x812": {
+      "route": "/profile/security/devices",
+      "finalUrl": "/profile/security/devices",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-trusted-devices",
+        "mol-error-banner",
+        "mol-empty-state"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "profile-security-activity--375x812": {
+      "route": "/profile/security/activity",
+      "finalUrl": "/profile/security/activity",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-login-history",
+        "mol-loading-panel"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "messages--375x812": {
+      "route": "/messages",
+      "finalUrl": "/messages",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-thread-list",
+        "mol-error-banner",
+        "mol-page-section",
+        "mol-empty-state"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "messages-new--375x812": {
+      "route": "/messages/new",
+      "finalUrl": "/messages/new",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-thread-view"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "messages-thread--375x812": {
+      "route": "/messages/THR-000001",
+      "finalUrl": "/messages/THR-000001",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-thread-view"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "rewards--375x812": {
+      "route": "/rewards",
+      "finalUrl": "/rewards",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-rewards-summary"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "rewards-activity--375x812": {
+      "route": "/rewards/activity",
+      "finalUrl": "/rewards/activity",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-rewards-activity",
+        "mol-error-banner",
+        "mol-page-section",
+        "mol-empty-state"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "rewards-redeem--375x812": {
+      "route": "/rewards/redeem",
+      "finalUrl": "/rewards/redeem",
+      "families": {
+        "cn-page-shell": 1,
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-shell",
+        "mol-redeem-points",
+        "mol-error-banner"
+      ],
+      "docWidth": 424,
+      "docHeight": 812,
+      "overflowing": [
+        "div.",
+        "button.mat-focus-indicator.cn-page-shell__signout",
+        "span.mat-button-wrapper",
+        "span.mat-ripple.mat-button-ripple",
+        "span.mat-button-focus-overlay"
+      ]
+    },
+    "help--375x812": {
+      "route": "/help",
+      "finalUrl": "/help",
+      "families": {
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-help-home"
+      ],
+      "docWidth": 375,
+      "docHeight": 812,
+      "overflowing": []
+    },
+    "help-faq--375x812": {
+      "route": "/help/faq",
+      "finalUrl": "/help/faq",
+      "families": {
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-faq"
+      ],
+      "docWidth": 375,
+      "docHeight": 812,
+      "overflowing": []
+    },
+    "help-contact--375x812": {
+      "route": "/help/contact",
+      "finalUrl": "/help/contact",
+      "families": {
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-contact-us"
+      ],
+      "docWidth": 375,
+      "docHeight": 812,
+      "overflowing": []
+    },
+    "disclosures--375x812": {
+      "route": "/disclosures",
+      "finalUrl": "/disclosures",
+      "families": {
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-disclosure-list"
+      ],
+      "docWidth": 375,
+      "docHeight": 812,
+      "overflowing": []
+    },
+    "disclosures-viewer--375x812": {
+      "route": "/disclosures/privacy-notice",
+      "finalUrl": "/disclosures/privacy-notice",
+      "families": {
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-disclosure-viewer"
+      ],
+      "docWidth": 375,
+      "docHeight": 812,
+      "overflowing": []
+    },
+    "open-account--375x812": {
+      "route": "/open-account",
+      "finalUrl": "/open-account",
+      "families": {
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-onboarding-start"
+      ],
+      "docWidth": 375,
+      "docHeight": 812,
+      "overflowing": []
+    },
+    "open-account-identity--375x812": {
+      "route": "/open-account/identity",
+      "finalUrl": "/open-account/identity",
+      "families": {
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-identity-step",
+        "mol-error-banner"
+      ],
+      "docWidth": 375,
+      "docHeight": 812,
+      "overflowing": []
+    },
+    "open-account-contact--375x812": {
+      "route": "/open-account/contact",
+      "finalUrl": "/open-account/contact",
+      "families": {
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-contact-step",
+        "mol-error-banner"
+      ],
+      "docWidth": 375,
+      "docHeight": 954,
+      "overflowing": []
+    },
+    "open-account-product--375x812": {
+      "route": "/open-account/product",
+      "finalUrl": "/open-account/product",
+      "families": {
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-product-step",
+        "mol-error-banner"
+      ],
+      "docWidth": 375,
+      "docHeight": 812,
+      "overflowing": []
+    },
+    "open-account-funding--375x812": {
+      "route": "/open-account/funding",
+      "finalUrl": "/open-account/funding",
+      "families": {
+        "cn-page-header": 1,
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-funding-step",
+        "mol-error-banner"
+      ],
+      "docWidth": 375,
+      "docHeight": 812,
+      "overflowing": []
+    },
+    "open-account-review--375x812": {
+      "route": "/open-account/review",
+      "finalUrl": "/open-account/review",
+      "families": {
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-review-step"
+      ],
+      "docWidth": 375,
+      "docHeight": 812,
+      "overflowing": []
+    },
+    "errors-not-found--375x812": {
+      "route": "/not-found",
+      "finalUrl": "/not-found",
+      "families": {
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-not-found"
+      ],
+      "docWidth": 375,
+      "docHeight": 812,
+      "overflowing": []
+    },
+    "errors-forbidden--375x812": {
+      "route": "/forbidden",
+      "finalUrl": "/forbidden",
+      "families": {
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-forbidden"
+      ],
+      "docWidth": 375,
+      "docHeight": 812,
+      "overflowing": []
+    },
+    "errors-generic--375x812": {
+      "route": "/error",
+      "finalUrl": "/error",
+      "families": {
+        "cn-page-header": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-generic-error"
+      ],
+      "docWidth": 375,
+      "docHeight": 812,
+      "overflowing": []
+    },
+    "logged-out--375x812": {
+      "route": "/logged-out",
+      "finalUrl": "/logged-out",
+      "families": {
+        "cn-card": 1
+      },
+      "molComponents": [
+        "mol-root",
+        "mol-sw-update-banner",
+        "mol-logged-out"
+      ],
+      "docWidth": 375,
+      "docHeight": 812,
+      "overflowing": []
+    }
+  }
+}

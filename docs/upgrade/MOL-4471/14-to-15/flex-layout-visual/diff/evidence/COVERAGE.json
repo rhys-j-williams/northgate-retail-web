@@ -1,0 +1,1319 @@
+[
+  {
+    "file": "src/app/features/accounts/components/account-detail/account-detail.component.html",
+    "usages": 8,
+    "routes": [
+      "/accounts/:accountId"
+    ],
+    "shots": [
+      "accounts-detail",
+      "accounts-detail-export-dialog"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/accounts/components/account-list/account-list.component.html",
+    "usages": 2,
+    "routes": [
+      "/accounts"
+    ],
+    "shots": [
+      "accounts"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/accounts/components/dispute-transaction/dispute-transaction.component.html",
+    "usages": 11,
+    "routes": [
+      "/accounts/:accountId/transactions/:transactionId/dispute"
+    ],
+    "shots": [
+      "accounts-transaction-dispute"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/accounts/components/export-transactions/export-transactions.component.html",
+    "usages": 3,
+    "routes": [
+      "dialog from transaction-list.component"
+    ],
+    "shots": [],
+    "status": "NOT REACHABLE",
+    "note": "Dialog opened from the transaction list Export button; the local BFF returns 404 for account details so the transaction list (and its Export button) never renders for the fixture customer."
+  },
+  {
+    "file": "src/app/features/accounts/components/interest-summary/interest-summary.component.html",
+    "usages": 2,
+    "routes": [
+      "/accounts/:accountId"
+    ],
+    "shots": [
+      "accounts-detail",
+      "accounts-detail-export-dialog"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/accounts/components/pending-transactions/pending-transactions.component.html",
+    "usages": 4,
+    "routes": [
+      "/accounts/:accountId"
+    ],
+    "shots": [
+      "accounts-detail",
+      "accounts-detail-export-dialog"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/accounts/components/rename-account/rename-account.component.html",
+    "usages": 3,
+    "routes": [],
+    "shots": [],
+    "status": "NOT REACHABLE",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/accounts/components/routing-details/routing-details.component.html",
+    "usages": 12,
+    "routes": [
+      "/accounts/:accountId"
+    ],
+    "shots": [
+      "accounts-detail",
+      "accounts-detail-export-dialog"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/accounts/components/transaction-detail/transaction-detail.component.html",
+    "usages": 6,
+    "routes": [
+      "/accounts/:accountId/transactions/:transactionId"
+    ],
+    "shots": [
+      "accounts-transaction-detail"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/accounts/components/transaction-filters/transaction-filters.component.html",
+    "usages": 12,
+    "routes": [
+      "/accounts/:accountId"
+    ],
+    "shots": [
+      "accounts-detail",
+      "accounts-detail-export-dialog"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/accounts/components/transaction-list/transaction-list.component.html",
+    "usages": 3,
+    "routes": [
+      "/accounts/:accountId"
+    ],
+    "shots": [
+      "accounts-detail",
+      "accounts-detail-export-dialog"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/alerts/components/alert-history/alert-history.component.html",
+    "usages": 9,
+    "routes": [
+      "/alerts/history"
+    ],
+    "shots": [
+      "alerts-history"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/alerts/components/alert-preference-row/alert-preference-row.component.html",
+    "usages": 13,
+    "routes": [
+      "/alerts"
+    ],
+    "shots": [
+      "alerts"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/alerts/components/alert-preferences/alert-preferences.component.html",
+    "usages": 2,
+    "routes": [
+      "/alerts"
+    ],
+    "shots": [
+      "alerts"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/alerts/components/alerts-home/alerts-home.component.html",
+    "usages": 2,
+    "routes": [
+      "/alerts"
+    ],
+    "shots": [
+      "alerts"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/alerts/components/quiet-hours/quiet-hours.component.html",
+    "usages": 7,
+    "routes": [
+      "/alerts"
+    ],
+    "shots": [
+      "alerts"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/alerts/components/test-alert/test-alert.component.html",
+    "usages": 3,
+    "routes": [],
+    "shots": [],
+    "status": "NOT REACHABLE",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/bill-pay/components/add-bill-payee/add-bill-payee.component.html",
+    "usages": 16,
+    "routes": [
+      "/bill-pay/payees/new"
+    ],
+    "shots": [
+      "bill-pay-payees-new"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/bill-pay/components/autopay-settings/autopay-settings.component.html",
+    "usages": 10,
+    "routes": [
+      "/bill-pay/bills/:billId/autopay"
+    ],
+    "shots": [
+      "bill-pay-autopay"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/bill-pay/components/bill-detail/bill-detail.component.html",
+    "usages": 32,
+    "routes": [
+      "/bill-pay/bills/:billId"
+    ],
+    "shots": [
+      "bill-pay-bill-detail"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/bill-pay/components/bill-pay-home/bill-pay-home.component.html",
+    "usages": 2,
+    "routes": [
+      "/bill-pay"
+    ],
+    "shots": [
+      "bill-pay"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/bill-pay/components/cancel-payment/cancel-payment.component.html",
+    "usages": 3,
+    "routes": [],
+    "shots": [],
+    "status": "NOT REACHABLE",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/bill-pay/components/pay-bill/pay-bill.component.html",
+    "usages": 16,
+    "routes": [
+      "/bill-pay/bills/:billId/pay"
+    ],
+    "shots": [
+      "bill-pay-pay-bill"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/bill-pay/components/payment-history/payment-history.component.html",
+    "usages": 2,
+    "routes": [
+      "/bill-pay/history"
+    ],
+    "shots": [
+      "bill-pay-history"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/bill-pay/components/scheduled-payments/scheduled-payments.component.html",
+    "usages": 2,
+    "routes": [
+      "/bill-pay/scheduled"
+    ],
+    "shots": [
+      "bill-pay-scheduled"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/cards/components/activate-card/activate-card.component.html",
+    "usages": 9,
+    "routes": [
+      "/cards/:cardId/activate"
+    ],
+    "shots": [
+      "cards-activate"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/cards/components/card-controls/card-controls.component.html",
+    "usages": 11,
+    "routes": [
+      "/cards/:cardId/controls"
+    ],
+    "shots": [
+      "cards-controls"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/cards/components/card-detail/card-detail.component.html",
+    "usages": 13,
+    "routes": [
+      "/cards/:cardId"
+    ],
+    "shots": [
+      "cards-detail"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/cards/components/card-list/card-list.component.html",
+    "usages": 15,
+    "routes": [
+      "/cards"
+    ],
+    "shots": [
+      "cards"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/cards/components/lock-card/lock-card.component.html",
+    "usages": 3,
+    "routes": [],
+    "shots": [],
+    "status": "NOT REACHABLE",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/cards/components/report-card/report-card.component.html",
+    "usages": 11,
+    "routes": [
+      "/cards/:cardId/report"
+    ],
+    "shots": [
+      "cards-report"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/cards/components/travel-notice/travel-notice.component.html",
+    "usages": 15,
+    "routes": [
+      "/cards/:cardId/travel"
+    ],
+    "shots": [
+      "cards-travel"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/dashboard/components/alerts-digest/alerts-digest.component.html",
+    "usages": 5,
+    "routes": [
+      "/dashboard"
+    ],
+    "shots": [
+      "dashboard"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/dashboard/components/dashboard-overview/dashboard-overview.component.html",
+    "usages": 14,
+    "routes": [
+      "/dashboard"
+    ],
+    "shots": [
+      "dashboard"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/dashboard/components/promo-banner/promo-banner.component.html",
+    "usages": 7,
+    "routes": [
+      "/dashboard"
+    ],
+    "shots": [
+      "dashboard"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/dashboard/components/quick-transfer/quick-transfer.component.html",
+    "usages": 5,
+    "routes": [
+      "/dashboard"
+    ],
+    "shots": [
+      "dashboard"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/dashboard/components/recent-activity/recent-activity.component.html",
+    "usages": 5,
+    "routes": [
+      "/dashboard"
+    ],
+    "shots": [
+      "dashboard"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/dashboard/components/spending-snapshot/spending-snapshot.component.html",
+    "usages": 7,
+    "routes": [
+      "/dashboard"
+    ],
+    "shots": [
+      "dashboard"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/dashboard/components/upcoming-payments/upcoming-payments.component.html",
+    "usages": 7,
+    "routes": [
+      "/dashboard"
+    ],
+    "shots": [
+      "dashboard"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/disclosures/components/disclosure-list/disclosure-list.component.html",
+    "usages": 2,
+    "routes": [
+      "/disclosures"
+    ],
+    "shots": [
+      "disclosures"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/disclosures/components/disclosure-viewer/disclosure-viewer.component.html",
+    "usages": 2,
+    "routes": [
+      "/disclosures/:key"
+    ],
+    "shots": [
+      "disclosures-viewer"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/errors/components/forbidden/forbidden.component.html",
+    "usages": 2,
+    "routes": [
+      "/forbidden"
+    ],
+    "shots": [
+      "errors-forbidden"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/errors/components/generic-error/generic-error.component.html",
+    "usages": 2,
+    "routes": [
+      "/error"
+    ],
+    "shots": [
+      "errors-generic"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/errors/components/not-found/not-found.component.html",
+    "usages": 2,
+    "routes": [
+      "/not-found",
+      "/**"
+    ],
+    "shots": [
+      "errors-not-found",
+      "dashboard",
+      "accounts",
+      "accounts-detail",
+      "accounts-detail-export-dialog",
+      "accounts-transaction-detail",
+      "accounts-transaction-dispute",
+      "transfers",
+      "transfers-new",
+      "transfers-new-review",
+      "transfers-confirmation",
+      "transfers-history",
+      "transfers-detail",
+      "transfers-payees",
+      "transfers-payees-new",
+      "transfers-payee-verify",
+      "bill-pay",
+      "bill-pay-bill-detail",
+      "bill-pay-pay-bill",
+      "bill-pay-scheduled",
+      "bill-pay-history",
+      "bill-pay-payees-new",
+      "bill-pay-autopay",
+      "cards",
+      "cards-detail",
+      "cards-controls",
+      "cards-report",
+      "cards-travel",
+      "cards-activate",
+      "statements",
+      "statements-tax",
+      "statements-paperless",
+      "statements-viewer",
+      "alerts",
+      "alerts-history",
+      "profile",
+      "profile-contact",
+      "profile-address",
+      "profile-security",
+      "profile-security-password",
+      "profile-security-username",
+      "profile-security-mfa",
+      "profile-security-devices",
+      "profile-security-activity",
+      "messages",
+      "messages-new",
+      "messages-thread",
+      "rewards",
+      "rewards-activity",
+      "rewards-redeem",
+      "help",
+      "help-faq",
+      "help-contact",
+      "disclosures",
+      "disclosures-viewer",
+      "open-account",
+      "open-account-identity",
+      "open-account-contact",
+      "open-account-product",
+      "open-account-funding",
+      "open-account-review",
+      "errors-forbidden",
+      "errors-generic",
+      "logged-out"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/help/components/contact-us/contact-us.component.html",
+    "usages": 2,
+    "routes": [
+      "/help/contact"
+    ],
+    "shots": [
+      "help-contact"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/help/components/faq/faq.component.html",
+    "usages": 2,
+    "routes": [
+      "/help/faq"
+    ],
+    "shots": [
+      "help-faq"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/help/components/help-home/help-home.component.html",
+    "usages": 2,
+    "routes": [
+      "/help"
+    ],
+    "shots": [
+      "help"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/messages/components/compose-message/compose-message.component.html",
+    "usages": 15,
+    "routes": [
+      "/messages/new"
+    ],
+    "shots": [
+      "messages-new"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/messages/components/message-bubble/message-bubble.component.html",
+    "usages": 2,
+    "routes": [],
+    "shots": [],
+    "status": "NOT REACHABLE",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/messages/components/thread-list/thread-list.component.html",
+    "usages": 2,
+    "routes": [
+      "/messages"
+    ],
+    "shots": [
+      "messages"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/messages/components/thread-view/thread-view.component.html",
+    "usages": 2,
+    "routes": [
+      "/messages/:threadId"
+    ],
+    "shots": [
+      "messages-new",
+      "messages-thread"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/onboarding/components/contact-step/contact-step.component.html",
+    "usages": 21,
+    "routes": [
+      "/open-account/contact"
+    ],
+    "shots": [
+      "open-account-contact"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/onboarding/components/funding-step/funding-step.component.html",
+    "usages": 15,
+    "routes": [
+      "/open-account/funding"
+    ],
+    "shots": [
+      "open-account-funding"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/onboarding/components/identity-step/identity-step.component.html",
+    "usages": 16,
+    "routes": [
+      "/open-account/identity"
+    ],
+    "shots": [
+      "open-account-identity"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/onboarding/components/onboarding-start/onboarding-start.component.html",
+    "usages": 2,
+    "routes": [
+      "/open-account"
+    ],
+    "shots": [
+      "open-account"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/onboarding/components/product-step/product-step.component.html",
+    "usages": 13,
+    "routes": [
+      "/open-account/product"
+    ],
+    "shots": [
+      "open-account-product"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/onboarding/components/review-step/review-step.component.html",
+    "usages": 2,
+    "routes": [
+      "/open-account/review"
+    ],
+    "shots": [
+      "open-account-review"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/profile/components/address-form/address-form.component.html",
+    "usages": 20,
+    "routes": [
+      "/profile/address"
+    ],
+    "shots": [
+      "profile-address"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/profile/components/change-password/change-password.component.html",
+    "usages": 8,
+    "routes": [
+      "/profile/security/password"
+    ],
+    "shots": [
+      "profile-security-password"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/profile/components/change-username/change-username.component.html",
+    "usages": 10,
+    "routes": [
+      "/profile/security/username"
+    ],
+    "shots": [
+      "profile-security-username"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/profile/components/contact-details/contact-details.component.html",
+    "usages": 15,
+    "routes": [
+      "/profile/contact"
+    ],
+    "shots": [
+      "profile-contact"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/profile/components/login-history/login-history.component.html",
+    "usages": 2,
+    "routes": [
+      "/profile/security/activity"
+    ],
+    "shots": [
+      "profile-security-activity"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/profile/components/mfa-settings/mfa-settings.component.html",
+    "usages": 4,
+    "routes": [
+      "/profile/security/mfa"
+    ],
+    "shots": [
+      "profile-security-mfa"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/profile/components/profile-home/profile-home.component.html",
+    "usages": 20,
+    "routes": [
+      "/profile"
+    ],
+    "shots": [
+      "profile"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/profile/components/security-settings/security-settings.component.html",
+    "usages": 2,
+    "routes": [
+      "/profile/security"
+    ],
+    "shots": [
+      "profile-security"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/profile/components/trusted-devices/trusted-devices.component.html",
+    "usages": 7,
+    "routes": [
+      "/profile/security/devices"
+    ],
+    "shots": [
+      "profile-security-devices"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/rewards/components/redeem-points/redeem-points.component.html",
+    "usages": 11,
+    "routes": [
+      "/rewards/redeem"
+    ],
+    "shots": [
+      "rewards-redeem"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/rewards/components/rewards-activity/rewards-activity.component.html",
+    "usages": 2,
+    "routes": [
+      "/rewards/activity"
+    ],
+    "shots": [
+      "rewards-activity"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/rewards/components/rewards-summary/rewards-summary.component.html",
+    "usages": 2,
+    "routes": [
+      "/rewards"
+    ],
+    "shots": [
+      "rewards"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/statements/components/document-search/document-search.component.html",
+    "usages": 2,
+    "routes": [],
+    "shots": [],
+    "status": "NOT REACHABLE",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/statements/components/paperless-settings/paperless-settings.component.html",
+    "usages": 11,
+    "routes": [
+      "/statements/paperless"
+    ],
+    "shots": [
+      "statements-paperless"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/statements/components/statement-list/statement-list.component.html",
+    "usages": 10,
+    "routes": [
+      "/statements"
+    ],
+    "shots": [
+      "statements"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/statements/components/statement-viewer/statement-viewer.component.html",
+    "usages": 5,
+    "routes": [
+      "/statements/:statementId"
+    ],
+    "shots": [
+      "statements-tax",
+      "statements-paperless",
+      "statements-viewer"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/statements/components/tax-documents/tax-documents.component.html",
+    "usages": 7,
+    "routes": [
+      "/statements/tax"
+    ],
+    "shots": [
+      "statements-tax"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/transfers/components/add-payee/add-payee.component.html",
+    "usages": 20,
+    "routes": [
+      "/transfers/payees/new"
+    ],
+    "shots": [
+      "transfers-payees-new"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/transfers/components/cancel-transfer/cancel-transfer.component.html",
+    "usages": 3,
+    "routes": [],
+    "shots": [],
+    "status": "NOT REACHABLE",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/transfers/components/payee-list/payee-list.component.html",
+    "usages": 13,
+    "routes": [
+      "/transfers/payees"
+    ],
+    "shots": [
+      "transfers-payees"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/transfers/components/scheduled-transfers/scheduled-transfers.component.html",
+    "usages": 2,
+    "routes": [
+      "/transfers"
+    ],
+    "shots": [
+      "transfers"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/transfers/components/transfer-confirmation/transfer-confirmation.component.html",
+    "usages": 6,
+    "routes": [
+      "/transfers/:transferId/confirmation"
+    ],
+    "shots": [
+      "transfers-confirmation"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/transfers/components/transfer-detail/transfer-detail.component.html",
+    "usages": 37,
+    "routes": [
+      "/transfers/:transferId"
+    ],
+    "shots": [
+      "transfers-new",
+      "transfers-history",
+      "transfers-detail",
+      "transfers-payees"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/transfers/components/transfer-details-step/transfer-details-step.component.html",
+    "usages": 15,
+    "routes": [
+      "/transfers/new"
+    ],
+    "shots": [
+      "transfers-new"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/transfers/components/transfer-history/transfer-history.component.html",
+    "usages": 2,
+    "routes": [
+      "/transfers/history"
+    ],
+    "shots": [
+      "transfers-history"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/transfers/components/transfer-limits-panel/transfer-limits-panel.component.html",
+    "usages": 2,
+    "routes": [
+      "/transfers"
+    ],
+    "shots": [
+      "transfers"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/transfers/components/transfer-review-step/transfer-review-step.component.html",
+    "usages": 9,
+    "routes": [
+      "/transfers/new/review"
+    ],
+    "shots": [
+      "transfers-new-review"
+    ],
+    "status": "REDIRECTED",
+    "note": "The review step redirects to /transfers/new when no draft transfer exists in the store; the wizard cannot progress with the local BFF (no accounts resolve), so the step is not renderable here."
+  },
+  {
+    "file": "src/app/features/transfers/components/transfer-schedule-step/transfer-schedule-step.component.html",
+    "usages": 4,
+    "routes": [
+      "/transfers/new"
+    ],
+    "shots": [
+      "transfers-new"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/transfers/components/transfers-home/transfers-home.component.html",
+    "usages": 11,
+    "routes": [
+      "/transfers"
+    ],
+    "shots": [
+      "transfers"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/features/transfers/components/verify-payee/verify-payee.component.html",
+    "usages": 11,
+    "routes": [
+      "/transfers/payees/:payeeId/verify"
+    ],
+    "shots": [
+      "transfers-payee-verify"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/shared/components/empty-state/empty-state.component.ts",
+    "usages": 3,
+    "routes": [
+      "/accounts",
+      "/alerts/history",
+      "/bill-pay",
+      "/bill-pay/history",
+      "/bill-pay/scheduled",
+      "/cards",
+      "/dashboard",
+      "/messages",
+      "/profile/security/activity",
+      "/profile/security/devices",
+      "/rewards/activity",
+      "/statements",
+      "/statements/tax",
+      "/transfers/payees",
+      "/transfers",
+      "/transfers/history"
+    ],
+    "shots": [
+      "accounts",
+      "alerts-history",
+      "bill-pay",
+      "bill-pay-history",
+      "bill-pay-scheduled",
+      "cards",
+      "dashboard",
+      "messages",
+      "profile-security-activity",
+      "profile-security-devices",
+      "rewards-activity",
+      "statements",
+      "statements-tax",
+      "transfers-payees",
+      "transfers",
+      "transfers-history"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/shared/components/error-banner/error-banner.component.ts",
+    "usages": 7,
+    "routes": [
+      "/accounts",
+      "/accounts/:accountId/transactions/:transactionId/dispute",
+      "dialog from transaction-list.component",
+      "/accounts/:accountId",
+      "/alerts",
+      "/bill-pay/payees/new",
+      "/bill-pay/bills/:billId/autopay",
+      "/bill-pay",
+      "/bill-pay/bills/:billId/pay",
+      "/bill-pay/history",
+      "/bill-pay/scheduled",
+      "/cards/:cardId/activate",
+      "/cards/:cardId/controls",
+      "/cards/:cardId",
+      "/cards",
+      "/cards/:cardId/report",
+      "/cards/:cardId/travel",
+      "/dashboard",
+      "/messages/new",
+      "/messages",
+      "/open-account/contact",
+      "/open-account/funding",
+      "/open-account/identity",
+      "/open-account/product",
+      "/profile/address",
+      "/profile/security/password",
+      "/profile/security/username",
+      "/profile/contact",
+      "/profile/security/activity",
+      "/profile/security/mfa",
+      "/profile/security/devices",
+      "/rewards/redeem",
+      "/rewards/activity",
+      "/statements",
+      "/statements/:statementId",
+      "/transfers/payees/new",
+      "/transfers/payees",
+      "/transfers",
+      "/transfers/history",
+      "/transfers/new/review",
+      "/transfers/payees/:payeeId/verify"
+    ],
+    "shots": [
+      "accounts",
+      "accounts-transaction-dispute",
+      "accounts-detail",
+      "accounts-detail-export-dialog",
+      "alerts",
+      "bill-pay-payees-new",
+      "bill-pay-autopay",
+      "bill-pay",
+      "bill-pay-pay-bill",
+      "bill-pay-history",
+      "bill-pay-scheduled",
+      "cards-activate",
+      "cards-controls",
+      "cards-detail",
+      "cards",
+      "cards-report",
+      "cards-travel",
+      "dashboard",
+      "messages-new",
+      "messages",
+      "open-account-contact",
+      "open-account-funding",
+      "open-account-identity",
+      "open-account-product",
+      "profile-address",
+      "profile-security-password",
+      "profile-security-username",
+      "profile-contact",
+      "profile-security-activity",
+      "profile-security-mfa",
+      "profile-security-devices",
+      "rewards-redeem",
+      "rewards-activity",
+      "statements",
+      "statements-tax",
+      "statements-paperless",
+      "statements-viewer",
+      "transfers-payees-new",
+      "transfers-payees",
+      "transfers",
+      "transfers-history",
+      "transfers-new-review",
+      "transfers-payee-verify"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/shared/components/masked-number/masked-number.component.ts",
+    "usages": 3,
+    "routes": [
+      "/transfers/payees",
+      "/transfers/new/review"
+    ],
+    "shots": [
+      "transfers-payees",
+      "transfers-new-review"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/shared/components/page-section/page-section.component.ts",
+    "usages": 5,
+    "routes": [
+      "/accounts/:accountId",
+      "/accounts",
+      "/alerts",
+      "/bill-pay",
+      "/bill-pay/history",
+      "/bill-pay/scheduled",
+      "/cards/:cardId/controls",
+      "/messages",
+      "/rewards/activity",
+      "/transfers",
+      "/transfers/history"
+    ],
+    "shots": [
+      "accounts-detail",
+      "accounts-detail-export-dialog",
+      "accounts",
+      "alerts",
+      "bill-pay",
+      "bill-pay-history",
+      "bill-pay-scheduled",
+      "cards-controls",
+      "messages",
+      "rewards-activity",
+      "transfers",
+      "transfers-history"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/shell/auth-callback/auth-callback.component.ts",
+    "usages": 3,
+    "routes": [
+      "/auth/callback",
+      "/auth/callback"
+    ],
+    "shots": [],
+    "status": "NOT REACHABLE",
+    "note": "Transient page shown for < 1 s while the Keystone code is exchanged; not screenshot-stable. Inline template, 2 usages."
+  },
+  {
+    "file": "src/app/shell/idle-warning-dialog/idle-warning-dialog.component.ts",
+    "usages": 3,
+    "routes": [
+      "dialog from shell.component"
+    ],
+    "shots": [],
+    "status": "NOT REACHABLE",
+    "note": "Opened by the shell after the idle timeout (minutes); not triggered during capture. Inline template."
+  },
+  {
+    "file": "src/app/shell/logged-out/logged-out.component.ts",
+    "usages": 5,
+    "routes": [
+      "/logged-out",
+      "/logged-out"
+    ],
+    "shots": [
+      "logged-out"
+    ],
+    "status": "captured",
+    "note": ""
+  },
+  {
+    "file": "src/app/shell/sw-update-banner/sw-update-banner.component.ts",
+    "usages": 4,
+    "routes": [
+      "(app root, every route)"
+    ],
+    "shots": [],
+    "status": "NOT REACHABLE",
+    "note": "Only shown when the service worker reports a new version; the dev server has no service worker. Inline template."
+  }
+]

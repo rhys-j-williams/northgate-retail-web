@@ -7,9 +7,24 @@ the before/after record of every route that renders one of the 95 templates in
 | Directory | Content |
 |---|---|
 | `baseline/` | Angular 14.3.0 + `@angular/flex-layout` 14.0.0-beta.41 (develop `8b456b7`), 64 routes x 2 viewports = 128 PNGs, `manifest.json`, `COVERAGE.md`, `capture.log` |
-| `candidate/` | Same routes after Angular 15 + Canopy 4 + flex-layout removal |
-| `diff/` | Pixel diffs (`pixelmatch`) and `SUMMARY.md` (per route: template, changed pixels, %, explanation) |
-| `tools/` | `capture.js` (Playwright, Chrome for Testing 137 headless=new), `coverage.js` (template -> route map), `lib.js` |
+| `candidate/` | Same 64 routes x 2 viewports after Angular 15.2.10 + Material 15 MDC + Canopy 4.0.0 + flex-layout removal (`feature/MOL-4471-angular-14-to-15`), `manifest.json` (128 shots, 0 failed) |
+| `diff/` | `<id>.diff.png` per pair (`pixelmatch`, threshold 0.1), `stats.json`, **`SUMMARY.md`** (per template and per pair: route, changed pixels, %, explanation codes), `evidence/` (geometry pairing, computed-style verification and component-family scans the summary is derived from) |
+| `tools/` | Playwright scripts (`capture.js`, `coverage.js`, `diff.js`, `geom.js`, `geom-compare.js`, `verify-layout.js`, `explain.js`, `summary.js`, `lib.js`, `routes.js`) - see `tools/README.md` |
+
+## Result (details in `diff/SUMMARY.md`)
+
+* 128 pairs: 22 identical, 106 with differences, **0 unexplained**.
+* 496 flex-layout elements were paired with their `mol-*` replacement across all routes/viewports;
+  all but 16 sit at the same x/width (+/-1px) with identical computed flex rules. Of the 16: 10 are
+  on the three desktop routes where the Angular 14 `fxFlex` directive never produced an inline style
+  (`/accounts/:id`, `/cards/:id`, `/statements/paperless` - 8 elements plus 2 siblings that moved with
+  them; baseline defect, SUMMARY section 4, decision for KAN-30); 2 are an 8px intrinsic-width shift of
+  a Canopy 4 `cn-select` and its neighbour; 4 are pairing offsets on `/cards`, whose grid container and
+  items became component-owned classes and were measured separately (identical boxes, code G).
+* 2,589 computed-style checks of the replacement classes against the flex-layout rules: 0 mismatches.
+* Everything else that differs is the Material MDC / Canopy 4 re-render that lands in the same hop
+  (control heights, typography, shell top bar, page heights) and the Canopy page-shell overflow at
+  375px that exists in both versions (424px -> 400px wide documents).
 
 ## How the baseline was captured
 

@@ -3,7 +3,8 @@
 // read the same way (`mol-flex-row mol-gap-16` for `fxLayout="row" fxLayoutGap="16px"`).
 //
 // The computed styles mirror what flex-layout 14 wrote inline, including its quirks (basis of
-// `0.000000001px` in columns, min/max on the main axis for sized fxFlex), so the visual diff in
+// `0.000000001px` in columns, min/max on the main axis for sized fxFlex, gaps as a margin on every
+// child but the last rather than `gap`), so the visual diff in
 // docs/upgrade/MOL-4471/14-to-15/flex-layout-visual/ stays explainable. Only the `lt-md`
 // breakpoint was ever used; it is flex-layout's `screen and (max-width: 959.98px)`, which is also
 // the width Canopy's cn-page-shell collapses its nav at.
@@ -33,14 +34,17 @@ $mol-flex-sized: 160, 220, 260, 320, 360;
   flex-direction: column;
 }
 
-.mol-flex-wrap {
-  flex-wrap: wrap;
-}
-
 // ---- fxLayoutGap ------------------------------------------------------------------------------
+// margin-right (row) / margin-bottom (column) on all children but the last, leaving the children's
+// own margins on the other sides alone. `:last-child` stands in for flex-layout's "last visible
+// child": children are added/removed with *ngIf, never hidden with display:none.
 @each $gap in $mol-gaps {
-  .mol-gap-#{$gap} {
-    gap: #{$gap}px;
+  .mol-flex-row.mol-gap-#{$gap} > :not(:last-child) {
+    margin-right: #{$gap}px;
+  }
+
+  .mol-flex-col.mol-gap-#{$gap} > :not(:last-child) {
+    margin-bottom: #{$gap}px;
   }
 }
 
@@ -123,9 +127,23 @@ $mol-flex-sized: 160, 220, 260, 320, 360;
     flex-direction: column-reverse;
   }
 
+  // Stacked containers move the gap from the row axis to the column axis.
   @each $gap in $mol-gaps {
-    .mol-gap-#{$gap}--lt-md {
-      gap: #{$gap}px;
+    .mol-flex-col--lt-md.mol-gap-#{$gap} > :not(:last-child) {
+      margin-bottom: #{$gap}px;
+      margin-right: 0;
+    }
+
+    .mol-flex-col-reverse--lt-md.mol-gap-#{$gap} > :not(:last-child) {
+      margin-right: 0;
+      margin-top: #{$gap}px;
+    }
+  }
+
+  // fxLayoutGap.lt-md: after the loop above so it wins over the container's default gap.
+  @each $gap in $mol-gaps {
+    .mol-flex-col--lt-md.mol-gap-#{$gap}--lt-md > :not(:last-child) {
+      margin-bottom: #{$gap}px;
     }
   }
 

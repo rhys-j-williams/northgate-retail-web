@@ -57,8 +57,8 @@ body {
 }
 
 // Page content width. CnPageShell already constrains maxContentWidth; this is the inner rhythm.
+// Display comes from the layout utilities (mol-flex-col) or the element's own default.
 .mol-page {
-  display: block;
   padding: 0 0 48px;
 }
 

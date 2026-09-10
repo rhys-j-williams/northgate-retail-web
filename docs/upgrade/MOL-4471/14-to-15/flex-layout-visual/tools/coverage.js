@@ -2,7 +2,7 @@
 // Maps every template in the flex-layout inventory to the route screenshot(s) that render it.
 const fs = require('fs');
 const path = require('path');
-const REPO = path.resolve(__dirname, '../../../../..');
+const REPO = path.resolve(__dirname, '../../../../../..');
 const inv = require(path.join(REPO, 'docs/upgrade/MOL-4471/14-to-15/00-baseline-14/flex-layout-inventory.json'));
 const manifest = require(path.resolve(process.argv[2]));
 const OUT = path.resolve(process.argv[3]);
@@ -112,5 +112,6 @@ for (const [k, v] of Object.entries(NOTES)) lines.push(`* **${k}** - ${v}`);
 lines.push('', '## Per-route capture details', '', '| id | route | final URL | viewport | page size | page errors |', '|---|---|---|---|---|---|');
 for (const s of manifest.shots) lines.push(`| ${s.id} | \`${s.route}\` | ${s.finalUrl !== s.route ? '`' + s.finalUrl + '`' : '=' } | ${s.viewport} | ${s.pageSize ? s.pageSize.w + 'x' + s.pageSize.h : '-'} | ${(s.pageErrors || []).length ? s.pageErrors.map(e => '`' + e.replace(/\|/g, '/') + '`').join('<br>') : '-'} |`);
 fs.writeFileSync(OUT, lines.join('\n') + '\n');
+fs.writeFileSync(OUT.replace(/\.md$/, '.json'), JSON.stringify(rows.map(r => ({ ...r, note: FILE_NOTES[r.file] || '' })), null, 2));
 console.log(`covered=${covered} redirected=${redirected} notReachable=${notReachable} -> ${OUT}`);
 for (const r of rows.filter(r => r.status !== 'captured')) console.log(' ', r.status, r.file, r.routes.join(','));

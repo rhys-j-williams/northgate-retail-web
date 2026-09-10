@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Inject } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 
 import { AppError } from '../../../../core/errors/app-error.model';
@@ -16,6 +17,7 @@ export interface RenameAccountData {
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class RenameAccountComponent {
+  readonly nickname: FormControl<string>;
   busy = false;
   error: AppError | null = null;
 
@@ -24,12 +26,21 @@ export class RenameAccountComponent {
     @Inject(MAT_DIALOG_DATA) readonly data: RenameAccountData,
     private readonly api: AccountsApiService,
     private readonly cdr: ChangeDetectorRef
-  ) {}
+  ) {
+    this.nickname = new FormControl<string>(data.nickname, { nonNullable: true, validators: [Validators.required, Validators.maxLength(40)] });
+  }
+
+  get unchanged(): boolean {
+    return this.nickname.value.trim() === this.data.nickname;
+  }
 
   confirm(): void {
+    if (this.nickname.invalid || this.unchanged) {
+      return;
+    }
     this.busy = true;
     this.error = null;
-    this.api.rename(this.data.accountId, this.data.nickname).subscribe({
+    this.api.rename(this.data.accountId, this.nickname.value.trim()).subscribe({
       next: () => this.ref.close(true),
       error: (err: AppError) => {
         this.busy = false;

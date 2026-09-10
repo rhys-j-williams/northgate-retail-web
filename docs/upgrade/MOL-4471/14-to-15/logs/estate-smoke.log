@@ -1,0 +1,38 @@
+northgate estate smoke, mode=unknown, 2026-09-10T00:32:56Z
+
+[0] mock health sweep
+  PASS  health keystone-idp-mock
+  PASS  health bedrock-core-mock
+  PASS  health aggregio-mock
+  PASS  health tickerhaus-mock
+  PASS  health triscore-mock
+  PASS  health paylink-network-mock
+  PASS  health vault-mock
+  PASS  health splunk-hec-mock
+  PASS  health lantern-collector-mock
+  PASS  health semaphore-flags-mock
+  PASS  health ldap-mock
+  PASS  health verdaccio
+
+[1] keystone login (authorization code + PKCE, fixture user, MFA 123456)
+  PASS  keystone PKCE login as ravi.halloran, ID token verified via JWKS (ok CUS-100003 amr=pwd,otp,mfa)
+
+[2] bff-retail accounts with Bedrock backed balances
+  PASS  bff-retail returned 2 accounts, balance of ACC-221833965 matches Bedrock (-772983 minor)
+
+[3] beacon: three ACCT.EVENTS for CUS-100003 -> console channel adapter, ordered, within 10s
+  PASS  beacon dispatched 3 console alerts for CUS-100003 in sequence order
+
+[4] documents-service statement PDF
+  PASS  documents-service returned a 3746 byte PDF for ACC-221833965
+
+[5] lantern event lands in the collector
+  PASS  lantern track event smoke-1789000377799450724 stored (collector count=1)
+  PASS  lantern.min.js served (7693 bytes)
+
+[6] splunk correlation search for the accounts request (smoke-1789000376-28565)
+  PASS  splunk HEC accepts a token-authenticated event
+  PASS  splunk trace smoke-1789000376-28565 spans [bedrock-adapter,bedrock-core-mock,bff-retail]
+
+smoke summary: 20 passed, 0 failed, 0 skipped
+exit 0

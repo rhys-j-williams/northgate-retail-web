@@ -1,0 +1,17 @@
+STATE  COMPONENT          CHECK                              DETAIL
+-----  ---------          -----                              ------
+PASS   retail-web         no forbidden strings (worktree)    
+SKIP   retail-web         no forbidden strings (history)     --quick
+PASS   retail-web         no build output committed          
+PASS   retail-web         exact dependency versions          
+PASS   retail-web         package.json present               
+PASS   retail-web         .nvmrc present                     
+PASS   retail-web         lockfile committed                 
+PASS   retail-web         history depth                      356 >= 180
+PASS   retail-web         author spread                      17 authors
+PASS   retail-web         release tags                       v2024.09.2 
+SKIP   retail-web         install, test, build               --quick
+PASS   retail-web         localised builds                   en-US and es
+
+pass 10, fail 0, skip 2
+exit 0

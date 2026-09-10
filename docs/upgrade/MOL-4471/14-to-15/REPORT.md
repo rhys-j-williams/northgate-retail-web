@@ -78,7 +78,10 @@ Logs: [`ng-update-core-cli-15.log`](logs/ng-update-core-cli-15.log), [`ng-update
 [`ng-update-ngrx-15.log`](logs/ng-update-ngrx-15.log); per-item outcome in [`deprecations.log`](deprecations.log).
 
 - **`ng update @angular/core@15 @angular/cli@15 @angular-eslint/schematics@15`**: `relativeLinkResolution`
-  removed from the router config (`app-routing.module.ts`); `RouterLinkWithHref` nothing to do;
+  removed from the router config (`app-routing.module.ts`; the removed comment cited a transfer-wizard
+  `../review` link and MOL-2288, but the wizard today navigates `['review']` relative to the non-empty
+  `new` route, so `corrected` resolves identically; this is a KAN-25 reviewer check, see
+  [`deprecations.log`](deprecations.log)); `RouterLinkWithHref` nothing to do;
   Karma `require.context` boilerplate removed from `src/test.ts`; TS target ES2022 +
   `useDefineForClassFields: false`; angular-eslint 15 `schematics` block in `angular.json`; zone.js
   0.12.0. Test discovery and the coverage denominator (MOL-2911: whole `app/` tree, not just what

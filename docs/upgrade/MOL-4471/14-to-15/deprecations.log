@@ -47,7 +47,7 @@
 #   - canopy-4-theme-mixin schematic: "no Canopy typography overrides found, nothing to do" (retail-web uses
 #     @include canopy.theme() with defaults). KAN-33 typography rename table therefore has no local footprint; if it changes
 #     the effect is inside Canopy. KAN-34 dense/-2 density: not used. Interim components (KAN-27/KAN-28): cn-filter-chips
-#     kept in 4 templates (transaction-filters x2, card-controls, channel-picker), cn-amount-slider not used.
+#     kept in 4 places across 3 templates (transaction-filters x2, card-controls, channel-picker), cn-amount-slider not used.
 #   - Public entry points only: @northgate/canopy-ui, /layout, /overlays, /data-display, Sass 'themes'/'tokens'.
 #     Pre-existing MOL-1522 print rule in src/styles.scss targets .cn-shell__nav/.cn-shell__topbar which exist in neither
 #     3.7.2 nor 4.0.0 (dead rule, left unchanged; REPORT.md section 10 item 5).

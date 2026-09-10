@@ -1,0 +1,87 @@
+# MOL-4471 Angular 14 -> 15 deprecation log (northgate-retail-web)
+# Source: logs/ng-update-core-cli-15.log, logs/ng-update-material-15.log, logs/mdc-migration.log,
+#         logs/canopy-4-theme-mixin.log, logs/ng-update-ngrx-15.log, logs/build-prod.log, logs/test-ci.log,
+#         logs/lint.log, logs/npm-ci-clean-no-ngcc.log in this directory.
+#
+# ng update @angular/core@15 @angular/cli@15 @angular-eslint/schematics@15 migrations applied:
+#   - @angular-eslint/schematics "Updates @angular-eslint to v15"
+#       -> package.json: @angular-eslint/* 15.2.1 (exact, save-exact=true); angular.json: "schematics" block with
+#          setParserOptionsProject for the application/library schematics (no effect on the existing lint config)
+#   - @angular/cli "Remove Browserslist configuration files that matches the Angular CLI default configuration"
+#       -> no change (.browserslistrc kept: it differs from the CLI default, so the migration left it)
+#   - @angular/cli "Remove exported @angular/platform-server renderModule method" -> no change (no SSR)
+#   - @angular/cli "Remove no longer needed require calls in Karma builder main file"
+#       -> src/test.ts: require.context spec discovery removed. The MOL-2911 trick that pulled every app/**/*.ts into the
+#          coverage denominator also used require.context (no longer supported by the CLI 15 Karma builder); replaced by
+#          test.options.include = ["**/*.spec.ts", "app/**/*.ts"] in angular.json. Same 198 specs, same 36.19% lines.
+#   - @angular/cli "Update TypeScript compiler target and set useDefineForClassFields"
+#       -> tsconfig.json: target es2017 -> ES2022, useDefineForClassFields: false (IDE only; the CLI forces both)
+#   - @angular/cli "Remove options from angular.json that are no longer supported by the official builders" -> no change
+#   - @angular/core "relativeLinkResolution config parameter of the Router is removed"
+#       -> src/app/app-routing.module.ts: relativeLinkResolution: 'legacy' removed from RouterModule.forRoot options
+#          ('corrected' has been the default since Angular 11; the app had kept 'legacy'. Behaviour differs only for
+#          relative navigation from an empty-path route. All 64 routes rendered in the estate walk and 196 specs pass;
+#          the two relativeTo navigations are transfer-wizard (path 'new', non-empty) -> ['review'] and alerts-home
+#          (empty path) -> [] with a fragment only (no segments to resolve), so 'corrected' == 'legacy' for both;
+#          reviewers please confirm the transfer-wizard one for KAN-25 scope)
+#   - @angular/core "RouterLink contains the logic of RouterLinkWithHref" -> no change (no RouterLinkWithHref references)
+#   - zone.js 0.11.8 -> 0.12.0 (peer of @angular/core 15: ~0.11.4 || ~0.12.0). src/polyfills.ts still imports
+#     'zone.js/dist/zone' (MOL-1870); the dist/ bundles are present and un-deprecated in 0.12.0, build and tests are clean,
+#     so the import is left for the 16 hop (zone.js 0.13 drops dist/). Host zone version recorded for the Iris widget
+#     (KAN-40): 0.12.0 == iris manifest zoneJsCompatible.
+#
+# ng update @angular/material@15 migrations applied:
+#   - "Updates Angular Material to v15" -> 11 .ts files rewritten to MatLegacy* module/import names (legacy Material 14 look)
+#   - ng generate @angular/material:mdc-migration (all components, src)
+#       -> shared.module.ts, shell.component.ts, idle-warning-dialog.component.ts: MatLegacyDialogModule/MatLegacyFormField/
+#          MatLegacyInput/MatLegacyPaginator -> MDC MatDialogModule/MatFormFieldModule/MatInputModule/MatPaginatorModule;
+#          the other 8 files (transaction-list, export-transactions, rename-account, cancel-transfer, cancel-payment,
+#          lock-card, test-alert, card-list) go back to the standard MDC imports, so they are net unchanged vs develop.
+#          No MatLegacy* import remains in src (grep "Legacy" -> 0 code hits). No .mat-* selector overrides existed in
+#          src/styles.scss, so no style rewrite was needed. The legacy components are deprecated in 15 and removed in 17;
+#          nothing to carry.
+#   - MDC visual differences (control heights, paddings, dialog/paginator rendering) are classified as code M in
+#     flex-layout-visual/diff/SUMMARY.md for the KAN-30 / KAN-31 reviewers; not decided here.
+#
+# Canopy 4.0.0 (CNPY-2140) migration:
+#   - canopy-4-theme-mixin schematic: "no Canopy typography overrides found, nothing to do" (retail-web uses
+#     @include canopy.theme() with defaults). KAN-33 typography rename table therefore has no local footprint; if it changes
+#     the effect is inside Canopy. KAN-34 dense/-2 density: not used. Interim components (KAN-27/KAN-28): cn-filter-chips
+#     kept in 4 templates (transaction-filters x2, card-controls, channel-picker), cn-amount-slider not used.
+#   - Public entry points only: @northgate/canopy-ui, /layout, /overlays, /data-display, Sass 'themes'/'tokens'.
+#     Pre-existing MOL-1522 print rule in src/styles.scss targets .cn-shell__nav/.cn-shell__topbar which exist in neither
+#     3.7.2 nor 4.0.0 (dead rule, left unchanged; REPORT.md section 10 item 5).
+#
+# NgRx 15.4.0: ng update @ngrx/store@15 migrations -> no changes (no deprecated APIs in use).
+# ngx-mask 15.2.3: NgxMaskModule.forRoot() removed upstream -> app.module.ts uses provideEnvironmentNgxMask() and imports
+#   NgxMaskDirective / NgxMaskPipe (only non-mechanical third-party change).
+# angular-oauth2-oidc 15.0.1, ngx-cookie-service 15.0.0: version bumps only, no API change in the code paths used.
+#
+# Removed:
+#   - @angular/flex-layout 14.0.0-beta.41 (interim 15.0.0-beta.42 while the 15 tree resolved, then removed): 724 attribute
+#     usages in 95 templates (fxLayout 315, fxLayoutGap 207, fxFlex 125, fxLayoutAlign 77; 101 responsive .lt-md), and the
+#     FlexLayoutModule import/export in shared.module.ts, replaced by the mol-* utilities in src/styles/_layout.scss
+#     (breakpoints from the estate tokens; .lt-md = max-width 959.98px, matching flex-layout's lt-md) and one component
+#     stylesheet (card-list, fxLayoutGap="16px grid"). Inventory after: 0 (flex-layout-removal/flex-layout-inventory-after.md).
+#   - .npmrc legacy-peer-deps=true (MOL-3611): only needed for flex-layout's exact @angular/core 14.0 peer. Strict peers now
+#     resolve (logs/npm-ci-clean-no-ngcc.log).
+#   - postinstall "ngcc ..." : no View Engine package remains (logs/ngcc-proof.txt, logs/angular-packages-format.txt);
+#     Lantern 5.0.0 and Canopy 4.0.0 are partial Ivy. ngcc itself is removed in Angular 16, so this also clears the one
+#     install-time blocker ADR 0014 listed for the 16 hop (not started here).
+#
+# Deprecations outstanding after the hop (none block the build; build.log has exactly one warning, the initial bundle budget):
+#   - CanLoad (src/app/core/guards/lazy-module.guard.ts, ADR 0006): deprecated in Angular 15.1 in favour of canMatch.
+#     Still supported through 15.x; functional-guard migration is a 16+ item. Not changed (entitlement guard, KAN-25 adjacent).
+#   - HttpClientXsrfModule (core.module.ts): still supported in 15; provideHttpClient(withXsrfConfiguration()) is a 15+
+#     optional refactor. Not changed.
+#   - Observable.toPromise() (6 call sites in cards/statements): deprecated by RxJS 7 (removed in RxJS 8); lastValueFrom /
+#     firstValueFrom replacement is a follow-up outside the mechanical hop. Not changed.
+#   - Untyped forms (ADR 0012, Untyped* in profile and onboarding; transfers and bill pay use the typed API but have
+#     9.09% / 14.20% line coverage): still supported; any forms refactor there is blocked behind KAN-25.
+#   - 'zone.js/dist/zone' import in src/polyfills.ts (see above): works on 0.12.0, must move to 'zone.js' before zone.js 0.13.
+#   - eslint 8 / @typescript-eslint 5.x: unchanged, last supported on the angular-eslint 15 line.
+#   - initial bundle warning budget 2 MB exceeded (2.27 MB; was 2.05 MB on 14) -> human decision (REPORT.md section 10).
+#   - npm ci "npm WARN deprecated" notices: inflight, read-package-json, @npmcli/move-file, @babel/plugin-proposal-* 7.18.x
+#     (all transitive dev tooling under @angular-devkit/build-angular 15.2.11; no action inside the 15 line).
+#   - Angular 15 itself is out of LTS (May 2024); this is an intermediate wave position under GIS-STD-022 / TR-1188
+#     (ceiling 2026.11). 15 -> 16 is a separate hop and is not started on this branch (ADR 0015).

@@ -34,8 +34,9 @@ that TypeScript 4.7 could not parse and the build died with TS2304 (MOL-4433). T
 parses them, but the pin stays until the next deliberate bump.
 
 Angular 14 -> 15 landed under MOL-4471 (`docs/adr/0015-angular-14-to-15.md`, which supersedes
-0014; artefacts in `docs/upgrade/MOL-4471/14-to-15/`). One major at a time: 16 is a separate hop
-with its own ticket. Do not `ng update` on `develop`; always a feature branch.
+0014; artefacts in `docs/upgrade/MOL-4471/14-to-15/`, matrix in
+`docs/upgrade/MOL-4471/COMPATIBILITY_MATRIX.md`, release notes in `CHANGELOG.md`). One major at a
+time: 16 is a separate hop with its own ticket. Do not `ng update` on `develop`; always a feature branch.
 
 ## Running it
 

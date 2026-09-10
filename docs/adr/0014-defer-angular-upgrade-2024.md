@@ -1,6 +1,6 @@
 # ADR 0014: Defer the Angular 15+ upgrade
 
-Status: Accepted
+Status: Superseded by [ADR 0015](0015-angular-14-to-15.md) (MOL-4471, 2026-09)
 Date: 2024-06-27
 Deciders: D. Okafor (retail-digital lead), M. Calderón, W. Tanaka (architecture), C. Mbeki (GIS AppSec)
 Tickets: MOL-3801 (spike), MOL-4471 (epic, deferred), GIS-2207
